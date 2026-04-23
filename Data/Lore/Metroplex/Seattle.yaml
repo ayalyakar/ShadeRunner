@@ -1,0 +1,119 @@
+# Metroplex-wide canon for Seattle.
+# Edition: SR1E (Seattle Sourcebook, FASA, 1990). Year: 2050.
+# Policy: structured facts + prose notes. See Design/Setting/DESIGN - Canon.md.
+
+metroplex: Seattle
+
+sources:
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 6
+    image: "Sources/SR1E-Seattle/p006-facts-when-traveling.png"
+    section: "Facts at Your Fingertips — When to Go / Traveling to Seattle"
+
+# The Seattle Sourcebook uses the same tab header at the metroplex chapter level
+# as it does per-district. Retained as canonical template structure.
+tabs: [Facts, History, Downtown, Outlying, Government, Economy, Crime, Maps]
+
+climate:
+  source_page: 6
+  annual_mean_temperature_c: 5.1
+  july_normal_high_c: 21.0
+  january_normal_low_c: -9.5
+  annual_precipitation_cm: 90.56
+  wettest_month:
+    month: "December"
+    precipitation_cm: 15.18
+  driest_month:
+    month: "July"
+    precipitation_cm: 1.87
+  weather_events:
+    - "Heavy thunderstorms in spring and summer"
+    - "Wind storms in autumn"
+    - "Rare winter snowstorms"
+  reputation:
+    rainy: |
+      Seattle has a canonical reputation for heavy rain. The actual annual
+      precipitation figure (~90.56 cm) is modest compared to many North
+      American cities — the reputation is cultural, not quantitative.
+  visit_calendar:
+    best: ["late spring", "early fall"]
+    worst: ["mid-summer (heat)", "mid-winter (rain)"]
+    metahuman_note: |
+      Many Orks and Trolls find the city most beautiful in winter — a
+      canonical cultural note from the sourcebook, not a stat effect.
+
+travel_to_metroplex:
+  source_page: 6
+  modes:
+    - mode: "Plane"
+      primary_airport: "Seattle-Tacoma International Airport"
+      airport_short: "Sea-Tac"
+      domestic_fare_range_yen: { min: 200, max: 1700 }
+      fare_factors: ["class", "time of year", "city of origin", "time of day"]
+      ground_connections: ["taxis / cabs", "Metro buses"]
+      intracity_air:
+        carriers_count: 5
+        vehicle_types: ["helicopter", "tilt-rotor craft"]
+        rooftop_landings: true
+        notes: |
+          Five intracity airlines service the metroplex with helicopter and
+          tilt-rotor fleets; their vehicles make rooftop landings at many of
+          the plex's major hotels and buildings.
+
+    - mode: "Automobile / Bus"
+      border_note: |
+        Ground travel to Seattle requires crossing Native American Nations
+        (NAN) territory. Each NAN has its own travel-restriction regime.
+      private_car:
+        advance_planning_months: 5
+        pass_cost_floor_yen: 80
+        requirement: "Update passport file on credstick before travel."
+        notes: |
+          Travel restrictions vary per nation; plan at least five months
+          in advance to obtain the necessary passes. Multiple passes may
+          be required for a single trip.
+      bus:
+        advantage: "Bus lines are pre-licensed for NAN transit; red-tape avoided."
+        east_coast_ucas_fare_yen: 300
+        licensed_lines:
+          - name: "Blueline Tours and Trips"
+            transcription_note: "Name read as 'Blueline Tours and Trips'; uncertain."
+          - name: "Whippet Bus Company"
+          - name: "Falcor Express"
+            ownership_note: "Partially owned by NAN."
+            transcription_note: "Name read as 'Falcor Express'; uncertain."
+
+    - mode: "Train"
+      service: "Renraku Maglev Bullet Train"
+      operator: "Renraku"
+      route:
+        from: "Los Angeles"
+        to: "Seattle"
+        length_km_approx: 2000
+        coverage: "Runs through the majority of the lower states."
+      construction_year: 2017
+      construction_year_transcription_note: |
+        Year read as '2017'; could be '2011'. Low confidence. Flag for
+        re-verification against a higher-resolution image.
+      san_francisco_mention: |
+        The sourcebook text specifically mentions taking the Maglev from
+        San Francisco to Seattle; SF is a mid-route stop on the LA→Seattle line.
+      reliability:
+        reputation: "Frequent breakdowns causing delays of hours to days."
+        notes: "Reliability is a canonical weakness of the line."
+      fares_yen:
+        first_class: 400
+        second_class: 250
+        tourist_class: 165
+      first_class_amenities:
+        - "Meal included, served in the sumptuous dining car"
+
+# Page-image has a small additional paragraph about the tunnels (Seabreeze?) on
+# the Maglev route. Prose was only partially legible in the current scan and
+# is not transcribed verbatim. Revisit on re-scan.
+transcription_gaps:
+  - page: 6
+    section: "Train"
+    note: "Paragraph about the Maglev's tunnels (Seabreeze?) partly illegible; only the broad reliability / fare facts captured with confidence."
