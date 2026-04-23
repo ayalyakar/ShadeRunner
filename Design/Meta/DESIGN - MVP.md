@@ -27,7 +27,14 @@ The MVP is **shippable to self**: complete end-to-end, no placeholders in the cr
 - **Supremacy groups (ambient in MVP):**
   - **Humanis Policlub**, **KKK**, **The Order** — rally events, hate-crime incidents, BBS chatter; metahuman-defense counter-presence surfaced in neighborhood NPC clustering.
 - **Canonical NPCs with game presence:** Mayor **Jeffrey Gasston**, **James O'Malley**, **Theodore Alamando**, **Don Autigerano**. All statted but peripheral to the first run. Governor Schultz, Del Secondi as flavor only.
-- **Police response (canonical per-district override):** minimum 4-man squads; riot-van vehicles (Aero Citymaster, Nissan Patrol-1); ~33% of Redmond government corruption-linked to the syndicates.
+- **BBS personas:** recurring Shadowland handles tracked as persistent NPC personas. First tracked: **Huyen Nick** (civic-journalism voice, 2+ posts from p.129).
+- **Corp facilities (ambient in MVP):** four named **"Toxic Castles"** — **Hollywood Simsense Entertainments** (Hollywood sub-area), **Life-Eze Appliances**, **Moonshun Vehicles**, **Carnation Seattle**. Fortified (high walls, electric fencing, armed guards); helicopter / tilt-rotor / Snoqualmie-River logistics. Runs against them deferred post-MVP.
+- **Sub-economies (MVP-visible):**
+  - **BTL chip trade** — ambient + run-content eligible.
+  - **Body-parts trade** — **MVP sub-economy**: victim rescue / butcher raid / buyer exposure run types in scope. High-heat, morally grey.
+  - **Inferior industrial products** — ambient fraud pipeline.
+- **Police response (canonical per-district override):** minimum 4-man squads; riot-van vehicles (Aero Citymaster, Nissan Patrol-1); ~33% of Redmond government corruption-linked to the syndicates. Regular patrols only in the Bellevue-border strip; deep Barrens effectively unpatrolled.
+- **LTG prefix:** Redmond = **11206** (procgen generates local 4-digit numbers for Redmond commlinks / businesses).
 - **First Johnson:** a **Touristville fixer** (Connection ~3–4) who calls the PC cold. Meet happens in a Touristville bar.
 - **First run:** content **TBD** (deferred; retrieval / protection / extraction / sabotage).
 - **NPC populations:** procgen driven by the district's canonical demographics (87% human, 10% ork, 6% elf, 1% dwarf, 1% troll, 1% other; 70% below poverty; 78% <12-years education) **plus neighborhood-level metahuman clustering** (p.128 post-Night-of-Rage self-defense pattern).

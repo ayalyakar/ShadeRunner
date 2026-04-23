@@ -1,0 +1,30 @@
+# Canonical corp / business stub.
+
+name: "Hollywood Simsense Entertainments"
+type: "Corporation (simsense / entertainment)"
+
+sources:
+  - edition: SR1E
+    page: 129
+    title: "Redmond: New Hope for a Troubled District"
+    section: "Outlying"
+
+facilities:
+  - district: "Redmond"
+    category: "Toxic Castle"
+    fortifications: "High walls, electric fencing, armed guards."
+    logistics:
+      - "helicopter"
+      - "tilt-rotor aircraft"
+      - "Snoqualmie River (barge / shipment)"
+    neighborhood_note: "Hollywood sub-area also hosts the Red Hot Nukes gang (cross-ref)."
+
+flavor: |
+  One of only a handful of major businesses still operating in
+  Redmond. Simsense entertainment production — raises the question
+  of whether BTL trade sits closer to the official product than
+  anyone admits publicly.
+
+game_presence:
+  mvp: "ambient (named facility; heist-target candidate)"
+  post_mvp: "full corp entity with internal politics"

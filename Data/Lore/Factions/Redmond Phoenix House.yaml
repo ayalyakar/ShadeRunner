@@ -1,0 +1,31 @@
+# Canonical business stub.
+
+name: "Redmond Phoenix House"
+type: "Restaurant (Japanese-American cuisine)"
+
+sources:
+  - edition: SR1E
+    page: 129
+    title: "Redmond: New Hope for a Troubled District"
+    section: "Outlying"
+
+facts:
+  district: "Redmond"
+  street: "Union Hill Road"
+  ltg: "11206 (63-7516)"
+  cuisine: "Japanese-American"
+  tagline: "Japanese-American Cuisine at its Finest."
+
+flavor: |
+  First canonical Redmond business address and LTG number from the
+  sourcebook. Referenced in-game via an in-fiction advertisement.
+  The 11206 prefix is the canonical Redmond LTG area code.
+
+game_presence:
+  mvp: "ambient (named venue; plausible meet spot or neutral restaurant)"
+  post_mvp: "recurring venue; possible Yakuza-adjacent given cuisine and district"
+
+hooks:
+  - "Neutral meet spot away from Touristville dives."
+  - "Possible Yakuza back-office given Japanese-American framing."
+  - "Recurring location for civic / politician sightings per p.129 prose."

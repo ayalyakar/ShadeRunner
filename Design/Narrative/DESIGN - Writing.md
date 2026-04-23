@@ -47,6 +47,16 @@ Explicitly excluded: **runtime LLM generation**. See `Technology/DESIGN - AI Too
 - Scripted scenes for trust milestones.
 - Procedural intermediate banter.
 
+### BBS personas
+
+Recurring Shadowland handles (posters who appear in multiple canonical extracts) are tracked as **persistent NPC personas** under `Data/Lore/NPCs/<Handle>.yaml`. Each persona carries:
+
+- A voice profile (tone, reach, recurring opinions).
+- A post history (timestamp, topic, source page).
+- An optional on-meat NPC link if the handle is later revealed to map to a physical character.
+
+All future content attributed to that handle — hand-authored, templated, or LLM-drafted — must respect the persona's voice profile. First tracked persona: **Huyen Nick** (Redmond; cynical civic-journalism voice).
+
 ### Emails / messages
 - Templates with variable slots; per-sender voice profiles.
 

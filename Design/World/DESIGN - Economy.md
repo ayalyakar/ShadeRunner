@@ -55,9 +55,20 @@ Payouts scale with:
 - Barter lets a SINless runner operate without banking.
 - Favor debts are tracked explicitly; calling in debts is a core social-system mechanic.
 
+## Canonical illicit sub-economies
+
+Per-district data files may declare **canonical illicit sub-economies** that enrich the economy layer with SR-flavor content. Each sub-economy declares its MVP presence (ambient / MVP run-content / post-MVP). Reference: Redmond (`Data/Lore/Districts/Redmond.yaml`) carries three:
+
+- **BTL chip trade** — cited as the backbone of Redmond's "successful" businesses (SR1E p.129).
+- **Body-parts trade** — squatters kidnapped, organs sold to wealthy SINners; MVP-eligible run content.
+- **Inferior industrial products** — knowing-defect pipeline into unscrupulous megacorp supply chains.
+
+These are content layers on top of the standard price/availability/SIN model, not replacements. Other districts will accumulate their own sub-economies as extracts arrive.
+
 ## Open questions
 
 - Inflation across decades — explicit, or invisible rebasing?
 - Corp scrip / alternative currencies.
 - Taxation and laundering — how much to simulate for a non-hero player?
 - Insurance, legal fines, court costs — edge cases but canonical.
+- Sub-economy pricing: does the body-parts trade have a transparent "price per organ" table, or is it narrative-only?
