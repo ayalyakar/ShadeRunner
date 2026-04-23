@@ -21,6 +21,7 @@ Raw sourcebook page screenshots cited by files in `Data/`.
 - `p001-cover.png` — cover (dragonfly motif, title only).
 - `p002-credits.png` — title page / credits / FASA copyright 1990 / publisher address (archive-only; credits deliberately not ingested to canon per project policy).
 - `p003-toc-prologue-open.png` — Table of Contents + opening of the "Ant Lion: A Prologue" fiction. TOC ingested as the module structural skeleton; prologue prose is archive-only.
+- `p004-prologue-continued.png` — "Ant Lion: A Prologue" (continued). Archive-only per project policy; no canon stubs for prologue-only entities (Dorin, Daniels, Alex the Coyote shaman, the Ant Lion creature, the pyramid/temple).
 
 ## Citation format (in `Data/` YAML)
 

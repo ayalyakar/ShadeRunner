@@ -212,3 +212,9 @@ sources:
     page: 3
     image: "Sources/SR1E-QueenEuphoria/p003-toc-prologue-open.png"
     section: "Table of Contents + Ant Lion: A Prologue (opening)"
+  - edition: SR1E
+    book: "Queen Euphoria"
+    year: 1990
+    page: 4
+    image: "Sources/SR1E-QueenEuphoria/p004-prologue-continued.png"
+    section: "Ant Lion: A Prologue (continued; archive-only)"
