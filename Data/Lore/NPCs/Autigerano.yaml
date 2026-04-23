@@ -1,0 +1,31 @@
+# Canonical NPC stub.
+
+name: "Autigerano"
+title: "Don (Ill Squires, Yakuza)"
+
+sources:
+  - edition: SR1E
+    page: 128
+    title: "Redmond: New Hope for a Troubled District"
+    section: "Outlying"
+
+facts:
+  faction: "Yakuza — Ill Squires Ring"
+  role: "Leader of the most active Yakuza Ring in Redmond."
+  first_name_known: false
+
+flavor: |
+  Runs the Ill Squires — the most active of five known Yakuza Rings
+  in Redmond. Drives the recruitment pipeline: promising warriors get
+  cyberware on the gang's tab; promising magicians get access to the
+  Ring's library and magical cache.
+
+game_presence:
+  mvp: "named NPC"
+  hooks:
+    - "Yakuza-side runs targeting or leveraging the Mafia schism."
+    - "Recruitment thread for a magically gifted PC or contact."
+    - "Cyberware bounty for a physical PC: the Yakuza offers 'free' chrome."
+
+stats:
+  notes: "Statblock not yet derived; SR1E-era Yakuza Don, magically aware."

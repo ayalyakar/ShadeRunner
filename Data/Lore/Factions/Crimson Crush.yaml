@@ -1,0 +1,22 @@
+# Canonical faction stub.
+
+name: "Crimson Crush"
+type: "Metahuman street gang"
+
+sources:
+  - edition: SR1E
+    page: 128
+    title: "Redmond: New Hope for a Troubled District"
+    section: "Outlying"
+
+presence:
+  - district: "Redmond"
+    turf: "Bargain Basement"
+
+flavor: |
+  Metahuman gang that haunts the people of Bargain Basement.
+  Details awaiting further extract.
+
+game_presence:
+  mvp: true
+  role: "MVP gang; territorial antagonist for any runs crossing Bargain Basement."

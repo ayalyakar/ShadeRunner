@@ -34,9 +34,14 @@ Factions act on ticks (daily at the sprawl layer, weekly at the global layer):
 - Player can be **hired by**, **betray**, **ally with**, **undermine** any faction.
 - Long-term player pressure can genuinely shift faction fortunes within the constraints of canon anchors (see `Setting/DESIGN - Canon.md`).
 
+## Per-faction data
+
+Canonical faction entries live under `Data/Lore/Factions/<Name>.yaml` (see `Setting/DESIGN - Canon.md` for ingestion policy). Each entry records type, sources, per-district presence, leadership, game-presence tier (ambient / MVP / post-MVP), and narrative hooks. Faction-NPC links cross-reference `Data/Lore/NPCs/`.
+
 ## Open questions
 
 - Faction AI sophistication — goal-oriented planner, utility AI, or scripted personalities?
 - How many factions can the sim track before it becomes unreadable to the player?
 - Intra-faction politics — one monolithic actor per faction, or multiple executives with competing agendas?
 - Secret societies: how does the player discover they exist at all?
+- Sub-faction handling: a district-level Mafia branch with its own Don and capo is a distinct sim actor from "Seattle Mafia" at large — how deep does the nesting go?

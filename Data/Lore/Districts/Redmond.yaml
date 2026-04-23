@@ -1,18 +1,30 @@
-# Transcribed from sourcebook extract (Screenshot 2026-04-23).
+# Transcribed from Redmond sourcebook extracts.
 # Edition attribution: SR1E (per project lead).
-# Page: 127 ("REDMOND: NEW HOPE FOR A TROUBLED DISTRICT").
 # Policy: seed — calibrate for play. See Design/Setting/DESIGN - Canon.md.
 
 district: Redmond
-source:
-  edition: SR1E
-  page: 127
-  title: "Redmond: New Hope for a Troubled District"
-  tabs: [Facts, History, Downtown, Districts, Government, Economy, Crime, Maps]
+
+sources:
+  - edition: SR1E
+    page: 127
+    title: "Redmond: New Hope for a Troubled District"
+    section: "Facts"
+  - edition: SR1E
+    page: 128
+    title: "Redmond: New Hope for a Troubled District"
+    section: "Outlying / Geography & Demographics / Politics"
+
+tabs: [Facts, History, Downtown, Outlying, Government, Economy, Crime, Maps]
 
 facts:
   area_km2: 436
-  population: 436000
+  population: 436000   # authoritative: fact sheet p.127 wins over prose ~500k
+  population_prose_estimate:
+    point: 500000
+    range_min: 300000
+    range_max: 700000
+    source_page: 128
+    notes: "Prose attributes uncertainty to transient population; fact sheet is canonical."
   population_density_per_km2: 1142
   per_capita_income_annual_yen: 6000
   below_poverty_level: 0.70
@@ -20,11 +32,9 @@ facts:
   corporate_affiliation: 0.22
   voting_precincts: 15
   hospitals_and_clinics: 6
-  ltg_access_numbers: null   # TODO: transcribe from source; image illegible
+  ltg_access_numbers: null   # TODO: transcribe
 
-# Per-metatype percentages as printed in the fact sheet.
-# Note: raw values sum to 106%. Canonical SR sourcebook data sometimes
-# sums above 100% due to metavariant/overlap accounting. Retained as-is.
+# Per-metatype percentages as printed. Raw values sum to 106% — retained as canonical.
 metatype_mix:
   human: 0.87
   elf: 0.06
@@ -33,15 +43,32 @@ metatype_mix:
   troll: 0.01
   other: 0.01
 
+metatype_distribution_pattern:
+  clustering: true
+  source_page: 128
+  notes: |
+    Since the Night of Rage (2039), metahumans cluster for self-defense rather
+    than distributing evenly across the district. Procgen should apply
+    neighborhood-level clustering to metatype sampling, not a flat district-wide
+    mix. See Design/World/DESIGN - Procgen.md for the rule.
+
 education:
   less_than_12_years: 0.78
   high_school_equivalency: 0.18
   college_equivalency: 0.03
-  advanced_studies_certificates: 0.01   # <1% — printed as <1%
+  advanced_studies_certificates: 0.01   # printed as <1%
 
-# Historical events referenced in the district's flavor prose.
-# See Design/Setting/DESIGN - Canon.md for in-game treatment rules
-# (pre-game events = backdrop; in-game canon events = scheduled sim events).
+geography:
+  terrain: "Mostly flat; few existing hills concentrated in the southern end."
+  hydrology:
+    - name: "Snoqualmie River"
+      notes: "Drains approximately one third of the district."
+  landmarks:
+    - name: "Renton Corner Mall"
+      notes: |
+        Recovery/rebuilding project championed by Mayor Gasston; cited as
+        the first sign of the district's economic revival in decades.
+
 history_hooks:
   - year: 2029
     event: "Computer Crash of '29"
@@ -49,11 +76,24 @@ history_hooks:
   - year: 2032
     event: "VITAS outbreak"
     notes: "Pre-game backdrop; population collapse, social fabric broken."
+  - year: 2039
+    event: "Night of Rage"
+    notes: |
+      Pre-game backdrop; drove metahuman clustering / self-defense patterns
+      still visible in district demographics.
   - year: null
     event: "Redmond Hellhounds attack"
     notes: "Pre-game backdrop; canonical gang incident that shaped the Barrens."
+  - year: null
+    event: "Del Secondi Mafia schism"
+    notes: |
+      Del Secondi and supporters declared independence from the Seattle Mafia.
+      Del Secondi was summarily executed; his renegade faction continues to
+      challenge for control of the district.
+  - year: 2048
+    event: "Jeffrey Gasston elected Mayor of Redmond"
+    notes: "Drives the Renton Corner Mall recovery project."
 
-# Named sub-areas surfaced from the prose / canonical lore.
 sub_areas:
   - name: "Redmond Barrens"
     notes: "The lawless core of the district; MVP starter ground."
@@ -61,30 +101,147 @@ sub_areas:
     notes: "Shadow-tourism strip; bars, clubs, Johnson meets. MVP hand-crafted sub-zone."
   - name: "Glow City"
     notes: "Radioactive ruin; backdrop only in MVP."
+  - name: "Bargain Basement"
+    notes: "Crimson Crush gang's territory (p.128)."
+  - name: "Hollywood"
+    notes: "Red Hot Nukes gang's territory (p.128)."
 
-# Canonical gangs surfaced from the prose / canonical lore.
-# MVP includes Halloweeners, Redmond Hellhounds, Spikes (project decision).
-gangs:
-  - name: "Halloweeners"
-    mvp: true
-  - name: "Redmond Hellhounds"
-    mvp: true
-  - name: "Spikes"
-    mvp: true
+# Faction presence. Individual faction sheets under Data/Lore/Factions/.
+factions:
+  gangs:
+    - name: "Halloweeners"
+      mvp: true
+      file: "Data/Lore/Factions/Halloweeners.yaml"
+    - name: "Redmond Hellhounds"
+      mvp: true
+      file: "Data/Lore/Factions/Redmond Hellhounds.yaml"
+    - name: "Spikes"
+      mvp: true
+      file: "Data/Lore/Factions/Spikes.yaml"
+    - name: "Rusted Stilettos"
+      mvp: true
+      file: "Data/Lore/Factions/Rusted Stilettos.yaml"
+      notes: "Metahuman gang (p.128)."
+    - name: "Crimson Crush"
+      mvp: true
+      file: "Data/Lore/Factions/Crimson Crush.yaml"
+      notes: "Metahuman gang; haunts Bargain Basement (p.128)."
+    - name: "Red Hot Nukes"
+      mvp: true
+      file: "Data/Lore/Factions/Red Hot Nukes.yaml"
+      notes: "Metahuman gang; Hollywood turf (p.128)."
 
-# Shadowland posts quoted at the foot of the page.
-# Policy: verbatim ingest as in-game BBS content (see Design/Narrative/DESIGN - Writing.md).
-# Image not fully legible; transcription pending a clearer scan.
+  organized_crime:
+    - name: "Seattle Mafia (Redmond branch)"
+      mvp_presence: "ambient"
+      file: "Data/Lore/Factions/Seattle Mafia.yaml"
+      leadership:
+        nominal_don: "James O'Malley"
+        capo: "Theodore Alamando"
+        renegade_leader_executed: "Del Secondi"
+      notes: "Black market present; in internal turmoil since Del Secondi schism."
+    - name: "Yakuza Rings (Redmond)"
+      mvp_presence: "ambient"
+      file: "Data/Lore/Factions/Yakuza Rings.yaml"
+      count: 5
+      most_active: "Ill Squires"
+      notes: |
+        Five known Rings operating in Redmond as a recruitment pool.
+        Ill Squires (Don Autigerano) most active. Recruit promising
+        warriors/magicians; warriors get cyberware, magicians get
+        access to the gang's library and magical cache.
+
+  supremacy_groups:
+    - name: "Humanis Policlub"
+      mvp_presence: "ambient"
+      file: "Data/Lore/Factions/Humanis Policlub.yaml"
+    - name: "KKK"
+      mvp_presence: "ambient"
+      file: "Data/Lore/Factions/KKK.yaml"
+    - name: "The Order"
+      mvp_presence: "ambient"
+      file: "Data/Lore/Factions/The Order.yaml"
+    notes: |
+      All three active in Redmond (p.128). Spread human-supremacy rhetoric;
+      metahuman counter-organizing for self-defense is a driver of the
+      clustering pattern.
+
+  corps_with_facilities:
+    note: |
+      "Few companies" operate factories in Redmond (p.128); each has massive
+      fortifications and hires the "biggest and meanest orks" as guards.
+      Specific corps unnamed in this extract.
+
+# Canonical NPCs mentioned. Individual files under Data/Lore/NPCs/.
+canonical_npcs:
+  - name: "Jeffrey Gasston"
+    title: "Mayor of Redmond"
+    file: "Data/Lore/NPCs/Jeffrey Gasston.yaml"
+    elected: 2048
+    mvp_presence: "full NPC with schedule"
+  - name: "James O'Malley"
+    title: "Don (Seattle Mafia)"
+    file: "Data/Lore/NPCs/James O'Malley.yaml"
+    mvp_presence: "named NPC"
+  - name: "Theodore Alamando"
+    title: "Capo (Redmond Mafia)"
+    file: "Data/Lore/NPCs/Theodore Alamando.yaml"
+    mvp_presence: "named NPC"
+  - name: "Del Secondi"
+    title: "Mafia renegade (executed)"
+    file: "Data/Lore/NPCs/Del Secondi.yaml"
+    status: "deceased pre-game"
+    mvp_presence: "referenced in lore / dialogue"
+  - name: "Autigerano"
+    title: "Don (Ill Squires, Yakuza)"
+    file: "Data/Lore/NPCs/Autigerano.yaml"
+    mvp_presence: "named NPC"
+  - name: "Governor Schultz"
+    title: "Governor of the Seattle Metroplex; Gasston's mentor"
+    file: null
+    mvp_presence: "flavor only"
+
+# Per-district override of the global police response data.
+# See Design/Systems/DESIGN - Combat.md for the global escalation model.
+police_response:
+  minimum_squad_size: 4
+  standard_vehicles:
+    - "Aero Citymaster"
+    - "Nissan Patrol-1"
+  government_corruption_rate: 0.33
+  source_page: 128
+  notes: |
+    Patrols never leave station in less than four-man squads because the
+    streets are too dangerous. Vehicles chosen for riot capacity and crew
+    lift. Roughly a third of Redmond government is tied to the syndicates
+    (Mafia and Yakuza) — affects bribe availability and reliability of
+    official channels.
+
+# Shadowland posts quoted in the extracts.
+# Policy: verbatim ingest as in-game BBS content (see Narrative/DESIGN - Writing.md).
+# Image legibility is the current gating factor on transcription.
 shadowland_posts:
-  - handle: null
+  - source_page: 127
+    handle: null
     text: null
     notes: "Fragment mentions abandoned buildings, darkened alleys, scavengers' life. Transcribe from clearer source."
+  - source_page: 128
+    handle: "Marcuson"
+    text: null
+    notes: |
+      Compares Redmond and Puyallup Barrens; Redmond tougher (more people,
+      thinner air, worse racism). Transcribe full text.
+  - source_page: 128
+    handle: null
+    text: null
+    notes: |
+      Critical of Mayor Gasston (inexperienced, grand plans, free-spending
+      ways drain the district's coffers).
 
-# Gameplay calibration hooks (computed from the facts above).
 calibration:
   per_capita_income_anchor_yen_per_year: 6000
   per_capita_income_anchor_yen_per_month: 500
   notes: |
     Anchor for lifestyle tier pricing and run-payout curves.
     A Low-tier apartment (~2,000¥/mo) is ~4x median Redmond monthly income,
-    which matches a working runner's precarious economic framing.
+    matching a working runner's precarious economic framing.

@@ -1,0 +1,18 @@
+# Canonical faction stub.
+
+name: "KKK"
+type: "Human-supremacy organization"
+
+sources:
+  - edition: SR1E
+    page: 128
+    title: "Redmond: New Hope for a Troubled District"
+    section: "Outlying"
+
+presence:
+  - district: "Redmond"
+    activity: "Active; part of the supremacy-group cluster flourishing in the district."
+
+game_presence:
+  mvp: "ambient"
+  post_mvp: "direct conflict"
