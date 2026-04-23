@@ -192,6 +192,7 @@ transcription_gaps:
   - "p.3 TOC was ingested from a low-res phone screenshot; multiple scene titles, names, and page numbers carry per-entry transcription_note flags and MUST be re-verified when each chapter's own page ingests. Key ambiguities: 'To Cause A Stir' / 'Herding Euphoria' / 'Rocking Strikes' / 'Meeting Heroes' / 'Hit The Waxx?' (titles); 'Craft / Thomas Ozella' (pairing); 'Selva Fasilo' (spelling); 'A MegaMedia Production' and 'Audience With The Queen' (page numbers)."
   - "p.3 also shows the opening of the Ant Lion prologue fiction. Per project policy, prologue prose is NOT transcribed - archive-only."
   - "p.3 TOC Cast of Characters entries under page 62-64 are too low-res to extract individual names beyond Robert Carmon; full cast list deferred to Cast of Characters chapter ingestion."
+  - "Source-file naming note: Sources/SR1E-QueenEuphoria/ filenames use pNNN in screenshot-upload order, NOT strictly matching printed page numbers. The 7 phone screenshots ingested so far (p001 - p007) cover printed pp.1 - 6 - the Ant Lion prologue spans printed pp.3 - 4 but was captured by 3 screenshots (p003, p004, p005) due to phone-scroll page overlap. The 'page:' field inside sources[] entries is the authoritative printed page number for cross-referencing."
 
 sources:
   - edition: SR1E
@@ -218,3 +219,10 @@ sources:
     page: 4
     image: "Sources/SR1E-QueenEuphoria/p004-prologue-continued.png"
     section: "Ant Lion: A Prologue (continued; archive-only)"
+  - edition: SR1E
+    book: "Queen Euphoria"
+    year: 1990
+    page: 4
+    image: "Sources/SR1E-QueenEuphoria/p005-prologue-end.png"
+    section: "Ant Lion: A Prologue (continued / page-4 tail; archive-only)"
+    note: "File is named pNNN by screenshot order, not printed page. This screenshot captures the tail of the prologue's printed p.4 content before INTRODUCTION starts on printed p.5."
