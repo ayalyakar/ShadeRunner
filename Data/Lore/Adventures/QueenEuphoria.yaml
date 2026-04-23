@@ -28,6 +28,89 @@ synopsis_stub: |
   motif (foreshadowing the Ant Lion / insect-spirit themes of the prologue
   and plot).
 
+# Setting paragraph from printed p.5 INTRODUCTION, cross-checked against
+# existing ShadeRunner canon (Data/Lore/Metroplex/Seattle.yaml and
+# Districts/). Re-ingestion policy: capture the adventure's setting
+# statements and flag any discrepancies for reconciliation.
+setting_recap_from_p5:
+  year: 2050
+  world_premises:
+    - "Advances in technology and magic have reshaped the world."
+    - "The return of Magic: Elves, Dragons, Dwarfs, Orks, and Trolls now exist in their true forms."
+    - "Megacorporations (rather than superpowers) rule much of the world."
+    - "Shadowrunners operate in the gaps; no one admits their existence, no one denies it."
+  setting_focus: "Streets and shadows of Seattle, Tacoma, and Redmond Districts of the Seattle metroplex."
+  metroplex_extent:
+    area_sq_miles: 1000
+    area_note: "~1000 square miles; an urban sprawl on the eastern shore of Puget Sound."
+  surrounding_powers:
+    - "Larger states of Native American nations surrounding the metroplex (Treaty of Denver canon, already captured in Seattle.yaml history block)."
+    - "Other sovereign states of Metahumans and Awakened Beings."
+  cross_check_vs_existing_canon:
+    - note: "Adventure p.5 names 'Seattle, Tacoma, and Redmond Districts' as the three foreground districts."
+      reconciliation: "Not in conflict with Seattle.yaml - those are three of the metroplex's named districts. Adventure uses a narrow focus; full metroplex is broader. 'Seattle District' here likely means Downtown + Seattle-proper, which in later canon is broken into Downtown + other named districts. Treat as adventure-era loose usage, not a canon contradiction."
+    - note: "Adventure p.5 gives metroplex area as ~1000 sq miles."
+      reconciliation: "Consistent with Seattle.yaml metroplex scale. Downtown district alone is 468 km^2 (~180 sq mi) per p.19 of the Seattle Sourcebook, so 1000 sq mi for the full metroplex aligns."
+    - note: "Adventure p.5 invokes Native American nations as surrounding powers."
+      reconciliation: "Matches Seattle.yaml history (Treaty of Denver, NAN sovereignty). No conflict."
+    - note: "Adventure p.5 year is 2050, matching the project's MVP-era lock."
+      reconciliation: "No conflict; reinforces era: 2050 tag on this module."
+
+# GM-facing module conventions defined on printed p.5. These apply to every
+# scene-level ingestion in this module (and any future FASA 1E adventure
+# modules we ingest). Captured once here to avoid re-explaining in every
+# scene file. Also informs how scenes will be adapted to the CRPG's
+# dialogue / narration layer.
+presentation_conventions:
+  making_success_tests:
+    notation: "Skill (N)"
+    meaning: "An unresolved Success Test using that skill against Target Number N."
+    example: "'Stealth (4) Test' = unresolved Stealth Success Test at Target Number 4."
+    success_tables:
+      note: "Some rolls use a Success Table yielding different outcomes at different levels of success."
+  scene_sections:
+    - name: "Tell It To Them Straight"
+      audience: players
+      purpose: "Boxed read-aloud narration delivered verbatim (or close to it) at the player characters. Describes where they are and what they perceive as though they are present."
+      adaptation_target: "In-game narration / scene-intro voiceover / environment description."
+    - name: "Gamemaster's Notes"
+      audience: gamemaster
+      purpose: "Inline instructions to the GM, typeset in boldface. Provides run-of-play direction (what to spawn, what to say, what to check)."
+      adaptation_target: "In-game scripting / flag-setting / conditional triggers (not surfaced to the player)."
+    - name: "Behind the Scenes"
+      audience: gamemaster
+      purpose: "The real plot of the encounter: what is actually happening, what NPCs are doing off-screen. Maps and NPC statistics appear here if the encounter needs them."
+      adaptation_target: "World-state authoritative truth, NPC AI behavior, scene-level data files."
+    - name: "Debugging"
+      audience: gamemaster
+      purpose: "GM hints for recovering when a scene goes off-rails - e.g., keeping PCs from getting too discouraged or wiped too easily. GM is free to ignore."
+      adaptation_target: "Fallback / failsafe branching in scene scripting; adaptive difficulty hooks."
+    - name: "Legwork"
+      audience: players (indirectly, via PC action)
+      purpose: "Information the PCs can obtain via their contacts or via the public data nets (Matrix LTG / BBS queries)."
+      adaptation_target: "Contact-dialogue unlocks, Matrix LTG search entries, dossier / codex content."
+
+# ShadeRunner is a solo-PC CRPG (see Design/Meta/DESIGN - MVP.md).
+# Queen Euphoria was written for a tabletop party. Any eventual adaptation
+# of this module into playable content must reconcile the divergence
+# logged here.
+adaptation_notes:
+  canonical_party_assumption:
+    size_min: 4
+    size_max: 8
+    required_archetypes: ["magician", "decker"]
+    combat_importance: "All characters need combat competence - canonical guidance is explicit."
+    pregens_source: "SR1E basic rules + FASA's Sprawl Sites sourcebook."
+  shaderunner_adaptation_divergence:
+    party_size_mismatch: "ShadeRunner is strictly solo-PC. A 4-8 party is not supported."
+    proposed_mitigations:
+      - "Scale encounter difficulty down to a solo + optional hired-runner-NPC party."
+      - "Bridge missing archetype coverage via hireable contacts (a hired decker / hired magician) when the PC lacks the skill."
+      - "Some encounters may need to be cut or collapsed if the scene is mechanically dependent on multi-PC tactics."
+    status: "Logged at ingestion time. Actual per-scene adaptation decisions land when (and if) the module is promoted into playable ShadeRunner runs."
+  decision_tree_format:
+    note: "The module uses a decision-tree structure: the same encounter may be reached via different paths, and some encounters can be missed entirely. This is a good structural match for ShadeRunner's branching-quest design."
+
 # Module outline skeleton derived from the p.3 Table of Contents. Scene /
 # section detail is filled in as each chapter's page ingests. Page numbers
 # are the printed sourcebook pages. Entries with transcription_note were
@@ -226,3 +309,10 @@ sources:
     image: "Sources/SR1E-QueenEuphoria/p005-prologue-end.png"
     section: "Ant Lion: A Prologue (continued / page-4 tail; archive-only)"
     note: "File is named pNNN by screenshot order, not printed page. This screenshot captures the tail of the prologue's printed p.4 content before INTRODUCTION starts on printed p.5."
+  - edition: SR1E
+    book: "Queen Euphoria"
+    year: 1990
+    page: 5
+    image: "Sources/SR1E-QueenEuphoria/p006-introduction.png"
+    section: "Introduction / Gamemastering Notes / Making Success Tests / How To Use This Book"
+    note: "File is named p006 by screenshot order; printed page is 5."
