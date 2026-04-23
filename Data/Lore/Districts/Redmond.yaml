@@ -13,6 +13,10 @@ sources:
     page: 128
     title: "Redmond: New Hope for a Troubled District"
     section: "Outlying / Geography & Demographics / Politics"
+  - edition: SR1E
+    page: 129
+    title: "Redmond: New Hope for a Troubled District"
+    section: "Outlying / Government / Economy"
 
 tabs: [Facts, History, Downtown, Outlying, Government, Economy, Crime, Maps]
 
@@ -32,7 +36,8 @@ facts:
   corporate_affiliation: 0.22
   voting_precincts: 15
   hospitals_and_clinics: 6
-  ltg_access_numbers: null   # TODO: transcribe
+  ltg_prefix: "11206"   # Canonical Redmond area prefix (p.129 Phoenix House ad).
+  ltg_prefix_source_page: 129
 
 # Per-metatype percentages as printed. Raw values sum to 106% — retained as canonical.
 metatype_mix:
@@ -62,12 +67,28 @@ geography:
   terrain: "Mostly flat; few existing hills concentrated in the southern end."
   hydrology:
     - name: "Snoqualmie River"
-      notes: "Drains approximately one third of the district."
+      notes: |
+        Drains approximately one third of the district. Also used as a
+        shipping artery by Redmond factories to move materials in/out
+        safely (p.129).
   landmarks:
     - name: "Renton Corner Mall"
       notes: |
         Recovery/rebuilding project championed by Mayor Gasston; cited as
         the first sign of the district's economic revival in decades.
+    - name: "Union Hill Road"
+      notes: "Home of Redmond Phoenix House restaurant (p.129)."
+  logistics:
+    source_page: 129
+    modes:
+      - "helicopter"
+      - "tilt-rotor aircraft"
+      - "Snoqualmie River barge"
+    notes: |
+      Ground shipments attract desperate squatters who raid convoys for
+      raw materials. Redmond factories rely on air and river logistics
+      as a result. Makes ground-intercept and heli/tilt-rotor intercept
+      both viable run-content vectors.
 
 history_hooks:
   - year: 2029
@@ -78,9 +99,7 @@ history_hooks:
     notes: "Pre-game backdrop; population collapse, social fabric broken."
   - year: 2039
     event: "Night of Rage"
-    notes: |
-      Pre-game backdrop; drove metahuman clustering / self-defense patterns
-      still visible in district demographics.
+    notes: "Pre-game backdrop; drove metahuman clustering / self-defense patterns."
   - year: null
     event: "Redmond Hellhounds attack"
     notes: "Pre-game backdrop; canonical gang incident that shaped the Barrens."
@@ -104,7 +123,26 @@ sub_areas:
   - name: "Bargain Basement"
     notes: "Crimson Crush gang's territory (p.128)."
   - name: "Hollywood"
-    notes: "Red Hot Nukes gang's territory (p.128)."
+    notes: |
+      Red Hot Nukes gang's territory. Also hosts Hollywood Simsense
+      Entertainments' Redmond facility — gang vs. corp tension built in.
+  - name: "Bellevue-border strip"
+    notes: |
+      Source p.129. Only part of Redmond with functioning civic law;
+      occasional Lone Star patrols. Rest of the district is effectively
+      ungoverned.
+
+government:
+  source_pages: [128, 129]
+  corruption_rate: 0.33
+  practical_control: |
+    Most of the district is not meaningfully governed. Only a narrow strip
+    along the Bellevue border shows respect for law and order. Elsewhere,
+    only occasional Lone Star patrols surface.
+  notes: |
+    Mayor Gasston's authority is nominal in most of the Barrens.
+    Civic services, code enforcement, and tax collection are effectively
+    suspended in the ungoverned majority of Redmond.
 
 # Faction presence. Individual faction sheets under Data/Lore/Factions/.
 factions:
@@ -147,9 +185,7 @@ factions:
       most_active: "Ill Squires"
       notes: |
         Five known Rings operating in Redmond as a recruitment pool.
-        Ill Squires (Don Autigerano) most active. Recruit promising
-        warriors/magicians; warriors get cyberware, magicians get
-        access to the gang's library and magical cache.
+        Ill Squires (Don Autigerano) most active.
 
   supremacy_groups:
     - name: "Humanis Policlub"
@@ -161,16 +197,38 @@ factions:
     - name: "The Order"
       mvp_presence: "ambient"
       file: "Data/Lore/Factions/The Order.yaml"
-    notes: |
-      All three active in Redmond (p.128). Spread human-supremacy rhetoric;
-      metahuman counter-organizing for self-defense is a driver of the
-      clustering pattern.
 
+  # Canonical corps operating in Redmond per p.129.
   corps_with_facilities:
-    note: |
-      "Few companies" operate factories in Redmond (p.128); each has massive
-      fortifications and hires the "biggest and meanest orks" as guards.
-      Specific corps unnamed in this extract.
+    - name: "Hollywood Simsense Entertainments"
+      file: "Data/Lore/Factions/Hollywood Simsense Entertainments.yaml"
+      facility_sub_area: "Hollywood"
+      mvp_presence: "ambient (named facility)"
+    - name: "Life-Eze Appliances"
+      file: "Data/Lore/Factions/Life-Eze Appliances.yaml"
+      facility_sub_area: null   # unspecified in p.129
+      mvp_presence: "ambient (named facility)"
+    - name: "Moonshun Vehicles"
+      file: "Data/Lore/Factions/Moonshun Vehicles.yaml"
+      facility_sub_area: null
+      mvp_presence: "ambient (named facility)"
+    - name: "Carnation Seattle"
+      file: "Data/Lore/Factions/Carnation Seattle.yaml"
+      facility_sub_area: null
+      mvp_presence: "ambient (named facility)"
+    notes: |
+      All four referred to collectively as "Toxic Castles" (p.129): fortified
+      compounds with high walls, electric fencing, and armed guards that
+      visibly pollute the surrounding area. Plus unnamed petro-chemical
+      refineries, chemical plants, and metal recycling centers — smaller
+      operators that sell inferior products to unscrupulous megacorps.
+
+  businesses:
+    - name: "Redmond Phoenix House"
+      file: "Data/Lore/Factions/Redmond Phoenix House.yaml"
+      type: "restaurant"
+      street: "Union Hill Road"
+      ltg: "11206 (63-7516)"
 
 # Canonical NPCs mentioned. Individual files under Data/Lore/NPCs/.
 canonical_npcs:
@@ -197,9 +255,29 @@ canonical_npcs:
     file: "Data/Lore/NPCs/Autigerano.yaml"
     mvp_presence: "named NPC"
   - name: "Governor Schultz"
-    title: "Governor of the Seattle Metroplex; Gasston's mentor"
+    title: "Governor (Gasston's mentor)"
     file: null
     mvp_presence: "flavor only"
+
+# BBS personas (Shadowland handles tracked as persistent NPCs).
+# Policy: recurring handles become persistent NPC personas.
+bbs_personas:
+  - handle: "Huyen Nick"
+    file: "Data/Lore/NPCs/Huyen Nick.yaml"
+    post_count: 2
+    first_seen_page: 129
+  - handle: "Just Another Barrens Squat"
+    file: null   # not yet promoted; one post so far
+    post_count: 1
+    first_seen_page: 129
+  - handle: "Marcuson"
+    file: null   # not yet promoted; one post so far
+    post_count: 1
+    first_seen_page: 128
+  - handle: "Anonymous"
+    file: null   # not persona-tracked (anonymous)
+    post_count: 1
+    first_seen_page: 129
 
 # Per-district override of the global police response data.
 # See Design/Systems/DESIGN - Combat.md for the global escalation model.
@@ -209,17 +287,39 @@ police_response:
     - "Aero Citymaster"
     - "Nissan Patrol-1"
   government_corruption_rate: 0.33
-  source_page: 128
-  notes: |
-    Patrols never leave station in less than four-man squads because the
-    streets are too dangerous. Vehicles chosen for riot capacity and crew
-    lift. Roughly a third of Redmond government is tied to the syndicates
-    (Mafia and Yakuza) — affects bribe availability and reliability of
-    official channels.
+  practical_coverage: |
+    Only the Bellevue-border strip sees regular Lone Star presence.
+    Rest of Redmond: occasional patrols only; response times effectively
+    unbounded in the deep Barrens.
+  source_pages: [128, 129]
+
+# Sub-economies specific to Redmond (ambient in MVP unless otherwise noted).
+sub_economies:
+  - name: "BTL chip trade"
+    mvp_presence: "ambient + run-content eligible"
+    source_page: 129
+    notes: |
+      Most successful Redmond businesses actually sell BTL chips.
+      Politicians visiting the district are rumored to shop for BTL more
+      than for constituency concerns. Enables BTL-track run content.
+  - name: "Body-parts trade"
+    mvp_presence: "MVP sub-economy (see Design/Meta/DESIGN - MVP.md)"
+    source_page: 129
+    notes: |
+      Thugs kidnap squatters, deliver to back-alley butcher shops, sell
+      organs to wealthy SINners who want to live forever. High-heat,
+      morally grey run content.
+  - name: "Inferior industrial products"
+    mvp_presence: "ambient"
+    source_page: 129
+    notes: |
+      Petro-chemical refineries, chemical plants, metal recycling centers
+      move knowingly sub-standard product into unscrupulous megacorp supply
+      chains. Fraud / quality-control run content.
 
 # Shadowland posts quoted in the extracts.
 # Policy: verbatim ingest as in-game BBS content (see Narrative/DESIGN - Writing.md).
-# Image legibility is the current gating factor on transcription.
+# Image legibility gates full transcription.
 shadowland_posts:
   - source_page: 127
     handle: null
@@ -237,6 +337,33 @@ shadowland_posts:
     notes: |
       Critical of Mayor Gasston (inexperienced, grand plans, free-spending
       ways drain the district's coffers).
+  - source_page: 129
+    handle: "Huyen Nick"
+    timestamp_raw: "(21-90-40) (2-18-50)"
+    text: null
+    notes: "Redmond government — there is none except a strip along Bellevue."
+  - source_page: 129
+    handle: "Just Another Barrens Squat"
+    timestamp_raw: "(05-48-30) (1-21-50)"
+    text: null
+    notes: |
+      Fat politicians visit in limos, snoop, pretend to care; suspected
+      of BTL-shopping rather than civic concern.
+  - source_page: 129
+    handle: "Huyen Nick"
+    timestamp_raw: "(05-12-49) (1-24-50)"
+    text: null
+    notes: |
+      Redmond economy, "Toxic Castles", named corps (Hollywood Simsense,
+      Life-Eze, Moonshun, Carnation Seattle), BTL chip trade, inferior
+      products sold to unscrupulous megacorps.
+  - source_page: 129
+    handle: "Anonymous"
+    timestamp_raw: "(21-46-50) (12-29-50)"
+    text: null
+    notes: |
+      Body-parts trade: thugs kidnap squatters, back-alley butcher shops,
+      sell to wealthy SINners who want to live forever.
 
 calibration:
   per_capita_income_anchor_yen_per_year: 6000

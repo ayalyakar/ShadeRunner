@@ -1,0 +1,28 @@
+# Canonical corp / business stub.
+
+name: "Carnation Seattle"
+type: "Corporation (likely industrial subsidiary)"
+
+sources:
+  - edition: SR1E
+    page: 129
+    title: "Redmond: New Hope for a Troubled District"
+    section: "Outlying"
+
+facilities:
+  - district: "Redmond"
+    category: "Toxic Castle"
+    fortifications: "High walls, electric fencing, armed guards."
+    logistics:
+      - "helicopter"
+      - "tilt-rotor aircraft"
+      - "Snoqualmie River (barge / shipment)"
+
+flavor: |
+  One of Redmond's handful of operational corps. Product domain
+  unclear from this extract; "Seattle" suffix suggests a regional
+  subsidiary of a larger Carnation entity (awaiting further extract).
+
+game_presence:
+  mvp: "ambient (named facility)"
+  post_mvp: "full corp entity; parent-company relationships TBD"
