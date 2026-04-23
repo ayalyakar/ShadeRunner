@@ -1,0 +1,51 @@
+# Canonical place stub — hotel (from in-world advertisement).
+
+name: "Lucas' Palace"
+type: "Hotel"
+
+sources:
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 21
+    image: "Sources/SR1E-Seattle/p021-downtown-geography-demographics.png"
+    section: "Half-page advertisement"
+
+tagline: "Fine Accommodations"
+
+location:
+  district: "Downtown"
+  intersection: "Third Ave. & Virginia St."
+  intersection_transcription_note: |
+    Intersection read as 'Third Ave. & Virginia St.'; low confidence
+    on 'Virginia St.' Real-world Seattle has a 3rd Ave & Virginia
+    crossing in the Belltown area — likely canonical parallel.
+
+ltg:
+  value: "206 (32-0411)"
+  transcription_note: "LTG last-digits block read with moderate confidence."
+
+tier:
+  framework: "Metroplex/Seattle.yaml business_tiers"
+  assigned: "Luxury or First Class"
+  note: |
+    'Fine Accommodations' tagline implies upmarket. Not enumerated
+    in the four-tier hotel rollup on p.11; standalone venue.
+
+cuisine: null
+cuisine_note: "Ad does not specify on-site dining; upmarket hotels typically include restaurants."
+
+game_presence:
+  mvp: "flavor only (Trid / print ad ambient content)."
+  post_mvp:
+    - "Downtown upmarket hotel venue — Johnson-meet or stake-out setting."
+    - "Belltown-adjacent neighborhood anchor."
+
+hooks:
+  - "Fine-Accommodations register contrasts with the Lucky Tom / Skoofin Hill cheap-hotels from Redmond-era prior canon."
+  - "Third Ave corridor as a Downtown-spine run path."
+
+transcription_note: |
+  Record built from the half-page advertisement on SR1E Seattle
+  Sourcebook p.21. Minimal ad-surface details beyond name, tagline,
+  intersection, and LTG.

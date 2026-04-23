@@ -13,6 +13,16 @@ sources:
     page: 19
     image: "Sources/SR1E-Seattle/p019-downtown-at-a-glance.png"
     section: "Downtown / At a Glance"
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 21
+    image: "Sources/SR1E-Seattle/p021-downtown-geography-demographics.png"
+    section: "Downtown — Geography and Demographics"
+
+ingestion_gaps:
+  - pages: [20]
+    note: "Page 20 not yet ingested; likely continues the At-a-Glance prose into the Geography-and-Demographics section opening. Revisit when scan is available."
 
 # Hybrid-template tab set (same as the Facts chapter). Per-district.
 tabs: [Facts, History, Downtown, Outlying, Government, Economy, Crime, Maps]
@@ -104,6 +114,125 @@ environment:
       Despite the smog, Seattle air averages relatively clean on the
       continent — west winds + rain wash do the work.
 
+geography:
+  source_page: 21
+  continuity: |
+    Seattle's downtown terrain has remained virtually unchanged for
+    over a century — unusual in the 2050 era. Most contemporary city
+    governments have leveled hills, filled in lakes, or otherwise
+    remade their downtown topology.
+  waterfront:
+    location: "Along Elliot Bay."
+    character: "Low and flat; restaurants, shops, hotels, and attractions cluster here."
+    appeal: "Canonical tourist + waterfront register — the 'sparkly' Seattle front face."
+  slope:
+    character: "Away from the waterfront, terrain rises steeply into hills steep enough to challenge even the physically fit."
+    architecture: |
+      Most non-waterfront buildings are built directly into the
+      sloping ground, with catwalks and elevators linking levels.
+      Canonical Seattle 'multi-level downtown' flavor.
+  peak_viewpoint:
+    location: "Queen Anne Hill — highest point of downtown."
+    vistas:
+      west: "Puget Sound + Olympic Mountains."
+      east: "Lake Washington + Cascade Range."
+      south: "Mount Rainier dominates."
+    heritage: "Same vistas the city's first settlers saw 300 years ago; canonical civic-pride landmark."
+  bodies_of_water:
+    - name: "Elliot Bay"
+      role: "Primary waterfront; freight + tourism; southern edge is the Duwamish River mouth."
+    - name: "Puget Sound"
+      role: "Beyond Elliot Bay to the west; large-vessel shipping + ferry routes."
+    - name: "Lake Washington"
+      role: "East boundary of downtown; Council Island sits in its southern portion (cross-ref Metroplex/Seattle.yaml salish_shidhe_council_access)."
+    - name: "Lake Union"
+      role: "Nestled in a hollow between two lines of hills north of downtown; paired with Green Lake."
+    - name: "Green Lake"
+      role: "Paired with Lake Union in the hollow; farther-out residential / flatland boundary."
+    - name: "Duwamish River"
+      role: "Heavily channeled river; flat broad mouth forms southern edge of Elliot Bay."
+      industry: "Heavy freight docks + factories line both banks of the flat-mouth region."
+      economy_note: "Canonically vital to Seattle's shipping + industrial economy."
+  flatlands_beyond_green_lake: "Broad flat former farmland north of the hills; residential / low-density land use now."
+  hills_and_small_lakes: "Rest of the district is broken up by hills and small lakes; varied topography."
+
+demographics_extension:
+  source_page: 21
+  cosmopolitan_note: |
+    Canonically the most cosmopolitan district in the metroplex.
+    Elves + Orks together account for ~34% of downtown population
+    (15% + 19%). Combined with 63% Human and 2% Dwarf, the cultural
+    mix is the densest in Seattle.
+  ethnic_and_metatype_neighborhoods:
+    - name: "International District"
+      demographic: "Historically Oriental / Asian-American (originally a forced-settlement zone)."
+      syndicate_turf: "Yakuza (explicit extortion zone per p.21)."
+      file: "Data/Lore/Districts/Downtown/International District.yaml (to be created when specific-place-focus pages ingest)"
+      note: "Neighborhood gets its own sub-file once additional detail arrives."
+    - name: "Elven District"
+      demographic: "Elven-majority neighborhood — newer ethnic zone."
+      note: "May have Tir Tairngire cultural influence; resolve on future pages."
+      transcription_note: "Named plainly as 'the Elven District'; exact neighborhood name may be canonical under another label."
+    - name: "Ork District"
+      demographic: "Ork-majority, subterranean."
+      location: "'Lies beneath the city streets' — canonically the Ork Underground."
+      cross_ref: "Metroplex/Seattle.yaml ork_underground"
+      note: "Downtown's Ork share (19%) is heavily concentrated here."
+    - name: "Harbor Island"
+      demographic: "Industrial / waterfront; population mix not stated on p.21."
+      syndicate_turf: "Mafia (explicit extortion zone per p.21)."
+      note: "Location at the Duwamish-mouth / Elliot-Bay freight-dock zone is implied."
+
+crime_block:
+  source_page: 21
+  headquarters_note: "Downtown Seattle is the HQ + 'chief area of concern' for both the Yakuza and the Seattle Mafia."
+  revenue_share: "Downtown generates ~1/3 of both syndicates' yearly metroplex take."
+  turf_zones:
+    yakuza:
+      neighborhood: "International District"
+      description: |
+        In certain sections, nearly every business is Yakuza-owned or
+        pays extortion to remain open.
+    mafia:
+      neighborhood: "Harbor Island area"
+      description: |
+        Harbor Island sections run on a similar ownership /
+        extortion model for the Seattle Mafia.
+  street_crime_profile:
+    targets:
+      - "Jewelry stores stuffed with glittering stones."
+      - "Corp officials showing wealth + status on the sidewalks."
+      - "Tourists 'so enamored' of the sights they forget to secure possessions."
+    summary: "Downtown crime is high despite high corp-security — targets are plentiful and concentrated."
+  game_presence:
+    mvp: "lore / ambient (MVP district is Redmond)."
+    post_mvp:
+      - "International District as Yakuza-turf runnable zone."
+      - "Harbor Island as Mafia-turf runnable zone."
+      - "Syndicate-HQ infiltration at the high end of the run-tier ladder."
+
+government_block:
+  source_page: 21
+  corruption_register: |
+    Downtown politicians are canonically openly corrupt — 'no bones'
+    made about payoffs being required to get anything done in district
+    government. 'Efficiency incentives' is the local euphemism for
+    bribery.
+  canonical_price_point:
+    item: "Pothole repair in front of your house"
+    bribe_yen: 300
+    turnaround: "Next-day service."
+  syndicate_influence:
+    description: |
+      Mafia + Yakuza both carry substantial rosters of low- and mid-
+      level Downtown government officials 'in their pockets'. The
+      bribery layer makes syndicate control of Downtown politics
+      canonical, not rumored.
+  contrast_with_other_districts: |
+    Prose implies other districts have 'loftier sentiments and
+    practical sensitivity' that restrain open corruption. Downtown
+    is noted as distinctively unabashed about the graft.
+
 bbs_posts:
   source_page: 19
   - handle: "Woppke the Weatherman"
@@ -121,6 +250,14 @@ bbs_posts:
       register: "Street-hardened cynic, sarcastic."
       recurring_persona_candidate: false
     handle_transcription_note: "Handle reads as 'Shogun'; high confidence."
+  - handle: "Unamused Seattlite"
+    source_page: 21
+    timestamp_raw: "(23-19-53) (12-10-50)"
+    topic: "Sarcastic: 'Yeah, this administration just adds Pyramids and Arcologies. Nothing major.' References the Aztechnology Pyramid + Renraku Arcology."
+    voice_profile:
+      register: "World-weary local; dry sarcasm."
+      recurring_persona_candidate: false
+    handle_transcription_note: "Handle captured; timestamp low confidence."
 
 canon_contrasts:
   source_page: 19
@@ -158,3 +295,12 @@ transcription_gaps:
   - page: 19
     section: "BBS — 'Woppke the Weatherman' handle"
     note: "Handle spelling low confidence."
+  - page: 21
+    section: "Geography — Queen Anne Hill orientation relative to waterfront"
+    note: "Spatial relation between Queen Anne Hill and Elliot Bay described loosely; revisit when Downtown map page ingests."
+  - page: 21
+    section: "Neighborhoods — Elven District exact name"
+    note: "Plain label 'the Elven District'; specific neighborhood name may be canonical under another label."
+  - page: 21
+    section: "Crime — Harbor Island population mix"
+    note: "Harbor Island demographic / day-population not characterized on this page."
