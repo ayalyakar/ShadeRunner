@@ -1,0 +1,44 @@
+# Canonical place stub — restaurant (from in-world advertisement).
+
+name: "The Pink Door"
+type: "Restaurant"
+
+sources:
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 13
+    image: "Sources/SR1E-Seattle/p013-facts-pleasure-orkunderground-media.png"
+    section: "Half-page advertisement"
+
+tagline: "OPEN UP!!"
+
+location:
+  intersection: "Pine St. & Western Ave."
+  district: null
+  district_transcription_note: |
+    Specific district not stated on the ad. Pine Street + Western
+    Avenue places the venue in Downtown / Pike Place Market
+    neighborhood by real-world geography; confirm when Downtown
+    chapter ingests.
+
+cuisine: null
+cuisine_note: "Ad does not specify cuisine on the image surface."
+
+tier:
+  framework: "Metroplex/Seattle.yaml business_tiers"
+  assigned: null
+  note: "Not enumerated in the four-tier restaurants rollup on p.10; possibly a standalone venue."
+
+game_presence:
+  mvp: "flavor only (Trid / print ad ambient content)."
+  post_mvp: "Could be authored as a Downtown neighborhood venue; Pike-Place-adjacent geography is atmospheric."
+
+hooks:
+  - "Pink-door aesthetic as visual signature."
+  - "Possible ambient meet-venue for a Downtown-based Johnson."
+
+transcription_note: |
+  Record built from the half-page advertisement on SR1E Seattle
+  Sourcebook p.13. Minimal detail on the ad surface beyond name,
+  tagline, and intersection.

@@ -1,0 +1,47 @@
+# Canonical place stub — licensed adult entertainment (pleasure house).
+
+name: "Bedlight"
+type: "Brothel / Pleasure house (licensed)"
+
+sources:
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 13
+    image: "Sources/SR1E-Seattle/p013-facts-pleasure-orkunderground-media.png"
+    section: "Facts at Your Fingertips — Adult Entertainment / 'largest and best-known of these houses'"
+
+regulation:
+  licensed_by: "City of Seattle"
+  inspected_by: "City medical services"
+
+tier:
+  framework: "Metroplex/Seattle.yaml business_tiers"
+  assigned: "Luxury / First Class"
+  notes: "Prose emphasizes upmarket pricing across the three named venues."
+
+location:
+  district_hint: null
+  address: null
+  transcription_note: "No specific district-hint visible for Bedlight on this page image."
+
+services:
+  canonical: "Legal sex work; licensed / inspected."
+  implied:
+    - "Full range of client services, regulated and health-screened."
+    - "Simsense / BTL recording options likely at this tier — flag for post-MVP BTL-studio crossover."
+
+game_presence:
+  mvp: "flavor / ambient."
+  post_mvp:
+    - "Walkable upmarket brothel venue."
+    - "Madam-contact type."
+    - "Potential romance-eligible named contact among performers."
+
+hooks:
+  - "Named as one of the three 'largest and best-known' pleasure houses in Seattle."
+  - "Possible distinctive register — name 'Bedlight' suggests simsense-heavy venue (chip recordings made on-site)."
+
+transcription_note: |
+  Record sourced from a single-paragraph mention on SR1E Seattle
+  Sourcebook p.13. Name read as 'Bedlight'; low confidence.

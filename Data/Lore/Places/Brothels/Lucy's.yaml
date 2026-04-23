@@ -1,0 +1,51 @@
+# Canonical place stub — licensed adult entertainment (pleasure house).
+
+name: "Lucy's"
+type: "Brothel / Pleasure house (licensed)"
+
+sources:
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 13
+    image: "Sources/SR1E-Seattle/p013-facts-pleasure-orkunderground-media.png"
+    section: "Facts at Your Fingertips — Adult Entertainment / 'largest and best-known of these houses'"
+
+regulation:
+  licensed_by: "City of Seattle"
+  inspected_by: "City medical services"
+
+tier:
+  framework: "Metroplex/Seattle.yaml business_tiers"
+  assigned: "Luxury / First Class"
+  notes: "Prose emphasizes upmarket pricing across the three named venues."
+
+location:
+  district_hint: "Texas Plaza"
+  district_hint_transcription_note: |
+    District-hint read as 'Texas Plaza'; low confidence. Could be a
+    neighborhood within Downtown / Capitol Hill or a sub-zone — resolve
+    when those districts ingest.
+  address: null
+
+services:
+  canonical: "Legal sex work; licensed / inspected."
+  implied:
+    - "Full range of client services, regulated and health-screened."
+    - "Simsense / BTL recording options likely at this tier — flag for post-MVP BTL-studio crossover."
+
+game_presence:
+  mvp: "flavor / ambient."
+  post_mvp:
+    - "Walkable upmarket brothel venue."
+    - "Madam-contact type."
+    - "Potential romance-eligible named contact among performers."
+    - "Run hooks: client-data heist, performer extraction, faction-protection arc."
+
+hooks:
+  - "High-profile client base = intel opportunity."
+  - "SR1E brothel trio (with Lord of Out-Style and Bedlight) as a mini-cartel or rival set."
+
+transcription_note: |
+  Record sourced from a single-paragraph mention on SR1E Seattle
+  Sourcebook p.13. District-hint low-confidence.

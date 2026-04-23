@@ -1,0 +1,54 @@
+# Canonical place stub — licensed adult entertainment (pleasure house).
+
+name: "Lord of Out-Style"
+type: "Brothel / Pleasure house (licensed)"
+
+sources:
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 13
+    image: "Sources/SR1E-Seattle/p013-facts-pleasure-orkunderground-media.png"
+    section: "Facts at Your Fingertips — Adult Entertainment / 'largest and best-known of these houses'"
+
+regulation:
+  licensed_by: "City of Seattle"
+  inspected_by: "City medical services"
+
+tier:
+  framework: "Metroplex/Seattle.yaml business_tiers"
+  assigned: "Luxury / First Class"
+  notes: "Prose emphasizes 'justifiably high' prices for the beauty of talent; upmarket tier."
+
+location:
+  district_hint: "Oak Pillar"
+  district_hint_transcription_note: |
+    District-hint read as 'Oak Pillar'; low confidence. Could be a
+    neighborhood within Downtown / Seattle Center, or a sub-zone name
+    that resolves when those districts ingest.
+  address: null
+
+services:
+  canonical: "Legal sex work; licensed / inspected."
+  implied:
+    - "Full range of client services, regulated and health-screened."
+    - "Likely includes simsense / BTL recording options at this tier — flag for post-MVP BTL-studio crossover."
+
+game_presence:
+  mvp: "flavor / ambient (MVP district is Redmond; this venue is Downtown-adjacent)."
+  post_mvp:
+    - "Walkable luxury brothel scene."
+    - "Madam-contact type (Connection 3-4; sex-work-circle rep)."
+    - "Run: extract a performer under corp-surveillance harassment."
+    - "Run: steal a high-profile client's personal data during a session."
+    - "Run: broker a peace between rival pleasure-house chains."
+
+hooks:
+  - "High-tier client base = corp intel opportunity."
+  - "Licensed + medically-inspected venue = SIN-check strictness for customers."
+  - "Rival pleasure-house dynamics across the three named venues."
+
+transcription_note: |
+  Record sourced from a single-paragraph mention on SR1E Seattle
+  Sourcebook p.13. Name and district-hint both low-confidence. Revisit
+  on re-scan or when Downtown chapter is ingested.
