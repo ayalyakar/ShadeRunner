@@ -16,6 +16,13 @@ Per district:
 - Local multipliers and seasonal/event-driven shifts (e.g. after a turf war, prices shift).
 - Item inventories at shops/fixers refresh on a cadence.
 
+## Calibration anchor
+
+- **Redmond per-capita income: 6,000¥/year (≈ 500¥/month)** is the anchor point for lifestyle tier pricing and run-payout curves across the game. Source: `Data/Lore/Districts/Redmond.yaml` (SR1E, p. 127).
+- Lifestyle tiers are calibrated against this anchor so that a working Barrens runner at Low tier (2,000¥/month) pays ~4× median Redmond monthly income — matching the precarious framing SR intends.
+- Other districts' income data (when transcribed) provide relative multipliers against this baseline.
+- **Era inflation is an open question.** Same yen across decades is the current default; an explicit era-scaling curve may be added later.
+
 ## SIN economy
 
 - PC can hold multiple SINs at varying legitimacy tiers (real, fake-Rating-1 through fake-Rating-6).

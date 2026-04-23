@@ -27,6 +27,12 @@ A personal, solo-developed Shadowrun RPG for PC (Windows/Linux). This index link
 - [Setting/DESIGN - Canon.md](Setting/DESIGN%20-%20Canon.md)
 - [Setting/DESIGN - World Scale.md](Setting/DESIGN%20-%20World%20Scale.md)
 
+### Districts
+
+Per-district design sheets (sourcebook-tab hybrid template). Canonical stats live alongside in `Data/Lore/Districts/`.
+
+- [Setting/Districts/DESIGN - Redmond.md](Setting/Districts/DESIGN%20-%20Redmond.md)
+
 ## World (simulation)
 
 - [World/DESIGN - Simulation Depth.md](World/DESIGN%20-%20Simulation%20Depth.md)
