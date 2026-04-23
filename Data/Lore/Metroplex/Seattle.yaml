@@ -23,6 +23,12 @@ sources:
     page: 10
     image: "Sources/SR1E-Seattle/p010-facts-bus-monorail-chains.png"
     section: "Facts at Your Fingertips — Ferry (addendum) / Bus / Monorail / Major Businesses and Chains"
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 11
+    image: "Sources/SR1E-Seattle/p011-facts-hotels-electronics-bodytech-tourist.png"
+    section: "Facts at Your Fingertips — Chains (Hotels / Computers / Body Enhancement) / Tourist Information"
 
 ingestion_gaps:
   - pages: [7, 8]
@@ -482,6 +488,151 @@ business_tiers:
       - name: "Lexis Foods"
       - name: "The Captain's Gallery"
 
+  hotels:
+    source_page: 11
+    legibility_note: |
+      Chain names across Hotels are small-font body text in a narrow
+      column; many entries are transcribed with low confidence. All
+      entries carry individual transcription_notes.
+    luxury: []
+    luxury_transcription_note: |
+      Luxury-tier hotel names on this page read as an obscured line of
+      small-type body text at the current scan resolution. Not confidently
+      transcribed. Revisit on re-scan.
+    first_class:
+      - name: "Westin Hotels"
+      - name: "Hotel Trans"
+        transcription_note: "Name read as 'Hotel Trans'; low confidence."
+      - name: "The Lost-Luxe"
+        transcription_note: "Name read as 'The Lost-Luxe'; low confidence."
+      - name: "York Hotel"
+        transcription_note: "Name read as 'York Hotel'; low confidence."
+    family_style:
+      - name: "Motel 1998"
+        transcription_note: "Name read as 'Motel 1998'; low confidence."
+    family_style_transcription_note: "Additional Family-Style entries expected on the page but not confidently legible."
+    no_frills:
+      - name: "Penn and Thor"
+        transcription_note: "Name read as 'Penn and Thor'; low confidence."
+      - name: "Style's Castle Inn"
+        transcription_note: "Name read as 'Style's Castle Inn'; low confidence."
+      - name: "Barne's Moneymunchers"
+        transcription_note: "Name read as 'Barne's Moneymunchers'; low confidence."
+    bbs_footnote:
+      raw: "(attribution ending '1-31-16 / 26-54-50')"
+      interpretation_note: |
+        Hotels section ends with what reads as another Shadowland-style
+        post attribution (same (nn-nn-nn) (nn-nn-nn) timestamp format
+        as the 'Fast cash' line on p.9). Legibility too low to capture
+        handle reliably. Revisit on re-scan.
+
+  computers_and_electronics:
+    source_page: 11
+    luxury:
+      - name: "Suriette"
+        transcription_note: "Name read as 'Suriette'; low confidence."
+      - name: "R. Byler"
+        transcription_note: "Name read as 'R. Byler'; low confidence."
+      - name: "Lyle's Computer Sorcerers"
+        transcription_note: "Name read as 'Lyle's Computer Sorcerers'; low confidence."
+    luxury_transcription_note: "A further Luxury entry is expected on the page but not confidently legible."
+    first_class:
+      - name: "Sunrose Computer International"
+        transcription_note: "Name read as 'Sunrose Computer International'; low confidence."
+      - name: "Hard-ware Sisters"
+        transcription_note: "Name read as 'Hard-ware Sisters'; low confidence."
+      - name: "Board Sisters Software"
+        transcription_note: "Name read as 'Board Sisters Software'; low confidence."
+    family_style:
+      - name: "Software Sellers"
+      - name: "Microfiche Software"
+        transcription_note: "Name read as 'Microfiche Software'; low confidence."
+      - name: "DeCore's Electronics"
+        transcription_note: "Name read as 'DeCore's Electronics'; low confidence."
+    no_frills:
+      - name: "Used Computer Exchange"
+      - name: "Haaren's Red Light"
+        transcription_note: "Name read as 'Haaren's Red Light'; low confidence."
+      - name: "Hermedy's Cheap Electronics"
+        transcription_note: "Name read as 'Hermedy's Cheap Electronics'; low confidence."
+    mvp_link: |
+      This category is the canonical shop basis for cyberdeck and
+      utility-program purchases (Decker archetype). Family-Style and
+      No-Frills tiers are the MVP shop tier range for a Low-lifestyle
+      runner. See Character/DESIGN - Cyberware.md and Systems/DESIGN -
+      Matrix.md.
+
+  body_enhancement_centers:
+    source_page: 11
+    description: |
+      Canonical SR name for cyberware / bioware shops. The four-tier
+      framework maps directly onto cyberware pricing / quality /
+      Essence-cost tradeoffs — No-Frills shops are the street-doc
+      tier (higher Essence cost per grade of chrome), Luxury shops
+      are deltaware-adjacent (post-MVP territory).
+    luxury:
+      - name: "Executive Body Enhancements"
+    first_class:
+      - name: "Body-Tech"
+    family_style:
+      - name: "A Whole New You"
+    no_frills:
+      - name: "St. George's Cyberwear Chains"
+        transcription_note: "Name read as 'St. George's Cyberwear Chains'; low confidence."
+    mvp_link: |
+      Anchor canon for Character/DESIGN - Cyberware.md shop pipeline.
+      MVP street doc is conceptually a No-Frills or Family-Style entry
+      in this category — specific Redmond shop name lands when the
+      Redmond chapter is ingested.
+
+tourist_information:
+  source_page: 11
+  visitor_center:
+    name: "Seattle Visitor Center"
+    location:
+      inside: "Seattle Convention Center"
+      street: "Seventh Avenue"
+    services:
+      - "Brochures"
+      - "Maps"
+      - "Personal assistance"
+      - "Guided city tours (bookable on-site)"
+  chamber_of_commerce:
+    name: "Seattle Chamber of Commerce"
+    location:
+      street: "Seventh Avenue"
+    services:
+      - "Personal-guide booking"
+    personal_guide:
+      cost_yen: 1000
+      cost_transcription_note: "Value read as 1000; low confidence on digit count."
+      licensing_note: |
+        Chamber-booked guides are licensed and insured; the Chamber
+        guarantees qualified officers on duty. Guides double as
+        security-trained escorts — a visible deterrent in city-tourism
+        zones. Partly pleasant, partly deterrent, per the prose.
+      transcription_note: |
+        Several sentences about the guide program are partially illegible
+        on the current scan. Only broad shape captured.
+  private_investigators:
+    availability: "Throughout the city."
+    shadowland_hotline:
+      number: "555-SHADOW"
+      notes: |
+        In-world hotline number. Callers can reach a 'scripted one at
+        home' — the SR-canonical Shadowland front-desk style. Useful
+        for commlink UX (see Presentation/DESIGN - UI.md) as a
+        diegetic phone-a-friend hook.
+      transcription_note: |
+        The sentence ends with something like 'criminal reference guide',
+        only partly legible. Treat as flavor until re-verified.
+
+# Run Run Shaw's is featured in a stylized ad on the right side of p.11
+# (vertical "run run shaw's" typography; line about 'x runs at $9 plus tax').
+# Not stubbed as a standalone place at this pass — legibility too low to
+# record cuisine / LTG. Will revisit if the restaurant recurs on later
+# pages.
+
 # Tuesdays is featured in a full-page advertisement on p.10 ("Authentic
 # Chinese Cajun Cuisine"). Not included in the four-tier chain list above —
 # stubbed as a standalone place. See Data/Lore/Places/Restaurants/Tuesdays.yaml.
@@ -531,3 +682,24 @@ transcription_gaps:
       The printed intro explicitly calls this 'a partial list'. Do not
       treat the list as exhaustive — other SR1E or later-edition
       Seattle canon may add chains we will want to integrate.
+  - page: 11
+    section: "Major Businesses and Chains — Hotels Luxury tier"
+    note: "Luxury-tier hotel names not confidently legible; row left empty with a note."
+  - page: 11
+    section: "Major Businesses and Chains — Hotels BBS footnote"
+    note: "Another Shadowland-style post attribution at end of Hotels section; legibility too low to capture handle."
+  - page: 11
+    section: "Major Businesses and Chains — all three new categories"
+    note: |
+      Hotels / Computers and Electronics / Body Enhancement Centers chain
+      names transcribed with low confidence; individual entries carry
+      transcription_notes. Batch-verify.
+  - page: 11
+    section: "Tourist Information — Chamber of Commerce guide program"
+    note: "Prose about Chamber-based officers partly illegible; only broad shape captured."
+  - page: 11
+    section: "Tourist Information — 555-SHADOW hotline tail sentence"
+    note: "'Criminal reference guide' tail phrase only partly legible."
+  - page: 11
+    section: "Run Run Shaw's advertisement"
+    note: "Stylized ad for 'run run shaw's' on right side of page not yet stubbed as a Place; revisit if restaurant recurs."
