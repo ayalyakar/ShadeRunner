@@ -1,0 +1,160 @@
+# Transcribed from Seattle Sourcebook extracts.
+# Edition: SR1E (Seattle Sourcebook, FASA, 1990). Year: 2050.
+# Policy: structured facts + prose notes. See Design/Setting/DESIGN - Canon.md.
+
+district: "Downtown"
+aka: "Downtown / Seattle"
+tagline: "Where it happens, chummer"
+
+sources:
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 19
+    image: "Sources/SR1E-Seattle/p019-downtown-at-a-glance.png"
+    section: "Downtown / At a Glance"
+
+# Hybrid-template tab set (same as the Facts chapter). Per-district.
+tabs: [Facts, History, Downtown, Outlying, Government, Economy, Crime, Maps]
+
+facts:
+  source_page: 19
+  area_km2: 468
+  population: 545000
+  population_density_per_km2: 1164
+  per_capita_income_annual_yen: 130000
+  below_poverty_level: 0.20
+  on_fortunes_active_trackers_list: 0.01
+  corporate_affiliation: 0.85
+  voting_precincts: 11
+  hospitals_and_clinics: 12
+  ltg_prefix: "206"
+  ltg_downtown_access: "206 / 2206"
+  ltg_transcription_note: |
+    Prose reads 'LTG Access Number: 206/2206'. Best interpretation:
+    206 = Seattle metroplex-wide prefix (already captured in the
+    getting-around section); 2206 = the Downtown-specific exchange.
+    Flag for re-verification.
+
+metatype_mix:
+  human: 0.63
+  elf: 0.15
+  dwarf: 0.02
+  ork: 0.19
+  troll: 0.01
+  other: 0.01
+  sum_note: "Sums to 101% — rounding artifact, retained as canonical."
+  contrast_note: |
+    Notably Elf-rich (15%, vs 6% in Redmond) and Dwarf-present (2%,
+    vs 1% in Redmond). Ork share (19%) substantially above Redmond
+    (10%) — reflects the Ork Underground community beneath the
+    district. Cross-ref Metroplex/Seattle.yaml ork_underground.
+
+education:
+  source_page: 19
+  less_than_12_years: 0.25
+  high_school_equivalency: 0.45
+  college_equivalency: 0.18
+  graduate_or_advanced: 0.12
+  sum_check: 1.00
+  contrast_note: |
+    Education skew is the inverse of Redmond-era data from the prior
+    pass: Downtown has 30% college+graduate; Redmond had 4%. Supports
+    the corporate-affiliation / per-capita-income delta.
+
+description:
+  source_page: 19
+  summary: |
+    Downtown is Seattle's main business district. Not purely a forest
+    of skyscrapers — shops, parks, theaters, museums, and hotels are
+    interleaved throughout. A mix of corp-tower density + civic and
+    retail texture.
+  resident_register: "Typical resident complains of crowds, smoggy air, and crime — same profile as a typical New Yorker or Chicagoan."
+  weekend_character: |
+    Sidewalks pack on weekends with visitors from outlying districts
+    who come into Downtown to shop, club, or otherwise spend the day.
+    Cross-district traffic is a defining feature.
+  smog_character: |
+    Even during Stage Red smog alerts, Downtown is full of shoppers
+    and clubgoers — citizens wear breathers and carry on. Canonical
+    cultural quirk: Seattle weather is bad, Seattle commerce is
+    bulletproof.
+
+environment:
+  source_page: 19
+  rain:
+    chemical_register: "Acid enough to pit and stain buildings and to ruin clothing."
+    benefit: "Scrubs particulate air pollution. Canonical net-positive despite its downsides."
+  smog:
+    stage_red_alerts_per_year_metroplex_avg: 90
+    geographic_distribution:
+      cleaner_zones:
+        - "Coast"
+        - "Parts of the Snohomish District"
+        - "'Fairly lake' areas"
+      cleaner_zones_transcription_note: |
+        Scan reads ambiguously — possibly 'fairy tale' or 'fairly lake'
+        or 'parts far inland'. Captured loosely; revisit.
+      perpetual_smog_zones:
+        - "Redmond Barrens"
+        - "Other A-rating districts"
+      perpetual_smog_transcription_note: "Prose says 'the Barrens seem perpetually enshrouded in the deadly haze'; Redmond-era prior-pass canon confirms. Generalized here."
+    prevailing_wind: "West"
+    air_quality_summary: |
+      Despite the smog, Seattle air averages relatively clean on the
+      continent — west winds + rain wash do the work.
+
+bbs_posts:
+  source_page: 19
+  - handle: "Woppke the Weatherman"
+    timestamp_raw: "(18-27-05) (10-17-50)"
+    topic: "Explainer on Seattle's acid rain + Stage Red smog distribution."
+    voice_profile:
+      register: "Weather-forecast explainer / public-service commentary."
+      recurring_persona_candidate: true
+      note: "Specific 'Weatherman' branded handle suggests Trid-weather-anchor origin; promote to persistent persona on second appearance."
+    handle_transcription_note: "Spelled 'Woppke'; low confidence."
+  - handle: "Shogun"
+    timestamp_raw: "(21-54-18) (11-23-50)"
+    topic: "Cynical street-smart rebuttal — shopping is fine 'as long as some joker doesn't rob or firebomb one while you're there marveling at the sights'."
+    voice_profile:
+      register: "Street-hardened cynic, sarcastic."
+      recurring_persona_candidate: false
+    handle_transcription_note: "Handle reads as 'Shogun'; high confidence."
+
+canon_contrasts:
+  source_page: 19
+  vs_redmond_prior_pass:
+    note: |
+      Prior-session Redmond canon (now in history; see project commits
+      prior to the clean-slate) recorded the opposite profile: 6,000
+      yen / year per-capita income, 70% below poverty, 22% corporate
+      affiliation, 78% <12-year-education. The Downtown facts are
+      ~22x income, 1/3 the poverty, ~4x corp ownership. Useful for
+      relative-calibration anchors in Design/World/DESIGN - Economy.md.
+
+game_presence:
+  mvp: "lore / ambient only (MVP district is Redmond, not Downtown)."
+  post_mvp:
+    - "Walkable Downtown core as a second-tier content expansion."
+    - "Corp-tower heist / extraction run content."
+    - "Ork Underground access points from Downtown surface."
+    - "Governor's office / Council chamber runs (civic-politics arc)."
+    - "Seattle Center Opera House / Symphony scenes (cross-ref Metroplex/Seattle.yaml entertainment)."
+
+hooks:
+  - "85% corp-affiliation = every street is surveilled; stealth builds matter."
+  - "19% Ork population = significant metahuman ambient; contrast with Redmond's 10%."
+  - "'Stage Red smog alert' as a canonical weather-mechanic hook for post-MVP."
+  - "Downtown as Schults/Alameson political backdrop."
+
+transcription_gaps:
+  - page: 19
+    section: "Facts — LTG access number"
+    note: "'206/2206' read as a pair; structure / scheme low confidence."
+  - page: 19
+    section: "Environment — smog cleaner zones list"
+    note: "'fairy tale of the Snohomish District' reads as an OCR artifact. Likely 'fairly' or 'parts near'. Flag."
+  - page: 19
+    section: "BBS — 'Woppke the Weatherman' handle"
+    note: "Handle spelling low confidence."

@@ -71,6 +71,24 @@ sources:
     page: 18
     image: "Sources/SR1E-Seattle/p018-history-from-ashes-schults.png"
     section: "History — From the Ashes / Schults election / Conclusion"
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 19
+    image: "Sources/SR1E-Seattle/p019-downtown-at-a-glance.png"
+    section: "Downtown — At a Glance"
+
+districts_index:
+  note: |
+    Per-district canonical data lives under Data/Lore/Districts/.
+    This index grows as district chapters ingest. The metroplex's
+    canonical district count of '10 main districts' per p.9 prose
+    is still under validation against the TOC enumeration.
+  entries:
+    - name: "Downtown"
+      file: "Data/Lore/Districts/Downtown.yaml"
+      tagline: "Where it happens, chummer"
+      ingested_pages: [19]
 
 ingestion_gaps:
   - pages: [7, 8]
