@@ -1,0 +1,30 @@
+# Canonical NPC stub.
+
+name: "Brion Tonugle"
+title: "Owner, Skoofin Hill Manor & Eat"
+
+sources:
+  - edition: SR1E
+    page: 130
+    title: "Redmond: New Hope for a Troubled District"
+    section: "Places of Interest — Hotels"
+
+facts:
+  business: "Skoofin Hill Manor & Eat"
+  business_file: "Data/Lore/Places/Hotels/Skoofin Hill Manor.yaml"
+  district: "Redmond"
+  racial_bias: false
+
+flavor: |
+  Runs a notorious Barrens flophouse — cheap, filthy, and
+  death-trap-unsafe. "No racial bias" is his one virtue: the metahuman
+  squatter with a hundred nuyen gets a cubicle same as anyone else.
+  Cynical, pragmatic, unsentimental.
+
+game_presence:
+  mvp: "named NPC (peripheral); potential low-tier contact"
+  post_mvp: "character-arc candidate if the Manor becomes a site of incident"
+
+hooks:
+  - "Cheap meet spot for low-connection fixers who trust his discretion."
+  - "Plausible witness / information vendor for Redmond missing-persons cases."

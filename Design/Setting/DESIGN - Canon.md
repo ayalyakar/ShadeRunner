@@ -54,8 +54,12 @@ Canonical extracts (fact sheets, NPC statblocks, faction entries, event descript
 
 - **Transcribed stats / data** → `Data/Lore/<domain>/<name>.yaml`
   - `Data/Lore/Districts/` — district fact sheets.
-  - `Data/Lore/NPCs/` — canonical NPC statblocks (coming).
-  - `Data/Lore/Factions/` — corp / gang / organization entries (coming).
+  - `Data/Lore/NPCs/` — canonical NPC statblocks / personas.
+  - `Data/Lore/Factions/` — corps, gangs, organizations.
+  - `Data/Lore/Places/` — location entries, sub-categorized by type:
+    - `Data/Lore/Places/Hotels/`
+    - `Data/Lore/Places/Restaurants/`
+    - (more type sub-folders as they arrive — shops, clubs, safehouses, clinics, lodges.)
 - **Design prose** → `Design/Setting/<domain>/DESIGN - <Name>.md`
   - `Design/Setting/Districts/DESIGN - <District>.md` — district design sheets (hybrid template).
 - **Source images / scans** are not committed to the repo; the transcribed data files are the authoritative in-repo reference.

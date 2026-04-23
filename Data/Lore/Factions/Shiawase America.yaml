@@ -1,0 +1,32 @@
+# Canonical corp stub (AAA).
+
+name: "Shiawase America"
+type: "Megacorporation (AAA) — regional subsidiary"
+parent: "Shiawase"
+
+sources:
+  - edition: SR1E
+    page: 130
+    title: "Redmond: New Hope for a Troubled District"
+    section: "Outlying — Neighborhoods (Glow City)"
+
+facilities:
+  - district: "Redmond"
+    sub_area: "Glow City"
+    category: "Nuclear power plant"
+    notes: |
+      Built in 2028 adjacent to the ruined hulk of Tritium Services'
+      predecessor plant (post-2013 meltdown). Has been providing power
+      to the city ever since. Squatters live on the contaminated land
+      around the plant despite extraordinary cancer and infant-mortality
+      rates. Eviction attempts abandoned long ago.
+
+flavor: |
+  One of the AAA megacorps; Shiawase has operational stakes in Seattle's
+  power infrastructure. The Redmond plant is a tangible AAA anchor in
+  an otherwise lawless district — corp presence in force where almost
+  nothing else corporate is.
+
+game_presence:
+  mvp: "ambient (named facility; Glow City spectacle backdrop)"
+  post_mvp: "full AAA entity; facility-tier runs"
