@@ -41,6 +41,12 @@ sources:
     page: 13
     image: "Sources/SR1E-Seattle/p013-facts-pleasure-orkunderground-media.png"
     section: "Facts at Your Fingertips — Adult Entertainment / Ork Underground / Media (Trid / Cable / Press)"
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 14
+    image: "Sources/SR1E-Seattle/p014-history-treaty-of-denver.png"
+    section: "History — Treaty of Denver (opening)"
 
 ingestion_gaps:
   - pages: [7, 8]
@@ -1054,7 +1060,119 @@ media:
       - "Trid-studio locations for runs (intercept broadcasts, extract anchors, hijack a pay-per-view stream)."
       - "NSBL / NAN media cross-border angle for runs spanning Seattle + SSC lands."
 
-# Run Run Shaw's is featured in a stylized ad on the right side of p.11
+history:
+  scope_note: |
+    These events are presented as Seattle's history in the Seattle
+    Sourcebook but describe continental-scale SR1E canon (the Treaty
+    of Denver war and the Great Ghost Dance). They ground Seattle's
+    legal status, SSC-border geography, and mountain-risk topography.
+    Cross-referenced by Design/Setting/DESIGN - Canon.md (era baseline 2050).
+
+  pre_awakening:
+    source_page: 14
+    origin: "Logging town supplying California's boom-era lumber demand."
+    industrial_expansion: |
+      Seattle, Everett, and Tacoma leveraged their natural harbors to
+      become major shipping and trade centers. By the second half of
+      the 20th century, Seattle was the largest city in the Pacific
+      Northwest.
+    corporate_attraction:
+      - "Cheap land"
+      - "Vast natural resources"
+      - "Healthy profits"
+    outcome: "Industry + high-tech corporations clustered in the region; future looked bright on the eve of the Awakening."
+
+  awakening_war:
+    source_page: 14
+    period: "2010 – April 2018"
+    scope: "Continental — not Seattle-specific. Seattle Sourcebook uses the war as the framing for why the SSC now borders the city."
+    trigger_2010:
+      us_action: "U.S. National Congress enacted a land-seizure law using a fabricated-pretext militia group as justification."
+      pretext_name: "Lost Eagle Militia"
+      pretext_transcription_note: |
+        Name read as 'Lost Eagle Militia'; possibly 'Last Eagle' or a
+        different organization. Exact name + legal vehicle partly
+        illegible; revisit on re-scan.
+      outcome: "Stripped Native Americans of what little land they still held."
+    vitas_backdrop_2011:
+      global_population_affected_fraction: 0.25
+      pacific_northwest_population_affected_fraction_approx: 0.143
+      notes: "VITAS plague co-occurred with the land seizures, destabilizing both government response and refugee movement."
+    olympic_earthquake:
+      date: "2011-01-12"
+      location: "Olympic Peninsula"
+      effect: |
+        Powerful quake damaged federal relocation-camp infrastructure;
+        thousands of interned Native Americans escaped and fled to
+        other camps or into the wilderness.
+    guerrilla_war:
+      period: "2011 – 2017"
+      leadership:
+        - name: "Howling Coyote"
+          role: "Spiritual leader of the Native American resistance; later led the Great Ghost Dance."
+        - name: "Thunder Tyer"
+          role: "Salish warrior chief, close friend of Howling Coyote; field commander of the guerrilla campaign."
+          transcription_note: "Name read as 'Thunder Tyer'; SR canon sometimes renders 'Thunder Tyler'. Flag for cross-reference."
+      war_council:
+        name: "Salish-Shidhe War Council"
+        composition:
+          - "Native American tribes"
+          - "Elves"
+          - "Magicians"
+        member_tribes_listed_on_page:
+          - "Salish"
+          - "Makah"
+          - "Norteño"
+          - "Cree"
+          - "Salish-Shakal"
+        member_tribes_transcription_note: |
+          Tribe list partly illegible; 'Salish-Shakal' low confidence
+          (possibly 'Salish-Shidhe' or a distinct tribe). Tribes read
+          best-effort; revisit on re-scan.
+      atrocities_note: "Both sides committed documented atrocities through the six-year war."
+      salish_offensive_2015:
+        - event: "Trident Submarine Base (Bangor) captured"
+          year: 2015
+          captor: "Salish forces under Thunder Tyer"
+        - event: "Kugri Sound Naval Shipyard (Bremerton) captured"
+          year: 2015
+          timing: "Five months after Trident Base."
+          captor: "Salish forces"
+          transcription_note: "Shipyard read as 'Kugri Sound'; canonical name may be 'Puget Sound Naval Shipyard'. Flag and revisit."
+      penultimate_siege:
+        - "Salish forces mustered for a final showdown against McChord Air Force Base and Fort Lewis."
+    great_ghost_dance:
+      date: "2017-08-04"
+      leader: "Howling Coyote (leading Native American followers in the ritual)"
+      simultaneous_volcanic_eruptions:
+        - "Mount Hood"
+        - "Mount St. Helens"
+        - "Mount Rainier"
+        - "Glacier Peak"
+      effects:
+        - "Pacific Northwest blanketed in ash, smoke, and lava."
+        - "Day turned to near-dark night."
+        - "Social structure of the region near collapse."
+      historiography: |
+        Even skeptics of the supernatural could not ignore that the
+        eruptions coincided exactly with the ritual — canonical moment
+        when mana's scale became undeniable globally.
+      transcription_note: |
+        Exact seismic-magnitude text ('X5-32'?) on the page partly
+        illegible. Four-mountain list is high-confidence.
+    treaty_of_denver:
+      signed: "2018-04 (April 2018)"
+      signatory_states:
+        - "United States (President William James)"
+        - "Canada"
+        - "Mexico"
+      native_signatories: "Native American Nations (NAN) collective, including the Salish-Shidhe War Council."
+      driver: "Cessation of hostilities + recognition of native sovereignty."
+      page_cuts_off: "Page 14 ends mid-sentence on the Treaty's provisions — continuation expected on p.15."
+      transcription_note: |
+        'President William James' administration + Treaty date read
+        with moderate confidence. Specific provisions of the treaty
+        are cut off on p.14; ingest p.15 to continue.
 
 # Run Run Shaw's is featured in a stylized ad on the right side of p.11
 # (vertical "run run shaw's" typography; line about 'x runs at $9 plus tax').
@@ -1186,3 +1304,21 @@ transcription_gaps:
   - page: 13
     section: "Media — magazine 'The Booker Top'"
     note: "Entertainment-guide magazine title read with low confidence."
+  - page: 14
+    section: "History — Awakening War 2010 trigger pretext 'Lost Eagle Militia'"
+    note: "Militia / statute name read as 'Lost Eagle Militia'; possibly 'Last Eagle' or distinct. Flag."
+  - page: 14
+    section: "History — Salish-Shidhe War Council tribe list"
+    note: "Tribe list partly illegible; 'Salish-Shakal' low confidence."
+  - page: 14
+    section: "History — 'Thunder Tyer' / 'Thunder Tyler' transcription"
+    note: "Name rendered differently across SR canon; flag for cross-reference on later pages."
+  - page: 14
+    section: "History — 'Kugri Sound Naval Shipyard' at Bremerton"
+    note: "Likely a misread of 'Puget Sound Naval Shipyard'. Verify."
+  - page: 14
+    section: "History — Great Ghost Dance seismic-magnitude text 'X5-32'"
+    note: "Earthquake / volcanic-magnitude shorthand on the page partly illegible."
+  - page: 14
+    section: "History — Treaty of Denver provisions cut off mid-sentence"
+    note: "Treaty details continue on p.15; ingest to complete."
