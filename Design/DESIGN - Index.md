@@ -38,6 +38,10 @@ Solo-developed, NSFW-forward Shadowrun-1E-leaning CRPG set in Seattle 2050–206
 - [Character/DESIGN - Creation.md](Character/DESIGN%20-%20Creation.md) — karma point-buy chargen; all 5 metatypes; all 4 archetypes.
 - [Character/DESIGN - Metatypes.md](Character/DESIGN%20-%20Metatypes.md) — Human, Elf, Dwarf, Ork, Troll. Stats + world reactivity.
 - [Character/DESIGN - Cyberware.md](Character/DESIGN%20-%20Cyberware.md) — minimal MVP catalogue; Essence economy.
+- [Character/DESIGN - Progression.md](Character/DESIGN%20-%20Progression.md) — karma ledger, slow / gritty pacing, skill + attribute raises.
+- [Character/DESIGN - Lifestyle.md](Character/DESIGN%20-%20Lifestyle.md) — Street / Squatter / Low (MVP default) / Middle / High / Luxury tiers; monthly rent; per-tier effects.
+- [Character/DESIGN - Downtime.md](Character/DESIGN%20-%20Downtime.md) — training, contact visits, sex-work / BTL / drugs, romance, research.
+- [Character/DESIGN - Aging.md](Character/DESIGN%20-%20Aging.md) — not simulated at MVP; post-MVP reconsideration.
 
 ## Systems
 
@@ -52,11 +56,13 @@ Solo-developed, NSFW-forward Shadowrun-1E-leaning CRPG set in Seattle 2050–206
 - [World/DESIGN - Time.md](World/DESIGN%20-%20Time.md) — real-clock minutes; NPC schedules; monthly rent.
 - [World/DESIGN - Procgen.md](World/DESIGN%20-%20Procgen.md) — hand-authored core at MVP; crowd seed only; no runtime LLM.
 - [World/DESIGN - Economy.md](World/DESIGN%20-%20Economy.md) — nuyen, lifestyle, run payouts, parallel NSFW / drug / BTL income channels.
+- [World/DESIGN - Factions.md](World/DESIGN%20-%20Factions.md) — faction YAML schema, category taxonomy, relationships, MVP vs. post-MVP scope.
 
 ## Presentation
 
 - [Presentation/DESIGN - Art Direction.md](Presentation/DESIGN%20-%20Art%20Direction.md) — 3D isometric world + 2D cel / comic-noir illustration layer.
 - [Presentation/DESIGN - Audio.md](Presentation/DESIGN%20-%20Audio.md) — Piper / XTTS / ElevenLabs voice tiers; curated SFX and music.
+- [Presentation/DESIGN - UI.md](Presentation/DESIGN%20-%20UI.md) — diegetic cyber register; commlink hub; dialogue UI; encumbrance inventory; per-district map; contextual tooltips.
 
 ## Social
 
@@ -65,15 +71,15 @@ Solo-developed, NSFW-forward Shadowrun-1E-leaning CRPG set in Seattle 2050–206
 ## Technology
 
 - [Technology/DESIGN - Engine.md](Technology/DESIGN%20-%20Engine.md) — Godot 4 + GDScript + 3D isometric.
+- [Technology/DESIGN - Architecture.md](Technology/DESIGN%20-%20Architecture.md) — repo layout, autoload singletons, scene taxonomy, data-loader, event bus.
+- [Technology/DESIGN - Persistence.md](Technology/DESIGN%20-%20Persistence.md) — save format, versioning, save-anywhere, autosave / quicksave, resume-mid-scene.
 - [Technology/DESIGN - AI Tooling.md](Technology/DESIGN%20-%20AI%20Tooling.md) — dev-time LLM / image / 3D / TTS stack (Claude, Venice, SDXL / Flux / Pony, Meshy, Piper, XTTS, ElevenLabs); runtime never.
 
 ## Pending (to be added as decisions land)
 
-- Character — Progression, Aging, Lifestyle, Downtime
 - Systems — Rigging (post-MVP)
-- World — Factions (index doc)
-- Presentation — UI
 - Setting — Districts / Redmond (lands when the Seattle Sourcebook's Redmond chapter is ingested)
+- Any ad-hoc docs that surface as systems go to implementation
 
 ## Status
 

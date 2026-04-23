@@ -60,9 +60,16 @@ Each archetype has **one MVP-playable build** — not the full skill/spell/progr
 
 ### Presentation / UI
 - Isometric 3D with fixed camera.
-- Character sheet, combat HUD, dialogue UI, commlink notifications.
-- Save-anywhere.
-- Day/night clock.
+- **Diegetic cyber-UI register** — HUD, menus, and overlays styled as in-world commlink / ARO overlays.
+- **Commlink as always-accessible hub** (hotkey-open), containing Messages / Calls / Map / Inventory / Character sheet / Matrix / BBS / Trid / Journal / Options tabs.
+- **Dialogue UI:** portrait + dialogue box at MVP. Skill-gated choices visible with inline tags (e.g. `[Etiquette 4]`, `[Sorcery]`). Full 2D illustrated dialogue scenes are a **post-MVP** goal.
+- **Inventory:** weight / encumbrance limited. No slot grid.
+- **Map:** per-district local map + mini-map HUD.
+- **Tutorial:** contextual tooltips on first encounter with each system. No scripted tutorial level.
+- **Accessibility at MVP:** subtitle customization (size / background / speaker labels) + text scale + dyslexia-friendly font option. Other a11y features post-MVP.
+- **Input:** mouse + keyboard, rebindable. Controller support post-MVP.
+- **Save-anywhere.** Godot-native save format; manual slots + autosave + quicksave.
+- **Real-clock time** (in-game minutes). Monthly rent cycle. NPC schedules respected.
 
 ### Out of MVP scope
 - Rigging.
