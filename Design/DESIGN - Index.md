@@ -45,18 +45,34 @@ Solo-developed, NSFW-forward Shadowrun-1E-leaning CRPG set in Seattle 2050–206
 - [Systems/DESIGN - Matrix.md](Systems/DESIGN%20-%20Matrix.md) — abstract minigame, SR1E wired Matrix baseline, wireless post-MVP drift.
 - [Systems/DESIGN - Magic.md](Systems/DESIGN%20-%20Magic.md) — Hermetic + Shamanic MVP; Spellcasting + Summoning; Adept power tree.
 
+## World
+
+- [World/DESIGN - Simulation Depth.md](World/DESIGN%20-%20Simulation%20Depth.md) — shallow scripted world at MVP; simulation depth grows post-MVP.
+- [World/DESIGN - Reputation.md](World/DESIGN%20-%20Reputation.md) — per-faction numeric rep; thresholds; dialogue / shop / run gating.
+- [World/DESIGN - Time.md](World/DESIGN%20-%20Time.md) — real-clock minutes; NPC schedules; monthly rent.
+- [World/DESIGN - Procgen.md](World/DESIGN%20-%20Procgen.md) — hand-authored core at MVP; crowd seed only; no runtime LLM.
+- [World/DESIGN - Economy.md](World/DESIGN%20-%20Economy.md) — nuyen, lifestyle, run payouts, parallel NSFW / drug / BTL income channels.
+
+## Presentation
+
+- [Presentation/DESIGN - Art Direction.md](Presentation/DESIGN%20-%20Art%20Direction.md) — 3D isometric world + 2D cel / comic-noir illustration layer.
+- [Presentation/DESIGN - Audio.md](Presentation/DESIGN%20-%20Audio.md) — Piper / XTTS / ElevenLabs voice tiers; curated SFX and music.
+
+## Social
+
+- [Social/DESIGN - Contacts.md](Social/DESIGN%20-%20Contacts.md) — named, persistent NPCs with Connection / Loyalty / voice / venue / services; romance model.
+
 ## Technology
 
 - [Technology/DESIGN - Engine.md](Technology/DESIGN%20-%20Engine.md) — Godot 4 + GDScript + 3D isometric.
-- [Technology/DESIGN - AI Tooling.md](Technology/DESIGN%20-%20AI%20Tooling.md) — dev-time LLM yes, runtime never.
+- [Technology/DESIGN - AI Tooling.md](Technology/DESIGN%20-%20AI%20Tooling.md) — dev-time LLM / image / 3D / TTS stack (Claude, Venice, SDXL / Flux / Pony, Meshy, Piper, XTTS, ElevenLabs); runtime never.
 
 ## Pending (to be added as decisions land)
 
 - Character — Progression, Aging, Lifestyle, Downtime
 - Systems — Rigging (post-MVP)
-- World — Economy, Factions, Simulation, Time, Reputation, Procgen
-- Presentation — Art Direction, Audio, UI
-- Social — Contacts
+- World — Factions (index doc)
+- Presentation — UI
 - Setting — Districts / Redmond (lands when the Seattle Sourcebook's Redmond chapter is ingested)
 
 ## Status

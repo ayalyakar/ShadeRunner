@@ -34,6 +34,19 @@ Each archetype has **one MVP-playable build** — not the full skill/spell/progr
 - **Execute** — mission environment. Must be completable via combat *or* non-combat path, with at least one branch (stealth / hack / magic / social).
 - **Payout** — dialogue, karma, rep, nuyen. Consequence imprinted on faction / contact state.
 
+### Concrete MVP run
+- **Type:** **Retrieval** (steal a specific item). Classic SR opener; clean goal; supports all four archetype paths.
+- **Johnson:** **Corporate Mr. Johnson** — mid-tier corp fixer hiring the PC for a data-chip / prototype retrieval. Covers the widest run-type surface and sets up corp-antagonist tension early.
+- **Fixer:** **Warm, seasoned Redmond fixer** — older, gruff, cares about the PC more than she admits. Connection ~3–4. Steady job supply. Lives / works in Redmond. She introduces the Johnson.
+- **Target:** specific item in a specific corp-adjacent location in Redmond (exact target to be decided once the Redmond chapter ingests).
+- **Paths:**
+  - **Combat:** front-door, shoot through guards.
+  - **Stealth:** back entry, avoid detection.
+  - **Decker:** jack into the host, grab the item remotely or disable security for physical entry.
+  - **Magic:** spirit-scout, invisibility / influence, magical entry.
+  - Minimum two paths playable for any archetype (their class path + at least one shared approach).
+- **Romance contact:** **Fellow runner encountered on the job** — met during Legwork or Execute as a friendly / rival face. Romance escalates across subsequent downtime beats. One complete romance arc (meet → rapport → first explicit scene) shipped in MVP.
+
 ### Systems MVP depth
 - **Combat:** turn-based, **phase-pass initiative** (high-Reaction acts multiple passes per round), **SR1E d6 exploding dice pool** resolution (count successes vs. target number), **square grid**, full cover + line-of-sight, **SR1E wound boxes (Physical + Stun tracks)** with dice-pool penalty. See `Systems/DESIGN - Combat.md`.
 - **Matrix:** **abstract minigame** surface (dedicated Matrix scene), **SR1E wired Matrix baseline** with post-Crash wireless drift eligible post-MVP. One decking loop — host, IC opposition, file retrieval or node control, jack-out consequences. See `Systems/DESIGN - Matrix.md`.
