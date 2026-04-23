@@ -1,0 +1,111 @@
+# Seattle history — Awakened City era (2021-2036).
+# Split from Metroplex/Seattle.yaml history block.
+#
+# Covers: UGE / Goblinization trigger (2021-04-30), SPD dissolution
+# (2023), Governor Kruse tenure (unspecified start - 2036 retirement).
+
+era: "Awakened City"
+period: "2021-04-30 - 2036"
+scope_note: |
+  Seattle's first two decades of metahuman emergence and the steady
+  governance of Kruse. Bridges the formation of the metroplex to the
+  Alameson / Night-of-Rage catastrophe.
+
+sources:
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 16
+    image: "Sources/SR1E-Seattle/p016-history-birth-metroplex-awakened.png"
+    section: "History — The Awakened City (opening)"
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 17
+    image: "Sources/SR1E-Seattle/p017-history-night-of-rage.png"
+    section: "History — SPD dissolution / Kruse governorship"
+
+awakened_city_opening:
+  source_page: 16
+  page_status: "Opening paragraphs only — continues on p.17+."
+  ube_date: "2021-04-30"
+  event:
+    name_canonical: "Unexplained Genetic Expression (UGE) / Goblinization"
+    prose_description: "One in ten Seattle citizens began mysteriously transforming into Orks and Trolls."
+    social_fallout_preview: |
+      Former allies were set against each other along metatype lines
+      (humans vs. emergent Orks / Trolls / Dwarves / Elves).
+      Canonical origin of metahuman-discrimination patterns carrying
+      forward into 2050.
+    transcription_note: |
+      Page 16 ends mid-paragraph on the Awakened City section;
+      continuation on p.17 will likely cover the first decade of
+      metahuman emergence in Seattle specifically.
+  game_presence:
+    mvp: "historical / lore only — grounds metahuman-discrimination ambient in 2050."
+    post_mvp:
+      - "Anniversary-of-UGE ambient event (annual flashback content on April 30)."
+      - "'One in ten' family-story beats for named older NPCs."
+      - "Cross-ref Character/DESIGN - Metatypes.md metahuman-world-reactivity layer."
+
+spd_era_and_dissolution:
+  source_page: 17
+  overview: |
+    The original Seattle Police Department (SPD) was caught between
+    Human and Metahuman mobs in the early-2020s riots, poorly
+    equipped, and politically abandoned by City Hall. The SPD was
+    dissolved in 2023 — replaced eventually by the Metroplex Guard.
+  key_years:
+    - year: 2022
+      event: "Peak street violence; SPD on the front line without riot gear."
+    - year: 2023
+      event: "SPD dissolved."
+      transcription_note: "Prose attributes dissolution to '23'; confirm against successor-agency chronology."
+  governance_note: |
+    Governance transition implied: the Seattle Metroplex Council
+    centralized security authority after dissolving the SPD; the
+    Metroplex Guard emerged as the successor force by the Night of
+    Rage era (2039).
+  bbs_exchange:
+    thread_topic: "Former SPD officer's memories of the 2022-23 riot era."
+    posts:
+      - handle: "SPD"
+        timestamp_raw: "(13-35-25-5) (11-50)"
+        voice_profile:
+          register: "Veteran cop, first-person, regretful."
+          opinions:
+            - "Caught between Human and Metahuman mobs without riot gear."
+            - "City Hall considered officers expendable."
+            - "Lost a partner in the line of duty; had to tell her husband."
+          recurring_persona_candidate: true
+          transcription_note: |
+            Handle + timestamp read with moderate confidence; voice
+            profile distinct and stable enough to consider promoting
+            on a second appearance.
+      - handle: "Anonymous"
+        timestamp_raw: "(11-17-14-3) (5-50)"
+        topic: "Pro-Human racist reply mocking SPD for 'protecting animals instead of shooting them'."
+        voice_profile:
+          register: "Humanis-adjacent anti-metahuman bigotry."
+      - handle: "SPD"
+        timestamp_raw: "(03-50) (15-4-50)"
+        topic: |
+          Sharp rejection of the racist reply. Asserts the oath was
+          to uphold the law regardless of metatype; threatens to find
+          the troll through a decker friend and show up in person
+          with 'a 10-pound Heavy stick and the biggest gun you'd
+          ever see'.
+        voice_profile_confirmation: "Confirms the SPD handle as a coherent single voice across both posts."
+
+kruse_governorship:
+  source_page: 17
+  overview: "Governor Kruse succeeded Lindstrom at some point after 2020 and served until retiring in 2036."
+  governor:
+    name: "Governor Kruse"
+    retirement_year: 2036
+    political_disposition: "Not characterized on this page; neutral / establishment reading until later pages clarify."
+  transcription_note: |
+    Page 17 names Kruse only in the Alameson-succession sentence;
+    full tenure / policies not yet detailed. Flag for cross-reference
+    on later history pages.
+

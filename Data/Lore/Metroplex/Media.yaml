@@ -1,0 +1,96 @@
+# Metroplex-wide canon for Seattle — media (trid broadcast, cable, press, magazines).
+# Split from Metroplex/Seattle.yaml (topic-file refactor).
+# Edition: SR1E (Seattle Sourcebook, FASA, 1990). Year: 2050.
+
+metroplex: "Seattle"
+topic: "Media"
+
+sources:
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 13
+    image: "Sources/SR1E-Seattle/p013-facts-pleasure-orkunderground-media.png"
+    section: "Facts at Your Fingertips — Media (Trid / Cable / Press)"
+
+media:
+  source_page: 13
+  trid_and_broadcast:
+    public_stations_count_prose: 7
+    public_stations_count_transcription_note: |
+      Prose claims 'seven public Index stations in the Seattle area'; the
+      enumeration on the page lists more channels after ambient overlap
+      (possible OCR duplication on KOBD / Channel 7). Resolve in a
+      re-verification pass.
+    stations:
+      - callsign: "KONG"
+        channel: 4
+        affiliation: "NBS"
+        affiliation_transcription_note: "Affiliation read as 'NBS'; possibly 'NBC' mis-scan."
+      - callsign: "KOBD"
+        channel: 7
+        affiliation: "CBC"
+        affiliation_transcription_note: "Affiliation read as 'CBC'; low confidence."
+      - callsign: "KNBC (?)"
+        channel: 7
+        affiliation: "NBC"
+        transcription_note: |
+          Prose lists a second Channel-7 station on the same line as
+          KOBD. Likely a distinct station with different callsign — read
+          tentatively as 'KNBC' / 'KING'. Flag and revisit.
+      - callsign: "KSIS"
+        channel: 9
+        affiliation: "PBS"
+      - callsign: "KXSB"
+        channel: 11
+        affiliation: "Independent"
+        transcription_note: "Callsign read as 'KXSB'; low confidence."
+      - callsign: "KGTC"
+        channel: 17
+        affiliation: "Independent"
+        transcription_note: "Callsign read as 'KGTC'; low confidence."
+      - callsign: "KTAX"
+        channel: 21
+        affiliation: "Independent"
+        transcription_note: "Callsign read as 'KTAX'; low confidence."
+    public_affairs_and_special_channels:
+      - callsign: "KPLX"
+        channel: 6
+        role: "Message / public affairs"
+        transcription_note: "Callsign read as 'KPLX'; low confidence."
+      - callsign: "NSBN"
+        channel: 19
+        role: "Native American Business System"
+      - callsign: "NSBL"
+        channel: 13
+        role: "Salish-Shidhe Lands network"
+        transcription_note: "Callsign read as 'NSBL'; possibly 'SSC Network' variant."
+    cable:
+      service_name: "Multiplex Video cable"
+      pay_per_view_stations: 237
+      content_range:
+        low: "Children's programming"
+        high: "Lurid / extreme adult content — 'the most lurid and weirdness mankind can imagine'"
+      content_range_transcription_note: "Upper-bound phrasing partly illegible; captured in spirit."
+      remote_sources:
+        - "East Coast feeds"
+        - "California Free Zone feeds"
+  press:
+    newspapers:
+      - name: "Seattle Times"
+      - name: "Seattle News Intelligencer"
+        transcription_note: |
+          Likely canonical Seattle 'Post-Intelligencer' (the real paper);
+          scan reads 'News Intelligencer'. Use published name as-read for
+          in-world consistency but flag.
+    magazines:
+      - name: "The Booker Top"
+        role: "Entertainment guide / city events magazine"
+        transcription_note: "Title read as 'The Booker Top'; low confidence."
+  game_presence:
+    mvp: "Trid / BBS ambient content — news headlines template, station-ID idle cues."
+    post_mvp:
+      - "Named press contacts (Seattle Times reporter as Connection-3 info broker)."
+      - "Trid-studio locations for runs (intercept broadcasts, extract anchors, hijack a pay-per-view stream)."
+      - "NSBL / NAN media cross-border angle for runs spanning Seattle + SSC lands."
+

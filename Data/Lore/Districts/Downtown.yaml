@@ -58,7 +58,7 @@ metatype_mix:
     Notably Elf-rich (15%, vs 6% in Redmond) and Dwarf-present (2%,
     vs 1% in Redmond). Ork share (19%) substantially above Redmond
     (10%) — reflects the Ork Underground community beneath the
-    district. Cross-ref Metroplex/Seattle.yaml ork_underground.
+    district. Cross-ref Data/Lore/Places/Underground/Ork Underground.yaml.
 
 education:
   source_page: 19
@@ -144,7 +144,7 @@ geography:
     - name: "Puget Sound"
       role: "Beyond Elliot Bay to the west; large-vessel shipping + ferry routes."
     - name: "Lake Washington"
-      role: "East boundary of downtown; Council Island sits in its southern portion (cross-ref Metroplex/Seattle.yaml salish_shidhe_council_access)."
+      role: "East boundary of downtown; Council Island sits in its southern portion (cross-ref Data/Lore/Metroplex/Services.yaml salish_shidhe_council_access)."
     - name: "Lake Union"
       role: "Nestled in a hollow between two lines of hills north of downtown; paired with Green Lake."
     - name: "Green Lake"
@@ -191,7 +191,7 @@ demographics_extension:
           (tunnels / sub-levels / underground community).
         Cross-referenced because they overlap in population, but the
         two labels reference different layers of canonical content.
-      cross_ref: "Metroplex/Seattle.yaml ork_underground"
+      cross_ref: "Data/Lore/Places/Underground/Ork Underground.yaml"
       file: "Data/Lore/Districts/Downtown/Ork District.yaml (to be created)"
       note: "Downtown's Ork share (19%) is heavily concentrated across both layers."
     - name: "Harbor Island"
@@ -330,7 +330,7 @@ game_presence:
     - "Corp-tower heist / extraction run content."
     - "Ork Underground access points from Downtown surface."
     - "Governor's office / Council chamber runs (civic-politics arc)."
-    - "Seattle Center Opera House / Symphony scenes (cross-ref Metroplex/Seattle.yaml entertainment)."
+    - "Seattle Center Opera House / Symphony scenes (cross-ref Data/Lore/Metroplex/Entertainment.yaml)."
 
 hooks:
   - "85% corp-affiliation = every street is surveilled; stealth builds matter."

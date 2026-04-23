@@ -1,0 +1,35 @@
+# Canonical faction — Seattle football team.
+
+name: "Seattle Seahawks"
+type: "Sports team (football)"
+tier: "Professional franchise"
+
+sources:
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 12
+    image: "Sources/SR1E-Seattle/p012-facts-ssc-legal-medical-alcohol-entertainment.png"
+    section: "Facts at Your Fingertips — Entertainment (sports)"
+
+sport: "Football (descendant of NFL; prose says 'NBL' — likely OCR)"
+sport_transcription_note: "Prose 'NBL' on p.12 likely misread of 'NFL'. See Sources/VERIFICATION.md."
+
+home_venue:
+  name: "Kingdome"
+  district: "Downtown (verify when venue-specific page ingests)"
+  file: "Data/Lore/Places/Landmarks/Kingdome.yaml (to be stubbed when detail arrives)"
+
+shared_venue_with:
+  - "Seattle Supersonics (basketball)"
+  - "Seattle Mariners (baseball)"
+
+game_presence:
+  mvp: "ambient flavor (Trid broadcasts, bar chatter, ads)."
+  post_mvp:
+    - "Kingdome-backdrop run (heist during a game)."
+    - "Star-player NPC as Connection-3+ celebrity contact."
+    - "Fixed-game corruption arc."
+    - "Deep-NPC rule: any named player or coach avoids 'star athlete' cliches; specific interiority required."
+
+transcription_note: "Stub from SR1E Seattle Sourcebook p.12."

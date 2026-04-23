@@ -32,16 +32,41 @@ structure:
 
 business_model:
   subscription:
-    tiers_note: |
+    tiers:
+      - name: "Basic"
+        monthly_yen_placeholder: 100
+        response_time_guarantee_minutes: 20
+        coverage_note: "Urban metroplex core only; no Barrens or SSC coverage."
+        extraction_team_size: "Small paramedic team; light armed escort."
+        transcription_note: "Tier numbers are project placeholders pending later-edition canon confirmation."
+      - name: "Gold"
+        monthly_yen_placeholder: 500
+        response_time_guarantee_minutes: 10
+        coverage_note: "Urban metroplex + Barrens (limited); still no open SSC ops."
+        extraction_team_size: "Full paramedic team + armored transport + rapid-response security."
+      - name: "Platinum"
+        monthly_yen_placeholder: 2000
+        response_time_guarantee_minutes: 5
+        coverage_note: "Metroplex-wide including Barrens; cross-border SSC ops case-by-case."
+        extraction_team_size: "Elite extraction: paramedic team, armored helicopter, full security team, trauma stabilization gear."
+        flavor: "Corp-exec + AAA-runner tier; the chopper is overhead within 5 minutes of a panic-button press."
+    tier_placeholder_note: |
       SR canon across editions establishes Basic / Gold / Platinum
-      subscription tiers with escalating response-time guarantees and
-      coverage. Seattle Sourcebook p.12 does not break these out.
-      Details TBD from later-edition canon per Setting/DESIGN - Canon.md.
+      with escalating response-time guarantees. Pricing + response
+      minutes above are project placeholders (forward-compatible with
+      economy simulation; Character/DESIGN - Lifestyle.md / World/
+      DESIGN - Economy.md). Exact canonical numbers TBD; adjust when
+      a sourcebook confirms.
   call_pattern: "Customer-triggered (subscribed credstick carries the panic-button authorization)."
   non_subscriber_policy: |
     Non-subscribers can be billed on-site at emergency rates — but
     DocWagon is not obligated to respond. The armored team's priority
     is always the paying customer.
+  district_availability_note: |
+    Per canonical Barrens-register framing, Basic-tier subscribers in
+    Redmond / Puyallup / other A-rated districts may get no
+    guaranteed coverage — vehicle response doesn't enter those zones
+    routinely. Tier-by-district availability matrix TBD.
 
 reputation:
   seattle_register: "Well-respected."

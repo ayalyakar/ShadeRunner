@@ -16,7 +16,7 @@ regulation:
   inspected_by: "City medical services"
 
 tier:
-  framework: "Metroplex/Seattle.yaml business_tiers"
+  framework: "Metroplex/Economy-Tiers.yaml business_tiers"
   assigned: "Luxury / First Class"
   notes: "Prose emphasizes 'justifiably high' prices for the beauty of talent; upmarket tier."
 

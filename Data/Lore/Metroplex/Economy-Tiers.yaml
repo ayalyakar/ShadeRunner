@@ -1,0 +1,317 @@
+# Metroplex-wide canon for Seattle — cost baseline + business-tier framework.
+# Split from Metroplex/Seattle.yaml (topic-file refactor).
+# Edition: SR1E (Seattle Sourcebook, FASA, 1990). Year: 2050.
+
+metroplex: "Seattle"
+topic: "Economy-Tiers"
+
+sources:
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 9
+    image: "Sources/SR1E-Seattle/p009-facts-cost-getting-around.png"
+    section: "Facts at Your Fingertips — What Will It Cost?"
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 10
+    image: "Sources/SR1E-Seattle/p010-facts-bus-monorail-chains.png"
+    section: "Facts at Your Fingertips — Major Businesses and Chains"
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 11
+    image: "Sources/SR1E-Seattle/p011-facts-hotels-electronics-bodytech-tourist.png"
+    section: "Facts at Your Fingertips — Major Businesses and Chains (Hotels / Computers / Body Enhancement)"
+
+cost_overview:
+  source_page: 9
+  general_price_level: "Higher than the rest of the UCAS."
+  shipping_markup_pct: 5
+  locally_cheap_goods:
+    - "Seafood"
+    - "Paper products"
+  hotel_prices_yen:
+    low: 25
+    high: null
+    high_transcription_note: "Upper bound partially illegible; not captured."
+  budget_accommodations:
+    - type: "Spartan hostel (YMCA / YWCA / Metahuman hostel)"
+      approx_nightly_yen: null
+      transcription_note: "Per-night price not confidently legible."
+    - type: "University / college dormitory (between semesters)"
+      nightly_yen_range: { min: 10, max: 20 }
+  dining_note: |
+    Many Seattle restaurants serve natural foods thanks to the city's trade
+    relations with the Native American Nations. Tourists sometimes
+    over-indulge on unfamiliar ingredients with unpleasant digestive
+    consequences. Moderation recommended until the visitor's palate has
+    adjusted; save the banquets for later in the trip.
+  modest_daily_expenses_yen:
+    - label: "Room at a moderate hotel (nightly)"
+      yen: 25
+    - label: "Hotel breakfast, including tip"
+      yen: 5
+    - label: "Lunch at an inexpensive restaurant, including tip"
+      yen: 10
+    - label: "Dinner at an inexpensive restaurant, including tip"
+      yen: 25
+    - label: "Sightseeing tour"
+      yen: 7
+    - label: "Nightclub admission"
+      yen: 25
+      transcription_note: "Value read as 25; low confidence."
+    - label: "Admission to museum or historical site"
+      yen: 5
+    - label: "Ticket to a major sporting event (inexpensive seats)"
+      yen: 25
+      transcription_note: "Value read as 25; low confidence."
+    - label: "Cab service (typical)"
+      yen: 50
+    - label: "Bribe for minor / 'who's here' information"
+      yen: 20
+      transcription_note: "Phrasing uncertain; canonical bribe line."
+    - label: "Bribe for sensitive information ('who's doing what to whom and why')"
+      yen_min: 200
+      yen_note: "Starts at 200; no upper bound."
+    - label: "Simple sexual pleasure"
+      yen: 50
+    - label: "BTL chip"
+      yen_min: 50
+      yen_note: "Starts at 50; no upper bound."
+  bbs_footnote:
+    raw: "Fast cash (11-15-13 / 5-15-50)"
+    interpretation_note: |
+      The table on p.9 ends with a line that reads as 'Fast cash
+      (11-15-13) (5-15-50)'. Most likely a Shadowland post-attribution
+      byline — posts in this sourcebook carry timestamp pairs in that
+      format — with 'Fast Cash' as the handle. Not fully legible; not
+      yet promoted to a persistent BBS persona. Flag for verification
+      and possible NPC stub creation at `Data/Lore/NPCs/Fast Cash.yaml`.
+
+business_tiers:
+  source_page: 10
+  framework: |
+    The sourcebook establishes a canonical four-tier system for Seattle
+    businesses — applied consistently across Department Stores, Grocery /
+    Convenience Stores, and Restaurants / Fast Food. The tiers are a
+    clean mapping onto lifestyle tiers (see Character/DESIGN - Lifestyle.md)
+    and drive shop pricing, SIN-check strictness, and clientele.
+  tiers:
+    - name: "Luxury"
+      clientele: "High-tier SINful (corp managers, old money, celebrity)."
+      sin_check: "Strict."
+      pricing: "Premium."
+    - name: "First Class"
+      clientele: "Middle-tier corp / professional."
+      sin_check: "Moderate."
+      pricing: "Above-baseline."
+    - name: "Family Style"
+      clientele: "Working class, civilian."
+      sin_check: "Light."
+      pricing: "Baseline."
+    - name: "No Frills"
+      clientele: "Low-tier / SINless-tolerant."
+      sin_check: "Minimal / none."
+      pricing: "Cheap."
+
+  department_stores:
+    source_page: 10
+    luxury:
+      - name: "Lordsmongs"
+        transcription_note: "Name read as 'Lordsmongs'; low confidence."
+      - name: "Bloomleys"
+        transcription_note: "Name read as 'Bloomleys'; low confidence."
+      - name: "Lacy's"
+    first_class:
+      - name: "Fahran and Redress"
+        transcription_note: "Name read as 'Fahran and Redress'; low confidence."
+      - name: "The Bowes"
+        transcription_note: "Name read as 'The Bowes'; low confidence."
+    family_style:
+      - name: "Wordsworth"
+        transcription_note: "Name read as 'Wordsworth'; low confidence."
+      - name: "Laura and Mercies"
+        transcription_note: "Name read as 'Laura and Mercies'; low confidence."
+      - name: "Penley's"
+        transcription_note: "Name read as 'Penley's'; low confidence."
+      - name: "Q"
+      - name: "Meyers Superstores"
+        transcription_note: "Name read as 'Meyers Superstores'; low confidence."
+    no_frills:
+      - name: "Ray-Mart"
+        transcription_note: "Name read as 'Ray-Mart'; could be a Wal-Mart cognate."
+      - name: "Steve's Central"
+        transcription_note: "Name read as 'Steve's Central'; low confidence."
+
+  groceries_and_convenience:
+    source_page: 10
+    luxury:
+      - name: "Society Grocers"
+        transcription_note: "Name read as 'Society Grocers'; low confidence."
+    first_class:
+      - name: "G. Meyers Gourmets"
+        transcription_note: "Name read as 'G. Meyers Gourmets'; low confidence."
+    family_style:
+      - name: "Advanson's Grocery"
+        transcription_note: "Name read as 'Advanson's'; low confidence."
+      - name: "Curry & Save"
+        transcription_note: "Name read as 'Curry & Save'; low confidence."
+      - name: "Quick-stop Groceries"
+    no_frills:
+      - name: "Stuffer Shacks"
+        transcription_note: "Name read as 'Stuffer Shacks'; likely SR-canonical 'Stuffer Shack'."
+      - name: "Round-the-Clock Markets"
+      - name: "Buy-Low Foods"
+
+  restaurants_and_fast_food:
+    source_page: 10
+    luxury:
+      - name: "Asenius International"
+        transcription_note: "Name read as 'Asenius International'; low confidence."
+      - name: "The Edge"
+      - name: "Tokoni's"
+        transcription_note: "Name read as 'Tokoni's'; low confidence."
+      - name: "Inai's Seattle Dining"
+        transcription_note: "Name read as 'Inai's'; low confidence."
+      - name: "Toshona Fogliero's"
+        transcription_note: "Name read as 'Toshona Fogliero's'; low confidence."
+    first_class:
+      - name: "The Green Village"
+      - name: "The Country Bar"
+      - name: "La Gatetas"
+        transcription_note: "Name read as 'La Gatetas'; low confidence."
+      - name: "Fu Gour Club"
+        transcription_note: "Name read as 'Fu Gour Club'; low confidence."
+      - name: "Joseph Wong"
+      - name: "Easy Ran"
+        transcription_note: "Name read as 'Easy Ran'; low confidence."
+      - name: "Purple Haze"
+      - name: "The Original Ester"
+        transcription_note: "Name read as 'The Original Ester'; low confidence."
+      - name: "Pol Tho's"
+        transcription_note: "Name read as 'Pol Tho's'; low confidence."
+    family_style:
+      - name: "Grade's for Ribs"
+        transcription_note: "Name read as 'Grade's for Ribs'; low confidence."
+      - name: "Bravo's"
+      - name: "Facanito McKusker's"
+        transcription_note: "Name read as 'Facanito McKusker's'; low confidence."
+      - name: "Jiang Net Lee"
+        transcription_note: "Name read as 'Jiang Net Lee'; low confidence."
+      - name: "Hakata's"
+      - name: "The Bengalok Inlet"
+        transcription_note: "Name read as 'The Bengalok Inlet'; low confidence."
+      - name: "Jack and Rental's"
+        transcription_note: "Name read as 'Jack and Rental's'; low confidence — could be 'Jack and Rental's'."
+      - name: "Massilino's"
+        transcription_note: "Name read as 'Massilino's'; low confidence."
+    no_frills:
+      - name: "Mankilder's"
+        transcription_note: "Name read as 'Mankilder's'; low confidence."
+      - name: "You Should Not Eat So Much"
+      - name: "Keeki Burgers"
+      - name: "The Golden Axechins"
+        transcription_note: "Name read as 'The Golden Axechins'; low confidence."
+      - name: "Regi Burgers"
+      - name: "Lexis Foods"
+      - name: "The Captain's Gallery"
+
+  hotels:
+    source_page: 11
+    legibility_note: |
+      Chain names across Hotels are small-font body text in a narrow
+      column; many entries are transcribed with low confidence. All
+      entries carry individual transcription_notes.
+    luxury: []
+    luxury_transcription_note: |
+      Luxury-tier hotel names on this page read as an obscured line of
+      small-type body text at the current scan resolution. Not confidently
+      transcribed. Revisit on re-scan.
+    first_class:
+      - name: "Westin Hotels"
+      - name: "Hotel Trans"
+        transcription_note: "Name read as 'Hotel Trans'; low confidence."
+      - name: "The Lost-Luxe"
+        transcription_note: "Name read as 'The Lost-Luxe'; low confidence."
+      - name: "York Hotel"
+        transcription_note: "Name read as 'York Hotel'; low confidence."
+    family_style:
+      - name: "Motel 1998"
+        transcription_note: "Name read as 'Motel 1998'; low confidence."
+    family_style_transcription_note: "Additional Family-Style entries expected on the page but not confidently legible."
+    no_frills:
+      - name: "Penn and Thor"
+        transcription_note: "Name read as 'Penn and Thor'; low confidence."
+      - name: "Style's Castle Inn"
+        transcription_note: "Name read as 'Style's Castle Inn'; low confidence."
+      - name: "Barne's Moneymunchers"
+        transcription_note: "Name read as 'Barne's Moneymunchers'; low confidence."
+    bbs_footnote:
+      raw: "(attribution ending '1-31-16 / 26-54-50')"
+      interpretation_note: |
+        Hotels section ends with what reads as another Shadowland-style
+        post attribution (same (nn-nn-nn) (nn-nn-nn) timestamp format
+        as the 'Fast cash' line on p.9). Legibility too low to capture
+        handle reliably. Revisit on re-scan.
+
+  computers_and_electronics:
+    source_page: 11
+    luxury:
+      - name: "Suriette"
+        transcription_note: "Name read as 'Suriette'; low confidence."
+      - name: "R. Byler"
+        transcription_note: "Name read as 'R. Byler'; low confidence."
+      - name: "Lyle's Computer Sorcerers"
+        transcription_note: "Name read as 'Lyle's Computer Sorcerers'; low confidence."
+    luxury_transcription_note: "A further Luxury entry is expected on the page but not confidently legible."
+    first_class:
+      - name: "Sunrose Computer International"
+        transcription_note: "Name read as 'Sunrose Computer International'; low confidence."
+      - name: "Hard-ware Sisters"
+        transcription_note: "Name read as 'Hard-ware Sisters'; low confidence."
+      - name: "Board Sisters Software"
+        transcription_note: "Name read as 'Board Sisters Software'; low confidence."
+    family_style:
+      - name: "Software Sellers"
+      - name: "Microfiche Software"
+        transcription_note: "Name read as 'Microfiche Software'; low confidence."
+      - name: "DeCore's Electronics"
+        transcription_note: "Name read as 'DeCore's Electronics'; low confidence."
+    no_frills:
+      - name: "Used Computer Exchange"
+      - name: "Haaren's Red Light"
+        transcription_note: "Name read as 'Haaren's Red Light'; low confidence."
+      - name: "Hermedy's Cheap Electronics"
+        transcription_note: "Name read as 'Hermedy's Cheap Electronics'; low confidence."
+    mvp_link: |
+      This category is the canonical shop basis for cyberdeck and
+      utility-program purchases (Decker archetype). Family-Style and
+      No-Frills tiers are the MVP shop tier range for a Low-lifestyle
+      runner. See Character/DESIGN - Cyberware.md and Systems/DESIGN -
+      Matrix.md.
+
+  body_enhancement_centers:
+    source_page: 11
+    description: |
+      Canonical SR name for cyberware / bioware shops. The four-tier
+      framework maps directly onto cyberware pricing / quality /
+      Essence-cost tradeoffs — No-Frills shops are the street-doc
+      tier (higher Essence cost per grade of chrome), Luxury shops
+      are deltaware-adjacent (post-MVP territory).
+    luxury:
+      - name: "Executive Body Enhancements"
+    first_class:
+      - name: "Body-Tech"
+    family_style:
+      - name: "A Whole New You"
+    no_frills:
+      - name: "St. George's Cyberwear Chains"
+        transcription_note: "Name read as 'St. George's Cyberwear Chains'; low confidence."
+    mvp_link: |
+      Anchor canon for Character/DESIGN - Cyberware.md shop pipeline.
+      MVP street doc is conceptually a No-Frills or Family-Style entry
+      in this category — specific Redmond shop name lands when the
+      Redmond chapter is ingested.
+

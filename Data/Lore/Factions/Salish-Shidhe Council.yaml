@@ -1,0 +1,127 @@
+# Canonical faction — sovereign NAN nation adjacent to Seattle Metroplex.
+
+name: "Salish-Shidhe Council"
+short_name: "SSC"
+type: "Sovereign NAN nation (tribal confederation)"
+tier: "AAA-equivalent (nation-state-scale)"
+
+sources:
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 12
+    image: "Sources/SR1E-Seattle/p012-facts-ssc-legal-medical-alcohol-entertainment.png"
+    section: "Facts at Your Fingertips — Salish-Shidhe Council Lands"
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 15
+    image: "Sources/SR1E-Seattle/p015-history-treaty-provisions-exodus.png"
+    section: "History — Treaty of Denver / NAN sovereignty"
+
+overview: |
+  Sovereign federation of Native American tribes, Elves, and
+  magicians occupying much of the former U.S. Pacific Northwest
+  outside the UCAS enclave cities. Successor polity to the
+  Salish-Shidhe War Council (2010s-era military confederation that
+  fought the Awakening War). Canonical SR nation bordering the
+  Seattle Metroplex on most sides — the Seattle Sourcebook's SSC
+  treatment focuses on how the border functions for metroplex
+  residents and visitors.
+
+historical_predecessor:
+  name: "Salish-Shidhe War Council"
+  period: "2010s-era military confederation"
+  role: "Fought the Awakening War (2011-2017); leadership included Howling Coyote (spiritual) and Thunder Tyer (military field command)."
+  fate: "Evolved into the current Salish-Shidhe Council (civilian / treaty-era governance)."
+  file: "Data/Lore/Factions/Salish-Shidhe War Council.yaml"
+
+geography:
+  capital_focal_point: "Council Island (in the southern portion of Lake Washington)."
+  council_island_role: "Center of SSC representation in Seattle; seat of the Passport Lodge for blue-ticket issuance to visitors from Seattle."
+  council_island_file: "Data/Lore/Districts/Council Island.yaml (to be created when that district chapter ingests)"
+  borders_seattle_metroplex: true
+  surrounds_seattle_note: |
+    Per Treaty of Denver (April 2018), most of the former U.S.
+    Pacific Northwest ceded to the NAN. Seattle Metroplex is a UCAS
+    enclave surrounded by SSC territory on the landward sides.
+
+access_from_seattle:
+  passport_required: "Blue ticket"
+  issuing_body: "SSC Passport Lodge on Council Island"
+  process_cross_ref: "Data/Lore/Metroplex/Services.yaml salish_shidhe_council_access"
+
+structure:
+  composition:
+    - "Native American tribes (member tribes listed on p.14 with transcription flags): Salish, Makah, Norteño, Cree, Salish-Shakal (last low-confidence)."
+    - "Elven communities."
+    - "Magicians (formally represented in the predecessor War Council; carry-over implied)."
+  leadership_2050:
+    note: "Not stated on ingested pages. Flag for later-pages."
+  sovereign_tribal_council:
+    role: "Canonical NAN-scale legislature distinct from the historical War Council. Governed the Anglo-minority residency rules post-Treaty; passed the 2019 anti-reprisal resolution referenced in History/Exodus-and-Metroplex-Birth.yaml."
+    transcription_note: |
+      Sovereign Tribal Council is the NAN-continental body; the
+      Salish-Shidhe Council is the specific nation-member council.
+      Hierarchy between them not explicitly stated on ingested pages.
+
+agencies:
+  truth_element:
+    role: "NAN counterintelligence / magical-interrogation service. Active from the late-Awakening-War era."
+    historical_note: "Per p.15, rounded up foreign intelligence assets + executed elite tribal infiltrators after the Treaty."
+    file: "Data/Lore/Factions/Truth Element.yaml (to be stubbed when Crime or Government chapters ingest)"
+
+services_visible_from_seattle:
+  - "Visitor-center representatives at the Seattle Convention Center (supply application forms for blue tickets)."
+  - "Passport Lodge on Council Island (issues blue tickets; ~1 day processing)."
+  - "NSBL broadcast channel (Salish-Shidhe Lands network; Channel 13 on Seattle cable)."
+
+cultural_register:
+  register: "Dignified, guarded, formal — SSC representatives speak the canonical language of sovereign diplomats. No tourist-friendliness clichés."
+  deep_npc_rule: |
+    Per Design/Narrative/DESIGN - Writing.md, any SSC-affiliated NPC
+    must avoid 'mystical Indian elder', 'stoic warrior', 'new-age
+    shaman' tropes. SSC citizens in-game are specific individuals
+    with internal politics (trad vs. modernist, Salish-vs-Makah
+    sub-tribal feeds, urban-vs-rural), personal contradictions, and
+    characters that are not reducible to their nationality.
+
+relationships:
+  allies:
+    - "Other NAN member nations (via Sovereign Tribal Council)."
+  rivals:
+    - "UCAS federal government (post-Treaty tension over enclave rights)."
+    - "Tir Tairngire (canonical Elf-nation rival; verify on later canon)."
+  hostile:
+    - "Humanis Policlub and adjacent anti-metahuman factions (Awakening-War-era memory + ongoing hate-crime targeting of SSC citizens in UCAS enclaves)."
+  neutral:
+    - "Seattle Metroplex government (contractual-diplomatic; bilateral passport regime is stable)."
+    - "Most Seattle corps (commerce proceeds; few corps operate on SSC soil at visible scale)."
+
+standing_default: 0
+thresholds:
+  hostile: -60
+  unfriendly: -20
+  neutral: 0
+  friendly: 20
+  trusted: 60
+
+game_presence:
+  mvp: "ambient — blue-ticket process may appear in dialogue; NSBL Trid content in ambient; Council-Island cross-reference from Downtown (MVP is Redmond so direct SSC contact is unlikely)."
+  post_mvp:
+    - "Cross-border run content (PC travels SSC-side for a job; blue-ticket or smuggling variants)."
+    - "Council Island as a walkable venue post-MVP."
+    - "SSC-affiliated contact types (passport-lodge clerk, NSBL journalist, on-meat Professor Stealth candidate)."
+    - "Tribal-faction sub-politics (Salish vs. Makah vs. etc.) as multi-run arcs."
+    - "Truth Element as antagonist agency for runs that cross the border."
+
+hooks:
+  - "Blue-ticket overstay is a canonical consequence hook (authorities-level trouble if mishandled)."
+  - "NAN-sympathizer vs. nativist dialogue register for older Seattle NPCs (cross-ref History/Exodus-and-Metroplex-Birth.yaml)."
+  - "Cross-border magical-community access: SSC magical traditions + Rat's Nest-Redmond-adjacent Rat-totem shamans (prior-pass canon; verify on re-ingest)."
+
+transcription_note: |
+  Stub built on SR1E Seattle Sourcebook pp.12 + 15. Richer SSC canon
+  will land when dedicated pages (Council Island chapter, Government
+  chapter, later-edition SSC sourcebooks) ingest. See
+  Sources/VERIFICATION.md for tribe-list uncertainties.

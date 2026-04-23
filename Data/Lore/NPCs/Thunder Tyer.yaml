@@ -1,0 +1,96 @@
+# Canonical NPC — historical figure (Salish field commander).
+
+name: "Thunder Tyer"
+alt_names:
+  - name: "Thunder Tyler"
+    status: "alternate rendering (SR canon variant)"
+    transcription_note: "See Sources/VERIFICATION.md entry on Thunder Tyer / Tyler. Canonical spelling to be confirmed."
+title: "Salish warrior chief; Salish-Shidhe War Council field commander (2010s)"
+status: "historical / fate unknown (canonically unresolved by 2050)"
+
+sources:
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 14
+    image: "Sources/SR1E-Seattle/p014-history-treaty-of-denver.png"
+    section: "History — Awakening War leadership (mention)"
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 15
+    image: "Sources/SR1E-Seattle/p015-history-treaty-provisions-exodus.png"
+    section: "History — Thunder Tyer biography (BBS exchange)"
+
+facts:
+  role: "Field commander of the Salish-Shidhe War Council guerrilla + offensive operations during the Awakening War (2011-2017)."
+  tribal_affiliation: "Salish."
+  relationship_to_howling_coyote: "Close friend; canonically paired throughout Awakening-War operations."
+
+biography:
+  early_life:
+    stepmother_community: "Native American — Salish or adjacent tribe."
+    transcription_note: "Specific community + Colorado geography details partly illegible on p.15; see Sources/VERIFICATION.md."
+  us_army_service:
+    enlisted_age: 18
+    enlisted_age_transcription_note: "Could be 18 / 28 / 38 — partly illegible."
+    rank_trajectory: "Rose to officer rank in the infantry."
+    rumored_double_agent: |
+      Rumored to have worked as a NAN-sympathizer double-agent while
+      still in US uniform. Never conclusively documented.
+  defection:
+    trigger: "Radicalized by mistreatment of his stepmother's Native American community."
+    role_post_defection: "Assumed control of Salish-Shidhe War Council military operations."
+  credited_victories_2015:
+    - "Capture of Trident Submarine Base at Bangor (2015)."
+    - "Capture of Kugri / Puget Sound Naval Shipyard at Bremerton (2015, five months after Trident)."
+    - "Positioned Salish forces for siege of McChord AFB + Fort Lewis."
+  moral_contradiction:
+    atrocity_allegations: |
+      Multiple reports link Thunder Tyer to atrocities committed by
+      Salish forces against Anglo civilians during the guerrilla war.
+    counter_act: |
+      Same commander ordered his warriors to evacuate and protect
+      Anglo civilians threatened by the Mount Rainier eruption late
+      in the war. Canonical contradictory moral register.
+  fate_after_treaty:
+    certainty: "Unknown — canonically unresolved."
+    rumors:
+      - "Retired quietly with his wife and children on the Olympic Peninsula immediately after Treaty ratification."
+      - "Assassinated by a US Army wetwork team."
+      - "Executed by his own officers after ordering Salish warriors to lay down arms and evacuate Anglos from volcanic-threat zones."
+
+interior:
+  surface_want: "Native American sovereignty restored."
+  deep_want: "Atonement — for a life that balances heroic leadership against documented atrocities."
+  shame: "Specific incidents of Anglo-civilian deaths under his command; unspeakable in public, named only in private moments."
+  pride: "The Mount-Rainier evacuation order — the one moment he unambiguously chose mercy at tactical cost."
+  contradiction: |
+    Built his career as a US Army officer — the same machine he
+    eventually waged a six-year war against. The military discipline
+    that won the Salish-Shidhe offensive was learned from the enemy.
+  formative_event:
+    year: null
+    description: "A specific incident (per canon, unstated) of US mistreatment of his stepmother's community that radicalized him. Content to be hand-authored when / if Tyer becomes a playable scene."
+
+voice:
+  register: "Quiet, measured, military. Few words, chosen ones. Rarely raises his voice; when he does, people listen."
+  pet_phrase: "TBD on first scripted appearance."
+  softens_around: "His wife and children (per retirement-rumor branch)."
+  hardens_around: "US military symbols; Humanis-adjacent rhetoric."
+
+game_presence:
+  mvp: "historical / lore only. Referenced in dialogue, BBS posts, shamanic-elder flashbacks."
+  post_mvp:
+    - "If the retirement-rumor is canonical, an old Tyer (age ~70-80 in 2050) could be a hidden-contact NPC — an awakening mentor, a NAN-border fixer, a moral-philosophy anchor."
+    - "A Tyer-era relic (his officer's sidearm, a battlefield journal, a Mount-Rainier-evacuation order document) makes a MacGuffin for a run."
+    - "Thunder-Tyer-era veteran NPCs carry backstory dialogue about him."
+  hooks:
+    - "Fate-ambiguity arc — player investigation to learn which rumor is true."
+    - "Atrocity-vs-mercy moral contradiction is a template for deep-NPC-rule-compliant conflict (see Narrative/DESIGN - Writing.md)."
+
+transcription_note: |
+  Stub built from SR1E Seattle Sourcebook pp.14-15. See
+  Sources/VERIFICATION.md for the list of uncertain items
+  (name rendering, age, stepmother-community location, shipyard
+  name variant).

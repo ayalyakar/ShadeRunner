@@ -1,0 +1,97 @@
+# Canonical place — subterranean metahuman community beneath Downtown Seattle.
+# Promoted from Metroplex/Seattle.yaml (was an inline section; now a dedicated place record).
+
+name: "Ork Underground"
+type: "Subterranean community / metahuman-majority district"
+
+sources:
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 13
+    image: "Sources/SR1E-Seattle/p013-facts-pleasure-orkunderground-media.png"
+    section: "Facts at Your Fingertips — Ork Underground"
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 21
+    image: "Sources/SR1E-Seattle/p021-downtown-geography-demographics.png"
+    section: "Downtown — Demographics (surface Ork District cross-reference)"
+
+linked_entities:
+  - kind: "Surface neighborhood (distinct but linked)"
+    name: "Ork District (Downtown surface-layer)"
+    cross_ref: "Data/Lore/Districts/Downtown/Ork District.yaml (to be created)"
+    relation: |
+      Per project canon decision, the Ork Underground is the
+      subterranean physical complex; the Ork District is the surface
+      Ork-majority neighborhood. They overlap in population and
+      history but are separate canonical entities.
+
+parent_district: "Downtown"
+parent_district_file: "Data/Lore/Districts/Downtown.yaml"
+
+ork_underground:
+  source_page: 13
+  overview: |
+    A massive canonical subterranean settlement beneath downtown
+    Seattle. Some sections date to the late 19th century (Seattle's
+    historical underground tour zone); reconstruction of the downtown
+    core sealed older ground-level streets under new elevations,
+    creating the original strata. Orks and Dwarves, displaced after
+    Awakening and UGE, re-occupied and expanded the underground into
+    a multi-level metahuman-majority community.
+  location: "Under downtown Seattle."
+  demographics:
+    primary_population: "Ork"
+    dwarven_presence: "Very few — 'only a handful' per the prose, following an ambiguous 2041 incident with the Ork community."
+    dwarven_presence_transcription_note: |
+      Prose mentions a 2041 event ('bolt-crash' / split / schism) that
+      drove most Dwarves out. Exact word / event name not confidently
+      legible.
+  history_hooks:
+    - year: "pre-Awakening"
+      event: "19th-century underground strata from downtown reconstruction"
+      notes: "Original sub-streets preserved beneath current ground level."
+    - year: 2039
+      event: "Night of Rage"
+      notes: |
+        Prose attributes an influx of Orks fleeing Night-of-Rage violence
+        through the sewers as part of the community's origin mythology.
+        (Page image reads ambiguously on whether year is 2039 or 2009;
+        SR canon says 2039.)
+      transcription_note: "Year read as 2039 per canon; image scanned character is ambiguous."
+    - year: 2041
+      event: "Ork-Dwarven schism"
+      notes: |
+        Most Dwarves left the Underground following an incident in 2041;
+        specifics not confidently legible.
+      transcription_note: "Event nature / label partly illegible."
+  rumored_second_city:
+    location: "Rumored secondary Ork underground near / beneath the Seattle Center"
+    ork_stance: "Orks are tight-lipped about it; refuse to confirm or deny."
+    notes: "Canonical rumor seed — run hook for Ork-community access arcs."
+  tour_access:
+    non_ork_risk:
+      - "Tours carry significant risk for Humans, Dwarves, and Elves."
+      - "Risk spikes at night — aggressive contact with resident Orks possible."
+    guides:
+      armed: true
+      notes: "Commercial tours use heavily armed guides. Even so, visitors are advised to stay alert."
+  canonical_bbs_post:
+    handle: "Aza-ker Poseph"
+    timestamp_raw: "(18-14-4055) (15-5-5-50)"
+    transcription_note: |
+      Handle and timestamps read with low confidence. Timestamps follow
+      the same Shadowland (nn-nn-nn) (nn-nn-nn) format as earlier posts.
+      Not yet promoted to a persistent BBS persona — flag and revisit.
+    topic: "Personal account of a tour gone wrong in the Ork Underground."
+  game_presence:
+    mvp: "flavor / lore only (MVP district is Redmond, not Downtown)."
+    post_mvp:
+      - "Ork-community faction with tiered Loyalty gates for non-Ork PCs."
+      - "Underground-tour scenes (commercial + illegal)."
+      - "Rumored second city as a run target — find, map, escape."
+      - "Night-of-Rage memorial content / survivor NPCs."
+      - "Schism-era Dwarven refugee contact type."
+

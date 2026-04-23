@@ -1,0 +1,80 @@
+# Canonical BBS persona — historian / documentary-voice Shadowland poster.
+
+name: "Professor Stealth"
+persona_type: "BBS / Shadowland handle (recurring-persona candidate promoted)"
+promotion_rationale: |
+  Distinct documentary / historian voice register plus multi-paragraph
+  historical-analysis format (as opposed to one-line replies) is
+  unusual enough on the Shadowland BBS to warrant persistent
+  persona tracking from first appearance. Formal promotion per
+  Design/Narrative/DESIGN - Writing.md BBS-persona policy.
+
+sources:
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 15
+    image: "Sources/SR1E-Seattle/p015-history-treaty-provisions-exodus.png"
+    section: "History — Thunder Tyer biography (response to Canyon)"
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 18
+    image: "Sources/SR1E-Seattle/p018-history-from-ashes-schults.png"
+    section: "History — Humanis Information Service ad-hominem attack on Professor Stealth's credibility"
+
+posts:
+  - page_ref: 15
+    timestamp_raw: "(15-45-20-5) (2-50)"
+    thread_topic: "What happened to Thunder Tyer?"
+    asker_handle: "Canyon"
+    content_summary: |
+      Detailed multi-paragraph biography of Thunder Tyer — US Army
+      enlistment, rumored double-agent status, defection,
+      Salish-Shidhe War Council command, credited victories,
+      atrocity allegations, Mount-Rainier evacuation moral
+      contradiction, three rumored post-Treaty fates.
+    transcription_note: "See Data/Lore/NPCs/Thunder Tyer.yaml."
+  - page_ref: 18
+    timestamp_raw: null
+    mention_type: "Attacked-credibility reference"
+    content_summary: |
+      Humanis Policlub Information Service public-relations post
+      attacks Professor Stealth's credibility by claiming he is a
+      'Metahuman brainwashed to believe all Humans are evil.' The
+      attack implies Stealth is one or more of: Metahuman, politically
+      active, sufficiently influential to warrant rebuttal.
+
+inferred_profile:
+  metatype_implication: "Metahuman (per Humanis-rebuttal implication; unconfirmed)."
+  politics: "Anti-Humanis; NAN-sympathetic; historically-literate."
+  reach: "Enough Shadowland name-recognition that Humanis-Policlub publicists target him specifically."
+  occupation_hypothesis: "Academic (per 'Professor' moniker) — possibly a history / political-science lecturer with on-meat identity not yet revealed."
+
+voice_profile:
+  tone: "Documentary, historian, multi-paragraph. Assembles facts into narrative rather than one-liner commentary. Careful with speculation — labels rumors as rumors, attested facts as such."
+  reach: "Quoted and attacked by opposing factions; name-recognition on Shadowland established."
+  pacing: "Slow, confident, doesn't rush to conclusions. Trades crispness for completeness."
+  opinions_stance:
+    - "Anti-Humanis on the visible-register level; historically-grounded rather than slogan-driven."
+    - "NAN-sympathetic without romanticization — acknowledges NAN-side atrocities when relevant."
+    - "Values naming culprits and events accurately, even when it's uncomfortable."
+  recurring_tropes_to_avoid:
+    - "No professorial-pedantry cliche; no 'let me educate you' condescension."
+    - "Stealth does his homework but doesn't lecture."
+
+game_presence:
+  mvp: "BBS persona only — occasional Shadowland post references, possible cameo appearance in a history-research legwork beat."
+  post_mvp:
+    - "On-meat identity reveal as a recurring story thread (who is Stealth in person?)."
+    - "History-lecturer contact type for runners needing deep background."
+    - "Humanis-target NPC — if Stealth's identity leaks, he becomes a Humanis target, generating a 'protect the informant' run."
+    - "Academic-institution venue (university / archive) where Stealth is real-identity reachable."
+
+hooks:
+  - "The fact that Humanis bothered to attack Stealth by name signals he matters — build reveal content around that implied weight."
+  - "Stealth's historical voice is canonical for any Awakening-War / Treaty-of-Denver / Night-of-Rage deep-background dialogue; future LLM-assisted drafting uses this voice profile."
+
+transcription_note: |
+  Handle 'Professor Stealth' + timestamps on pp.15 and 18 read with
+  low confidence. See Sources/VERIFICATION.md.

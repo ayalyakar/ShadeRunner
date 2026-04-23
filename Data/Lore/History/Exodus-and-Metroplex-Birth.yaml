@@ -1,0 +1,135 @@
+# Seattle history — Exodus of 2019 + Birth of the Metroplex (2019-2020).
+# Split from Metroplex/Seattle.yaml history block.
+
+era: "Exodus and Metroplex Birth"
+period: "2019 - 2020-11-16"
+scope_note: |
+  Post-Treaty Anglo-refugee flood into Seattle (>200,000 in 2019),
+  annexation campaign (Bellevue / Renton / Kent / King County / Pierce
+  / Snohomish / Everett / Tacoma), and formal creation of the Seattle
+  Metroplex as a federal city-state under first Governor Charles C.
+  Lindstrom (2020-11-16).
+
+sources:
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 15
+    image: "Sources/SR1E-Seattle/p015-history-treaty-provisions-exodus.png"
+    section: "History — Exodus of 2019"
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 16
+    image: "Sources/SR1E-Seattle/p016-history-birth-metroplex-awakened.png"
+    section: "History — Birth of the Metroplex"
+
+exodus_of_2019:
+  source_page: 15
+  overview: |
+    First major population shock after the Treaty of Denver. Anglo
+    residents of former US territory that had been ceded to NAN lost
+    their land-ownership rights; those who didn't want to live as
+    NAN minority citizens fled east into the remaining US enclaves.
+  year: 2019
+  mechanism:
+    anglo_options:
+      - "Repatriate to new US boundaries."
+      - "Remain as minority citizens under NAN sovereignty."
+    sovereign_tribal_council_resolution: |
+      Outlawed formal reprisals against Anglos who chose to stay,
+      but couldn't prevent social-pressure departures.
+  sovereign_tribal_council:
+    note: "Canonical governing body distinct from the Salish-Shidhe War Council — the broader NAN legislature."
+    game_presence: "Faction-level actor (post-MVP). Not stubbed yet."
+  migration_volume:
+    seattle_area_refugees_year_2019: 200000
+    primary_resettlement_sub_district: "Puyallup region"
+    notes: |
+      Over 200,000 refugees arrived in Seattle-area within 2019
+      alone. Most resettled in Puyallup — canonical root cause of
+      the Puyallup region's overcrowding / Barrens reputation
+      carrying forward into 2050.
+  absorption_capacity:
+    eastern_us: "Had resources to absorb the flood."
+    california: "Had resources to absorb the flood."
+    seattle_and_neighbors: "Overwhelmed; inter-city competition for federal aid."
+  federal_response:
+    quality: "Inadequate — federal aid distributed across cities; Seattle's specific pleas for help 'all but ignored'."
+  city_tensions:
+    seattle_vs_tacoma_vs_everett: "Cities fought over every scrap of federal aid, laying the groundwork for 2050-era inter-district dysfunction."
+  temporary_camps: "Liquid refugee camps (floating barges?) used as temporary housing."
+  temporary_camps_transcription_note: |
+    Prose reads 'liquid refugee camps'; may refer to floating
+    waterfront barge encampments or to a specific camp-type
+    mis-scanned. Flag.
+  eyewitness_bbs_post:
+    handle: null
+    timestamp_raw: "(CHIS-98) (15-25-29-30)"
+    transcription_note: "Handle partly illegible; timestamp captured as best-effort."
+    topic: |
+      Eyewitness account of kilometer-long refugee columns arriving
+      in Seattle. Mixed register — hungry / frightened but grateful
+      to be alive. Useful as an ambient / flashback voice profile
+      for an older 2050-era Seattle NPC.
+  game_presence:
+    mvp: "historical / lore only — grounds Puyallup-Barrens population pressure and Seattle-area inter-city tensions."
+    post_mvp:
+      - "Anglo-refugee-descendant NPC background type."
+      - "NAN-sympathetic vs. nativist NPC branching for older Seattle residents."
+      - "Tacoma / Everett / Seattle aid-competition as civic-politics run backdrop."
+
+birth_of_metroplex:
+  source_page: 16
+  overview: |
+    The Exodus-of-2019 refugee pressure broke the pre-war city
+    structure and forced the 'Seattle Metroplex' as a single
+    city-state under federal recognition. Annexation drove the
+    city's growth from core Seattle to encompass King / Pierce /
+    Snohomish counties within 18 months.
+  charles_lindstrom:
+    name: "Charles C. Lindstrom"
+    role: "Mayor of Seattle (2019); charismatic; 'penchant for fiery speeches and daring action'."
+    nickname: "Lindstrom the Conqueror"
+    ambition: "Make Seattle the economic capital of the Pacific Coast by annexing surrounding towns."
+    pre_exodus_reputation: |
+      Early annexation pushes repeatedly failed; critics mocked the
+      nickname with schadenfreude as every attempt collapsed.
+    turning_point: |
+      The Exodus flood of 2019 made independent suburban governance
+      practically impossible. Lindstrom's once-laughable unification
+      plan became the only viable response.
+    post_annexation_role: "First Governor of the Seattle Metroplex (confirmed by federal resolution 2020-11-16)."
+  annexation_timeline:
+    - date: "2019 (early)"
+      event: "Bellevue, Renton, and Kent voted to join greater Seattle."
+      margin_note: "Prose reads 'unanimously' for all three; low confidence on that qualifier."
+    - date: "2019 (summer)"
+      event: "Greater Seattle absorbed all of King County plus most of Pierce and Snohomish Counties."
+    - date: "2019-09-06"
+      event: "Citizens of Everett and Tacoma voted in favor of joining Seattle."
+      margin: "85%+ in favor per post-vote tally."
+    - date: "2020-11-16"
+      event: "US President signed a resolution dissolving Washington State and formally creating the Seattle Metroplex as a city-state."
+      outcome: "Charles C. Lindstrom installed as first Governor."
+  organized_crime_interference:
+    source_page: 16
+    summary: |
+      Mafia and Yakuza attempted to intimidate and coerce voters
+      in Everett and Tacoma during the 2019-09-06 annexation
+      campaigns — shooting and bombing polling-related events.
+    intended_outcome: "Pre-annexation independence (to keep Seattle security forces out of their operations)."
+    actual_outcome: |
+      The syndicate violence backfired — public fear of organized
+      crime drove voters toward the stronger-security Seattle
+      Metroplex. Final vote tally in favor of annexation passed
+      85% in both cities.
+    transcription_note: "Several words on the syndicate-interference paragraph partly illegible; captured in spirit."
+    game_presence: "Canonical grudge-event origin for 2050-era Mafia / Yakuza resentment of Seattle federal oversight."
+  bbs_post_detective_law:
+    handle: "Detective Law"
+    timestamp_raw: "(21-20-98) (4-3-5) 0"
+    transcription_note: "Handle + timestamp read with low confidence."
+    topic: "Documentary summary of the syndicate-interference campaign during the 2019 annexation votes."
+    voice_profile: "Detective-register — factual, law-enforcement-adjacent tone. Candidate for recurring persona pending additional appearances."
+

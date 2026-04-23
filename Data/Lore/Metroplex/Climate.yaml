@@ -1,0 +1,43 @@
+# Metroplex-wide canon for Seattle — climate.
+# Split from Metroplex/Seattle.yaml (topic-file refactor).
+# Edition: SR1E (Seattle Sourcebook, FASA, 1990). Year: 2050.
+
+metroplex: "Seattle"
+topic: "Climate"
+
+sources:
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 6
+    image: "Sources/SR1E-Seattle/p006-facts-when-traveling.png"
+    section: "Facts at Your Fingertips — When to Go"
+
+climate:
+  source_page: 6
+  annual_mean_temperature_c: 5.1
+  july_normal_high_c: 21.0
+  january_normal_low_c: -9.5
+  annual_precipitation_cm: 90.56
+  wettest_month:
+    month: "December"
+    precipitation_cm: 15.18
+  driest_month:
+    month: "July"
+    precipitation_cm: 1.87
+  weather_events:
+    - "Heavy thunderstorms in spring and summer"
+    - "Wind storms in autumn"
+    - "Rare winter snowstorms"
+  reputation:
+    rainy: |
+      Seattle has a canonical reputation for heavy rain. The actual annual
+      precipitation figure (~90.56 cm) is modest compared to many North
+      American cities — the reputation is cultural, not quantitative.
+  visit_calendar:
+    best: ["late spring", "early fall"]
+    worst: ["mid-summer (heat)", "mid-winter (rain)"]
+    metahuman_note: |
+      Many Orks and Trolls find the city most beautiful in winter — a
+      canonical cultural note from the sourcebook, not a stat effect.
+

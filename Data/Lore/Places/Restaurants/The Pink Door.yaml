@@ -26,7 +26,7 @@ cuisine: null
 cuisine_note: "Ad does not specify cuisine on the image surface."
 
 tier:
-  framework: "Metroplex/Seattle.yaml business_tiers"
+  framework: "Metroplex/Economy-Tiers.yaml business_tiers"
   assigned: null
   note: "Not enumerated in the four-tier restaurants rollup on p.10; possibly a standalone venue."
 

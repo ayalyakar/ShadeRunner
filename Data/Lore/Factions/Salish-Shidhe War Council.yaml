@@ -1,0 +1,88 @@
+# Canonical faction — historical military confederation (precursor to SSC).
+
+name: "Salish-Shidhe War Council"
+type: "Historical / military confederation (defunct)"
+tier: "Nation-state-scale (during 2010s)"
+status: "Historical only — evolved into the Salish-Shidhe Council after the Treaty of Denver (April 2018)."
+
+sources:
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 14
+    image: "Sources/SR1E-Seattle/p014-history-treaty-of-denver.png"
+    section: "History — guerrilla war leadership"
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 15
+    image: "Sources/SR1E-Seattle/p015-history-treaty-provisions-exodus.png"
+    section: "History — 2015 offensive / Thunder Tyer command"
+
+overview: |
+  Military-era confederation that fought the Awakening War
+  (2011-2017) against the US federal government. Composed of
+  Native American tribes, Elves, and magicians under unified
+  command. Transitioned to the civilian Salish-Shidhe Council
+  after the April-2018 Treaty of Denver.
+
+composition:
+  member_tribes_listed_on_page_14:
+    - "Salish"
+    - "Makah"
+    - "Norteño"
+    - "Cree"
+    - "Salish-Shakal"
+  member_tribes_transcription_note: |
+    Tribe list partly illegible on p.14 scan; 'Salish-Shakal' low
+    confidence. See Sources/VERIFICATION.md.
+  non_tribal_members:
+    - "Elven communities"
+    - "Magicians (formal representation in command)"
+
+leadership:
+  spiritual:
+    name: "Howling Coyote"
+    file: "Data/Lore/NPCs/Howling Coyote.yaml"
+  military_field_command:
+    name: "Thunder Tyer"
+    file: "Data/Lore/NPCs/Thunder Tyer.yaml"
+
+canonical_operations:
+  - year: 2011
+    event: "VITAS + Olympic-Peninsula-earthquake mobilization; guerrilla war begins."
+  - year: 2015
+    event: "Trident Submarine Base (Bangor) captured under Tyer's command."
+  - year: 2015
+    event: "Kugri / Puget Sound Naval Shipyard (Bremerton) captured 5 months later."
+  - year: "2015-2017"
+    event: "Siege positioning against McChord AFB + Fort Lewis."
+  - year: 2017
+    event: "Great Ghost Dance (2017-08-04) — Howling Coyote leads ritual; Mount Hood / Mount St. Helens / Mount Rainier / Glacier Peak erupt simultaneously."
+  - year: 2018
+    event: "Treaty of Denver signed April 2018; War Council dissolves into civilian Salish-Shidhe Council."
+
+atrocities_note: |
+  Both sides committed documented atrocities. Thunder Tyer personally
+  linked to some; same command also responsible for the Mount Rainier
+  Anglo-evacuation order (see Data/Lore/NPCs/Thunder Tyer.yaml for
+  the moral-contradiction detail).
+
+successor:
+  name: "Salish-Shidhe Council"
+  file: "Data/Lore/Factions/Salish-Shidhe Council.yaml"
+
+game_presence:
+  mvp: "historical / lore only."
+  post_mvp:
+    - "War-Council-era veteran NPC backstory anchors."
+    - "War-era relic MacGuffins."
+    - "Historical-knowledge dialogue checks (reference for Streetwise / Etiquette rolls with NAN NPCs)."
+
+hooks:
+  - "Thunder-Tyer-specific relics (officer's sidearm, battlefield journal, evacuation-order document)."
+  - "War-Council-era magical practices — possible cross-ref for shaman PC backstory."
+
+transcription_note: |
+  Stub based on SR1E Seattle Sourcebook pp.14-15. Richer detail
+  when dedicated Awakening-War-era canon arrives.

@@ -32,6 +32,17 @@ presence:
     activity_level: "ambient at MVP (patrols, response, arrests); direct engagement post-MVP."
 
 historical_role:
+  absorption_of_metroplex_guard:
+    status: "Canonical per project decision."
+    when: "Post-Night-of-Rage / Week-of-Shame era (2039+)."
+    mechanism: |
+      Metroplex Guard personnel were re-badged, rotated, or mustered
+      out as Lone Star took over the Seattle policing contract under
+      Governor Schults. Institutional memory of Guard complicity at
+      the 2039 warehouse fires carries into Lone Star via those
+      absorbed veterans.
+    implication: "Old Lone Star officers in 2050 include former Metroplex Guard alumni; canonical texture for NPC backstories."
+    cross_ref: "Data/Lore/Factions/Metroplex Guard.yaml"
   schults_ultimatum:
     source_page: 18
     year: 2039

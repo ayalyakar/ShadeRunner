@@ -26,7 +26,7 @@ open_days_claim: "Open every day — the ad reads 'Eat a Tuesdays 7 days a week'
 open_days_transcription_note: "Ad slogan partially legible; interpretation best-effort."
 
 tier:
-  framework: "Metroplex/Seattle.yaml business_tiers"
+  framework: "Metroplex/Economy-Tiers.yaml business_tiers"
   assigned: null
   note: "Not listed in any tier of the Major Businesses and Chains rollup on the same page; may be either single-location (not a chain) or omitted from that partial list."
 

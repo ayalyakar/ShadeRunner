@@ -1,0 +1,35 @@
+# Canonical faction — Seattle-associated AAA baseball team.
+
+name: "Toronto Tigers"
+type: "Sports team (AAA baseball, 'unchipped' league)"
+tier: "Minor-league / AAA franchise"
+
+sources:
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 12
+    image: "Sources/SR1E-Seattle/p012-facts-ssc-legal-medical-alcohol-entertainment.png"
+    section: "Facts at Your Fingertips — Entertainment (sports)"
+
+sport: "Baseball"
+league_context:
+  label: "'Unchipped' (no cyberware-enhanced players)"
+  note: |
+    SR1E canon distinguishes 'chipped' and 'unchipped' baseball
+    leagues. The Tigers play unchipped — presumably purist-appeal
+    audience; lower technical ceiling than the chipped majors but
+    with cultural authenticity cachet.
+
+home_venue:
+  name: null
+  note: "Prose associates the Tigers with Seattle despite the 'Toronto' name; home venue / operations not detailed on p.12."
+  transcription_note: "Relationship between Toronto-labeled team and Seattle operations TBD."
+
+game_presence:
+  mvp: "ambient flavor."
+  post_mvp:
+    - "Cultural-authenticity angle: 'unchipped' purism as narrative thread."
+    - "Player-contact content (hand-authored with deep-NPC rule)."
+
+transcription_note: "Stub from SR1E Seattle Sourcebook p.12."

@@ -1,0 +1,81 @@
+# Canonical NPC — historical figure / spiritual leader.
+
+name: "Howling Coyote"
+title: "Spiritual leader of the Native American resistance (2010s); architect of the Great Ghost Dance (2017-08-04)"
+status: "historical / canonically mythological-scale figure; 2050-era status TBD from later SR canon"
+
+sources:
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 14
+    image: "Sources/SR1E-Seattle/p014-history-treaty-of-denver.png"
+    section: "History — Awakening War leadership (mention)"
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 15
+    image: "Sources/SR1E-Seattle/p015-history-treaty-provisions-exodus.png"
+    section: "History — Truth Element / Post-Awakening intelligence era"
+
+facts:
+  role: "Spiritual leader of the Native American resistance during the 2010-2018 Awakening War; led the Great Ghost Dance that coincided with the Mount Hood / Mount St. Helens / Mount Rainier / Glacier Peak simultaneous eruptions on 2017-08-04."
+  relationship_to_thunder_tyer: "Close personal friend; Tyer served as his military counterpart (field commander to Coyote's spiritual / political leadership)."
+  tribal_affiliation: "Unstated on p.14-15 content in this ingest; canonical SR lore places him in the broader NAN / Salish-Shidhe confederation."
+
+canonical_event:
+  great_ghost_dance:
+    date: "2017-08-04"
+    role: "Leader of the ritual."
+    coinciding_events:
+      - "Simultaneous volcanic eruptions of Mount Hood, Mount St. Helens, Mount Rainier, Glacier Peak."
+    historiographic_weight: |
+      The canonical moment when mana's scale became undeniable
+      globally. Pre-Awakening skeptics could no longer deny the
+      supernatural; the Great Ghost Dance is the global benchmark
+      for Awakening-era magical power.
+    treaty_outcome: |
+      Directly triggered the Treaty-of-Denver negotiations (US /
+      Canada / Mexico + NAN). Signed April 2018.
+
+interior:
+  surface_want: "Native American sovereignty + recognition."
+  deep_want: |
+    The continued respect of the spirits who granted him the Great
+    Ghost Dance's power — which was one-time, not repeatable. He
+    spends the rest of his life careful with how he is seen to use
+    that authority.
+  shame: |
+    The eruptions killed people too — including NAN citizens. The
+    victory was also a mass casualty event. Specifics hand-authored
+    when Coyote appears in a scripted scene.
+  pride: "Treaty of Denver — the one durable political win of his life."
+  contradiction: |
+    Spiritual leader whose greatest act is also a weapon of mass
+    destruction. Canonical moral-register anchor for
+    'how magic rhymes with responsibility' dialogue.
+  formative_event:
+    year: null
+    description: "TBD from deeper canon / project-authored backstory."
+
+voice:
+  register: "Measured, poetic, sparing. Speaks rarely; each sentence carries weight. Silence is itself a kind of speech."
+  pet_phrase: "TBD on first scripted appearance."
+  softens_around: "Students, young shamans, the awakened generation seeking guidance."
+  hardens_around: "Those who would cheapen the Dance into repeatable spectacle."
+
+game_presence:
+  mvp: "historical / lore only — referenced in dialogue, magical-tradition backstory, ambient-sourcebook references."
+  post_mvp:
+    - "If Coyote is canonically alive in 2050 (SR canon tends to render him still living, as a mythological elder), he could be a post-MVP hidden-contact NPC — extreme-Connection-rating shamanic mentor, accessible only to magical PCs after initiation."
+    - "The Great Ghost Dance itself as a pre-game scripted flashback-scene for awakened PCs."
+    - "A Coyote-era relic (ceremonial drum, treaty document, sacred site) as a run MacGuffin."
+    - "Cross-reference for magical-tradition design (Shamanic path heritage; see Systems/DESIGN - Magic.md)."
+  hooks:
+    - "Coyote-as-reclusive-elder archetype, but written per the deep-NPC rule — not 'mysterious old Indian' trope. Specific interiority, politics, regrets."
+    - "Great-Ghost-Dance moral contradiction as philosophical backbone for shamanic PC arcs."
+
+transcription_note: |
+  Stub built on SR1E Seattle Sourcebook pp.14-15 references. Canon
+  beyond the Seattle Sourcebook likely enriches this record; expand
+  on later-edition ingestion.

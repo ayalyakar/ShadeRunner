@@ -33,7 +33,7 @@ cuisine: null
 cuisine_note: "Ad doesn't specify cuisine. 'Finest dining' register implies upmarket."
 
 tier:
-  framework: "Metroplex/Seattle.yaml business_tiers"
+  framework: "Metroplex/Economy-Tiers.yaml business_tiers"
   assigned: "Luxury or First Class"
   note: "Not enumerated in the four-tier restaurant rollup on p.10; likely independent venue."
 

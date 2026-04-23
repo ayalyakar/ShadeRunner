@@ -1,0 +1,47 @@
+# Canonical faction — Seattle Combat Bike / Urban Brawl team.
+
+name: "Seattle Timberwolves"
+aka: "Tacoma Timberwolves (colloquial — matches home venue)"
+type: "Sports team (Urban Brawl / Combat Bike)"
+tier: "Professional franchise"
+
+sources:
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 12
+    image: "Sources/SR1E-Seattle/p012-facts-ssc-legal-medical-alcohol-entertainment.png"
+    section: "Facts at Your Fingertips — Entertainment (sports)"
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 17
+    image: "Sources/SR1E-Seattle/p017-history-night-of-rage.png"
+    section: "History — Governor Alameson's prior career"
+
+sport: "Combat Bike (Urban Brawl)"
+home_venue:
+  name: "Tacoma Dome"
+  district: "Tacoma"
+  file: "Data/Lore/Places/Landmarks/Tacoma Dome.yaml (to be stubbed)"
+
+reputation:
+  register: "Seattle's premier combat-bike squad; intense rivalry with the Screamers."
+
+notable_alumni:
+  - name: "Victor 'Vic the Quick' Alameson"
+    era: "Former combat biker; went on to Seattle Metroplex governorship (2036-2039). See History/Night-of-Rage.yaml and History/Awakened-City.yaml."
+    file: "Historical figure; no NPC stub (assassinated 2039)."
+
+game_presence:
+  mvp: "ambient flavor + background for Alameson political-history beat."
+  post_mvp:
+    - "Tacoma Dome-backdrop run (brawl-match corruption / fixed outcome / VIP extraction)."
+    - "Combat-bike-team as faction with gambling + organized-crime hooks (Mafia / Yakuza / Bolts interests)."
+    - "Current-rosters named-player contacts — each with specific interiority per deep-NPC rule; no 'meathead athlete' cliche."
+
+hooks:
+  - "Alameson alumni angle: the current franchise inherits political baggage from his governorship."
+  - "Rivalry-with-Screamers multi-run arc (fixed games, player sabotage, survivor-guilt NPC contacts)."
+
+transcription_note: "Stub from SR1E Seattle Sourcebook pp.12 + 17."

@@ -1,0 +1,28 @@
+# Canonical faction — Everett-based AAA baseball team.
+
+name: "Everett Giants"
+type: "Sports team (AAA baseball, 'unchipped' league)"
+tier: "Minor-league / AAA franchise"
+
+sources:
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 12
+    image: "Sources/SR1E-Seattle/p012-facts-ssc-legal-medical-alcohol-entertainment.png"
+    section: "Facts at Your Fingertips — Entertainment (sports)"
+
+sport: "Baseball"
+home_district: "Everett"
+
+league_context:
+  label: "'Unchipped' (no cyberware-enhanced players)"
+  cross_ref: "Toronto Tigers (same league classification)."
+
+game_presence:
+  mvp: "ambient flavor."
+  post_mvp:
+    - "Post-MVP Everett-district content hook (stadium / franchise as local anchor)."
+    - "Deep-NPC rule for player / management content."
+
+transcription_note: "Stub from SR1E Seattle Sourcebook p.12."

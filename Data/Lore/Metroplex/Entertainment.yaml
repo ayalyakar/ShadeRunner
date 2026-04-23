@@ -1,0 +1,155 @@
+# Metroplex-wide canon for Seattle — entertainment (museums, music, theater, sports, adult nightlife).
+# Split from Metroplex/Seattle.yaml (topic-file refactor).
+# Edition: SR1E (Seattle Sourcebook, FASA, 1990). Year: 2050.
+
+metroplex: "Seattle"
+topic: "Entertainment"
+
+sources:
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 12
+    image: "Sources/SR1E-Seattle/p012-facts-ssc-legal-medical-alcohol-entertainment.png"
+    section: "Facts at Your Fingertips — Entertainment"
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 13
+    image: "Sources/SR1E-Seattle/p013-facts-pleasure-orkunderground-media.png"
+    section: "Facts at Your Fingertips — Adult Entertainment"
+
+entertainment:
+  source_page: 12
+  museums:
+    - name: "Seattle Art Museum"
+      location: "Volunteer Park"
+      location_transcription_note: "Prose reads 'Volunteers Park'; canonical Seattle landmark is 'Volunteer Park'. Treat as 'Volunteer Park'."
+    - name: "Museum of History and Industry"
+      address: "2161 East Hamlin"
+      description: "Documents the city's history from its formation to the present day."
+  music:
+    classical_and_opera:
+      - name: "Seattle Symphony"
+      - name: "Seattle Opera"
+    classical_venue:
+      name: "Seattle Center Opera House"
+      operator_note: "The sourcebook's phrasing 'performing the demanding King of the Metropolitan Opera at venues by Renraku' is partly illegible; Renraku corporate sponsorship of the venue is implied but not stated with certainty."
+      transcription_note: "Exact sponsorship / ownership language not captured confidently."
+    seattle_megastar_alumni:
+      - name: "Concrete Dreams"
+      - name: "Lily Shuisha Suyu"
+        transcription_note: "Name read as 'Lily Shuisha Suyu'; low confidence."
+    local_breakouts:
+      - name: "Comfortably Numb's"
+        status: "Locally tipped as next-to-crash-nationally."
+        transcription_note: "Band name read as \"Comfortably Numb's\"; apostrophe and exact spelling uncertain."
+    nightlife_note: "Many Vee (virtual-reality / sim-VR) nightclubs citywide."
+  theater:
+    - name: "Seattle Repertory"
+      tier: "Serious theater"
+    - name: "The Contemporary Theatre"
+      tier: "Serious theater"
+    - name: "Coriel's Pantheon"
+      tier: "Smaller theaters chain"
+      transcription_note: "Name read as \"Coriel's Pantheon\"; low confidence."
+    unidentified_venues_transcription_note: |
+      Prose on p.12 mentions an additional Vastrous Gaming and 'Orlonstoro'
+      venue; neither confidently read. Flag for re-verification.
+  sports:
+    source_page: 12
+    stadiums:
+      - name: "Kingdome"
+        hosts: ["Seattle Seahawks (football)", "Seattle Supersonics (basketball)", "Seattle Mariners (baseball)"]
+      - name: "Tacoma Dome"
+        hosts: ["Seattle Timberwolves (Combat Bike / Urban Brawl)"]
+    teams:
+      - name: "Seattle Seahawks"
+        sport: "Football"
+        league_note: "Prose mentions descent from the NFL; transcription 'NBL' on page is likely a typo for 'NFL'."
+        home_venue: "Kingdome"
+      - name: "Seattle Supersonics"
+        sport: "Basketball"
+        home_venue: "Kingdome"
+      - name: "Seattle Mariners"
+        sport: "Baseball"
+        home_venue: "Kingdome"
+      - name: "Seattle Madisons"
+        sport: "Uncertain — likely combat-sport / urban brawl variant"
+        home_venue: "Seattle Sports League arcade"
+        transcription_note: "Both team scope and venue partly illegible. Flag for re-verification."
+      - name: "Toronto Tigers"
+        sport: "Baseball (AAA minor league)"
+        notes: "Unchipped (no cyberware-enhanced) baseball team; Seattle-associated AAA franchise per prose."
+      - name: "Everett Giants"
+        sport: "Baseball (AAA minor league)"
+        notes: "Unchipped AAA franchise."
+      - name: "Seattle Timberwolves"
+        sport: "Combat Bike (Urban Brawl)"
+        home_venue: "Tacoma Dome"
+        reputation: "Seattle's premier combat-bike squad; intense rivalry with the Screamers."
+      - name: "Screamers"
+        sport: "Combat Bike (Union Bowl league)"
+        reputation: |
+          Renowned for causing the most deaths and injuries to opponents
+          in the past decade — intentionally brutal. Canonical Urban-Brawl
+          villain team.
+        transcription_note: "Many details partial; confidence on team scope + league name moderate."
+    leagues:
+      - name: "Urban Brawl / Combat Bike"
+        note: "SR-canonical high-lethality circuit; Timberwolves + Screamers named canonical teams."
+      - name: "AAA Baseball ('unchipped')"
+        note: "Distinguished from 'chipped' leagues (cyber-enhanced pro ball), implying a cyberware league exists — flag for Economy / Sports-system design doc when relevant."
+  game_presence:
+    mvp: "flavor (Trid ads, ambient NPC barks, bar chatter)."
+    post_mvp: |
+      Stadium-backdrop runs (Kingdome heist, Tacoma Dome brawl-match
+      corruption), sports-star contact type, Urban Brawl team as
+      faction with gambling / organized-crime hooks.
+
+  nightlife_adult:
+    source_page: 13
+    category_note: |
+      The sourcebook describes these venues as large, well-known adult
+      'houses' / 'bazaars' offering legal, city-regulated sex work.
+      Exact noun wording on the page is partly legible; interpretation
+      'licensed pleasure houses / brothels' captures the canonical
+      intent. This is first-class canon for the NSFW pillar (see
+      Meta/DESIGN - NSFW.md).
+    regulation:
+      licensed_by: "City of Seattle"
+      inspected_by: "City medical services"
+      implied_standards:
+        - "Health screening of workers and clients."
+        - "Age-of-consent and worker-consent compliance."
+        - "Anti-trafficking oversight."
+      transcription_note: |
+        The page states venues are 'licensed and inspected by the
+        city's medical services'. Implied standards above are inferred
+        from that licensing model — not stated verbatim.
+    price_register: "High — prices 'justifiably high' per the prose; upmarket sex-work tier."
+    named_houses:
+      - name: "Lord of Out-Style"
+        district_hint: "Oak Pillar"
+        file: "Data/Lore/Places/Brothels/Lord of Out-Style.yaml"
+        transcription_note: "Name + district-hint both low-confidence; OCR best-effort reading."
+      - name: "Lucy's"
+        district_hint: "Texas Plaza"
+        file: "Data/Lore/Places/Brothels/Lucy's.yaml"
+        transcription_note: "'Texas Plaza' district-hint low-confidence."
+      - name: "Bedlight"
+        district_hint: null
+        file: "Data/Lore/Places/Brothels/Bedlight.yaml"
+        transcription_note: "Name read as 'Bedlight'; low confidence."
+    completeness_note: |
+      Prose implies more large well-known venues beyond the three named
+      (e.g. 'the largest and best-known of these houses'). Non-named
+      venues roll up under procgen-authored mid-tier brothels in
+      post-MVP content.
+    game_presence:
+      mvp: "Named venues are flavor / ambient in MVP — one 'licensed pleasure house' (to be placed in Redmond or Touristville adjacent) is the MVP NSFW-venue anchor."
+      post_mvp: |
+        Full walkable Lord of Out-Style / Lucy's / Bedlight venues with
+        bookable services, resident contacts (madams, performers), intel
+        opportunities, and sex-work-side-hustle career integration.
+

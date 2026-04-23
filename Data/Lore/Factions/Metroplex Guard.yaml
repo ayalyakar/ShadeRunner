@@ -1,8 +1,10 @@
 # Canonical faction — Seattle's post-SPD armed police / guard force.
 
 name: "Metroplex Guard"
-type: "Metroplex police / paramilitary"
-tier: "City-agency"
+type: "Metroplex police / paramilitary (defunct — absorbed into Lone Star)"
+tier: "Historical / retired"
+status: "Historical only — per project canon decision, the Metroplex Guard was absorbed into Lone Star's Seattle policing operation after the 2039 Night of Rage / Week of Shame era. Personnel were re-badged or rotated out. No separate Guard force exists in the 2050 MVP era."
+status_decision_provenance: "Project canon decision during structural refactor (post-p.21 ingestion). See Sources/VERIFICATION.md for the reasoning anchor."
 
 sources:
   - edition: SR1E
@@ -81,8 +83,8 @@ game_presence:
     - "Faction status reassessment once 2050-era structure is ingested."
 
 open_questions:
-  - "What is the Metroplex Guard's status in 2050 after Lone Star took the policing contract?"
-  - "Are individual former Guard personnel still visible in the metroplex structure (reincorporated into Lone Star, rotated to private security, retired)?"
+  - "Whether Lone Star's Seattle force carries any Guard-era institutional memory (likely yes — old Guard officers = current Lone Star veterans)."
+  - "Whether any Guard-era unit insignia / protocols / precinct-house footprints persist — archaeological / canon-texture angles."
 
 transcription_note: |
   Stub built on Night-of-Rage paragraphs on SR1E Seattle Sourcebook

@@ -1,0 +1,28 @@
+# Canonical faction — Seattle basketball team.
+
+name: "Seattle Supersonics"
+type: "Sports team (basketball)"
+tier: "Professional franchise"
+
+sources:
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 12
+    image: "Sources/SR1E-Seattle/p012-facts-ssc-legal-medical-alcohol-entertainment.png"
+    section: "Facts at Your Fingertips — Entertainment (sports)"
+
+sport: "Basketball"
+home_venue:
+  name: "Kingdome"
+  shared_venue_with:
+    - "Seattle Seahawks (football)"
+    - "Seattle Mariners (baseball)"
+
+game_presence:
+  mvp: "ambient flavor."
+  post_mvp:
+    - "Kingdome-backdrop run."
+    - "Star-player NPC content."
+
+transcription_note: "Stub from SR1E Seattle Sourcebook p.12."

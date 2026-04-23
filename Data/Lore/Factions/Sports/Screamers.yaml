@@ -1,0 +1,43 @@
+# Canonical faction — Combat Bike team notorious for lethal play.
+
+name: "Screamers"
+type: "Sports team (Urban Brawl / Combat Bike) — canonical villain franchise"
+tier: "Professional franchise"
+
+sources:
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 12
+    image: "Sources/SR1E-Seattle/p012-facts-ssc-legal-medical-alcohol-entertainment.png"
+    section: "Facts at Your Fingertips — Entertainment (sports)"
+
+sport: "Combat Bike (Union Bowl league)"
+league_transcription_note: "League name 'Union Bowl' read with low confidence. See Sources/VERIFICATION.md."
+home_venue:
+  name: null
+  note: "Home venue not clearly stated on p.12; visits Tacoma Dome as Timberwolves rival."
+
+reputation:
+  register: |
+    Renowned for causing the most deaths and injuries to opponents
+    in the past decade — intentionally brutal. Canonical Urban-Brawl
+    villain team.
+
+relationships:
+  rivals:
+    - "Seattle Timberwolves (canonical rivalry)."
+
+game_presence:
+  mvp: "ambient flavor."
+  post_mvp:
+    - "Run: sabotage a Screamers game to reduce their lethality record."
+    - "Run: extract a Screamers player whose family is being held as leverage."
+    - "Run: investigate a death-on-the-pitch that may have been intentional wetwork."
+    - "Deep-NPC rule: Screamers lethality is not cartoon-villain; each player has specific reasons (pride, desperation, addiction, coerced debt, family legacy)."
+
+hooks:
+  - "Intentional-brutality-as-sport canonical anchor for Combat Bike league content."
+  - "Rivalry-with-Timberwolves multi-run arc."
+
+transcription_note: "Stub from SR1E Seattle Sourcebook p.12."

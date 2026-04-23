@@ -1,0 +1,32 @@
+# Seattle history — Pre-Awakening era (origin of the metroplex region).
+# Split from Metroplex/Seattle.yaml history block.
+
+era: "Pre-Awakening"
+period: "Origin through 2010"
+scope_note: |
+  Seattle's industrial origin and early-21st-century setup on the eve
+  of the Awakening. Short era file — most of Seattle's modern canon
+  begins with the Awakening War (2010-2018). See History/Awakening-War.yaml.
+
+sources:
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 14
+    image: "Sources/SR1E-Seattle/p014-history-treaty-of-denver.png"
+    section: "History — (pre-Awakening opening)"
+
+pre_awakening:
+  source_page: 14
+  origin: "Logging town supplying California's boom-era lumber demand."
+  industrial_expansion: |
+    Seattle, Everett, and Tacoma leveraged their natural harbors to
+    become major shipping and trade centers. By the second half of
+    the 20th century, Seattle was the largest city in the Pacific
+    Northwest.
+  corporate_attraction:
+    - "Cheap land"
+    - "Vast natural resources"
+    - "Healthy profits"
+  outcome: "Industry + high-tech corporations clustered in the region; future looked bright on the eve of the Awakening."
+

@@ -1,0 +1,256 @@
+# Metroplex-wide canon for Seattle — travel (arrival + getting around).
+# Split from Metroplex/Seattle.yaml (topic-file refactor).
+# Edition: SR1E (Seattle Sourcebook, FASA, 1990). Year: 2050.
+
+metroplex: "Seattle"
+topic: "Travel"
+
+sources:
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 6
+    image: "Sources/SR1E-Seattle/p006-facts-when-traveling.png"
+    section: "Facts at Your Fingertips — Traveling to Seattle"
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 9
+    image: "Sources/SR1E-Seattle/p009-facts-cost-getting-around.png"
+    section: "Facts at Your Fingertips — Boat (travel to) / Getting Around — Air / Cab / Ferry"
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 10
+    image: "Sources/SR1E-Seattle/p010-facts-bus-monorail-chains.png"
+    section: "Facts at Your Fingertips — Ferry (addendum) / Bus / Monorail"
+
+travel_to_metroplex:
+  source_page: 6
+  modes:
+    - mode: "Plane"
+      primary_airport: "Seattle-Tacoma International Airport"
+      airport_short: "Sea-Tac"
+      domestic_fare_range_yen: { min: 200, max: 1700 }
+      fare_factors: ["class", "time of year", "city of origin", "time of day"]
+      ground_connections: ["taxis / cabs", "Metro buses"]
+      intracity_air:
+        carriers_count: 5
+        vehicle_types: ["helicopter", "tilt-rotor craft"]
+        rooftop_landings: true
+        notes: |
+          Five intracity airlines service the metroplex with helicopter and
+          tilt-rotor fleets; their vehicles make rooftop landings at many of
+          the plex's major hotels and buildings.
+
+    - mode: "Automobile / Bus"
+      border_note: |
+        Ground travel to Seattle requires crossing Native American Nations
+        (NAN) territory. Each NAN has its own travel-restriction regime.
+      private_car:
+        advance_planning_months: 5
+        pass_cost_floor_yen: 80
+        requirement: "Update passport file on credstick before travel."
+        notes: |
+          Travel restrictions vary per nation; plan at least five months
+          in advance to obtain the necessary passes. Multiple passes may
+          be required for a single trip.
+      bus:
+        advantage: "Bus lines are pre-licensed for NAN transit; red-tape avoided."
+        east_coast_ucas_fare_yen: 300
+        licensed_lines:
+          - name: "Blueline Tours and Trips"
+            transcription_note: "Name read as 'Blueline Tours and Trips'; uncertain."
+          - name: "Whippet Bus Company"
+          - name: "Falcor Express"
+            ownership_note: "Partially owned by NAN."
+            transcription_note: "Name read as 'Falcor Express'; uncertain."
+
+    - mode: "Train"
+      service: "Renraku Maglev Bullet Train"
+      operator: "Renraku"
+      route:
+        from: "Los Angeles"
+        to: "Seattle"
+        length_km_approx: 2000
+        coverage: "Runs through the majority of the lower states."
+      construction_year: 2017
+      construction_year_transcription_note: |
+        Year read as '2017'; could be '2011'. Low confidence. Flag for
+        re-verification against a higher-resolution image.
+      san_francisco_mention: |
+        The sourcebook text specifically mentions taking the Maglev from
+        San Francisco to Seattle; SF is a mid-route stop on the LA→Seattle line.
+      reliability:
+        reputation: "Frequent breakdowns causing delays of hours to days."
+        notes: "Reliability is a canonical weakness of the line."
+      fares_yen:
+        first_class: 400
+        second_class: 250
+        tourist_class: 165
+      first_class_amenities:
+        - "Meal included, served in the sumptuous dining car"
+
+    - mode: "Boat"
+      source_page: 9
+      speed_note: "Slowest arrival mode, but often the most scenic."
+      passenger_lines:
+        - name: "Gray Swan"
+        - name: "Pacific Royalty"
+        - name: "Oarcoash Line"
+          transcription_note: "Name read as 'Oarcoash'; low confidence. Could be 'Orcas(h)', 'Oarcoach', or similar."
+      luxury_fare_yen_range:
+        floor: 2000
+        notes: "Prose reports 'several thousand nuyen' for a first-class berth; 2,000+ as a placeholder floor until verified."
+      budget_option: |
+        Cheaper berths can sometimes be arranged on the many commercial
+        vessels that also stop in Seattle.
+
+getting_around_metroplex:
+  source_page: 9
+  introduction: |
+    Once arrived in Seattle and settled in, a traveler has four main
+    ways to reach the city's districts: intracity air, cab / car rental,
+    public ferry, and (implied) the public transit system.
+  districts_count_prose: 10
+  districts_count_transcription_note: |
+    Prose reads 'the city's ten main districts'; TOC enumerates
+    considerably more district-like entries (Downtown, Seattle Center,
+    Arcology, Council Island, Bellevue, Tacoma, Everett, Renton,
+    Auburn, Snohomish, Fort Lewis, Redmond, Puyallup). Either 'ten' is
+    a colloquial roundup, or some TOC entries are sub-district rather
+    than district. Resolve when district chapters are ingested.
+
+  modes:
+    - mode: "Air (intracity)"
+      source_page: 9
+      heliport_coverage: "Most Seattle skyscrapers have rooftop heliports."
+      vehicle_types: ["helicopter", "tilt-rotor", "lighter-than-air"]
+      carriers_count: 5
+      carriers:
+        - name: "Emerald City Airlines"
+        - name: "Renraku Loco Airlines"
+          transcription_note: "Middle word read as 'Loco'; low confidence — could be 'Local', 'Logo', or similar."
+        - name: "Sea-Tac Express"
+        - name: "Aztech Shuttle Service"
+        - name: "Federated-Boeing Airlines"
+      service_targets:
+        - "Government buildings"
+        - "Luxury hotels"
+        - "Shopping malls"
+        - "Major business buildings"
+      sample_fare:
+        from: "Renraku Arcology (Downtown)"
+        to: "Bellevue"
+        yen: 110
+      price_register: "Expensive compared to ground / ferry options."
+
+    - mode: "Cab / Car Rental / Roads"
+      source_page: 9
+      rental_agencies_local: 10
+      continental_agency:
+        name: "Detahx"
+        transcription_note: "Name read as 'Detahx'; low confidence. Could be a larger continental rental chain not yet identified in canon."
+      rental_requirements:
+        - "Valid driver's license"
+        - "Insurance"
+      rental_range: "Wide variety of vehicles across price tiers."
+      public_transit:
+        notes: |
+          The city operates a public transit system (bus + electric-car
+          highway grid). Exact structure and fares partly illegible on
+          this page; revisit on re-scan.
+        transcription_note: "Transit-system description legibility low."
+      roads:
+        electric_car_grid: true
+        off_peak_cross_metroplex_hours_approx: 3
+        rush_hour: "Highways jammed; traffic reduced to stop-and-go."
+        daytime_safety: "Relatively safe on main roads during daylight."
+        barrens_roads: |
+          Streets in the Barrens are often impassible due to debris,
+          collapsed infrastructure, or deliberately blocked routes
+          ('posts'). Residential-street safety varies dramatically by
+          neighborhood.
+        night_hazard: |
+          At night, go-gangs (on bikes, in cars, sometimes in aircraft)
+          terrorize the highways — robbery and violence against isolated
+          drivers are routine. Anyone travelling by road at night is
+          rolling with the criminal element.
+
+    - mode: "Bus (Metro Transit)"
+      source_page: 10
+      operator: "Metro Transit"
+      reputation: "One of the best transit companies in the UCAS."
+      coverage: "Many routes throughout Seattle, frequent stops."
+      schedule_availability: "Bus schedules posted in many public places."
+      fare_yen:
+        downtown_rides: 0                # free in the downtown core
+        outside_downtown_per_ride: 1
+      downtown_free_zone_note: "Rides are free within the downtown district; 1 yen fare applies everywhere else."
+      bus_tunnels:
+        built_decade: "1990s"
+        purpose: "Reduce above-ground traffic congestion."
+        route: "Loops under downtown; connects Seattle Center; passes through the Renraku Arcology; terminates at the King Street Station."
+        effect: "Canonically effective at reducing commute time."
+        amenities: "Stations have small shops and kiosks."
+        night_hazard: |
+          Dangerous after nightfall despite armed-guard presence — ambient
+          crime (muggings, chip deals, gang predation) in the tunnels.
+
+    - mode: "Monorail"
+      source_page: 10
+      age_years_approx: 100
+      built_era_note: "Nearly 100 years of service as of 2050 — original monorail built in the mid-20th century and repeatedly upgraded / expanded."
+      route: "Elevated loop around the downtown district."
+      stops:
+        - "Seattle Center"
+        - "Renraku Arcology"
+        - "King Street Station"
+        - "Various additional points along the loop"
+      tracks: 2
+      fare_yen: 3
+      notes: |
+        Only two monorail tracks exist — limits simultaneous train
+        capacity. Upgraded and expanded several times since its original
+        construction.
+
+    - mode: "Ferry (Seattle Public Ferry System)"
+      source_page: 9
+      operator: "Seattle Public Ferry System (city-run)"
+      boat_count: 20
+      routes:
+        - "Waterfront, running up and down the metroplex shoreline"
+        - "Major inland / mainland routes"
+        - "Victoria, B.C."
+        - "Fraser River, B.C."
+      named_line:
+        name: "Bolle Ferry"
+        transcription_note: "Name read as 'Bolle'; low confidence. Could be 'Belle', 'Bollé', or similar."
+      vehicle_capacity:
+        large_ferry_vehicle_max: 50
+      fares_yen:
+        range: { min: 5, max: 20 }
+        average: 10
+        hydrofoil: 15
+      reliability:
+        reputation: "Long history of mishaps and mismanagement."
+        visible_accidents_per_year: 2
+        sample_incidents:
+          - "Ferry ramming a dock (or pier) at high speed"
+          - "Inter-ferry collisions"
+          - "Hull leaks"
+          - "Captain ramming another vessel while trying to impress a passenger"
+        political_note: |
+          Embarrassing to the city government because ferry service is one
+          of the few infrastructure lines actually run directly by the
+          city rather than privatized to Lone Star / Ares / Renraku /
+          etc. Accidents draw disproportionate press coverage.
+      corruption:
+        source_page: 10
+        notes: |
+          Corruption is a canonical feature of ferry management. Ferry
+          officials regularly get caught skimming; internal betting pools
+          on 'when the next official gets pinched with his hand in the
+          till' are a running joke among crews. Pairs with the
+          mismanagement / accident record (see reliability).
+

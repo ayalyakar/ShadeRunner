@@ -1,0 +1,32 @@
+# Canonical faction — Seattle baseball team.
+
+name: "Seattle Mariners"
+type: "Sports team (baseball)"
+tier: "Professional franchise"
+
+sources:
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 12
+    image: "Sources/SR1E-Seattle/p012-facts-ssc-legal-medical-alcohol-entertainment.png"
+    section: "Facts at Your Fingertips — Entertainment (sports)"
+
+sport: "Baseball"
+home_venue:
+  name: "Kingdome"
+  shared_venue_with:
+    - "Seattle Seahawks"
+    - "Seattle Supersonics"
+
+league_context:
+  implied_category: "Presumably chipped (cyber-enhanced) professional baseball — distinct from 'unchipped' AAA league named on same page (Toronto Tigers, Everett Giants)."
+  transcription_note: "Leagues never named explicitly; inference."
+
+game_presence:
+  mvp: "ambient flavor."
+  post_mvp:
+    - "Chipped-vs-unchipped baseball as economic / cultural canon hook."
+    - "Player-cyberware bribery / doping corruption angle."
+
+transcription_note: "Stub from SR1E Seattle Sourcebook p.12."
