@@ -1,0 +1,61 @@
+# Canonical place stub — restaurant (from in-world advertisement).
+
+name: "The Other Place"
+type: "Restaurant"
+
+sources:
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 17
+    image: "Sources/SR1E-Seattle/p017-history-night-of-rage.png"
+    section: "Full-page advertisement"
+
+tagline: "Seattle's finest dining for over ninety years"
+
+location:
+  intersection: "181 Ave. & Union St."
+  intersection_transcription_note: |
+    Street number read as '181'; could be a different digit block. In
+    real-world Seattle, 'The Other Place' was a real restaurant at
+    2nd Ave & Union St — likely that's the canonical address with a
+    misread number.
+  district: null
+  district_transcription_note: |
+    District not stated on the ad. 2nd Ave & Union puts it in Downtown
+    by real-world geography — confirm on Downtown chapter ingest.
+
+ltg:
+  value: "206 (34-5300)"
+  transcription_note: "LTG last-digits block read with moderate confidence."
+
+cuisine: null
+cuisine_note: "Ad doesn't specify cuisine. 'Finest dining' register implies upmarket."
+
+tier:
+  framework: "Metroplex/Seattle.yaml business_tiers"
+  assigned: "Luxury or First Class"
+  note: "Not enumerated in the four-tier restaurant rollup on p.10; likely independent venue."
+
+heritage:
+  age_years_approx: 90
+  notes: |
+    'Over ninety years' heritage — by 2050 the venue has been in
+    operation since ~1960. Canonical long-lived Seattle institution.
+    Survived all the chaos of the 2010s-2040s.
+
+game_presence:
+  mvp: "flavor only (Trid / print ad ambient content)."
+  post_mvp:
+    - "Walkable Downtown upscale restaurant."
+    - "Meet-venue for a Downtown Johnson — Johnson's choice implies they can afford it."
+    - "Heritage / long-tenure angle for a regular-NPC owner storyline."
+
+hooks:
+  - "Ninety-year heritage = continuity across Awakening, metaplex formation, Night of Rage — rich NPC-owner backstory potential."
+  - "Upscale Downtown venue as a contrast to Barrens venues."
+
+transcription_note: |
+  Record built from the full-page advertisement on SR1E Seattle
+  Sourcebook p.17. Minimal ad-surface details beyond name, tagline,
+  intersection, and LTG.

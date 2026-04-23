@@ -1,0 +1,90 @@
+# Canonical faction — corporate coordinating body with political clout.
+
+name: "United Corporation Council"
+type: "Corporate confederation / civic-political body"
+tier: "AAA-equivalent (the coordinated bloc of Seattle's major corps)"
+
+sources:
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 17
+    image: "Sources/SR1E-Seattle/p017-history-night-of-rage.png"
+    section: "History — Night of Rage (political fallout)"
+
+overview: |
+  Formal association of Seattle's major corporations. Functions as a
+  corporate-interest lobby with enough leverage to threaten a sitting
+  Governor into reversing anti-metahuman policy. Canonically described
+  as 'highly-influential' in the sourcebook.
+
+presence:
+  - metroplex: "Seattle"
+    activity: "Coordinating body; sits above individual corp SGs in Seattle politics."
+    activity_level: "ambient at MVP (lore / dialogue); direct engagement post-MVP."
+
+historical_action:
+  event: "Night of Rage political intervention (2039-02-07)"
+  action: "Threatened Governor Victor Alameson with massive boycotts and kick-outs if the anti-metahuman terrorism did not end immediately."
+  motivation:
+    stated: "Civic concern."
+    implicit: |
+      Economic self-interest — metahuman workers, consumers, and
+      runners are a meaningful share of the Seattle labor market and
+      consumer base. An all-out Humanis-driven civil war would disrupt
+      corp revenues, not to mention corp-owned infrastructure.
+  outcome: "Political pressure contributed to the winding-down of open metroplex-level anti-metahuman operations (though ambient discrimination persisted)."
+
+structure:
+  membership:
+    - "Major corporations operating in the Seattle Metroplex."
+    - "Composition details not enumerated on this page; revisit when corp-specific pages ingest."
+  membership_transcription_note: "Exact roster not listed on p.17."
+  governance:
+    form: "Council body; voting / consensus details unknown at MVP."
+
+services:
+  internal:
+    - "Coordinating position on city legislation."
+    - "Dispute resolution among member corps (implicit)."
+  external:
+    - "Collective political pressure on Seattle governance."
+    - "Joint investment / infrastructure projects (implicit)."
+
+relationships:
+  allies:
+    - "Member corps, individually and collectively."
+  rivals:
+    - "Non-member / upstart corps operating in Seattle."
+  hostile:
+    - "Any Seattle governance that threatens corp revenue at scale (Alameson's Humanis-aligned regime being the canonical case)."
+  neutral:
+    - "Lone Star / Metroplex Guard (depends on context)."
+    - "NAN / SSC (beyond border-interest level)."
+
+standing_default: 0
+thresholds:
+  hostile: -60
+  unfriendly: -20
+  neutral: 0
+  friendly: 20
+  trusted: 60
+
+game_presence:
+  mvp: "ambient / lore — a backdrop force when corp politics come up; not a direct-encounter faction."
+  post_mvp:
+    - "Council-meeting infiltration run."
+    - "Run: steal Council session recording (deniability leverage)."
+    - "Corp-rival PC patron — play one member corp against another."
+    - "Contact type: Council staffer as Connection-4 info broker."
+
+hooks:
+  - "Who sits on the Council — which corps are in and which are out."
+  - "Council internal factionalism — Japanacorps vs. American corps dynamic?"
+  - "Council relationship to the Metroplex Governor / Council government."
+  - "Post-Alameson, did the Council's anti-Humanis posture stick, or was it a one-time intervention?"
+
+transcription_note: |
+  Stub built on the single political-fallout paragraph on SR1E Seattle
+  Sourcebook p.17. Expand with member roster and governance details
+  when later sourcebook pages discuss the Council more fully.

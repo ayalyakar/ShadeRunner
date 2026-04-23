@@ -59,6 +59,12 @@ sources:
     page: 16
     image: "Sources/SR1E-Seattle/p016-history-birth-metroplex-awakened.png"
     section: "History — Birth of the Metroplex / The Awakened City (opening)"
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 17
+    image: "Sources/SR1E-Seattle/p017-history-night-of-rage.png"
+    section: "History — SPD dissolution / Alameson governorship / Night of Rage"
 
 ingestion_gaps:
   - pages: [7, 8]
@@ -1425,6 +1431,164 @@ history:
         - "'One in ten' family-story beats for named older NPCs."
         - "Cross-ref Character/DESIGN - Metatypes.md metahuman-world-reactivity layer."
 
+  spd_era_and_dissolution:
+    source_page: 17
+    overview: |
+      The original Seattle Police Department (SPD) was caught between
+      Human and Metahuman mobs in the early-2020s riots, poorly
+      equipped, and politically abandoned by City Hall. The SPD was
+      dissolved in 2023 — replaced eventually by the Metroplex Guard.
+    key_years:
+      - year: 2022
+        event: "Peak street violence; SPD on the front line without riot gear."
+      - year: 2023
+        event: "SPD dissolved."
+        transcription_note: "Prose attributes dissolution to '23'; confirm against successor-agency chronology."
+    governance_note: |
+      Governance transition implied: the Seattle Metroplex Council
+      centralized security authority after dissolving the SPD; the
+      Metroplex Guard emerged as the successor force by the Night of
+      Rage era (2039).
+    bbs_exchange:
+      thread_topic: "Former SPD officer's memories of the 2022-23 riot era."
+      posts:
+        - handle: "SPD"
+          timestamp_raw: "(13-35-25-5) (11-50)"
+          voice_profile:
+            register: "Veteran cop, first-person, regretful."
+            opinions:
+              - "Caught between Human and Metahuman mobs without riot gear."
+              - "City Hall considered officers expendable."
+              - "Lost a partner in the line of duty; had to tell her husband."
+            recurring_persona_candidate: true
+            transcription_note: |
+              Handle + timestamp read with moderate confidence; voice
+              profile distinct and stable enough to consider promoting
+              on a second appearance.
+        - handle: "Anonymous"
+          timestamp_raw: "(11-17-14-3) (5-50)"
+          topic: "Pro-Human racist reply mocking SPD for 'protecting animals instead of shooting them'."
+          voice_profile:
+            register: "Humanis-adjacent anti-metahuman bigotry."
+        - handle: "SPD"
+          timestamp_raw: "(03-50) (15-4-50)"
+          topic: |
+            Sharp rejection of the racist reply. Asserts the oath was
+            to uphold the law regardless of metatype; threatens to find
+            the troll through a decker friend and show up in person
+            with 'a 10-pound Heavy stick and the biggest gun you'd
+            ever see'.
+          voice_profile_confirmation: "Confirms the SPD handle as a coherent single voice across both posts."
+
+  kruse_governorship:
+    source_page: 17
+    overview: "Governor Kruse succeeded Lindstrom at some point after 2020 and served until retiring in 2036."
+    governor:
+      name: "Governor Kruse"
+      retirement_year: 2036
+      political_disposition: "Not characterized on this page; neutral / establishment reading until later pages clarify."
+    transcription_note: |
+      Page 17 names Kruse only in the Alameson-succession sentence;
+      full tenure / policies not yet detailed. Flag for cross-reference
+      on later history pages.
+
+  alameson_governorship:
+    source_page: 17
+    overview: |
+      Victor 'Vic the Quick' Alameson succeeded Kruse in 2036. Anti-
+      metahuman from the campaign forward; his policies directly set
+      up the Night of Rage in 2039.
+    governor:
+      name: "Victor Alameson"
+      nickname: "Vic the Quick"
+      prior_career: "Former Tacoma Timberwolves combat biker."
+      prior_career_cross_ref: "See entertainment.sports.teams — Seattle Timberwolves."
+      prior_career_transcription_note: |
+        Page reads 'Tacoma Timberwolves' (matching Timberwolves' home
+        venue, Tacoma Dome). Canon team name is 'Seattle Timberwolves';
+        same franchise, colloquial reference.
+      elected_year: 2036
+    platform_and_signature_statement:
+      campaign_stance: "Explicitly anti-metahuman."
+      signature_quote: "Orks, Trolls, Elves, and Dwarves are 'offensive combat bikers, but I'm afraid they haven't the brains for much else.'"
+      quote_transcription_note: "Quote paraphrased from a partly-illegible scan; exact wording approximate."
+    early_policy:
+      - "Crackdown on metahuman combat bikers."
+      - "Emboldened racist groups to recruit and escalate violence under implicit state cover."
+    liberty_village_atrocity:
+      date_year: 2036
+      location: "Liberty Village, Ohio"
+      event: "20 people, most of them Metahumans, killed when a well-organized hooded gang firebombed a church."
+      responsibility_claimed_by: "Alameson Branch of the Humanis Policlub."
+      responsibility_transcription_note: |
+        Branch name read as 'Alameson' — matches the new Governor's
+        surname exactly. Likely intentional canon: the Governor's name
+        attached to a Humanis sub-organization, signalling ideological
+        alignment. Flag for verification.
+      effect: "Catalyzed a wave of anti-metahuman attacks across North America."
+
+  night_of_rage:
+    source_page: 17
+    date: "2039-02-07"
+    canonical_event: true
+    canon_note: |
+      The Night of Rage is a core SR1E-canon event worldwide. This page
+      presents Seattle's specific experience — the firebombed waterfront
+      warehouses — as the epicenter of the broader global wave.
+    seattle_specific_sequence:
+      ordered_by: "Seattle Metroplex Council, under order of Governor Alameson."
+      round_up:
+        - "All Metahumans systematically rounded up."
+        - "Transported under armed guard to huge warehouses on the waterfront."
+        - "Told this was the final processing center before 'resettlement' — part of Alameson's 'improved citizenship' plan."
+      warehouse_inferno:
+        - "Screams audible from inside one warehouse; then gunfire."
+        - "Panic and hysteria swept the waterfront."
+        - "Series of explosions; flames ripped through the old wooden structures."
+        - "The Metroplex Guard 'simply stood by' and let the inferno blaze."
+      escape:
+        - "Many Metahumans escaped through the waterfront sewer system."
+        - "Sewer escape is part of the canonical Ork-Underground origin narrative (see ork_underground.history_hooks)."
+      death_toll: "Staggering — full count never confirmed."
+    implicated_parties:
+      official:
+        - name: "Metroplex Guard"
+          role: "Armed escort; then inaction as warehouses burned."
+          file: "Data/Lore/Factions/Metroplex Guard.yaml"
+      political:
+        - name: "Governor Victor Alameson"
+          role: "Ordered the round-up as final phase of 'improved citizenship' plan."
+      extremist:
+        - name: "Humanis Policlub (Alameson Branch)"
+          role: "Previously responsible for Liberty Village atrocity; strongly implied in the warehouse fires."
+          file: "Data/Lore/Factions/Humanis Policlub.yaml"
+      magical:
+        - name: "Hands of Fire"
+          role: "Neo-magical group alleged by some witnesses to have been on the scene before the warehouses ignited."
+          status: "Unconfirmed; canonical ambiguity."
+          transcription_note: "Name read as 'Hands of Fire'; group description brief. No stub created yet."
+    political_fallout:
+      united_corporation_council:
+        action: "Threatened Governor Alameson with massive boycotts if he didn't immediately end the terrorism."
+        file: "Data/Lore/Factions/United Corporation Council.yaml"
+      spd_successor_response: "War-trained SPD-successor forces (Metroplex Guard / Lone Star-era ancestor units) arrived too late; warehouses already burned."
+      public_reaction: "Citywide outcry; citizens 'set up a cry of protest'."
+    global_trigger_effect: |
+      The violence on the Seattle docks triggered similar incidents
+      throughout the city that night, and across the world in the
+      days that followed. Canonical global 'Night of Rage' pattern.
+    game_presence:
+      mvp: |
+        Historical / lore only — grounds every metahuman NPC's implied
+        backstory (who survived, who fled, who lost family). Ambient
+        dialogue + Trid anniversary content candidates.
+      post_mvp:
+        - "Anniversary-of-Rage flashback content on Feb 7."
+        - "Survivor-NPC elder type (cross-ref Ork Underground migrants)."
+        - "Run: retrieve / bury evidence of a specific warehouse-fire incident."
+        - "Run: expose a Humanis alumnus who participated and still walks free."
+        - "Tacoma-Timberwolves-era Alameson relic as MacGuffin."
+
 # Run Run Shaw's is featured in a stylized ad on the right side of p.11
 # (vertical "run run shaw's" typography; line about 'x runs at $9 plus tax').
 # Not stubbed as a standalone place at this pass — legibility too low to
@@ -1604,3 +1768,15 @@ transcription_gaps:
   - page: 16
     section: "History — Awakened City (first decade of UGE) cut off"
     note: "The Awakened City section opens on p.16 and continues on p.17; ingest p.17 to complete."
+  - page: 17
+    section: "History — SPD dissolution year '23"
+    note: "Prose attributes dissolution to '23 (2023); confirm successor-agency chronology."
+  - page: 17
+    section: "History — Alameson signature quote wording"
+    note: "Quote about metahumans and combat-bike intelligence paraphrased from a partly-illegible scan."
+  - page: 17
+    section: "History — Liberty Village perpetrators 'Alameson Branch'"
+    note: "Humanis sub-branch name reads as 'Alameson' (matches the Governor's surname exactly); flag for confirmation."
+  - page: 17
+    section: "History — Night of Rage 'Hands of Fire' neo-magic group"
+    note: "Mentioned as allegedly present at the warehouse inferno; too little detail for a faction stub yet."

@@ -1,0 +1,90 @@
+# Canonical faction — Seattle's post-SPD armed police / guard force.
+
+name: "Metroplex Guard"
+type: "Metroplex police / paramilitary"
+tier: "City-agency"
+
+sources:
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 17
+    image: "Sources/SR1E-Seattle/p017-history-night-of-rage.png"
+    section: "History — Night of Rage (direct involvement)"
+
+overview: |
+  Successor / parallel force to the dissolved Seattle Police Department
+  (SPD, 2023). The Metroplex Guard is the armed state apparatus of the
+  Seattle Metroplex Council — functions as city-run policing and
+  paramilitary response. By the 2039 Night of Rage, the Guard is the
+  on-the-ground force executing Governor Alameson's round-up orders;
+  canonically, the Guard 'simply stood by and let the inferno blaze'
+  at the waterfront warehouses.
+  By the 2050 era of the MVP, Lone Star holds the canonical policing
+  contract for Seattle — so the Metroplex Guard's role in 2050 is
+  ambiguous (absorbed / reorganized / coexisting with Lone Star);
+  flag for resolution on later-page ingestion.
+
+presence:
+  - metroplex: "Seattle"
+    activity_era: "2023 – late 2030s (clearly active); 2050 status TBD."
+    activity_level: "Historical / lore at MVP."
+
+historical_role:
+  formation:
+    year_range: "post-2023 (after SPD dissolution)"
+    transcription_note: "Exact formation year not stated on p.17; successor-agency chronology needs cross-ref to later history pages."
+  night_of_rage:
+    date: "2039-02-07"
+    role: "Armed escort of rounded-up Metahumans to the waterfront warehouses; then passive bystander as warehouses burned."
+    culpability_register: |
+      Canonical complicity — whether through orders, cowardice, or
+      ideological sympathy. Remembered as such by the Seattle
+      metahuman community in the 2050 era.
+
+structure:
+  chain_of_command_2039:
+    - "Governor (Alameson, 2039)"
+    - "Seattle Metroplex Council"
+    - "Metroplex Guard command"
+  armament_era_2039: "War-grade — combat riot gear, heavy weapons, armored transport."
+
+relationships:
+  historical_era:
+    allies:
+      - "Governor Alameson's administration"
+      - "Humanis Policlub (ideological alignment, implicit)"
+    hostile:
+      - "Metahuman community (post-Night of Rage)"
+    neutral:
+      - "United Corporation Council"
+  mvp_era_2050:
+    note: "Relationships depend on the 2050-era resolution of the force's status. Flag until ingested."
+
+standing_default: -20
+standing_default_note: |
+  Most metahuman PCs start unfriendly based on historical memory;
+  Human PC starting standing may be neutral. Revise once 2050-era
+  status of the Guard is confirmed from later pages.
+thresholds:
+  hostile: -60
+  unfriendly: -20
+  neutral: 0
+  friendly: 20
+  trusted: 60
+
+game_presence:
+  mvp: "historical / lore — groundwork for metahuman-trauma NPC backstories and mistrust-of-authority dialogue."
+  post_mvp:
+    - "Run: intercept Guard-era archives to expose NoR-night commanders still walking free."
+    - "NPC type: retired Guard officer with moral-contradiction arc (complicit vs. refuser)."
+    - "Faction status reassessment once 2050-era structure is ingested."
+
+open_questions:
+  - "What is the Metroplex Guard's status in 2050 after Lone Star took the policing contract?"
+  - "Are individual former Guard personnel still visible in the metroplex structure (reincorporated into Lone Star, rotated to private security, retired)?"
+
+transcription_note: |
+  Stub built on Night-of-Rage paragraphs on SR1E Seattle Sourcebook
+  p.17. Later pages will resolve the 2050-era status of this force —
+  expand or fold into Lone Star Seattle as appropriate on next pass.

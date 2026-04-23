@@ -1,0 +1,98 @@
+# Canonical faction — anti-metahuman policlub / hate group.
+
+name: "Humanis Policlub"
+type: "Supremacy group / Policlub"
+tier: "Political / paramilitary — multi-regional"
+
+sources:
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 17
+    image: "Sources/SR1E-Seattle/p017-history-night-of-rage.png"
+    section: "History — Night of Rage / Liberty Village atrocity"
+
+overview: |
+  Canonical SR supremacy faction: organized, political, paramilitary-
+  adjacent anti-metahumanism dressed as civic activism. The Seattle
+  Sourcebook establishes Humanis as continent-scale by the late
+  2030s, with branches claiming responsibility for named atrocities
+  and strongly implied in the Seattle waterfront warehouse inferno
+  that constitutes the city's Night of Rage (2039-02-07).
+
+presence:
+  - metroplex: "Seattle"
+    activity: |
+      Ambient at 2050 — a culturally normalized political presence in
+      Human-majority neighborhoods, with a violent fringe implicated in
+      hate crimes. Coordinates with sympathetic politicians.
+    activity_level: "ambient at MVP (rally events, hate-crime ambient, dialogue reactivity); direct engagement post-MVP."
+  - continental: "North America"
+    activity: "Multi-branch; named atrocities in Ohio (Liberty Village) and Seattle."
+
+structure:
+  branches_named:
+    - name: "Alameson Branch"
+      claimed_responsibility:
+        - event: "Liberty Village, Ohio firebombing (2036)"
+          details: "20 victims, most Metahuman, killed in a well-organized hooded attack on a church."
+      transcription_note: "Branch name reads as 'Alameson' — matches the contemporary Governor's surname exactly. Likely canon-intentional signal of political alignment."
+  historical_implication:
+    - event: "Seattle Night of Rage (2039-02-07)"
+      status: |
+        Not explicitly claimed. Strongly implied: same ideological
+        bloc, same tactics, same Governor as the Alameson Branch.
+        Witness accounts place an unnamed neo-magic group ('Hands of
+        Fire') on scene, but the political order came from Alameson's
+        Metroplex Council — and Alameson's direct ties to the
+        Alameson Branch are conspicuous.
+
+services:
+  internal:
+    - "Political activism (rallies, canvassing, op-eds, paid trid time)."
+    - "Paramilitary training (implicit — hooded-mob tactics at Liberty Village)."
+    - "Recruitment / radicalization pipeline for disaffected human citizens."
+  external_products:
+    - "Hate-crime violence against metahumans."
+    - "Political pressure on anti-metahuman legislation."
+
+relationships:
+  allies:
+    - faction: "KKK (stub to be added if it appears in Seattle canon)"
+    - faction: "The Order (stub to be added if it appears)"
+  rivals:
+    - "Metahuman self-defense / community-defense groups"
+  hostile:
+    - "All metahuman metatype communities (Elf / Ork / Dwarf / Troll / other)."
+    - "Shadowrunner community when it intersects metahuman clients."
+  neutral:
+    - "Lone Star / Metroplex Guard (depending on political winds; canonical corruption links to watch for)."
+
+standing_default: -20
+standing_default_note: "Most PCs (especially metahuman PCs) start unfriendly. Human Humanis-sympathizer PC background could invert to neutral / friendly."
+thresholds:
+  hostile: -60
+  unfriendly: -20
+  neutral: 0
+  friendly: 20
+  trusted: 60
+
+nsfw_hooks:
+  - "Hate-crime atrocities (on-screen, graphic) as post-MVP content."
+  - "Rally / recruitment scene at a venue the PC must infiltrate."
+  - "Race-based blackmail / extortion content."
+  - "Humanis-sympathizer PC branch — controversial but in-scope per Meta/DESIGN - NSFW.md ('nothing off-limits' with hard floor on minors)."
+
+game_presence:
+  mvp: "ambient — rally events, hate-crime news beats, dialogue reactivity in Human-majority venues."
+  post_mvp:
+    - "Run: expose a Humanis-alumnus mayor / council member."
+    - "Run: disrupt a rally."
+    - "Run: extract a metahuman family being hunted."
+    - "Run: retrieve Night-of-Rage evidence lost in the warehouse fires."
+    - "Contact type: Humanis insider informant (morally grey; useful for runners)."
+
+transcription_note: |
+  This stub builds on SR1E Seattle Sourcebook p.17. Full SR canon for
+  Humanis spans multiple editions; details here are Seattle-lens only.
+  Expand on later sourcebook ingestion.
