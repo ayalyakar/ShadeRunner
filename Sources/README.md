@@ -16,6 +16,10 @@ Raw sourcebook page screenshots cited by files in `Data/`.
 - `p004-toc-3.png` — Table of Contents, page 3 of 3.
 - `p005-introduction.png` — Introduction chapter opener.
 
+### SR1E-QueenEuphoria (Shadowrun 1E — Queen Euphoria adventure module, FASA, 1990)
+
+- `p001-cover.png` — cover (dragonfly motif, title only).
+
 ## Citation format (in `Data/` YAML)
 
 ```yaml

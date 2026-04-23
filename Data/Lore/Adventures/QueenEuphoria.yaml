@@ -1,0 +1,47 @@
+name: "Queen Euphoria"
+kind: adventure_module
+authored: false
+
+# Era policy (project canon decision):
+# Period piece locked to SR1E canonical year ~2050. NPCs, factions, and places
+# extracted from this module are likewise tagged era: 2050 so later-era (up to
+# 2064) runs can treat them as historical unless explicitly re-canonized.
+era:
+  canonical_year: 2050
+  policy: period_piece_locked
+  notes: |
+    Ingestion policy for this module: adventure frame lives here; NPC / faction
+    / place detail is extracted into Data/Lore/NPCs, Factions, and Places
+    (split-file policy). Prologue fiction (Ant Lion) is intentionally NOT
+    transcribed into structured canon - archive-only at Sources/.
+
+publication:
+  edition: SR1E
+  publisher: FASA Corporation
+  copyright_year: 1990
+  # Production staff transcribed on p.2 (pending ingestion).
+
+# Short framing. Full synopsis ingested from p.6-7.
+synopsis_stub: |
+  An SR1E Seattle-era adventure module centered on the MegaMedia starlet
+  known as "Queen Euphoria". The cover art features a stylized dragonfly
+  motif (foreshadowing the Ant Lion / insect-spirit themes of the prologue
+  and plot).
+
+# Populated as later pages ingest.
+acts: []
+npc_refs: []
+faction_refs: []
+place_refs: []
+hooks: []
+
+transcription_gaps:
+  - "Cover art is illustration-only: no text beyond the title 'Queen Euphoria' is captured on p.1."
+
+sources:
+  - edition: SR1E
+    book: "Queen Euphoria"
+    year: 1990
+    page: 1
+    image: "Sources/SR1E-QueenEuphoria/p001-cover.png"
+    section: "Cover"
