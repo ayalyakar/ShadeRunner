@@ -65,6 +65,12 @@ sources:
     page: 17
     image: "Sources/SR1E-Seattle/p017-history-night-of-rage.png"
     section: "History — SPD dissolution / Alameson governorship / Night of Rage"
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 18
+    image: "Sources/SR1E-Seattle/p018-history-from-ashes-schults.png"
+    section: "History — From the Ashes / Schults election / Conclusion"
 
 ingestion_gaps:
   - pages: [7, 8]
@@ -1588,6 +1594,160 @@ history:
         - "Run: retrieve / bury evidence of a specific warehouse-fire incident."
         - "Run: expose a Humanis alumnus who participated and still walks free."
         - "Tacoma-Timberwolves-era Alameson relic as MacGuffin."
+    bbs_followup_thread:
+      source_page: 18
+      topic: "BBS flame war about Night of Rage responsibility — Humanis PR vs. Professor Stealth vs. reader replies."
+      posts:
+        - handle: "The Humanis Policlub Information Service"
+          timestamp_raw: "(20-00-19-38) (35-50)"
+          role: "Humanis Policlub's official PR arm; hostile response to Professor Stealth's Thunder Tyer bio and related anti-Humanis narrative."
+          position:
+            - "Claimed most Metahuman deaths were 'purely accidental' — Metahumans killed each other in the frantic escape."
+            - "Attacked Professor Stealth's credibility on grounds he is 'himself a Metahuman brainwashed to believe all Humans are evil'."
+            - "Included a recruitment / contact hook: 'TGY 22-10-12-14' as the Policlub Info Service LTG."
+          transcription_note: "Contact LTG + signature phrasing read with low confidence."
+          faction_ref: "Data/Lore/Factions/Humanis Policlub.yaml"
+          game_presence: "PR-voice template for Humanis in-game BBS / Trid content."
+        - handle: "Alameson"
+          timestamp_raw: "(11-16-14-45) (9-50)"
+          provenance_note: |
+            The handle 'Alameson' appearing in BBS after Governor
+            Alameson's 2039 murder is canonically ambiguous — either
+            an impersonator / family member / Humanis staffer using
+            the name symbolically, or a fabricated attribution. Treat
+            as ambient hostile-voice content, not as Alameson himself.
+          transcription_note: "Post body partly illegible; captured only as 'hostile anti-metahuman' register."
+        - handle: "Anonymous"
+          timestamp_raw: "(25-17-50) (5-25-5)"
+          topic: "Raises an opposing claim: that Orks broke through the sewer system and actively prevented some Metahumans from escaping."
+          transcription_note: "Claim and exact phrasing partly illegible; captured in spirit as a counter-narrative."
+
+  from_the_ashes:
+    source_page: 18
+    overview: |
+      Night of Rage fallout immediately destabilized the Alameson
+      regime. Public protest, media pile-on, and UCC pressure drove
+      the governor to the wall. Days after refusing to resign,
+      Alameson was murdered in his office.
+    timeline:
+      - day: "T+3 (after Night of Rage)"
+        event: "Flames still smoldering in the Tacoma District; protests in front of police stations and government buildings demanding the resignation of every officer who stood by."
+      - day: "T+several"
+        event: "Media drumbeat against Alameson's administration."
+      - day: "T+several"
+        event: "Rumors emerged that Alameson himself was a member of the Hands of Fire neo-magic group."
+      - day: "T+several"
+        event: "Local politicians, with UCC support, demanded Alameson's resignation."
+      - day: "T+several"
+        event: "Alameson refused to resign, denied any wrongdoing."
+      - day: "T+several+1"
+        event: "Governor Alameson found murdered in his office."
+        outcome: "Assassination canonically unsolved; suspect list includes Hands of Fire (turning on their own), Humanis (silencing a liability), UCC-adjacent actors, and independent metahuman avengers."
+        transcription_note: "Culprit never identified on this page; treat as open."
+    tacoma_district_note: |
+      Prose implies at least one warehouse fire was in the Tacoma
+      District — either the Tacoma waterfront was part of the Seattle
+      round-up targets, or fires spread inland from the Seattle docks.
+      Flag for resolution when Tacoma chapter ingests.
+
+  special_election_2039:
+    source_page: 18
+    expected_winner:
+      name: "Ivan Lindstrom"
+      role: "Mayor of Downtown district (2039)."
+      lineage: "Son of Charles C. Lindstrom (first Governor of Seattle Metroplex)."
+      outcome: "Lost the special election despite being the name-recognition favorite."
+      file: null
+      notes: "Historical figure; 2050-era status TBD. Candidate for post-MVP NPC stub if he reappears."
+    actual_winner:
+      name: "Marilyn Schults"
+      role: "Mayor of Bellevue (pre-election); Governor of Seattle Metroplex (2039 – ongoing)."
+      profile_note: "Relative unknown at time of election; surprise upset-style victory."
+      margin: "Surprisingly large."
+      file: "Data/Lore/NPCs/Marilyn Schults.yaml"
+      ucc_support:
+        source: "United Corporation Council"
+        action: "Backed Schults as their preferred candidate; decisive factor in her victory."
+        ucc_file: "Data/Lore/Factions/United Corporation Council.yaml"
+
+  schults_lone_star_ultimatum:
+    source_page: 18
+    event: "Schults's first major action as Governor: ultimatum to Lone Star."
+    terms:
+      demand: "Arrest the leaders of the Hands of Fire."
+      consequence_if_refused: "Cancel Lone Star's Seattle policing contract for 'criminal refusal to stop a crime in progress during Night of Rage'."
+      transcription_note: "Contractual phrasing paraphrased; exact legal grounds partly illegible."
+    lone_star_response:
+      scale: "Approximately 200 suspected Hands of Fire leaders arrested in a coordinated surprise raid."
+      scale_transcription_note: "Arrest count partly illegible; '200' is best-effort."
+    week_of_shame:
+      duration_days: 7
+      name_attribution: "'Week of Shame' — the label refers to the Hands of Fire's collapse (not Lone Star's action), per the canonical tone of the prose."
+      name_attribution_transcription_note: "Attribution direction partly ambiguous in the scan; confirm on re-scan."
+      outcome: "Within a few days, most Hands of Fire leaders were either dead or behind bars."
+    lone_star_ref: "Data/Lore/Factions/Lone Star.yaml"
+    hands_of_fire_ref: "Data/Lore/Factions/Hands of Fire.yaml"
+
+  post_nor_metahuman_refuge:
+    source_page: 18
+    summary: |
+      Surviving metahumans from the Night of Rage fled deeper into
+      the metroplex. Many resettled in the Puyallup Barrens, forming
+      a canonical metahuman-majority refugee community that by 2050
+      still 'stubbornly refuses any contact with Humans'.
+    destination_district: "Puyallup Barrens"
+    destination_file_placeholder: "Data/Lore/Districts/Puyallup.yaml (to be created when Puyallup chapter ingests)"
+    community_register:
+      isolation: "Refuses contact with Humans."
+      cross_ref:
+        - "Cross-link to ork_underground (Downtown Seattle) — parallel post-Rage survivor community."
+    game_presence:
+      mvp: "lore only (MVP district is Redmond, not Puyallup)."
+      post_mvp:
+        - "Puyallup-refugee contact network."
+        - "Metahuman-exclusive venue / safe-house type."
+        - "NoR-descendant NPC background for any metahuman PC in Puyallup."
+
+  conclusion_block:
+    source_page: 18
+    overview: |
+      Seattle recovered from the Night of Rage with unexpected speed.
+      Governor Schults has remained Seattle's dominant political figure
+      from 2039 onward and is the sitting Governor in the 2050 MVP era.
+    schults_tenure:
+      elected_first: 2039
+      re_elected_years: [2043, 2047]
+      current_term: "Active in the 2050 MVP era."
+      ongoing_challenges:
+        - "Growing underworld syndicate power."
+        - "Rising street-crime rate."
+        - "Critics raising UCC-funding corruption concerns."
+      popularity:
+        baseline: "Still broadly positive."
+        public_image: "Hero who brought Seattle back from the Night of Rage."
+    ucc_corruption_rumors:
+      source_page: 18
+      bbs_posts:
+        - handle: "Roger Nick"
+          timestamp_raw: "(12-07-05-00-4-15) (50)"
+          position: |
+            UCC funding Schults's campaigns in large amounts; suspicion
+            she is using some of it for personal purposes. Counter-
+            balance: the public still sees her as a hero.
+          vow_claim: "Prose attributes a public vow from Schults 'never to sell such a thing until she can regain her [?]' — object of the vow not legible."
+          transcription_note: "Handle + timestamp low confidence; vow phrasing partly illegible."
+        - handle: "Doc-S Dot"
+          timestamp_raw: "(20-90-17-25) (5-50)"
+          position: "Sharper version of the Roger-Nick critique — 'more accurate to say she's taking some of it for her own purposes'."
+          transcription_note: "Handle + timestamp low confidence; captured as critique of same UCC-funding story."
+    schults_ref: "Data/Lore/NPCs/Marilyn Schults.yaml"
+    game_presence:
+      mvp: "ambient — the PC's Seattle is Governor Schults's Seattle; Trid and news backdrop references."
+      post_mvp:
+        - "Run: expose UCC-laundering allegations against Schults."
+        - "Run: protect a pro-Schults whistleblower against UCC retaliation."
+        - "Run: intercept a campaign-funding handoff."
+        - "Civic-politics arc as an extended multi-run story-line."
 
 # Run Run Shaw's is featured in a stylized ad on the right side of p.11
 # (vertical "run run shaw's" typography; line about 'x runs at $9 plus tax').
@@ -1780,3 +1940,27 @@ transcription_gaps:
   - page: 17
     section: "History — Night of Rage 'Hands of Fire' neo-magic group"
     note: "Mentioned as allegedly present at the warehouse inferno; too little detail for a faction stub yet."
+  - page: 18
+    section: "History — Humanis Policlub Info Service BBS contact LTG"
+    note: "LTG 'TGY 22-10-12-14' + signature phrasing read with low confidence."
+  - page: 18
+    section: "History — 'Alameson' BBS handle post-assassination"
+    note: "Canonically ambiguous whether this is an impersonator, family member, staffer, or fabricated attribution. Treat as hostile ambient voice, not Alameson himself."
+  - page: 18
+    section: "History — Alameson assassination culprit"
+    note: "Prose says 'murdered in his office' with no culprit identified; leave as open canonical mystery."
+  - page: 18
+    section: "History — Tacoma District warehouse fire"
+    note: "Prose implies at least one Night-of-Rage warehouse fire was in Tacoma District; confirm when Tacoma chapter ingests."
+  - page: 18
+    section: "History — Lone Star Week of Shame 200 arrest count"
+    note: "Arrest count partly illegible; captured as '~200' best-effort."
+  - page: 18
+    section: "History — 'Week of Shame' attribution direction"
+    note: "Partly ambiguous in the scan whether the label refers to Hands of Fire's collapse or Lone Star's action. Confirm on re-scan."
+  - page: 18
+    section: "History — Roger Nick + Doc-S Dot BBS handles"
+    note: "Handles + timestamps low confidence; UCC-corruption critique register captured."
+  - page: 18
+    section: "History — Schults vow phrasing"
+    note: "Object of the Governor's public vow not legible in the scan; paraphrased."

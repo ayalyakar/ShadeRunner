@@ -11,6 +11,12 @@ sources:
     page: 17
     image: "Sources/SR1E-Seattle/p017-history-night-of-rage.png"
     section: "History — Night of Rage / Liberty Village atrocity"
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 18
+    image: "Sources/SR1E-Seattle/p018-history-from-ashes-schults.png"
+    section: "History — BBS post-fallout thread / Humanis Policlub Information Service"
 
 overview: |
   Canonical SR supremacy faction: organized, political, paramilitary-
@@ -55,6 +61,24 @@ services:
   external_products:
     - "Hate-crime violence against metahumans."
     - "Political pressure on anti-metahuman legislation."
+
+public_relations:
+  information_service:
+    name: "Humanis Policlub Information Service"
+    source_page: 18
+    role: "Official PR arm of the Policlub; operates on Shadowland / BBS."
+    ltg: "TGY 22-10-12-14"
+    ltg_transcription_note: "LTG contact digits read with low confidence."
+    signature_moves:
+      - "Denial of Humanis responsibility for high-profile atrocities (classic: Night of Rage)."
+      - "Ad-hominem attack on critics (e.g. 'Professor Stealth is himself a Metahuman brainwashed to believe all Humans are evil')."
+      - "Inclusion of recruitment / contact hook at the bottom of every response."
+    voice_profile:
+      register: "Smooth, corporate-PR, deflective. Uses coordinated talking-points; rarely emotional."
+      game_presence: "Template for any in-game Humanis PR / Trid / BBS content."
+    game_presence:
+      mvp: "ambient — BBS / Trid Humanis rebuttals as flavor."
+      post_mvp: "Run: infiltrate the Information Service's back-office to expose the coordinating desk."
 
 relationships:
   allies:

@@ -1,0 +1,80 @@
+# Canonical NPC — sitting Governor of the Seattle Metroplex.
+
+name: "Marilyn Schults"
+title: "Governor of the Seattle Metroplex"
+
+sources:
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 18
+    image: "Sources/SR1E-Seattle/p018-history-from-ashes-schults.png"
+    section: "History — Special Election 2039 / Lone Star Ultimatum / Conclusion"
+
+facts:
+  role: "Governor of the Seattle Metroplex (2039 – active through 2050 MVP era)."
+  prior_role: "Mayor of Bellevue (pre-2039)."
+  ascension:
+    event: "Won the 2039 special election triggered by Governor Alameson's assassination."
+    context: "Relative unknown at time of election; surprise upset over name-recognition favorite Ivan Lindstrom."
+    backer: "United Corporation Council (decisive factor in victory)."
+  re_elections:
+    - year: 2043
+    - year: 2047
+  current_term: "Active through 2050 (continuous since 2039)."
+  tenure_years_by_2050: 11
+  faction_affiliations:
+    primary: "Seattle Metroplex government"
+    political_patron: "United Corporation Council"
+    political_patron_file: "Data/Lore/Factions/United Corporation Council.yaml"
+
+signature_policy_moves:
+  - name: "Lone Star Ultimatum (2039, post-inauguration)"
+    action: |
+      Demanded Lone Star arrest the leaders of the Hands of Fire or
+      lose the Seattle policing contract for 'criminal refusal to
+      stop a crime in progress during Night of Rage'.
+    outcome: "Lone Star conducted the 'Week of Shame' raids; ~200 Hands of Fire leaders dead or arrested within days."
+    political_effect: "Cemented Schults's 'hero-who-brought-Seattle-back' public image."
+
+public_image:
+  baseline_2050: "Broadly positive."
+  hero_narrative: "The Governor who brought Seattle back from the Night of Rage."
+  outstanding_critiques:
+    - topic: "UCC campaign funding"
+      claim: "UCC contributed huge sums to her campaigns; suspicions she skimmed personal benefit."
+      status: "Rumored / BBS-level; public has not widely turned on her."
+    - topic: "Growing underworld syndicate power"
+      status: "Critics argue her administration has not curbed Mafia / Yakuza / Triad expansion."
+    - topic: "Rising street crime"
+      status: "Critics argue Lone Star is selective in which crimes it polices."
+
+voice_profile:
+  tone: "Poised, populist, ex-technocrat; speaks in measured civic-reformist register."
+  reach: "Metroplex-wide name recognition; national political presence."
+  known_behaviours:
+    - "Public vow-style announcements (object of the vow sometimes illegible in the scan — 'never to sell such a thing until she can regain her [?]')."
+    - "Willing to weaponize private contractors against political enemies (Lone Star ultimatum precedent)."
+    - "Publicly non-aligned with Humanis or metahuman factions; deeply aligned privately with UCC."
+
+game_presence:
+  mvp: "named NPC, lore-only at MVP (MVP district is Redmond)."
+  post_mvp:
+    - "Governor's mansion / Downtown civic-campus venue."
+    - "Political-campaign run content (intercept / expose / protect)."
+    - "UCC corruption arc (multi-run)."
+    - "Schults-re-election or Schults-downfall campaign arc in late-era drift (post-2050)."
+  hooks:
+    - "UCC campaign-funding leverage arc."
+    - "Police contract negotiation run — shadowy UCC-preferred replacement to Lone Star?"
+    - "Schults-Lindstrom dynasty rivalry (son Ivan lost 2039; descendants may still be politically active)."
+    - "Night-of-Rage moral-debt content — a metahuman contact who holds Schults's 1939 decisions against her."
+
+stats:
+  notes: "Statblock not yet derived. Social / rep build expected — Charisma / Etiquette / Negotiation high; paramilitary-adjacent via Lone Star command history."
+
+transcription_note: |
+  This stub is built from the Schults sections on SR1E Seattle
+  Sourcebook p.18. Surname read as 'Schults'; possibly spelled
+  'Schultz' in canonical SR material. Flag for cross-reference on
+  later pages.

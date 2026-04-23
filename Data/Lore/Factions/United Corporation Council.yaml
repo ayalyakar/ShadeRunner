@@ -11,6 +11,12 @@ sources:
     page: 17
     image: "Sources/SR1E-Seattle/p017-history-night-of-rage.png"
     section: "History — Night of Rage (political fallout)"
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 18
+    image: "Sources/SR1E-Seattle/p018-history-from-ashes-schults.png"
+    section: "History — Schults campaign backing / Conclusion"
 
 overview: |
   Formal association of Seattle's major corporations. Functions as a
@@ -34,6 +40,25 @@ historical_action:
       consumer base. An all-out Humanis-driven civil war would disrupt
       corp revenues, not to mention corp-owned infrastructure.
   outcome: "Political pressure contributed to the winding-down of open metroplex-level anti-metahuman operations (though ambient discrimination persisted)."
+
+schults_patronage:
+  source_page: 18
+  event: "2039 special election"
+  action: "UCC threw decisive support behind Marilyn Schults (Mayor of Bellevue) against the expected-winner Ivan Lindstrom (Downtown)."
+  outcome: "Schults won by 'a surprisingly large margin' and has been continuously Governor since (re-elected 2043, 2047, active 2050)."
+  ongoing_funding:
+    bbs_claims:
+      - "UCC contributes 'huge sums' to Schults campaigns."
+      - "Critics allege Schults diverts some funds to personal use (Roger Nick and Doc-S Dot BBS posts)."
+    canonical_status: |
+      Allegations are BBS-level, not officially proven. The public
+      still broadly regards Schults as the hero who brought Seattle
+      back from the Night of Rage.
+  political_effect: |
+    UCC is canonically the 'power behind the throne' of the current
+    Seattle Metroplex administration. Post-MVP political-run content
+    can exploit this patronage directly.
+  schults_ref: "Data/Lore/NPCs/Marilyn Schults.yaml"
 
 structure:
   membership:

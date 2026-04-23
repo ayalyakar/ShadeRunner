@@ -1,0 +1,95 @@
+# Canonical faction — defunct neo-magic extremist group.
+
+name: "Hands of Fire"
+type: "Neo-magic extremist group (effectively broken 2039)"
+tier: "Fringe / historical"
+
+sources:
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 17
+    image: "Sources/SR1E-Seattle/p017-history-night-of-rage.png"
+    section: "History — Night of Rage (implicated)"
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 18
+    image: "Sources/SR1E-Seattle/p018-history-from-ashes-schults.png"
+    section: "History — Schults Lone Star Ultimatum / Week of Shame"
+
+overview: |
+  Neo-magic group canonically implicated in the 2039 Night of Rage
+  warehouse inferno on the Seattle waterfront. Allegedly included
+  Governor Victor Alameson as a member. Leadership was broken in
+  Lone Star's 'Week of Shame' coordinated raids shortly after
+  Schults's 2039 ultimatum — ~200 leaders dead or arrested within
+  days. Status after 2039: effectively defunct at leadership level;
+  fringe remnants may persist by the 2050 MVP era.
+
+presence:
+  - metroplex: "Seattle"
+    activity_era: "pre-2039 active; 2039+ largely dismantled"
+    activity_level_2050: "Fringe at most; possibly resurgent under a different name; flag for later-page verification."
+
+structure:
+  ideology: "Neo-magic-themed Human supremacism — blurring Humanis-style politics with magical practice or theater."
+  scale_pre_collapse:
+    leadership_count: 200
+    leadership_count_transcription_note: "Prose says ~200 leaders were rounded up; could be 20 or 2,000 depending on scan. Best-effort."
+  political_ties:
+    - entity: "Governor Victor Alameson"
+      status: "Rumored member (public rumor emerged after Night of Rage; the rumor was proximate cause of his fall)."
+  operational_role_night_of_rage:
+    alleged: "On scene before the waterfront warehouses ignited; implicated in the arson itself."
+    canonical_status: "Alleged; never conclusively proven."
+
+historical_events:
+  - date: "2039-02-07"
+    event: "Night of Rage — alleged arson role at waterfront warehouses."
+  - date: "2039 (days later)"
+    event: "Alameson murdered in his office — rumored Hands of Fire turning on a liability, among other theories."
+  - date: "2039 (Schults's first Lone Star ultimatum)"
+    event: "Week of Shame — Lone Star raids arrested or killed ~200 Hands of Fire leaders within days."
+  - date: "2039+ (post-Week of Shame)"
+    event: "Effectively defunct at leadership level; no recorded comeback in canonical SR1E material captured so far."
+
+relationships:
+  historical:
+    allies:
+      - "Humanis Policlub (ideological adjacency; overlapping membership rumored)."
+      - "Alameson governorship (political cover, pre-collapse)."
+    rivals:
+      - "Metahuman communities."
+    hostile:
+      - "Lone Star (post-ultimatum)."
+      - "United Corporation Council (took the political decision to greenlight the Week of Shame via Schults)."
+      - "Post-NoR Metahuman survivors and the Puyallup Barrens refugee community."
+
+standing_default: -60
+standing_default_note: "Hostile by canonical default; any PC engagement with surviving cells is high-heat."
+thresholds:
+  hostile: -60
+  unfriendly: -20
+  neutral: 0
+  friendly: 20
+  trusted: 60
+
+game_presence:
+  mvp: "historical / lore only — grounds Night-of-Rage backstory and Schults's hero-narrative."
+  post_mvp:
+    - "Run: expose a surviving Hands of Fire cell operating underground in 2050."
+    - "Run: recover Night-of-Rage evidence from a Hands of Fire safe house (burned / abandoned)."
+    - "Run: protect an ex-member-turned-informant from Humanis or Lone Star cleanup."
+    - "MacGuffin: Hands of Fire ritual implement (magical, dangerous)."
+    - "Rivalry arc: renamed successor faction emerges, triggering Governor's-office reaction."
+
+hooks:
+  - "Alameson membership rumor — canonical conspiracy fuel."
+  - "Hands of Fire-adjacent BBS / cult content in the in-world info ecosystem."
+  - "Lone Star institutional pride (Week of Shame) as NPC-dialogue anchor."
+
+transcription_note: |
+  Stub is built from SR1E Seattle Sourcebook pp. 17-18 Night-of-Rage
+  passages. Group's pre-Rage history, theology (if any), and 2050-era
+  status are all TBD from later-edition canon.

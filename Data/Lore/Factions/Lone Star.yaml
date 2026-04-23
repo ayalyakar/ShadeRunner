@@ -1,0 +1,120 @@
+# Canonical faction — Seattle's privatized police contractor.
+
+name: "Lone Star Security Services"
+short_name: "Lone Star"
+type: "Corporation (privatized policing contractor)"
+tier: "AA-equivalent"
+
+sources:
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 18
+    image: "Sources/SR1E-Seattle/p018-history-from-ashes-schults.png"
+    section: "History — Schults Lone Star Ultimatum / Week of Shame"
+
+overview: |
+  Lone Star is the contracted police force for the Seattle Metroplex
+  in the 2050 MVP era. Corporate-tier private policing; absorbed or
+  replaced the remnants of the Metroplex Guard after the Night of
+  Rage. Canonical SR1E police antagonist — armed, corruption-prone,
+  selectively enforced, and contractually beholden to the metroplex
+  government.
+
+presence:
+  - metroplex: "Seattle"
+    role: "Primary policing contractor by 2050."
+    contract_history:
+      - year_range: "post-Night of Rage (2039+)"
+        event: "Took over Seattle policing contract under pressure from Governor Schults's Lone Star Ultimatum."
+      - year: 2050
+        event: "Active policing contractor in the MVP era."
+    activity_level: "ambient at MVP (patrols, response, arrests); direct engagement post-MVP."
+
+historical_role:
+  schults_ultimatum:
+    source_page: 18
+    year: 2039
+    demand: "Arrest the leaders of the Hands of Fire under threat of contract cancellation."
+    response: "Coordinated surprise raids; ~200 Hands of Fire leaders dead or arrested within days."
+    label: "Week of Shame"
+    consequence: |
+      Established the Governor's leverage over Lone Star that persists
+      into the 2050 era — contract cancellation is a credible threat
+      the Metroplex Council has used before.
+  canonical_complicity: |
+    The same Lone Star that prosecuted the Week of Shame had also
+    been passive / complicit (as its predecessor Metroplex Guard) at
+    the Night-of-Rage warehouses. Institutional memory is tangled.
+
+structure:
+  policing_model: "Corporate-armed police; jurisdiction coterminous with the metroplex contract boundary."
+  vehicles_mentioned_elsewhere:
+    - "Aero Citymaster (riot van)"
+    - "Nissan Patrol-1"
+    transcription_note: |
+      Vehicles listed from prior-pass Redmond canon memory; not yet
+      re-attested in this ingestion. Resolve when Redmond chapter
+      re-ingests.
+  squad_doctrine_mentioned_elsewhere: "Minimum 4-man squads in high-security-rating districts."
+
+relationships:
+  allies:
+    - faction: "Seattle Metroplex government (contractual)"
+    - faction: "United Corporation Council (political patron of current Governor Schults)"
+  rivals:
+    - "Mafia / Yakuza / Triad syndicates"
+    - "Street gangs across all districts"
+  hostile:
+    - "Hands of Fire (historical — canonically broken)"
+    - "Extremist factions in the NoR-aftermath period (status varies by contract)"
+  neutral:
+    - "Corporate security forces (inter-corp truce logic)"
+    - "NAN / SSC authorities"
+
+services:
+  official:
+    - "Patrol, response, arrest, holding, transport."
+    - "Riot / paramilitary response (carried over from Metroplex Guard era)."
+    - "Major-incident task forces (Week-of-Shame-style coordinated raids)."
+  informal:
+    - "Corruption / bribe economy (implicit per SR canon)."
+    - "Selective enforcement per contract priorities + political wind."
+
+policing_tiers:
+  high_security_districts: "Full patrol + rapid response + corp-coordinated intel."
+  mid_security_districts: "Reduced patrol; response only on serious calls."
+  low_security_districts: "Occasional patrol only; most calls ignored (canonical A-rating).  See Redmond-era data when ingested."
+
+game_presence:
+  mvp: |
+    Direct engagement — Lone Star is the visible police force the
+    PC navigates around during the MVP run. Combat-encounter threat
+    at high-heat moments. Patrol NPCs as ambient texture.
+  post_mvp:
+    - "Run: impersonate Lone Star (uniform / vehicle heist)."
+    - "Run: expose Lone Star corruption leveraging Governor-contract politics."
+    - "Run: extract a cooperating Lone Star informant before internal affairs (or worse) gets him."
+    - "Corrupt-officer contact type."
+
+hooks:
+  - "Contract leverage (see Schults)."
+  - "Institutional memory of NoR / Week of Shame — old officers carry the weight; some still serving."
+  - "Tiered policing = starting-zone choice matters (Redmond's A-rating = effectively no response)."
+
+standing_default: -10
+standing_default_note: |
+  Most shadowrunners start unfriendly by professional necessity; not
+  hostile at first. Criminal-faction PCs slide toward hostile quickly.
+thresholds:
+  hostile: -60
+  unfriendly: -20
+  neutral: 0
+  friendly: 20
+  trusted: 60
+
+transcription_note: |
+  Stub anchors Lone Star as the current-era policing contractor.
+  Richer details (squad vehicles, corruption rates, precinct
+  locations) will land when dedicated Lone Star / Crime / district
+  pages ingest.
