@@ -166,22 +166,75 @@ demographics_extension:
   ethnic_and_metatype_neighborhoods:
     - name: "International District"
       demographic: "Historically Oriental / Asian-American (originally a forced-settlement zone)."
-      syndicate_turf: "Yakuza (explicit extortion zone per p.21)."
-      file: "Data/Lore/Districts/Downtown/International District.yaml (to be created when specific-place-focus pages ingest)"
+      syndicate_turf_ref: "Data/Lore/Factions/Yakuza Rings.yaml (authoritative turf list on faction side)"
+      file: "Data/Lore/Districts/Downtown/International District.yaml (to be created once this neighborhood appears in sourcebook pages)"
       note: "Neighborhood gets its own sub-file once additional detail arrives."
     - name: "Elven District"
-      demographic: "Elven-majority neighborhood — newer ethnic zone."
-      note: "May have Tir Tairngire cultural influence; resolve on future pages."
-      transcription_note: "Named plainly as 'the Elven District'; exact neighborhood name may be canonical under another label."
+      demographic: "Elven-majority neighborhood — canonically treated as a Tir Tairngire cultural enclave."
+      cultural_anchor: "Tir Tairngire"
+      cultural_anchor_note: |
+        Per project-level canon decision, the Elven District is
+        authored as a Tir-flavored enclave (SR canon's Elven nation).
+        This anchors the neighborhood's register to Tir cultural
+        signals even if later sourcebook pages don't call it out
+        explicitly.
+      file: "Data/Lore/Districts/Downtown/Elven District.yaml (to be created when this neighborhood appears in sourcebook pages)"
+      transcription_note: "Named plainly as 'the Elven District' on p.21; exact neighborhood name may be canonical under another label."
     - name: "Ork District"
-      demographic: "Ork-majority, subterranean."
-      location: "'Lies beneath the city streets' — canonically the Ork Underground."
+      demographic: "Ork-majority surface-layer neighborhood."
+      separation_note: |
+        The 'Ork District' and the 'Ork Underground' are treated as
+        two linked-but-distinct entities per project canon decision:
+        - Ork District = the demographic / neighborhood layer
+          (surface streets populated by Ork majorities).
+        - Ork Underground = the physical subterranean complex
+          (tunnels / sub-levels / underground community).
+        Cross-referenced because they overlap in population, but the
+        two labels reference different layers of canonical content.
       cross_ref: "Metroplex/Seattle.yaml ork_underground"
-      note: "Downtown's Ork share (19%) is heavily concentrated here."
+      file: "Data/Lore/Districts/Downtown/Ork District.yaml (to be created)"
+      note: "Downtown's Ork share (19%) is heavily concentrated across both layers."
     - name: "Harbor Island"
       demographic: "Industrial / waterfront; population mix not stated on p.21."
-      syndicate_turf: "Mafia (explicit extortion zone per p.21)."
+      syndicate_turf_ref: "Data/Lore/Factions/Seattle Mafia.yaml (authoritative turf list on faction side)"
       note: "Location at the Duwamish-mouth / Elliot-Bay freight-dock zone is implied."
+      file: "Data/Lore/Districts/Downtown/Harbor Island.yaml (to be created)"
+
+landmarks_index:
+  source_page: 21
+  entries:
+    - name: "Queen Anne Hill"
+      file: "Data/Lore/Places/Landmarks/Queen Anne Hill.yaml"
+    - name: "Elliot Bay"
+      file: null
+      note: "Body-of-water anchor; stub when relevant content arrives."
+    - name: "Puget Sound"
+      file: null
+      note: "Body-of-water anchor; metroplex-scale."
+    - name: "Lake Washington"
+      file: null
+      note: "Body-of-water anchor; southern portion hosts Council Island."
+    - name: "Lake Union"
+      file: null
+      note: "Body-of-water anchor."
+    - name: "Green Lake"
+      file: null
+      note: "Body-of-water anchor."
+    - name: "Duwamish River"
+      file: null
+      note: "River anchor; factories + docks along both banks."
+    - name: "Mount Rainier"
+      file: null
+      note: "Visible from Downtown; Night-of-Rage eruption canon tie-in."
+    - name: "Mount Hood"
+      file: null
+      note: "Great-Ghost-Dance eruption canon tie-in."
+    - name: "Mount St. Helens"
+      file: null
+      note: "Great-Ghost-Dance eruption canon tie-in."
+    - name: "Glacier Peak"
+      file: null
+      note: "Great-Ghost-Dance eruption canon tie-in."
 
 crime_block:
   source_page: 21

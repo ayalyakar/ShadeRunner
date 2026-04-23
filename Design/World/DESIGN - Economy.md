@@ -115,6 +115,58 @@ These are content layers on top of the standard price / availability / SIN model
 - SIN-check: at least one scripted scene that checks PC SIN rating.
 - Rent event: one monthly rent payment on the vertical slice clock.
 
+## Bribery
+
+**DECIDED:** Bribery is a **first-class mechanical system**, not narrative flavor. Canon anchor: SR1E Seattle Sourcebook p.21 explicitly prices a pothole-fix bribe at **300¥ next-day service** under the euphemism "efficiency incentives."
+
+### Model
+
+- **Every bribable NPC role** has a `bribe_profile:` declaring the **threshold price** per action and the **detection risk** if the bribe backfires.
+- **Bribe price** scales with: rank of the NPC, risk of the action being covered, PC's standing with the NPC's faction, district corruption rate.
+- **Detection risk** scales with: PC's negotiation / streetwise dice pool, NPC's integrity, ambient surveillance.
+- **Consequences of detection:** loss of bribe nuyen, standing drop with NPC's faction, optional heat / arrest event.
+
+### Canonical price points (seed)
+
+| Action | Price (¥) | Source |
+|---|---|---|
+| Pothole fix (civic, next-day) | 300 | SR1E Seattle Sourcebook p.21 |
+| "Minor / who's here" info | 20 | SR1E Seattle Sourcebook p.9 |
+| "Sensitive / who's doing what to whom and why" info | 200+ | SR1E Seattle Sourcebook p.9 |
+
+These anchor the **corruption-economy curve** across bribe tiers; district-level `corruption_rate` (e.g. Downtown's canonically open graft vs. other districts' "loftier sentiments") applies a **multiplier** to base prices and a **discount** on detection risk.
+
+### District corruption modifier (MVP)
+
+- **Very high corruption (Downtown):** base prices; low detection risk.
+- **High corruption (Redmond / Barrens):** lower-than-base prices; very low detection risk.
+- **Moderate (middle-class):** base prices; moderate detection risk.
+- **Low (Bellevue-adjacent):** 1.5× prices; high detection risk.
+- **Corp zones:** bribes sometimes impossible (too much surveillance); or very expensive for a reason.
+
+### NPC-side data
+
+Each named NPC with a bribe-accessible role carries:
+
+```yaml
+bribe_profile:
+  available: true
+  actions:
+    - action: "Look the other way on a minor infraction"
+      base_yen: 50
+      detection_base_risk: 0.15
+    - action: "Tip-off on police activity"
+      base_yen: 500
+      detection_base_risk: 0.40
+  integrity: 2        # 1-6; lower = easier to bribe
+  greed: 5            # 1-6; higher = cheaper baseline
+```
+
+### Not in MVP
+
+- Multi-step bribery (set up a corrupt official over many interactions) — post-MVP.
+- Bribe-as-Social-contest dice minigame — MVP uses a simple check; post-MVP can elaborate.
+
 ## Open questions
 
 - Inflation across era drift (2050 → 2064). Same yen? Explicit curve?

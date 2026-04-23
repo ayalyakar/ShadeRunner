@@ -1,0 +1,55 @@
+# Canonical landmark — highest point of Downtown Seattle.
+
+name: "Queen Anne Hill"
+type: "Landmark / Hill"
+
+sources:
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 21
+    image: "Sources/SR1E-Seattle/p021-downtown-geography-demographics.png"
+    section: "Downtown — Geography and Demographics"
+
+location:
+  district: "Downtown"
+  neighborhood: null
+  neighborhood_note: "Named 'Queen Anne' in real-world Seattle; canonically the eponymous neighborhood centered on the hill."
+
+description: |
+  Highest point of ground in downtown Seattle. Slope rises from the
+  Elliot Bay waterfront to Queen Anne Hill's peak; canonical viewpoint
+  offering unchanged-for-300-years vistas:
+  - West: Puget Sound + Olympic Mountains.
+  - East: Lake Washington + Cascade Range.
+  - South: Mount Rainier dominates.
+
+civic_role:
+  heritage: |
+    Canonical civic-pride anchor. Referenced as a continuity point
+    (the same view the city's first settlers saw 300 years ago) in
+    a sourcebook otherwise steeped in discontinuity (Awakening, war,
+    Goblinization, Night of Rage).
+  implied_use:
+    - "Tourist viewpoint."
+    - "Premium residential real estate on the slopes / peak (implied by altitude + vista)."
+    - "Strategic observation position."
+
+game_presence:
+  mvp: "flavor only (MVP district is Redmond)."
+  post_mvp:
+    - "Walkable viewpoint as a cinematic anchor for a Downtown story beat."
+    - "Rooftop / hilltop mage-ritual site (background count possibilities in a magical-community-adjacent location)."
+    - "Assassination sniper perch for wetwork runs (high angle on Downtown streets)."
+    - "Long-term-relationship romance-scene venue (iconic vista)."
+    - "Night-of-Rage memorial / reflection beat — contrast of unchanged view against radical urban history."
+
+hooks:
+  - "Altitude-based encounter design (cable-car / pedestrian-only access segments)."
+  - "Real-estate landmark — who owns the peak? (Post-MVP corp-faction hook.)"
+  - "Astral register — high ground + historical weight may matter for the Magic subsystem."
+
+transcription_note: |
+  Record built from SR1E Seattle Sourcebook p.21 Geography section.
+  Landmark anchor only; richer detail lands as Downtown chapter
+  progresses or if Queen-Anne-neighborhood pages surface.

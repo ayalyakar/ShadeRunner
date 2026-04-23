@@ -1,0 +1,104 @@
+# Canonical faction — Seattle chapter of the North American Mafia.
+
+name: "Seattle Mafia"
+type: "Organized crime"
+tier: "AA-equivalent"
+
+sources:
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 21
+    image: "Sources/SR1E-Seattle/p021-downtown-geography-demographics.png"
+    section: "Downtown — Crime (HQ / Harbor Island turf)"
+
+overview: |
+  One of two dominant organized-crime syndicates in the Seattle
+  Metroplex alongside the Yakuza Rings. HQ'd in Downtown Seattle with
+  canonical extortion-control of the Harbor Island industrial / freight
+  zone. Roughly a third of the Mafia's Seattle yearly take comes from
+  Downtown operations (per SR1E Seattle Sourcebook p.21).
+
+presence:
+  - metroplex: "Seattle"
+    hq_district: "Downtown"
+    revenue_share_from_downtown_approx: 0.33
+    activity_level: "ambient at MVP (Redmond is MVP district; Mafia appears in dialogue / rep)."
+
+turf:
+  authoritative: true
+  note: "Per project canon policy, syndicate-turf is authoritative on the faction side; neighborhoods cross-reference."
+  zones:
+    - district: "Downtown"
+      neighborhood: "Harbor Island"
+      control_mode: "Ownership + extortion — 'nearly every business pays or is owned'."
+      source_page: 21
+    - district: "Redmond"
+      neighborhood: null
+      control_mode: "Black markets + recruitment pool (carried forward from prior Redmond-era canon; flag for re-verification when Redmond chapter ingests)."
+      source_page: null
+      transcription_note: "Redmond-Mafia turf details await re-ingestion."
+
+structure:
+  note: "Full leadership roster TBD when Crime chapter or a dedicated Mafia sub-page ingests."
+  seattle_don:
+    name: null
+    note: "Prior-session canon (now wiped) named 'James O'Malley' as nominal Don. Flag for re-verification on Crime chapter."
+  seattle_capo_redmond:
+    name: null
+    note: "Prior-session canon named 'Theodore Alamando' as Redmond capo. Flag for re-verification."
+  renegade_schism:
+    leader_name: null
+    note: "Prior-session canon named a 'Del Secondi' schism. Re-verify on ingest."
+
+services:
+  internal:
+    - "Protection / extortion (Harbor Island anchor)."
+    - "Smuggling via Duwamish-mouth freight docks."
+    - "Political corruption (implicit given p.21 'officials in pockets' canon)."
+    - "Black-market economy (weapons, vehicles, unregulated goods)."
+  external:
+    - "Contract wetwork (post-MVP run hook)."
+    - "Fixer-tier Johnson representation (post-MVP)."
+
+relationships:
+  allies:
+    - "Corrupt Seattle politicians (canonical per p.21)."
+  rivals:
+    - "Yakuza Rings (the other dominant syndicate; compete for Downtown, but hold separate turfs)."
+  hostile:
+    - "Lone Star (contractual posture; in practice sometimes cooperative via bribery)."
+    - "Upstart gangs challenging Mafia rackets."
+  neutral:
+    - "Triads (little-referenced in Seattle canon captured so far)."
+    - "Humanis / The Order / KKK (ideological non-overlap; sometimes business-convergent)."
+
+standing_default: 0
+standing_default_note: "Neutral by default; PC alignment shifts via run context."
+thresholds:
+  hostile: -60
+  unfriendly: -20
+  neutral: 0
+  friendly: 20
+  trusted: 60
+
+game_presence:
+  mvp: "ambient (black-market contacts, dialogue rep, background events)."
+  post_mvp:
+    - "Mafia-tier job offers (Don / Capo as Johnson)."
+    - "Harbor Island freight-dock smuggling runs."
+    - "Political-corruption leverage runs."
+    - "Schism-era inter-faction conflict (pending re-verification)."
+    - "Deep-NPC family-structure content (cousin-vs-uncle, daughter-in-the-business, loyal-soldier-with-doubts, etc.)."
+
+hooks:
+  - "Harbor Island = freight + Mafia = smuggling run starter territory."
+  - "Political-corruption angle (cross-ref Design/World/DESIGN - Economy.md bribery system)."
+  - "Deep-NPC rule applies: no cartoon mafia tropes — each named Mafia figure gets a specific interiority and contradiction (see Narrative/DESIGN - Writing.md)."
+
+transcription_note: |
+  Stub is a Downtown-lens entry pending a dedicated Mafia Crime-
+  chapter ingestion. Prior-session canon (now committed history)
+  mentioned Don O'Malley + Capo Alamando + Del Secondi schism —
+  re-verify and fold in when those details appear in the current
+  Seattle Sourcebook ingest.

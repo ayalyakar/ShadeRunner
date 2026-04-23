@@ -19,10 +19,13 @@
 
 ## Canon storage
 
+- **Per-metroplex:** `Data/Lore/Metroplex/<Name>.yaml` (Seattle-wide climate, travel, economy-tier framework, history, etc.).
 - **Per-district:** `Data/Lore/Districts/<District>.yaml`.
-- **Per-faction:** `Data/Lore/Factions/<Name>.yaml`.
+- **Per-neighborhood:** `Data/Lore/Districts/<District>/<Neighborhood>.yaml`. Neighborhoods live as sub-folders under their parent district; the district's yaml carries the neighborhood index.
+- **Per-faction:** `Data/Lore/Factions/<Name>.yaml`. Syndicate / gang / corp **turf lives on the faction side** (a `turf:` list referencing district + neighborhood files). Neighborhood files may mention the syndicate for cross-reference but the authoritative list is on the faction.
 - **Per-NPC:** `Data/Lore/NPCs/<Name>.yaml`.
-- **Per-place:** `Data/Lore/Places/<Type>/<Name>.yaml` (Hotels, Restaurants, Bars, Clinics, etc.).
+- **Per-place:** `Data/Lore/Places/<Type>/<Name>.yaml` (Hotels, Restaurants, Bars, Brothels, Clinics, etc.).
+- **Per-landmark:** `Data/Lore/Places/Landmarks/<Name>.yaml` (Queen Anne Hill, Space Needle, Kingdome, mountains, etc.). Landmarks are named-anchor places with canonical significance but often no internal "venue" the PC visits.
 - **Other canon artifacts:** `Data/Lore/<Kind>/…` as needed (Corporations, Magical Traditions, Gear, etc.).
 
 ## Source citation

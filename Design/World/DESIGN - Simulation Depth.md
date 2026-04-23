@@ -2,9 +2,22 @@
 
 ## Decision
 
-**DECIDED:** **Shallow — scripted world** at MVP. NPCs follow hand-authored routines; faction state updates on run outcomes and canonical events. No emergent faction warfare, no NPC-driven economy drift, no autonomous crowd simulation.
+**DECIDED (MVP):** **Shallow — scripted world** at MVP. NPCs follow hand-authored routines; faction state updates on run outcomes and canonical events. No emergent faction warfare, no NPC-driven economy drift, no autonomous crowd simulation.
 
-Deeper simulation (faction-vs-faction dynamics, economy drift per events, emergent gang conflicts) is **post-MVP**.
+**DECIDED (post-MVP ambition):** The long-term target is **deep, realistic, complex simulation** in the RimWorld / Dwarf Fortress register — applied to faction dynamics, economy drift, NPC schedules, crime emergence, and weather / environmental effects. MVP is the scripted seed; the simulation layer is the game the seed grows into.
+
+The project accepts this is ambitious for solo scope, and mitigates it by: (1) locking MVP to scripted depth, (2) designing data records forward-compatible with simulation (e.g. faction standing already lives as numeric data, not dialogue flags), (3) building simulation modules incrementally post-MVP rather than all-at-once.
+
+### Forward compatibility rules
+
+Even at MVP, all content is authored as if it will eventually feed a simulation:
+
+- Factions have numeric standing, not just flags.
+- NPCs have schedules, bribe profiles, and relationship graphs — even if MVP only uses a subset.
+- Economy has real prices and real cadences, even if MVP only advances a few of them.
+- Weather / smog / rain events are state-tracked, not visual-only, even if MVP only uses them for scripted scenes.
+
+This is the "author forward" discipline that lets post-MVP simulation land without canonical retrofitting.
 
 ## What MVP-shallow means
 

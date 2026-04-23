@@ -63,6 +63,7 @@ Solo-developed, NSFW-forward Shadowrun-1E-leaning CRPG set in Seattle 2050–206
 - [Presentation/DESIGN - Art Direction.md](Presentation/DESIGN%20-%20Art%20Direction.md) — 3D isometric world + 2D cel / comic-noir illustration layer.
 - [Presentation/DESIGN - Audio.md](Presentation/DESIGN%20-%20Audio.md) — Piper / XTTS / ElevenLabs voice tiers; curated SFX and music.
 - [Presentation/DESIGN - UI.md](Presentation/DESIGN%20-%20UI.md) — diegetic cyber register; commlink hub; dialogue UI; encumbrance inventory; per-district map; contextual tooltips.
+- [Presentation/DESIGN - Environment.md](Presentation/DESIGN%20-%20Environment.md) — weather, smog-alerts-as-mechanic, acid-rain gear degradation, day/night, temperature.
 
 ## Social
 

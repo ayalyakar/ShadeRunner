@@ -1,0 +1,109 @@
+# Canonical faction — Seattle Yakuza (multi-ring umbrella).
+
+name: "Yakuza Rings (Seattle)"
+type: "Organized crime"
+tier: "AA-equivalent"
+
+sources:
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 21
+    image: "Sources/SR1E-Seattle/p021-downtown-geography-demographics.png"
+    section: "Downtown — Crime (HQ / International District turf)"
+
+overview: |
+  One of two dominant organized-crime syndicates in the Seattle
+  Metroplex alongside the Seattle Mafia. HQ'd in Downtown Seattle
+  with canonical extortion-control of the International District.
+  Roughly a third of the Yakuza's Seattle yearly take comes from
+  Downtown operations (per SR1E Seattle Sourcebook p.21).
+  Structured internally as multiple 'Rings' (SR canon — separate
+  organizations operating under the Yakuza umbrella with their own
+  leadership, turf, and rivalries).
+
+presence:
+  - metroplex: "Seattle"
+    hq_district: "Downtown"
+    revenue_share_from_downtown_approx: 0.33
+    activity_level: "ambient at MVP (Redmond is MVP district; Yakuza appears in dialogue / rep / rumor)."
+
+turf:
+  authoritative: true
+  note: "Per project canon policy, syndicate-turf is authoritative on the faction side; neighborhoods cross-reference."
+  zones:
+    - district: "Downtown"
+      neighborhood: "International District"
+      control_mode: "Ownership + extortion — 'nearly every business pays or is owned'."
+      source_page: 21
+    - district: "Redmond"
+      neighborhood: null
+      control_mode: "Recruitment pool + hotel-sector presence (carried forward from prior Redmond-era canon; flag for re-verification when Redmond chapter ingests)."
+      source_page: null
+      transcription_note: "Redmond-Yakuza turf details await re-ingestion."
+
+structure:
+  rings_note: |
+    The sourcebook's Yakuza presence is organized as multiple Rings,
+    each with its own leadership + specialty + territory. Prior-
+    session canon (now wiped) recorded 'five Rings in Redmond, Ill
+    Squires most active under Don Autigerano'; confirm when Crime
+    chapter or Redmond re-ingest lands.
+  rings:
+    - name_placeholder: "To be populated from Crime chapter ingest."
+
+services:
+  internal:
+    - "Protection / extortion (International District anchor)."
+    - "Recruitment pipeline — canonical focus on warrior + magician talent (prior-pass carry)."
+    - "Illicit imports via Downtown piers (cultural / Japanese-origin flavor)."
+    - "BTL chip trade (suspected; canonical at higher tiers in SR)."
+    - "Political corruption (per p.21 'officials in pockets')."
+  external:
+    - "Contract wetwork."
+    - "Fixer / Johnson representation."
+    - "Cyberware bounty program for promising warrior recruits (prior-pass carry; re-verify)."
+    - "Magical-training access for magician recruits (prior-pass carry; re-verify)."
+
+relationships:
+  allies:
+    - "Corrupt Seattle politicians (canonical per p.21)."
+    - "Tir Tairngire / Elven networks: possible overlap via Downtown Elven District cultural adjacency (speculative; flag)."
+  rivals:
+    - "Seattle Mafia (dominant syndicate rivalry — each controls separate Downtown turf)."
+  hostile:
+    - "Triads (natural rival in East-Asian organized crime; presence level in Seattle TBD)."
+    - "Upstart street gangs intruding on Yakuza rackets."
+  neutral:
+    - "Lone Star (contractual; in practice selective enforcement)."
+    - "Humanis etc. (ideological non-overlap; occasional convergence)."
+
+standing_default: 0
+standing_default_note: "Neutral by default; PC alignment shifts via run context."
+thresholds:
+  hostile: -60
+  unfriendly: -20
+  neutral: 0
+  friendly: 20
+  trusted: 60
+
+game_presence:
+  mvp: "ambient (recruitment rumors, dialogue rep, background events)."
+  post_mvp:
+    - "International District walkable venue as Yakuza-turf stronghold."
+    - "Ring-vs-Ring rivalry as extended story arc."
+    - "Recruitment-pipeline hook: PC approached as talent; defection / double-cross arcs."
+    - "Cultural-specific dialogue register (Japanese-flavored; must avoid Orientalist cliche per Narrative/DESIGN - Writing.md no-trope rule)."
+
+hooks:
+  - "International District = Yakuza stronghold; post-MVP walkable zone."
+  - "BTL chip trade crossover (canonical NSFW-pillar content)."
+  - "Magical-training hook for Awakened PCs with a moral price."
+  - "Deep-NPC rule applies: no movie-Yakuza tropes — each Ring lieutenant is a specific person with specific politics."
+
+transcription_note: |
+  Stub is a Downtown-lens entry pending a dedicated Yakuza / Crime-
+  chapter ingestion. Prior-session canon (now committed history)
+  mentioned five Redmond Rings + Ill Squires + Don Autigerano —
+  re-verify and fold in when those details appear in the current
+  Seattle Sourcebook ingest.

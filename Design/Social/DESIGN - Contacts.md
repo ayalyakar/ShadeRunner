@@ -125,6 +125,18 @@ At minimum MVP, a handful of named contacts:
 - **Extended romance content** — marriage / commitment / moving-in / polyamory modeling.
 - **Contact gear specialists** — each contact carries unique stock.
 
+## Character-depth discipline
+
+**Hard rule.** All contacts (and all named NPCs generally) are authored for interior depth and non-trope identity. See `Narrative/DESIGN - Writing.md` **Character depth discipline** for the binding template.
+
+Specifically for contacts:
+
+- **No "archetype as character."** The MVP-scope fixer isn't "warm seasoned Redmond fixer" — that's a starting sketch. The actual NPC has specifics: their own politics, their own shame, their own contradiction, their own unspoken agenda.
+- **Romance contacts especially.** Romance-eligible contacts cannot be "love-interest archetype." They are specific people with lives and conflicts that include, but are not about, the PC's attention. Romance scenes reveal character; they are not the character's entire function.
+- **Antagonist contacts.** Contacts who become hostile mid-campaign don't collapse into villainy; their reasons are particular and legible even when wrong.
+- **Sex-worker contacts.** Full interior depth. Explicit content does not reduce the character to their body. Canonical rule for the NSFW pillar per `Meta/DESIGN - NSFW.md`.
+- **Sub-faction politics.** A Yakuza lieutenant contact has politics within the Yakuza, family pressures, personal feuds — not just "Yakuza loyalty."
+
 ## Open questions
 
 - Contact portrait consistency — same character seed across all their appearances.
