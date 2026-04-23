@@ -11,6 +11,16 @@ sources:
     page: 6
     image: "Sources/SR1E-Seattle/p006-facts-when-traveling.png"
     section: "Facts at Your Fingertips — When to Go / Traveling to Seattle"
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 9
+    image: "Sources/SR1E-Seattle/p009-facts-cost-getting-around.png"
+    section: "Facts at Your Fingertips — Boat (travel to) / What Will It Cost? / Getting Around — Air / Cab / Ferry"
+
+ingestion_gaps:
+  - pages: [7, 8]
+    note: "Pages 7 and 8 not yet ingested; expected coverage includes Business Categories / Major Businesses / Tourist Information / SSC lands / Legal / Medical / Chips and Alcohol / Entertainment per TOC. Revisit when scans are available."
 
 # The Seattle Sourcebook uses the same tab header at the metroplex chapter level
 # as it does per-district. Retained as canonical template structure.
@@ -110,6 +120,189 @@ travel_to_metroplex:
       first_class_amenities:
         - "Meal included, served in the sumptuous dining car"
 
+    - mode: "Boat"
+      source_page: 9
+      speed_note: "Slowest arrival mode, but often the most scenic."
+      passenger_lines:
+        - name: "Gray Swan"
+        - name: "Pacific Royalty"
+        - name: "Oarcoash Line"
+          transcription_note: "Name read as 'Oarcoash'; low confidence. Could be 'Orcas(h)', 'Oarcoach', or similar."
+      luxury_fare_yen_range:
+        floor: 2000
+        notes: "Prose reports 'several thousand nuyen' for a first-class berth; 2,000+ as a placeholder floor until verified."
+      budget_option: |
+        Cheaper berths can sometimes be arranged on the many commercial
+        vessels that also stop in Seattle.
+
+cost_overview:
+  source_page: 9
+  general_price_level: "Higher than the rest of the UCAS."
+  shipping_markup_pct: 5
+  locally_cheap_goods:
+    - "Seafood"
+    - "Paper products"
+  hotel_prices_yen:
+    low: 25
+    high: null
+    high_transcription_note: "Upper bound partially illegible; not captured."
+  budget_accommodations:
+    - type: "Spartan hostel (YMCA / YWCA / Metahuman hostel)"
+      approx_nightly_yen: null
+      transcription_note: "Per-night price not confidently legible."
+    - type: "University / college dormitory (between semesters)"
+      nightly_yen_range: { min: 10, max: 20 }
+  dining_note: |
+    Many Seattle restaurants serve natural foods thanks to the city's trade
+    relations with the Native American Nations. Tourists sometimes
+    over-indulge on unfamiliar ingredients with unpleasant digestive
+    consequences. Moderation recommended until the visitor's palate has
+    adjusted; save the banquets for later in the trip.
+  modest_daily_expenses_yen:
+    - label: "Room at a moderate hotel (nightly)"
+      yen: 25
+    - label: "Hotel breakfast, including tip"
+      yen: 5
+    - label: "Lunch at an inexpensive restaurant, including tip"
+      yen: 10
+    - label: "Dinner at an inexpensive restaurant, including tip"
+      yen: 25
+    - label: "Sightseeing tour"
+      yen: 7
+    - label: "Nightclub admission"
+      yen: 25
+      transcription_note: "Value read as 25; low confidence."
+    - label: "Admission to museum or historical site"
+      yen: 5
+    - label: "Ticket to a major sporting event (inexpensive seats)"
+      yen: 25
+      transcription_note: "Value read as 25; low confidence."
+    - label: "Cab service (typical)"
+      yen: 50
+    - label: "Bribe for minor / 'who's here' information"
+      yen: 20
+      transcription_note: "Phrasing uncertain; canonical bribe line."
+    - label: "Bribe for sensitive information ('who's doing what to whom and why')"
+      yen_min: 200
+      yen_note: "Starts at 200; no upper bound."
+    - label: "Simple sexual pleasure"
+      yen: 50
+    - label: "BTL chip"
+      yen_min: 50
+      yen_note: "Starts at 50; no upper bound."
+  bbs_footnote:
+    raw: "Fast cash (11-15-13 / 5-15-50)"
+    interpretation_note: |
+      The table on p.9 ends with a line that reads as 'Fast cash
+      (11-15-13) (5-15-50)'. Most likely a Shadowland post-attribution
+      byline — posts in this sourcebook carry timestamp pairs in that
+      format — with 'Fast Cash' as the handle. Not fully legible; not
+      yet promoted to a persistent BBS persona. Flag for verification
+      and possible NPC stub creation at `Data/Lore/NPCs/Fast Cash.yaml`.
+
+getting_around_metroplex:
+  source_page: 9
+  introduction: |
+    Once arrived in Seattle and settled in, a traveler has four main
+    ways to reach the city's districts: intracity air, cab / car rental,
+    public ferry, and (implied) the public transit system.
+  districts_count_prose: 10
+  districts_count_transcription_note: |
+    Prose reads 'the city's ten main districts'; TOC enumerates
+    considerably more district-like entries (Downtown, Seattle Center,
+    Arcology, Council Island, Bellevue, Tacoma, Everett, Renton,
+    Auburn, Snohomish, Fort Lewis, Redmond, Puyallup). Either 'ten' is
+    a colloquial roundup, or some TOC entries are sub-district rather
+    than district. Resolve when district chapters are ingested.
+
+  modes:
+    - mode: "Air (intracity)"
+      source_page: 9
+      heliport_coverage: "Most Seattle skyscrapers have rooftop heliports."
+      vehicle_types: ["helicopter", "tilt-rotor", "lighter-than-air"]
+      carriers_count: 5
+      carriers:
+        - name: "Emerald City Airlines"
+        - name: "Renraku Loco Airlines"
+          transcription_note: "Middle word read as 'Loco'; low confidence — could be 'Local', 'Logo', or similar."
+        - name: "Sea-Tac Express"
+        - name: "Aztech Shuttle Service"
+        - name: "Federated-Boeing Airlines"
+      service_targets:
+        - "Government buildings"
+        - "Luxury hotels"
+        - "Shopping malls"
+        - "Major business buildings"
+      sample_fare:
+        from: "Renraku Arcology (Downtown)"
+        to: "Bellevue"
+        yen: 110
+      price_register: "Expensive compared to ground / ferry options."
+
+    - mode: "Cab / Car Rental / Roads"
+      source_page: 9
+      rental_agencies_local: 10
+      continental_agency:
+        name: "Detahx"
+        transcription_note: "Name read as 'Detahx'; low confidence. Could be a larger continental rental chain not yet identified in canon."
+      rental_requirements:
+        - "Valid driver's license"
+        - "Insurance"
+      rental_range: "Wide variety of vehicles across price tiers."
+      public_transit:
+        notes: |
+          The city operates a public transit system (bus + electric-car
+          highway grid). Exact structure and fares partly illegible on
+          this page; revisit on re-scan.
+        transcription_note: "Transit-system description legibility low."
+      roads:
+        electric_car_grid: true
+        off_peak_cross_metroplex_hours_approx: 3
+        rush_hour: "Highways jammed; traffic reduced to stop-and-go."
+        daytime_safety: "Relatively safe on main roads during daylight."
+        barrens_roads: |
+          Streets in the Barrens are often impassible due to debris,
+          collapsed infrastructure, or deliberately blocked routes
+          ('posts'). Residential-street safety varies dramatically by
+          neighborhood.
+        night_hazard: |
+          At night, go-gangs (on bikes, in cars, sometimes in aircraft)
+          terrorize the highways — robbery and violence against isolated
+          drivers are routine. Anyone travelling by road at night is
+          rolling with the criminal element.
+
+    - mode: "Ferry (Seattle Public Ferry System)"
+      source_page: 9
+      operator: "Seattle Public Ferry System (city-run)"
+      boat_count: 20
+      routes:
+        - "Waterfront, running up and down the metroplex shoreline"
+        - "Major inland / mainland routes"
+        - "Victoria, B.C."
+        - "Fraser River, B.C."
+      named_line:
+        name: "Bolle Ferry"
+        transcription_note: "Name read as 'Bolle'; low confidence. Could be 'Belle', 'Bollé', or similar."
+      vehicle_capacity:
+        large_ferry_vehicle_max: 50
+      fares_yen:
+        range: { min: 5, max: 20 }
+        average: 10
+        hydrofoil: 15
+      reliability:
+        reputation: "Long history of mishaps and mismanagement."
+        visible_accidents_per_year: 2
+        sample_incidents:
+          - "Ferry ramming a dock (or pier) at high speed"
+          - "Inter-ferry collisions"
+          - "Hull leaks"
+          - "Captain ramming another vessel while trying to impress a passenger"
+        political_note: |
+          Embarrassing to the city government because ferry service is one
+          of the few infrastructure lines actually run directly by the
+          city rather than privatized to Lone Star / Ares / Renraku /
+          etc. Accidents draw disproportionate press coverage.
+
 # Page-image has a small additional paragraph about the tunnels (Seabreeze?) on
 # the Maglev route. Prose was only partially legible in the current scan and
 # is not transcribed verbatim. Revisit on re-scan.
@@ -117,3 +310,27 @@ transcription_gaps:
   - page: 6
     section: "Train"
     note: "Paragraph about the Maglev's tunnels (Seabreeze?) partly illegible; only the broad reliability / fare facts captured with confidence."
+  - page: 9
+    section: "What Will It Cost? — Hotel upper range"
+    note: "Upper bound of hotel-price range partly illegible. Only lower bound (25 nuyen) captured."
+  - page: 9
+    section: "What Will It Cost? — Budget accommodations per-night price"
+    note: "YMCA / YWCA / Metahuman hostel nightly price not confidently legible."
+  - page: 9
+    section: "What Will It Cost? — modest-expenses table"
+    note: "Several yen values (nightclub admission, sporting event, bribe tiers) read with low confidence. Verify against a higher-resolution scan."
+  - page: 9
+    section: "What Will It Cost? — bbs footnote"
+    note: "'Fast cash (11-15-13) (5-15-50)' likely a BBS post attribution. Not yet promoted to a persistent NPC persona."
+  - page: 9
+    section: "Getting Around — continental car-rental agency"
+    note: "Agency name read as 'Detahx'; low confidence."
+  - page: 9
+    section: "Getting Around — Cab / Roads transit-system paragraph"
+    note: "Transit-system description (bus lines, fares, coverage) legibility low on this scan. Revisit."
+  - page: 9
+    section: "Getting Around — Air carrier 'Renraku Loco Airlines'"
+    note: "Middle word read as 'Loco'; low confidence."
+  - page: 9
+    section: "Getting Around — Ferry 'Bolle Ferry' line name"
+    note: "Name read as 'Bolle'; low confidence."
