@@ -29,6 +29,12 @@ sources:
     page: 11
     image: "Sources/SR1E-Seattle/p011-facts-hotels-electronics-bodytech-tourist.png"
     section: "Facts at Your Fingertips — Chains (Hotels / Computers / Body Enhancement) / Tourist Information"
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 12
+    image: "Sources/SR1E-Seattle/p012-facts-ssc-legal-medical-alcohol-entertainment.png"
+    section: "Facts at Your Fingertips — SSC Council Lands / Legal / Medical / Chips and Alcohol / Entertainment"
 
 ingestion_gaps:
   - pages: [7, 8]
@@ -637,6 +643,230 @@ tourist_information:
 # Chinese Cajun Cuisine"). Not included in the four-tier chain list above —
 # stubbed as a standalone place. See Data/Lore/Places/Restaurants/Tuesdays.yaml.
 
+salish_shidhe_council_access:
+  source_page: 12
+  overview: |
+    The Salish-Shidhe Council (SSC) is a sovereign Native American nation
+    adjacent to Seattle. Visiting SSC lands from Seattle requires a
+    'blue ticket' (blue-form travel pass) issued by the SSC, not the
+    UCAS or Seattle government.
+  entry_points:
+    - name: "Seattle Visitor Center"
+      role: "Information + forms"
+      notes: "SSC representatives staff a counter here; they supply application forms but cannot issue the pass."
+    - name: "Passport Lodge"
+      location: "Council Island (southern Lake Washington)"
+      role: "Issues blue tickets."
+      notes: |
+        In-person application required. Cab fare from the Visitor
+        Center to Council Island; drop-off at the Passport Lodge.
+  process:
+    - "In-person application at the Passport Lodge."
+    - "Present up-to-date credstick passport file."
+    - "Itinerary / purpose check."
+    - "Pass issued after ~1 day processing."
+  pass_validity:
+    tourist_days: 15
+    extended_with_approved_itinerary_days: 30
+    extended_transcription_note: "Extended-duration upper bound read as '1 month / up to 30 days'; value approximate."
+  in_country_rules:
+    - "Travel pass must be displayed prominently while inside SSC lands."
+    - "Overstaying or concealing the pass can trigger SSC authority action (detention / expulsion)."
+  council_island:
+    role: "Center of SSC representation in Seattle."
+    location: "Southern Lake Washington."
+    notes: |
+      Council Island has its own sovereign character and will get its
+      own district-level data file when Council Island chapter is
+      ingested (Data/Lore/Districts/Council Island.yaml planned).
+
+legal_assistance:
+  source_page: 12
+  nac_lu:
+    full_name: "North American Civil Liberties Union"
+    abbreviation: "NACLU"
+    seattle_hotline: "555-LVL115"
+    hotline_transcription_note: "Digits read as 'LVL115'; low confidence, likely an alphanumeric mnemonic like 'LEGAL' or similar."
+    role: "Refers callers to competent lawyers."
+  specialty_hotlines:
+    - audience: "Native Americans"
+      number: "555-TRBL"
+      notes: "'Tribal' mnemonic; referral to lawyers + advocacy groups familiar with NAN / tribal-law cases."
+    - audience: "Orks and troll community"
+      number: "555-ORKS"
+      notes: "Metahuman advocacy line."
+    - audience: "Elves"
+      number: "555-ELVS"
+      notes: "Metahuman advocacy line."
+  notes: |
+    In-world hotlines are all '555-' prefixed diegetic phone numbers —
+    useful as Commlink UX references (see Presentation/DESIGN - UI.md).
+    Can appear in NPC dialogue, arrest scenes, street-lawyer contact
+    introductions.
+
+medical_assistance:
+  source_page: 12
+  public_system:
+    name: "City Hospitals Health System"
+    funding: "Government-subsidized."
+    capability: "Handles most emergencies; hospitals + clinics citywide."
+    transport_modes: ["ambulance", "helicopter"]
+  private_system:
+    name: "DocWagon"
+    faction_ref: "Data/Lore/Factions/DocWagon.yaml"
+    reputation: "Well-respected; premium emergency-response service."
+    vehicles: ["armored cars", "helicopters"]
+    service_model: "Customer-based; subscribers get armed emergency extraction on call."
+  hmos:
+    - name: "City Health"
+      audience: "City of Seattle employees."
+      operator: "City of Seattle."
+    - name: "Group Medical"
+      audience: "General Seattle residents."
+      operator: "City of Seattle."
+      notes: "Citizens with a valid city-organization membership get covered care during their stay."
+  tourist_advice:
+    - "Carry an up-to-date medical file on credstick."
+    - "Keep a duplicate in a safe location."
+  game_presence:
+    mvp: "ambient — street doc is the primary PC healing path; DocWagon is flavor / high-tier emergency response."
+    post_mvp: |
+      DocWagon subscription as a lifestyle line-item (buy coverage,
+      push-button rescue). City Hospitals runs as a setting for
+      extraction / ICU runs. HMO gating for some prestige clinics.
+
+chips_and_alcohol:
+  source_page: 12
+  chips_and_drugs:
+    policy: "Seattle tries to maintain strict control over illegal chips and drugs."
+    programs:
+      - "Child-targeted anti-drug education."
+    enforcement_reality: |
+      Programs are perpetually underfunded and local law enforcement
+      lacks capacity to make them effective. Canonical gap between
+      stated policy and street reality.
+  alcohol:
+    policy: "Alcohol is the only legal recreational drug."
+    control_model: "Government-controlled distribution."
+    retail:
+      wine_and_beer:
+        allowed_in: ["grocery stores", "convenience stores"]
+      hard_liquor:
+        allowed_in: ["city-run liquor stores only"]
+    price_markup_vs_ucas_pct: 25
+    markup_rationale:
+      - "Massive liquor tax."
+      - "Transport cost to Seattle from producing regions."
+    liquor_store_hours:
+      open: "10:00"
+      close: "20:00"
+      days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+      weekend_note: |
+        Prose on p.12 only lists Mon-Fri. Whether city-run liquor
+        stores open on weekends is ambiguous; flag as open question.
+      transcription_note: "Weekend hours not stated in the page image; may be explicit elsewhere."
+  game_presence:
+    mvp: "ambient — drug-addiction system hooks into these markets; alcohol is cheap across the board but 25% above rest-of-UCAS."
+    post_mvp: "Drug-war runs (raid vs. ring / cop-payoff); liquor-tax smuggling subplot."
+
+entertainment:
+  source_page: 12
+  museums:
+    - name: "Seattle Art Museum"
+      location: "Volunteer Park"
+      location_transcription_note: "Prose reads 'Volunteers Park'; canonical Seattle landmark is 'Volunteer Park'. Treat as 'Volunteer Park'."
+    - name: "Museum of History and Industry"
+      address: "2161 East Hamlin"
+      description: "Documents the city's history from its formation to the present day."
+  music:
+    classical_and_opera:
+      - name: "Seattle Symphony"
+      - name: "Seattle Opera"
+    classical_venue:
+      name: "Seattle Center Opera House"
+      operator_note: "The sourcebook's phrasing 'performing the demanding King of the Metropolitan Opera at venues by Renraku' is partly illegible; Renraku corporate sponsorship of the venue is implied but not stated with certainty."
+      transcription_note: "Exact sponsorship / ownership language not captured confidently."
+    seattle_megastar_alumni:
+      - name: "Concrete Dreams"
+      - name: "Lily Shuisha Suyu"
+        transcription_note: "Name read as 'Lily Shuisha Suyu'; low confidence."
+    local_breakouts:
+      - name: "Comfortably Numb's"
+        status: "Locally tipped as next-to-crash-nationally."
+        transcription_note: "Band name read as \"Comfortably Numb's\"; apostrophe and exact spelling uncertain."
+    nightlife_note: "Many Vee (virtual-reality / sim-VR) nightclubs citywide."
+  theater:
+    - name: "Seattle Repertory"
+      tier: "Serious theater"
+    - name: "The Contemporary Theatre"
+      tier: "Serious theater"
+    - name: "Coriel's Pantheon"
+      tier: "Smaller theaters chain"
+      transcription_note: "Name read as \"Coriel's Pantheon\"; low confidence."
+    unidentified_venues_transcription_note: |
+      Prose on p.12 mentions an additional Vastrous Gaming and 'Orlonstoro'
+      venue; neither confidently read. Flag for re-verification.
+  sports:
+    source_page: 12
+    stadiums:
+      - name: "Kingdome"
+        hosts: ["Seattle Seahawks (football)", "Seattle Supersonics (basketball)", "Seattle Mariners (baseball)"]
+      - name: "Tacoma Dome"
+        hosts: ["Seattle Timberwolves (Combat Bike / Urban Brawl)"]
+    teams:
+      - name: "Seattle Seahawks"
+        sport: "Football"
+        league_note: "Prose mentions descent from the NFL; transcription 'NBL' on page is likely a typo for 'NFL'."
+        home_venue: "Kingdome"
+      - name: "Seattle Supersonics"
+        sport: "Basketball"
+        home_venue: "Kingdome"
+      - name: "Seattle Mariners"
+        sport: "Baseball"
+        home_venue: "Kingdome"
+      - name: "Seattle Madisons"
+        sport: "Uncertain — likely combat-sport / urban brawl variant"
+        home_venue: "Seattle Sports League arcade"
+        transcription_note: "Both team scope and venue partly illegible. Flag for re-verification."
+      - name: "Toronto Tigers"
+        sport: "Baseball (AAA minor league)"
+        notes: "Unchipped (no cyberware-enhanced) baseball team; Seattle-associated AAA franchise per prose."
+      - name: "Everett Giants"
+        sport: "Baseball (AAA minor league)"
+        notes: "Unchipped AAA franchise."
+      - name: "Seattle Timberwolves"
+        sport: "Combat Bike (Urban Brawl)"
+        home_venue: "Tacoma Dome"
+        reputation: "Seattle's premier combat-bike squad; intense rivalry with the Screamers."
+      - name: "Screamers"
+        sport: "Combat Bike (Union Bowl league)"
+        reputation: |
+          Renowned for causing the most deaths and injuries to opponents
+          in the past decade — intentionally brutal. Canonical Urban-Brawl
+          villain team.
+        transcription_note: "Many details partial; confidence on team scope + league name moderate."
+    leagues:
+      - name: "Urban Brawl / Combat Bike"
+        note: "SR-canonical high-lethality circuit; Timberwolves + Screamers named canonical teams."
+      - name: "AAA Baseball ('unchipped')"
+        note: "Distinguished from 'chipped' leagues (cyber-enhanced pro ball), implying a cyberware league exists — flag for Economy / Sports-system design doc when relevant."
+  game_presence:
+    mvp: "flavor (Trid ads, ambient NPC barks, bar chatter)."
+    post_mvp: |
+      Stadium-backdrop runs (Kingdome heist, Tacoma Dome brawl-match
+      corruption), sports-star contact type, Urban Brawl team as
+      faction with gambling / organized-crime hooks.
+
+# Run Run Shaw's is featured in a stylized ad on the right side of p.11
+# (vertical "run run shaw's" typography; line about 'x runs at $9 plus tax').
+# Not stubbed as a standalone place at this pass — legibility too low to
+# record cuisine / LTG. Will revisit if the restaurant recurs on later
+# pages.
+
+# Tuesdays is featured in a full-page advertisement on p.10 ("Authentic
+# Chinese Cajun Cuisine"). Not included in the four-tier chain list above —
+# stubbed as a standalone place. See Data/Lore/Places/Restaurants/Tuesdays.yaml.
+
 # Page-image has a small additional paragraph about the tunnels (Seabreeze?) on
 # the Maglev route. Prose was only partially legible in the current scan and
 # is not transcribed verbatim. Revisit on re-scan.
@@ -703,3 +933,21 @@ transcription_gaps:
   - page: 11
     section: "Run Run Shaw's advertisement"
     note: "Stylized ad for 'run run shaw's' on right side of page not yet stubbed as a Place; revisit if restaurant recurs."
+  - page: 12
+    section: "Legal Assistance — NACLU Seattle hotline"
+    note: "Digits read as '555-LVL115'; low confidence. Likely an alphanumeric mnemonic."
+  - page: 12
+    section: "Chips and Alcohol — liquor store weekend hours"
+    note: "Only Mon-Fri hours stated; weekend status not captured in the page image."
+  - page: 12
+    section: "Entertainment — Opera House sponsorship sentence"
+    note: "Prose about Seattle Center Opera House operator / Renraku sponsorship only partly legible."
+  - page: 12
+    section: "Entertainment — Coriel's Pantheon + Vastrous Gaming + Orlonstoro venue names"
+    note: "Three additional venue names on the page partly illegible."
+  - page: 12
+    section: "Entertainment — Seattle Madisons team"
+    note: "Team scope + home-venue phrasing partly illegible."
+  - page: 12
+    section: "Entertainment — Screamers Union Bowl league description"
+    note: "Details on the Screamers' league + home venue partly illegible; brutality reputation confirmed."

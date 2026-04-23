@@ -1,0 +1,92 @@
+# Canonical faction — emergency medical / extraction corporation.
+
+name: "DocWagon"
+type: "Corporation (emergency medical response)"
+tier: "AA-equivalent (best-in-class in its segment; precise tier TBD)"
+
+sources:
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 12
+    image: "Sources/SR1E-Seattle/p012-facts-ssc-legal-medical-alcohol-entertainment.png"
+    section: "Facts at Your Fingertips — Medical Assistance"
+
+presence:
+  - metroplex: "Seattle"
+    coverage: "Citywide, including high-risk zones where public ambulances won't go."
+    activity_level: "Ambient at MVP (flavor + Trid ads); direct engagement post-MVP."
+
+structure:
+  services:
+    - type: "Emergency medical extraction"
+      description: |
+        Customer-subscribed; dispatched on a panic-button call. Armored
+        vehicles and helicopters; armed response team accompanies
+        paramedic crew.
+    - type: "Trauma stabilization"
+    - type: "Transport to contracted or requested hospital"
+  assets:
+    - "Armored response cars"
+    - "Helicopters"
+
+business_model:
+  subscription:
+    tiers_note: |
+      SR canon across editions establishes Basic / Gold / Platinum
+      subscription tiers with escalating response-time guarantees and
+      coverage. Seattle Sourcebook p.12 does not break these out.
+      Details TBD from later-edition canon per Setting/DESIGN - Canon.md.
+  call_pattern: "Customer-triggered (subscribed credstick carries the panic-button authorization)."
+  non_subscriber_policy: |
+    Non-subscribers can be billed on-site at emergency rates — but
+    DocWagon is not obligated to respond. The armored team's priority
+    is always the paying customer.
+
+reputation:
+  seattle_register: "Well-respected."
+  cultural_anchor: |
+    DocWagon's armored response convoys are a canonical Seattle
+    atmosphere element — sirens + black-and-red paint jobs blowing
+    through intersections are a Trid staple.
+
+relationships:
+  allies:
+    - faction: "Corporate clientele (AAA, AA employers with group plans)"
+      note: "Corporate DocWagon contracts common; embedded in many mid-to-high lifestyle tiers."
+  rivals:
+    - "Other megacorp medical services (details post-MVP)"
+  hostile:
+    - "Organ-legger rings — DocWagon arrival complicates a harvest."
+      note_transcription: "Implied framing, not explicit on p.12."
+  neutral:
+    - "City Hospitals Health System"
+    - "Lone Star"
+
+game_presence:
+  mvp: "ambient (Trid ads, NPC barks, witnessing an armored response during a run for atmosphere)."
+  post_mvp:
+    - "Subscription as a lifestyle line-item (monthly cost → on-call extraction)."
+    - "Run: intercept / impersonate a DocWagon crew to extract a target."
+    - "Run: protect a DocWagon crew under fire from a gang attack."
+    - "Run: steal a DocWagon response vehicle for a get-away."
+    - "Contact: a DocWagon paramedic (Connection 2-3, medical-intel service, street doc adjacent)."
+
+hooks:
+  - "Armored-response-at-the-scene interrupt — classic SR encounter."
+  - "DocWagon subscription as status-signifier at higher lifestyle tiers."
+  - "Organ-legger subplot — DocWagon as obstacle or ally depending on the run."
+
+standing_default: 0
+thresholds:
+  hostile: -60
+  unfriendly: -20
+  neutral: 0
+  friendly: 20
+  trusted: 60
+
+transcription_note: |
+  This stub is built from the single paragraph on SR1E Seattle Sourcebook
+  p.12. Full-fidelity DocWagon canon (subscription tiers, pricing,
+  response-time guarantees, rival HMOs) requires further sourcebook
+  ingestion. Flag for expansion when relevant pages arrive.
