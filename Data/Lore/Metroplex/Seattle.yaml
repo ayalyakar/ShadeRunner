@@ -17,6 +17,12 @@ sources:
     page: 9
     image: "Sources/SR1E-Seattle/p009-facts-cost-getting-around.png"
     section: "Facts at Your Fingertips — Boat (travel to) / What Will It Cost? / Getting Around — Air / Cab / Ferry"
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 10
+    image: "Sources/SR1E-Seattle/p010-facts-bus-monorail-chains.png"
+    section: "Facts at Your Fingertips — Ferry (addendum) / Bus / Monorail / Major Businesses and Chains"
 
 ingestion_gaps:
   - pages: [7, 8]
@@ -271,6 +277,43 @@ getting_around_metroplex:
           drivers are routine. Anyone travelling by road at night is
           rolling with the criminal element.
 
+    - mode: "Bus (Metro Transit)"
+      source_page: 10
+      operator: "Metro Transit"
+      reputation: "One of the best transit companies in the UCAS."
+      coverage: "Many routes throughout Seattle, frequent stops."
+      schedule_availability: "Bus schedules posted in many public places."
+      fare_yen:
+        downtown_rides: 0                # free in the downtown core
+        outside_downtown_per_ride: 1
+      downtown_free_zone_note: "Rides are free within the downtown district; 1 yen fare applies everywhere else."
+      bus_tunnels:
+        built_decade: "1990s"
+        purpose: "Reduce above-ground traffic congestion."
+        route: "Loops under downtown; connects Seattle Center; passes through the Renraku Arcology; terminates at the King Street Station."
+        effect: "Canonically effective at reducing commute time."
+        amenities: "Stations have small shops and kiosks."
+        night_hazard: |
+          Dangerous after nightfall despite armed-guard presence — ambient
+          crime (muggings, chip deals, gang predation) in the tunnels.
+
+    - mode: "Monorail"
+      source_page: 10
+      age_years_approx: 100
+      built_era_note: "Nearly 100 years of service as of 2050 — original monorail built in the mid-20th century and repeatedly upgraded / expanded."
+      route: "Elevated loop around the downtown district."
+      stops:
+        - "Seattle Center"
+        - "Renraku Arcology"
+        - "King Street Station"
+        - "Various additional points along the loop"
+      tracks: 2
+      fare_yen: 3
+      notes: |
+        Only two monorail tracks exist — limits simultaneous train
+        capacity. Upgraded and expanded several times since its original
+        construction.
+
     - mode: "Ferry (Seattle Public Ferry System)"
       source_page: 9
       operator: "Seattle Public Ferry System (city-run)"
@@ -302,6 +345,146 @@ getting_around_metroplex:
           of the few infrastructure lines actually run directly by the
           city rather than privatized to Lone Star / Ares / Renraku /
           etc. Accidents draw disproportionate press coverage.
+      corruption:
+        source_page: 10
+        notes: |
+          Corruption is a canonical feature of ferry management. Ferry
+          officials regularly get caught skimming; internal betting pools
+          on 'when the next official gets pinched with his hand in the
+          till' are a running joke among crews. Pairs with the
+          mismanagement / accident record (see reliability).
+
+business_tiers:
+  source_page: 10
+  framework: |
+    The sourcebook establishes a canonical four-tier system for Seattle
+    businesses — applied consistently across Department Stores, Grocery /
+    Convenience Stores, and Restaurants / Fast Food. The tiers are a
+    clean mapping onto lifestyle tiers (see Character/DESIGN - Lifestyle.md)
+    and drive shop pricing, SIN-check strictness, and clientele.
+  tiers:
+    - name: "Luxury"
+      clientele: "High-tier SINful (corp managers, old money, celebrity)."
+      sin_check: "Strict."
+      pricing: "Premium."
+    - name: "First Class"
+      clientele: "Middle-tier corp / professional."
+      sin_check: "Moderate."
+      pricing: "Above-baseline."
+    - name: "Family Style"
+      clientele: "Working class, civilian."
+      sin_check: "Light."
+      pricing: "Baseline."
+    - name: "No Frills"
+      clientele: "Low-tier / SINless-tolerant."
+      sin_check: "Minimal / none."
+      pricing: "Cheap."
+
+  department_stores:
+    source_page: 10
+    luxury:
+      - name: "Lordsmongs"
+        transcription_note: "Name read as 'Lordsmongs'; low confidence."
+      - name: "Bloomleys"
+        transcription_note: "Name read as 'Bloomleys'; low confidence."
+      - name: "Lacy's"
+    first_class:
+      - name: "Fahran and Redress"
+        transcription_note: "Name read as 'Fahran and Redress'; low confidence."
+      - name: "The Bowes"
+        transcription_note: "Name read as 'The Bowes'; low confidence."
+    family_style:
+      - name: "Wordsworth"
+        transcription_note: "Name read as 'Wordsworth'; low confidence."
+      - name: "Laura and Mercies"
+        transcription_note: "Name read as 'Laura and Mercies'; low confidence."
+      - name: "Penley's"
+        transcription_note: "Name read as 'Penley's'; low confidence."
+      - name: "Q"
+      - name: "Meyers Superstores"
+        transcription_note: "Name read as 'Meyers Superstores'; low confidence."
+    no_frills:
+      - name: "Ray-Mart"
+        transcription_note: "Name read as 'Ray-Mart'; could be a Wal-Mart cognate."
+      - name: "Steve's Central"
+        transcription_note: "Name read as 'Steve's Central'; low confidence."
+
+  groceries_and_convenience:
+    source_page: 10
+    luxury:
+      - name: "Society Grocers"
+        transcription_note: "Name read as 'Society Grocers'; low confidence."
+    first_class:
+      - name: "G. Meyers Gourmets"
+        transcription_note: "Name read as 'G. Meyers Gourmets'; low confidence."
+    family_style:
+      - name: "Advanson's Grocery"
+        transcription_note: "Name read as 'Advanson's'; low confidence."
+      - name: "Curry & Save"
+        transcription_note: "Name read as 'Curry & Save'; low confidence."
+      - name: "Quick-stop Groceries"
+    no_frills:
+      - name: "Stuffer Shacks"
+        transcription_note: "Name read as 'Stuffer Shacks'; likely SR-canonical 'Stuffer Shack'."
+      - name: "Round-the-Clock Markets"
+      - name: "Buy-Low Foods"
+
+  restaurants_and_fast_food:
+    source_page: 10
+    luxury:
+      - name: "Asenius International"
+        transcription_note: "Name read as 'Asenius International'; low confidence."
+      - name: "The Edge"
+      - name: "Tokoni's"
+        transcription_note: "Name read as 'Tokoni's'; low confidence."
+      - name: "Inai's Seattle Dining"
+        transcription_note: "Name read as 'Inai's'; low confidence."
+      - name: "Toshona Fogliero's"
+        transcription_note: "Name read as 'Toshona Fogliero's'; low confidence."
+    first_class:
+      - name: "The Green Village"
+      - name: "The Country Bar"
+      - name: "La Gatetas"
+        transcription_note: "Name read as 'La Gatetas'; low confidence."
+      - name: "Fu Gour Club"
+        transcription_note: "Name read as 'Fu Gour Club'; low confidence."
+      - name: "Joseph Wong"
+      - name: "Easy Ran"
+        transcription_note: "Name read as 'Easy Ran'; low confidence."
+      - name: "Purple Haze"
+      - name: "The Original Ester"
+        transcription_note: "Name read as 'The Original Ester'; low confidence."
+      - name: "Pol Tho's"
+        transcription_note: "Name read as 'Pol Tho's'; low confidence."
+    family_style:
+      - name: "Grade's for Ribs"
+        transcription_note: "Name read as 'Grade's for Ribs'; low confidence."
+      - name: "Bravo's"
+      - name: "Facanito McKusker's"
+        transcription_note: "Name read as 'Facanito McKusker's'; low confidence."
+      - name: "Jiang Net Lee"
+        transcription_note: "Name read as 'Jiang Net Lee'; low confidence."
+      - name: "Hakata's"
+      - name: "The Bengalok Inlet"
+        transcription_note: "Name read as 'The Bengalok Inlet'; low confidence."
+      - name: "Jack and Rental's"
+        transcription_note: "Name read as 'Jack and Rental's'; low confidence — could be 'Jack and Rental's'."
+      - name: "Massilino's"
+        transcription_note: "Name read as 'Massilino's'; low confidence."
+    no_frills:
+      - name: "Mankilder's"
+        transcription_note: "Name read as 'Mankilder's'; low confidence."
+      - name: "You Should Not Eat So Much"
+      - name: "Keeki Burgers"
+      - name: "The Golden Axechins"
+        transcription_note: "Name read as 'The Golden Axechins'; low confidence."
+      - name: "Regi Burgers"
+      - name: "Lexis Foods"
+      - name: "The Captain's Gallery"
+
+# Tuesdays is featured in a full-page advertisement on p.10 ("Authentic
+# Chinese Cajun Cuisine"). Not included in the four-tier chain list above —
+# stubbed as a standalone place. See Data/Lore/Places/Restaurants/Tuesdays.yaml.
 
 # Page-image has a small additional paragraph about the tunnels (Seabreeze?) on
 # the Maglev route. Prose was only partially legible in the current scan and
@@ -334,3 +517,17 @@ transcription_gaps:
   - page: 9
     section: "Getting Around — Ferry 'Bolle Ferry' line name"
     note: "Name read as 'Bolle'; low confidence."
+  - page: 10
+    section: "Major Businesses and Chains — all tiers"
+    note: |
+      Most chain names are transcribed with low confidence from small
+      body text in a two-column layout. Each carries an individual
+      transcription_note in its entry. Batch-verify against a
+      higher-resolution scan in a dedicated pass before authoring
+      in-game shop scenes against these names.
+  - page: 10
+    section: "Major Businesses and Chains — completeness"
+    note: |
+      The printed intro explicitly calls this 'a partial list'. Do not
+      treat the list as exhaustive — other SR1E or later-edition
+      Seattle canon may add chains we will want to integrate.

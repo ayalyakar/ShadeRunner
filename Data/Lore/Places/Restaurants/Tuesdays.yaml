@@ -1,0 +1,52 @@
+# Canonical place stub — restaurant.
+# Pulled from a full-page in-world advertisement on SR1E Seattle Sourcebook p.10.
+
+name: "Tuesdays"
+type: "Restaurant"
+
+sources:
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 10
+    image: "Sources/SR1E-Seattle/p010-facts-bus-monorail-chains.png"
+    section: "Full-page advertisement"
+
+cuisine: "Authentic Chinese Cajun"
+tagline: "Authentic Chinese Cajun Cuisine"
+
+ltg_numbers:
+  - "206 (10-33-3491)"
+    # Transcription note: digits read as best as possible from the small
+    # print at the bottom of the page image. Second LTG partially legible.
+  - "206 (50-59-2946)"
+    transcription_note: "Digits low-confidence from small ad text."
+
+open_days_claim: "Open every day — the ad reads 'Eat a Tuesdays 7 days a week' (approximate)."
+open_days_transcription_note: "Ad slogan partially legible; interpretation best-effort."
+
+tier:
+  framework: "Metroplex/Seattle.yaml business_tiers"
+  assigned: null
+  note: "Not listed in any tier of the Major Businesses and Chains rollup on the same page; may be either single-location (not a chain) or omitted from that partial list."
+
+location:
+  district: null
+  address: null
+  transcription_note: |
+    Specific location / district not stated on the ad image at this
+    resolution. Revisit on re-scan or cross-reference with later
+    Seattle canon.
+
+game_presence:
+  mvp: "flavor only (ambient ad content; may populate a Trid-ad rotation)"
+  post_mvp: "could be authored as a walkable Seattle-Downtown venue with a memorable fusion-cuisine gimmick — run hook: mob-front / BTL-studio-cover / Yakuza-numbers backroom variant."
+
+hooks:
+  - "Fusion cuisine as the premise for an unlikely Johnson meet."
+  - "Ad slogan 'Eat a Tuesdays 7 days a week' is an absurd in-world joke — good satirical-tone register anchor."
+
+transcription_note: |
+  Entire record is built from the page-10 advertisement image. Verify
+  the restaurant's canonicity against later Seattle-canon material
+  before investing authoring time.
