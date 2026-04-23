@@ -53,6 +53,12 @@ sources:
     page: 15
     image: "Sources/SR1E-Seattle/p015-history-treaty-provisions-exodus.png"
     section: "History — Treaty provisions / Truth Element / Thunder Tyer bio / Exodus of 2019"
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 16
+    image: "Sources/SR1E-Seattle/p016-history-birth-metroplex-awakened.png"
+    section: "History — Birth of the Metroplex / The Awakened City (opening)"
 
 ingestion_gaps:
   - pages: [7, 8]
@@ -1342,6 +1348,83 @@ history:
         - "NAN-sympathetic vs. nativist NPC branching for older Seattle residents."
         - "Tacoma / Everett / Seattle aid-competition as civic-politics run backdrop."
 
+  birth_of_metroplex:
+    source_page: 16
+    overview: |
+      The Exodus-of-2019 refugee pressure broke the pre-war city
+      structure and forced the 'Seattle Metroplex' as a single
+      city-state under federal recognition. Annexation drove the
+      city's growth from core Seattle to encompass King / Pierce /
+      Snohomish counties within 18 months.
+    charles_lindstrom:
+      name: "Charles C. Lindstrom"
+      role: "Mayor of Seattle (2019); charismatic; 'penchant for fiery speeches and daring action'."
+      nickname: "Lindstrom the Conqueror"
+      ambition: "Make Seattle the economic capital of the Pacific Coast by annexing surrounding towns."
+      pre_exodus_reputation: |
+        Early annexation pushes repeatedly failed; critics mocked the
+        nickname with schadenfreude as every attempt collapsed.
+      turning_point: |
+        The Exodus flood of 2019 made independent suburban governance
+        practically impossible. Lindstrom's once-laughable unification
+        plan became the only viable response.
+      post_annexation_role: "First Governor of the Seattle Metroplex (confirmed by federal resolution 2020-11-16)."
+    annexation_timeline:
+      - date: "2019 (early)"
+        event: "Bellevue, Renton, and Kent voted to join greater Seattle."
+        margin_note: "Prose reads 'unanimously' for all three; low confidence on that qualifier."
+      - date: "2019 (summer)"
+        event: "Greater Seattle absorbed all of King County plus most of Pierce and Snohomish Counties."
+      - date: "2019-09-06"
+        event: "Citizens of Everett and Tacoma voted in favor of joining Seattle."
+        margin: "85%+ in favor per post-vote tally."
+      - date: "2020-11-16"
+        event: "US President signed a resolution dissolving Washington State and formally creating the Seattle Metroplex as a city-state."
+        outcome: "Charles C. Lindstrom installed as first Governor."
+    organized_crime_interference:
+      source_page: 16
+      summary: |
+        Mafia and Yakuza attempted to intimidate and coerce voters
+        in Everett and Tacoma during the 2019-09-06 annexation
+        campaigns — shooting and bombing polling-related events.
+      intended_outcome: "Pre-annexation independence (to keep Seattle security forces out of their operations)."
+      actual_outcome: |
+        The syndicate violence backfired — public fear of organized
+        crime drove voters toward the stronger-security Seattle
+        Metroplex. Final vote tally in favor of annexation passed
+        85% in both cities.
+      transcription_note: "Several words on the syndicate-interference paragraph partly illegible; captured in spirit."
+      game_presence: "Canonical grudge-event origin for 2050-era Mafia / Yakuza resentment of Seattle federal oversight."
+    bbs_post_detective_law:
+      handle: "Detective Law"
+      timestamp_raw: "(21-20-98) (4-3-5) 0"
+      transcription_note: "Handle + timestamp read with low confidence."
+      topic: "Documentary summary of the syndicate-interference campaign during the 2019 annexation votes."
+      voice_profile: "Detective-register — factual, law-enforcement-adjacent tone. Candidate for recurring persona pending additional appearances."
+
+  awakened_city_opening:
+    source_page: 16
+    page_status: "Opening paragraphs only — continues on p.17+."
+    ube_date: "2021-04-30"
+    event:
+      name_canonical: "Unexplained Genetic Expression (UGE) / Goblinization"
+      prose_description: "One in ten Seattle citizens began mysteriously transforming into Orks and Trolls."
+      social_fallout_preview: |
+        Former allies were set against each other along metatype lines
+        (humans vs. emergent Orks / Trolls / Dwarves / Elves).
+        Canonical origin of metahuman-discrimination patterns carrying
+        forward into 2050.
+      transcription_note: |
+        Page 16 ends mid-paragraph on the Awakened City section;
+        continuation on p.17 will likely cover the first decade of
+        metahuman emergence in Seattle specifically.
+    game_presence:
+      mvp: "historical / lore only — grounds metahuman-discrimination ambient in 2050."
+      post_mvp:
+        - "Anniversary-of-UGE ambient event (annual flashback content on April 30)."
+        - "'One in ten' family-story beats for named older NPCs."
+        - "Cross-ref Character/DESIGN - Metatypes.md metahuman-world-reactivity layer."
+
 # Run Run Shaw's is featured in a stylized ad on the right side of p.11
 # (vertical "run run shaw's" typography; line about 'x runs at $9 plus tax').
 # Not stubbed as a standalone place at this pass — legibility too low to
@@ -1509,3 +1592,15 @@ transcription_gaps:
   - page: 15
     section: "History — Exodus 2019 eyewitness BBS handle"
     note: "Handle partly illegible in the eyewitness-post attribution."
+  - page: 16
+    section: "History — Bellevue/Renton/Kent 'unanimously' voted"
+    note: "Prose reads 'unanimously' for the three-city early-2019 vote; low confidence that all three were truly unanimous. Flag."
+  - page: 16
+    section: "History — syndicate interference paragraph wording"
+    note: "Several words in the Mafia/Yakuza-interference paragraph partly illegible; content captured in spirit."
+  - page: 16
+    section: "History — Detective Law BBS handle / timestamp"
+    note: "Handle + timestamp read with low confidence; not yet promoted."
+  - page: 16
+    section: "History — Awakened City (first decade of UGE) cut off"
+    note: "The Awakened City section opens on p.16 and continues on p.17; ingest p.17 to complete."
