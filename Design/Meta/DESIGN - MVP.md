@@ -14,14 +14,23 @@ The MVP is **shippable to self**: complete end-to-end, no placeholders in the cr
 
 - **Geography:** Redmond Barrens only; Touristville strip as the one hand-crafted sub-zone (fixer bar, cheap eats, alley, strip-club entrance, fleabag motel). Two adjacent Barrens streets: the PC's apartment, a corner store, a gang hang.
 - **PC start:** Low-tier apartment at 2,000¥/month. Monthly rent pressure is the baseline economic stake.
-- **Factions present:**
-  - **Halloweeners** (fire-themed chaotic street gang).
-  - **Redmond Hellhounds** (the district's namesake gang, canonical in SR1E).
-  - **Spikes** (ork-majority go-gang).
-  - No corp presence beyond ambient. Knight Errant / Lone Star response time is effectively unbounded.
+- **Factions present (gangs, MVP turf):**
+  - **Halloweeners** — fire-themed chaotic street gang.
+  - **Redmond Hellhounds** — the district's namesake gang.
+  - **Spikes** — ork-majority go-gang.
+  - **Rusted Stilettos** — metahuman gang (p.128).
+  - **Crimson Crush** — metahuman gang; Bargain Basement turf.
+  - **Red Hot Nukes** — metahuman gang; Hollywood turf.
+- **Organized crime (ambient in MVP):**
+  - **Seattle Mafia (Redmond branch)** — James O'Malley, Theodore Alamando; Del Secondi schism as live background.
+  - **Yakuza Rings** — 5 Rings; Ill Squires (Don Autigerano) most active; recruitment pipeline as BBS / dialogue flavor.
+- **Supremacy groups (ambient in MVP):**
+  - **Humanis Policlub**, **KKK**, **The Order** — rally events, hate-crime incidents, BBS chatter; metahuman-defense counter-presence surfaced in neighborhood NPC clustering.
+- **Canonical NPCs with game presence:** Mayor **Jeffrey Gasston**, **James O'Malley**, **Theodore Alamando**, **Don Autigerano**. All statted but peripheral to the first run. Governor Schultz, Del Secondi as flavor only.
+- **Police response (canonical per-district override):** minimum 4-man squads; riot-van vehicles (Aero Citymaster, Nissan Patrol-1); ~33% of Redmond government corruption-linked to the syndicates.
 - **First Johnson:** a **Touristville fixer** (Connection ~3–4) who calls the PC cold. Meet happens in a Touristville bar.
 - **First run:** content **TBD** (deferred; retrieval / protection / extraction / sabotage).
-- **NPC populations:** procgen driven by the district's canonical demographics (87% human, 10% ork, 6% elf, 1% dwarf, 1% troll, 1% other; 70% below poverty; 78% <12-years education).
+- **NPC populations:** procgen driven by the district's canonical demographics (87% human, 10% ork, 6% elf, 1% dwarf, 1% troll, 1% other; 70% below poverty; 78% <12-years education) **plus neighborhood-level metahuman clustering** (p.128 post-Night-of-Rage self-defense pattern).
 
 ## Why these choices
 

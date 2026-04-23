@@ -1,0 +1,21 @@
+# Canonical faction stub.
+
+name: "Spikes"
+type: "Ork-majority go-gang"
+
+sources:
+  - edition: SR1E
+    page: 127
+    title: "Redmond: New Hope for a Troubled District"
+
+presence:
+  - district: "Redmond"
+    turf: "Redmond Barrens (exact blocks TBD)"
+
+flavor: |
+  Ork-majority go-gang consistent with Redmond's 10% ork demographic
+  and biker-culture framing. Detailed description awaiting further extract.
+
+game_presence:
+  mvp: true
+  role: "Core MVP gang; mobility-advantaged biker antagonist."

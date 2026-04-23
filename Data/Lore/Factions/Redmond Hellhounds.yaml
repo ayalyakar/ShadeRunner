@@ -1,0 +1,22 @@
+# Canonical faction stub.
+
+name: "Redmond Hellhounds"
+type: "Street gang"
+
+sources:
+  - edition: SR1E
+    page: 127
+    title: "Redmond: New Hope for a Troubled District"
+
+presence:
+  - district: "Redmond"
+    turf: "Redmond Barrens (exact blocks TBD)"
+
+flavor: |
+  The district's namesake gang. Referenced in the Redmond history prose
+  via the "Redmond Hellhounds attack" event that shaped the Barrens.
+  Detailed description awaiting further extract.
+
+game_presence:
+  mvp: true
+  role: "Core MVP gang; historical weight in the district."

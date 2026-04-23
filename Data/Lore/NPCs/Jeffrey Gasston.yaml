@@ -1,0 +1,40 @@
+# Canonical NPC stub.
+# See Design/Setting/DESIGN - Canon.md for ingestion policy.
+
+name: "Jeffrey Gasston"
+title: "Mayor of Redmond"
+
+sources:
+  - edition: SR1E
+    page: 128
+    title: "Redmond: New Hope for a Troubled District"
+    section: "Politics"
+
+facts:
+  elected: 2048
+  location: "Redmond"
+  mentor: "Governor Schultz"
+
+flavor:
+  early_career: |
+    Inexperienced political leader with grandiose plans and
+    (per critics) no patience to see them through. Mentored by
+    Governor Schultz; acquiring political savvy over time.
+  recovery_project: "Renton Corner Mall"
+  signature_issue: |
+    Rebuilding Redmond's economic wasteland. Occasional public-image
+    successes (Renton Corner Mall) alongside free-spending tendencies
+    that drain the district's coffers.
+  opposition: |
+    Deals with officials compromised by Mafia and Yakuza; roughly
+    a third of Redmond government is tied to the syndicates.
+
+game_presence:
+  mvp: "full NPC with schedule"
+  hooks:
+    - "Civic runs: expose corruption in his cabinet, or shield him from it."
+    - "Corporate-adversary runs: those who benefit from his failure."
+    - "Recovery runs: protect or sabotage the Renton Corner Mall project."
+
+stats:
+  notes: "Statblock not yet derived; SR1E-era civic leader, non-combatant baseline."

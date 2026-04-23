@@ -62,7 +62,7 @@ Canonical extracts (fact sheets, NPC statblocks, faction entries, event descript
 
 ### District template (sourcebook-tab hybrid)
 
-Per-district design files use the sourcebook tab layout (**Facts, History, Downtown, Districts, Government, Economy, Crime, Maps**) extended with design-only sections (**Hooks, MVP Notes, Open Questions**). See `Design/Setting/Districts/DESIGN - Redmond.md` for the reference implementation.
+Per-district design files use the sourcebook tab layout (**Facts, History, Downtown, Outlying, Government, Economy, Crime, Maps**) extended with design-only sections (**Hooks, MVP Notes, Open Questions**). See `Design/Setting/Districts/DESIGN - Redmond.md` for the reference implementation.
 
 ### Historical events split
 

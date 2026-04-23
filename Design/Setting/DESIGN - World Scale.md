@@ -30,7 +30,7 @@ Each district has:
 
 ## Per-district design sheets
 
-Each district gets a dedicated design file under `Design/Setting/Districts/` following the sourcebook-tab hybrid template (Facts, History, Downtown, Districts, Government, Economy, Crime, Maps + Hooks, MVP Notes, Open Questions). Stats are transcribed from canonical extracts and stored separately at `Data/Lore/Districts/<Name>.yaml`. See `Setting/DESIGN - Canon.md` for the ingestion policy.
+Each district gets a dedicated design file under `Design/Setting/Districts/` following the sourcebook-tab hybrid template (Facts, History, Downtown, Outlying, Government, Economy, Crime, Maps + Hooks, MVP Notes, Open Questions). Stats are transcribed from canonical extracts and stored separately at `Data/Lore/Districts/<Name>.yaml`. See `Setting/DESIGN - Canon.md` for the ingestion policy.
 
 Reference: `Design/Setting/Districts/DESIGN - Redmond.md` (first district implemented).
 

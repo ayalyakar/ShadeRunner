@@ -213,6 +213,10 @@ Failures produce one of: **surrender**, **flee**, **freeze**, **desperate all-in
 
 Escalation timers and intensities scale with target tier and how loud the run was.
 
+### Per-district police overrides
+
+Global police parameters (minimum squad size, standard response vehicles, base response times) can be overridden per district via the `police_response` block in `Data/Lore/Districts/<Name>.yaml`. Reference implementation: Redmond (4-man minimum squads, Aero Citymaster / Nissan Patrol-1 riot vans, ~33% corruption rate) from SR1E p.128.
+
 ## Lethality baseline
 
 Calibrated between **tabletop-brutal** and **tactical grind** — call it **High-Medium**:

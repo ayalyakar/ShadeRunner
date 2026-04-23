@@ -1,0 +1,22 @@
+# Canonical faction stub.
+
+name: "Rusted Stilettos"
+type: "Metahuman street gang"
+
+sources:
+  - edition: SR1E
+    page: 128
+    title: "Redmond: New Hope for a Troubled District"
+    section: "Outlying"
+
+presence:
+  - district: "Redmond"
+    turf: "Redmond Barrens (exact blocks TBD)"
+
+flavor: |
+  One of three infamous metahuman gangs in Redmond (alongside
+  Crimson Crush and Red Hot Nukes). Details awaiting further extract.
+
+game_presence:
+  mvp: true
+  role: "MVP gang; metahuman-majority."
