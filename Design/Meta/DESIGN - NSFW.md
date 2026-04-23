@@ -56,11 +56,22 @@ Absolute limits I (the assistant helping build this) will not cross regardless o
 
 At MVP, the NSFW pipeline must:
 
-- Ship at least one illustrated-explicit scene in the vertical slice (sex, violence, or both, depending on the run).
-- Have scene-tagging and scene-skip UX working.
-- Prove the authoring → art → ship loop end-to-end.
+- Ship at least one **illustrated-explicit** scene in the vertical slice. Art at MVP: **diffusion-drafted stills, human-curated, shipped as-is** (no hand-paint pass required). Full animated sex scenes are a stated post-MVP goal.
+- **One romance-eligible named contact** authored with full romance path (dialogue milestones + explicit scene). Validates the romance-scene pipeline.
+- **Addiction mechanics** implemented for drugs and BTL chips (tolerance, addiction risk, withdrawal). Simulated, not narrative-only.
+- **BTL chips as consumable items** working end-to-end: buy, consume, effect (short buff/debuff), addiction hook, sell. A small chip-library authored.
+- Scene-tagging and per-scene-skip UX working (no global NSFW toggle).
+- Prove the authoring → diffusion → curate → ship loop end-to-end.
 
-Full romance arcs, brothel hubs, BTL studios, addiction systems, sex-work career paths — all post-MVP.
+Post-MVP goals (tracked, not MVP-blocking):
+
+- Full animated sex scenes (from static illustrations to animation).
+- Additional romance-eligible contacts (multiple simultaneous allowed; consequences tracked).
+- Brothel hubs as walkable venues.
+- BTL-studio run types (production, extraction, sabotage, sabotage-of-rival-studio).
+- Full BTL career path (record / sell chips as a mini-profession).
+- Sex-work side hustle as a real income loop.
+- Expanded drug catalogue and deeper addiction-system content (detox clinics, withdrawal-driven runs).
 
 ## Open questions
 

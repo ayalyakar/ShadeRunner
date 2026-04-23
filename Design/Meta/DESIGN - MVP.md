@@ -21,9 +21,12 @@ MVP is **shippable to self**: no placeholders in the critical path. A missing fe
 Each archetype has **one MVP-playable build** — not the full skill/spell/program tree. More builds land post-MVP.
 
 ### Chargen
-- Blank-slate character creation: metatype, archetype, primary stats, skills, starting gear, backstory beats.
-- Metatypes at MVP: Human, Elf, Ork, Dwarf, Troll (five core SR metatypes).
-- Chargen is point-buy against karma (SR1E-ish economy).
+- Blank-slate character creation: **karma point-buy** across metatype, attributes, skills, resources. No priority table.
+- **Metatypes at MVP: all five SR1E core** — Human, Elf, Dwarf, Ork, Troll.
+- **Attributes:** SR3E/4E model (Agility split from Quickness; Body, Agility, Reaction, Strength, Charisma, Intelligence, Logic, Willpower + Essence, Magic).
+- **Skills:** SR1E skill tree, consolidated (redundant small-item skills merged; SR1E flavor retained).
+- **Starting gear:** minimal playable catalogue (~15–30 items covering one weapon per category, armor, basic runner kit).
+- **Cyberware:** minimal starter kit available at chargen (smartlink, wired reflexes 1, dermal 1, cyberears / cybereyes basics). Essence cost applies. Full catalogue post-MVP.
 
 ### Run structure
 - **Meet** — fixer-to-Johnson in a Redmond venue (bar / hotel / safe house).
@@ -32,13 +35,15 @@ Each archetype has **one MVP-playable build** — not the full skill/spell/progr
 - **Payout** — dialogue, karma, rep, nuyen. Consequence imprinted on faction / contact state.
 
 ### Systems MVP depth
-- **Combat:** turn-based phase/initiative, dice-pool resolution, SR-correct drain/recoil/armor math, one melee + one ranged archetype weapon, cover, line-of-sight.
-- **Matrix:** one decking loop — a host, IC opposition, file retrieval or node control action, jack-out consequences.
-- **Magic:** one spell (combat), one conjuring (spirit summons), drain resolution, line-of-sight, spirit services.
-- **Rigging:** **NOT in MVP.** Deferred post-MVP. A playable Rigger is post-MVP.
-- **Social / contacts:** one fixer, one Johnson, one contact archetype (e.g. fence), dialogue with skill checks.
-- **Economy:** monthly rent at Low tier (2,000¥/mo per prior anchor), payout → karma / rep / nuyen loop.
-- **NSFW:** at minimum, one illustrated-explicit scene in the vertical slice (e.g. a brothel / BTL studio encounter as an optional Legwork path). Validates the NSFW pipeline end-to-end.
+- **Combat:** turn-based, **phase-pass initiative** (high-Reaction acts multiple passes per round), **SR1E d6 exploding dice pool** resolution (count successes vs. target number), **square grid**, full cover + line-of-sight, **SR1E wound boxes (Physical + Stun tracks)** with dice-pool penalty. See `Systems/DESIGN - Combat.md`.
+- **Matrix:** **abstract minigame** surface (dedicated Matrix scene), **SR1E wired Matrix baseline** with post-Crash wireless drift eligible post-MVP. One decking loop — host, IC opposition, file retrieval or node control, jack-out consequences. See `Systems/DESIGN - Matrix.md`.
+- **Magic:** **Hermetic and Shamanic** traditions only at MVP; other traditions post-MVP. **Spellcasting + spirit summoning** (drain, line-of-sight, spirit services). See `Systems/DESIGN - Magic.md`.
+- **Rigging:** **NOT in MVP.** Deferred. Rigger archetype is post-MVP.
+- **Social / contacts:** one fixer, one Johnson, one contact archetype (e.g. fence), dialogue with skill checks. **One romance-eligible named contact** at MVP (validates the romance-scene pipeline end-to-end).
+- **Economy:** monthly rent at Low tier (2,000¥/mo per prior calibration), payout → karma / rep / nuyen loop. Sex work / BTL chip sale / drug sale as alt income channels working in parallel with run payouts.
+- **Addiction:** **simulated** (tolerance, addiction, withdrawal) for drugs and BTL chips. Mechanical, not just narrative.
+- **BTL:** BTL chips as **consumable items** at MVP — buy, consume, sell, with short buff/debuff effects and addiction risk. Chip-library authored. BTL-studio runs and full BTL career path are post-MVP.
+- **NSFW:** at minimum, one illustrated-explicit scene in the vertical slice (sex scene with the romance contact, a BTL-studio encounter, or a wetwork scene). Validates the NSFW pipeline end-to-end. **Art fidelity at MVP:** ship diffusion-drafted still illustrations as-is (human-curated). Full animated sex scenes are a stated post-MVP goal.
 
 ### Presentation / UI
 - Isometric 3D with fixed camera.

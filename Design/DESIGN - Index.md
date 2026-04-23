@@ -33,6 +33,18 @@ Solo-developed, NSFW-forward Shadowrun-1E-leaning CRPG set in Seattle 2050–206
 
 - [Narrative/DESIGN - Writing.md](Narrative/DESIGN%20-%20Writing.md) — three-layer writing pipeline + BBS persona policy.
 
+## Character
+
+- [Character/DESIGN - Creation.md](Character/DESIGN%20-%20Creation.md) — karma point-buy chargen; all 5 metatypes; all 4 archetypes.
+- [Character/DESIGN - Metatypes.md](Character/DESIGN%20-%20Metatypes.md) — Human, Elf, Dwarf, Ork, Troll. Stats + world reactivity.
+- [Character/DESIGN - Cyberware.md](Character/DESIGN%20-%20Cyberware.md) — minimal MVP catalogue; Essence economy.
+
+## Systems
+
+- [Systems/DESIGN - Combat.md](Systems/DESIGN%20-%20Combat.md) — phase-pass initiative, square grid, SR1E d6 exploding dice, Physical + Stun tracks.
+- [Systems/DESIGN - Matrix.md](Systems/DESIGN%20-%20Matrix.md) — abstract minigame, SR1E wired Matrix baseline, wireless post-MVP drift.
+- [Systems/DESIGN - Magic.md](Systems/DESIGN%20-%20Magic.md) — Hermetic + Shamanic MVP; Spellcasting + Summoning; Adept power tree.
+
 ## Technology
 
 - [Technology/DESIGN - Engine.md](Technology/DESIGN%20-%20Engine.md) — Godot 4 + GDScript + 3D isometric.
@@ -40,12 +52,12 @@ Solo-developed, NSFW-forward Shadowrun-1E-leaning CRPG set in Seattle 2050–206
 
 ## Pending (to be added as decisions land)
 
-- Character / Creation / Progression / Cyberware
-- Systems / Combat / Matrix / Magic / Rigging
-- World / Economy / Factions / Simulation / Time
-- Presentation / Art / Audio / UI
-- Social / Contacts
-- Setting / Districts / Redmond (will land once the Seattle Sourcebook's Redmond chapter is ingested)
+- Character — Progression, Aging, Lifestyle, Downtime
+- Systems — Rigging (post-MVP)
+- World — Economy, Factions, Simulation, Time, Reputation, Procgen
+- Presentation — Art Direction, Audio, UI
+- Social — Contacts
+- Setting — Districts / Redmond (lands when the Seattle Sourcebook's Redmond chapter is ingested)
 
 ## Status
 
