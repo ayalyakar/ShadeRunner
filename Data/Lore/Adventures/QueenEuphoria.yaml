@@ -21,12 +21,14 @@ publication:
   copyright_year: 1990
   # Production staff transcribed on p.2 (pending ingestion).
 
-# Short framing. Full synopsis ingested from p.6-7.
+# Short framing. Ingested from printed p.6 (Plot Synopsis).
 synopsis_stub: |
   An SR1E Seattle-era adventure module centered on the MegaMedia starlet
-  known as "Queen Euphoria". The cover art features a stylized dragonfly
+  known as "Euphoria". The cover art features a stylized dragonfly
   motif (foreshadowing the Ant Lion / insect-spirit themes of the prologue
-  and plot).
+  and plot). The module's spine is a corporate-sabotage caper that uncovers
+  an Insect Spirit infestation (a Queen Ant Spirit hive seeded by a former
+  explorer calling himself "Craft" under the hive's influence).
 
 # Setting paragraph from printed p.5 INTRODUCTION, cross-checked against
 # existing ShadeRunner canon (Data/Lore/Metroplex/Seattle.yaml and
@@ -110,6 +112,193 @@ adaptation_notes:
     status: "Logged at ingestion time. Actual per-scene adaptation decisions land when (and if) the module is promoted into playable ShadeRunner runs."
   decision_tree_format:
     note: "The module uses a decision-tree structure: the same encounter may be reached via different paths, and some encounters can be missed entirely. This is a good structural match for ShadeRunner's branching-quest design."
+
+# Plot synopsis ingested from printed p.6. Structured into ordered beats
+# to aid later scene-level cross-referencing. Spoiler-flagged because the
+# Insect Spirit / Queen Ant reveal is the central twist of the module
+# (and a major SR canon event type); per ShadeRunner spoiler policy,
+# in-game codex / dossier surfaces would gate on spoiler_level.
+plot_synopsis:
+  spoiler_level: gm_only
+  spoiler_reveals:
+    - "Thomas Dorin has an alias 'Craft' and is under the influence of an Insect Spirit (Queen Ant)."
+    - "The 'Amber Gel' food product is derived from Insect Spirit Worker material."
+    - "The Hive is located in the Puyallup Barrens."
+    - "Vincent Burroughs of Sirius Foods is complicit but does not know the supernatural source."
+  arc_summary: |
+    A former explorer (Thomas Dorin / "Craft") returns from the South
+    American jungle under the thrall of an unsummoned Queen Ant Spirit
+    and begins building a Hive in the Puyallup Barrens. Financing the
+    Hive, he sells Vincent Burroughs of Sirius Foods a mysteriously
+    addictive food product, "Amber Gel," derived from Worker-spirit
+    material. Rival corp Ludomeria hires a Fixer (Elliot Whitecastle)
+    to sabotage Sirius's Euphoria-fronted Amber Gel promotion via a
+    shadowrun kidnapping. Escalating corp retaliation draws the runners
+    back in on a hired-to-find-Euphoria job for MegaMedia, after Craft
+    himself kidnaps Euphoria (now obsessed with making her "His Queen").
+    Investigation converges on Craft's Hive facility in Puyallup.
+  plot_beats:
+    - id: beat_01_discovery
+      title: "Craft's discovery"
+      summary: |
+        Thomas Dorin, under the alias "Craft," has returned from the
+        South American jungle bringing back an unsummoned Queen Ant
+        Spirit. He begins forming a Hive in preparation for summoning
+        her.
+      pc_involvement: none
+      spoiler_level: gm_only
+    - id: beat_02_amber_gel
+      title: "Amber Gel / Sirius Foods alliance"
+      summary: |
+        Craft discovers that Worker-Insect material blended with
+        conventional food thickeners and additives yields a
+        hypnotically addictive food product. He partners with Vincent
+        Burroughs, a Sirius Foods executive: nuyen + corporate
+        security in exchange for supply. Burroughs does not know the
+        true source. Sirius executives are aware of the secret deal
+        but look the other way so long as Burroughs keeps producing
+        "Amber Gel."
+      pc_involvement: none
+      spoiler_level: gm_only
+    - id: beat_03_euphoria_promotion
+      title: "Euphoria hired to promote Amber Gel"
+      summary: |
+        Sirius Foods hires the media-celebrity Euphoria - normally a
+        recluse - to promote Amber Gel in a Seattle-local rollout. If
+        the appearances go well, Amber Gel gets pushed internationally.
+        Currently the product is only mildly successful.
+      pc_involvement: none
+    - id: beat_04_ludomeria_hires_fixer
+      title: "Ludomeria sabotage I: the Fixer"
+      summary: |
+        Rival corp Ludomeria learns of Euphoria's role and wants to
+        disrupt Sirius's rollout. Ludomeria engages a local Fixer,
+        Elliot Whitecastle, to assemble a shadowrunner team. Goal:
+        prevent Euphoria appearing at any of her Amber Gel promotion
+        events over one weekend. Expected fallout: Sirius tears up
+        Euphoria's contract, and adverse publicity buries Amber Gel.
+      pc_involvement: adversary_brief
+    - id: beat_05_first_kidnap
+      title: "First Euphoria kidnapping (the PCs' run)"
+      summary: |
+        The shadowrunners (the PCs) kidnap Euphoria and hide her
+        across the scheduled appearance weekend. Sirius runs the
+        promotions without their star, desperately trying to save
+        face. MegaMedia - Euphoria's production company - is enraged.
+      pc_involvement: primary
+    - id: beat_06_pride_counter
+      title: "Pride hired to find her"
+      summary: |
+        Sirius hires another shadowrunner, an African-Itzaman mage
+        named Pride, to find Euphoria. Using ritual magic and a strand
+        of Euphoria's hair from her pillowcase, Pride tracks the PCs.
+        The PCs defeat Pride and hold Euphoria until Monday - past all
+        her scheduled appearances - then release her.
+      pc_involvement: primary
+    - id: beat_07_court_standoff
+      title: "Litigation between Sirius and MegaMedia"
+      summary: |
+        Sirius Foods and MegaMedia can't agree on compensation for the
+        missed appearances (both know outside parties arranged it).
+        They move to resolve the dispute in court.
+      pc_involvement: none
+    - id: beat_08_ludomeria_megamedia
+      title: "Ludomeria sabotage II: MegaMedia deal"
+      summary: |
+        Ludomeria approaches MegaMedia with a similar contract - a
+        series of Euphoria appearances promoting Ludomeria's own
+        Amber-Gel-knockoff product, 'Blue Bacaoey'
+        (transcription_note: product name reading tentative - low-res).
+      pc_involvement: none
+      transcription_note: "Product name 'Blue Bacaoey' read tentatively from low-res p.6; verify at a later ingestion pass."
+    - id: beat_09_burroughs_panic
+      title: "Burroughs orders Craft to act"
+      summary: |
+        Burroughs fears the combined negative publicity from the botched
+        Sirius-Euphoria rollout AND Ludomeria's knockoff push will end
+        his Sirius career. He asks Craft to 'take care of Euphoria.'
+        Craft, under the hive's hold and fixated on Euphoria, takes
+        this as his cue to make her 'His Queen.'
+      pc_involvement: none
+      spoiler_level: gm_only
+    - id: beat_10_second_kidnap
+      title: "Second kidnapping: Craft at Euphoria's penthouse"
+      summary: |
+        Using Soldier and Worker Insect Spirits from the Hive, Craft
+        invades Euphoria's penthouse during a home studio recording
+        session. He slaughters her bodyguards (brutally, in a way that
+        reads as non-human) and kidnaps her. Her recording equipment
+        captures the attack before she is taken. He brings her to the
+        Hive, begins the Queen Ant summoning, and feeds her a
+        concoction to begin her metamorphosis.
+      pc_involvement: none
+      spoiler_level: gm_only
+      key_evidence:
+        - "Recording captures two men: one wearing a 'Garnaty's Bar and Grill' t-shirt, another speaking the name 'Burroughs'."
+    - id: beat_11_megamedia_hires_pcs
+      title: "MegaMedia contracts PCs to find Euphoria"
+      summary: |
+        MegaMedia pressures Sirius (in court) to help recover Euphoria.
+        Robert Carmon - previously a Fixer, now a MegaMedia VP - is
+        put in charge of the recovery. Suspecting the PCs were
+        involved in the first kidnapping and at least have information,
+        Carmon hires them to find Euphoria this time.
+      pc_involvement: primary
+    - id: beat_12_penthouse_investigation
+      title: "Penthouse crime scene"
+      summary: |
+        Carmon takes the runners to Euphoria's penthouse where the
+        second kidnapping occurred. The scene is carnage - the
+        bodyguards butchered in a way that suggests nothing Human did
+        it. During investigation the runners find / suspect Euphoria's
+        recording equipment; review it for the evidence it captured.
+      pc_involvement: primary
+      evidence_discovered:
+        - "Garnaty's Bar and Grill logo visible on an attacker's clothing."
+        - "Attacker's conversation includes the name 'Burroughs'."
+    - id: beat_13_lead_garnatys
+      title: "Lead: Garnaty's Bar and Grill"
+      summary: |
+        Runners follow the Garnaty's clue to the bar and ask after a
+        missing waiter, Van Willis. Trail leads to a sighting in the
+        Puyallup Barrens near a shop / location named 'Magic Crafts.'
+      pc_involvement: primary
+      transcription_note: "Shop / location name 'Magic Crafts' and waiter name 'Van Willis' read tentatively from low-res p.6; verify at later ingestion pass."
+    - id: beat_14_lead_burroughs
+      title: "Lead: Vincent Burroughs' office"
+      summary: |
+        Runners bluff / fight their way into Burroughs' office and learn
+        part of Amber Gel's history. A Soldier (Man) Insect Spirit
+        attacks Burroughs; if the runners protect him, they may also
+        recover the original Amber Gel concoction from a hidden
+        compartment in his office.
+      pc_involvement: primary
+    - id: beat_15_lead_matrix
+      title: "Lead: Matrix run on Sirius Foods"
+      summary: |
+        Alternate path: penetrate Sirius Foods' computer system. Yields
+        information on Amber Gel production and on Craft.
+      pc_involvement: primary
+      archetype_dependency: decker
+    - id: beat_16_climax
+      title: "Climax: the Amber Gel production facility / Hive"
+      summary: |
+        All three leads converge on the Amber Gel production facility
+        hidden in the Puyallup Barrens. Deep within: Craft, and the
+        nascent Ant Spirit Hive. The module closes on the explicit
+        open question: 'What else will they find there? And will they
+        live to tell about it?'
+      pc_involvement: primary
+      spoiler_level: gm_only
+
+  # Page-6 also carries three short meta-paragraphs about the rest of the
+  # book's chapter structure (Cast of Characters, Picking Up the Pieces,
+  # Player Handouts). Summarized here; structural skeleton for these
+  # already lives under structure.sections above.
+  module_structure_notes_from_p6:
+    - "Cast of Characters (p.62+): includes pre-generated player-character and non-player-character descriptions and stats."
+    - "Picking Up The Pieces (p.53+): contains the Awarding Karma guidance and items to hand out to the players depending on the adventure outcome."
+    - "Player Handouts (p.65): includes a news item keyed to the run's success or failure."
 
 # Module outline skeleton derived from the p.3 Table of Contents. Scene /
 # section detail is filled in as each chapter's page ingests. Page numbers
@@ -237,15 +426,31 @@ structure:
 npc_refs:
   - name: "Vincent Burroughs"
     status: pending_detail
-    source_page: [56]
+    source_page: [6, 56]
+    role: "Sirius Foods executive; Craft's corporate handler for Amber Gel."
+    spoiler_level: public
+    plot_beats: [beat_02_amber_gel, beat_09_burroughs_panic, beat_14_lead_burroughs]
   - name: "Robert Carmon"
     status: pending_detail
-    source_page: [57, 62]
-    transcription_note: "Appears in both Legwork and Cast of Characters."
+    source_page: [6, 57, 62]
+    role: "Former Fixer promoted to MegaMedia Vice President. Hires the PCs on behalf of MegaMedia to find Euphoria after her second kidnapping."
+    spoiler_level: public
+    plot_beats: [beat_11_megamedia_hires_pcs, beat_12_penthouse_investigation]
+    transcription_note: "Appears in p.3 Legwork (p.57) and p.3 Cast of Characters (p.62); introduced in p.6 synopsis."
+  - name: "Thomas Dorin"
+    aliases: ["Craft"]
+    status: pending_detail
+    source_page: [6, 57]
+    role: "Former explorer; returned from South American jungle under the thrall of an unsummoned Queen Ant Spirit. Builds Insect Spirit Hive in Puyallup; creates 'Amber Gel'. Module's primary antagonist."
+    spoiler_level: gm_only
+    plot_beats: [beat_01_discovery, beat_02_amber_gel, beat_09_burroughs_panic, beat_10_second_kidnap, beat_16_climax]
+    transcription_note: "p.3 TOC paired 'Craft' with 'Thomas Ozella' (low-res); p.6 synopsis identifies 'Craft' as alias of 'Thomas Dorin'. Ozella pairing likely a misread - Ozella may be a separate contact. Verify at Legwork ingestion."
   - name: "Thomas Ozella"
     status: pending_detail
     source_page: [57]
-    transcription_note: "Name paired with 'Craft' in p.3 TOC - relationship TBD."
+    role: "TBD - possibly a separate Legwork contact, or a misread TOC pairing with 'Craft' / Thomas Dorin."
+    spoiler_level: public
+    transcription_note: "Presence as a distinct NPC tentative pending Legwork chapter ingestion; the p.3 TOC low-res reading 'Craft / Thomas Ozella' may instead be a single entry for Thomas Dorin / Craft."
   - name: "Hugh Coulis"
     status: pending_detail
     source_page: [58]
@@ -259,14 +464,127 @@ npc_refs:
     status: pending_detail
     source_page: [60]
     transcription_note: "p.3 TOC low-res - spelling tentative."
+  - name: "Euphoria"
+    status: pending_detail
+    source_page: [6, 58]
+    role: "Media megacelebrity; normally a recluse. Contracted by Sirius Foods to promote Amber Gel. Kidnapped twice in the module's plot (first by the PCs for Ludomeria, later by Craft who intends to transform her into a Queen Ant Spirit)."
+    spoiler_level: public
+    plot_beats: [beat_03_euphoria_promotion, beat_05_first_kidnap, beat_06_pride_counter, beat_10_second_kidnap, beat_16_climax]
+    transcription_note: "Distinct from the 'Queen Euphoria' module title. The in-world character's stage name is 'Euphoria'; 'Queen Euphoria' is the title the module gives to the storyline-through-line (Craft intends to make her into a Queen Spirit)."
+  - name: "Ludomeria"
+    status: pending_detail
+    source_page: [6]
+    role: "Corporate rival to Sirius Foods in the food / nutrient space. Hires Fixer Elliot Whitecastle to sabotage Sirius's Amber Gel promotion by kidnapping Euphoria. Later contracts MegaMedia for a promotion push of its own Amber-Gel knockoff, 'Blue Bacaoey.'"
+    spoiler_level: public
+    plot_beats: [beat_04_ludomeria_hires_fixer, beat_08_ludomeria_megamedia]
+    transcription_note: "Readable from p.6 synopsis. Whether Ludomeria is a corp, a named individual, or both is unclear from p.6 alone - the name's grammatical use in the synopsis is ambiguous ('Ludomeria, seeing an opportunity, approaches MegaMedia'). Default to 'corp' until chapter ingestion clarifies; may instead be an individual exec, in which case re-classify."
+  - name: "Elliot Whitecastle"
+    status: pending_detail
+    source_page: [6]
+    role: "Local Fixer. Recruited by Ludomeria to assemble the shadowrun team for the first Euphoria kidnapping - the team the PCs run on."
+    spoiler_level: public
+    plot_beats: [beat_04_ludomeria_hires_fixer, beat_05_first_kidnap]
+    transcription_note: "Spelling 'Whitecastle' read tentatively from low-res p.6; verify at later ingestion pass."
+  - name: "Pride"
+    status: pending_detail
+    source_page: [6]
+    role: "Rival shadowrunner - an African-Itzaman ritual mage hired by Sirius Foods to find Euphoria during the first kidnapping. Tracks the PCs via ritual magic using a strand of Euphoria's hair from her pillowcase. Defeated by the PCs."
+    spoiler_level: public
+    plot_beats: [beat_06_pride_counter]
+    transcription_note: "Magical tradition 'African-Itzaman' read tentatively from low-res p.6; 'Itzaman' may be a module-specific spelling. Verify at Cast of Characters ingestion."
+  - name: "Van Willis"
+    status: pending_detail
+    source_page: [6]
+    role: "Waiter at Garnaty's Bar and Grill. Implicated in the second Euphoria kidnapping via a T-shirt logo visible on the recording. Sighted in the Puyallup Barrens near a location named 'Magic Crafts.'"
+    spoiler_level: public
+    plot_beats: [beat_12_penthouse_investigation, beat_13_lead_garnatys]
+    transcription_note: "Name 'Van Willis' read tentatively from low-res p.6."
 
 faction_refs:
   - name: "MegaMedia Entertainment Inc."
     status: pending_detail
-    source_page: [61]
-    note: "Deferred creation of Data/Lore/Factions/ file until Legwork p.61 ingests - faction schema requires more data than TOC provides."
+    source_page: [6, 61]
+    role: "Media / streaming production corp. Euphoria's employer / stable. Contracts Sirius Foods (via Carmon) to recover Euphoria after her second kidnapping. Later Ludomeria contracts MegaMedia for knockoff promotions."
+    spoiler_level: public
+    plot_beats: [beat_05_first_kidnap, beat_07_court_standoff, beat_08_ludomeria_megamedia, beat_11_megamedia_hires_pcs]
+    note: "Faction-detail file under Data/Lore/Factions/ still deferred until Legwork p.61 ingests."
+  - name: "Sirius Foods"
+    status: pending_detail
+    source_page: [6]
+    role: "Food / consumer-products megacorp (or subsidiary). Employs Vincent Burroughs. Partners with Craft for Amber Gel supply. Rival of Ludomeria. Entangled in the full plot."
+    spoiler_level: public
+    plot_beats: [beat_02_amber_gel, beat_03_euphoria_promotion, beat_06_pride_counter, beat_07_court_standoff, beat_11_megamedia_hires_pcs, beat_15_lead_matrix]
+    note: "Faction-detail file deferred until chapter / Legwork ingestion provides rating, services, category, etc."
+  - name: "Ludomeria"
+    status: tentative_faction
+    source_page: [6]
+    note: "Classification as a faction (vs. a named individual antagonist) is tentative - grammatical use in p.6 is ambiguous. Cross-linked with the Ludomeria npc_refs entry until disambiguated."
 
-place_refs: []
+place_refs:
+  - name: "Garnaty's Bar and Grill"
+    status: pending_detail
+    source_page: [6]
+    kind: "bar_and_grill"
+    district: unknown
+    role: "Seattle bar. Van Willis works here. Logo visible on an attacker's T-shirt in the second-kidnapping recording. Home of the 'Garnaty's' investigative lead."
+    spoiler_level: public
+    plot_beats: [beat_12_penthouse_investigation, beat_13_lead_garnatys]
+    notes:
+      - "Candidate for Data/Lore/Places/Bars/ file at chapter-ingestion time (Bars/ subdir already exists under Places/... actually Restaurants/ and Brothels/ only - Bars/ needs to be created)."
+  - name: "Magic Crafts"
+    status: pending_detail
+    source_page: [6]
+    kind: "shop_or_location"
+    district: "Puyallup Barrens"
+    role: "Shop or location in the Puyallup Barrens near where Van Willis is sighted."
+    spoiler_level: public
+    plot_beats: [beat_13_lead_garnatys]
+    transcription_note: "Name read tentatively from low-res p.6; may be thematically tied to 'Craft' (the antagonist alias), suggesting it is a front or drop associated with the Hive."
+  - name: "Euphoria's penthouse"
+    status: pending_detail
+    source_page: [6]
+    kind: "residence"
+    district: unknown
+    role: "Euphoria's home. Scene of the second kidnapping. Recording equipment captures the attack."
+    spoiler_level: public
+    plot_beats: [beat_10_second_kidnap, beat_12_penthouse_investigation]
+  - name: "Vincent Burroughs' office"
+    status: pending_detail
+    source_page: [6]
+    kind: "corporate_office"
+    district: unknown
+    role: "Burroughs' Sirius Foods office. One of the module's primary investigative leads. Contains a hidden compartment that may hold the original Amber Gel concoction; scene of a Soldier-Spirit attack on Burroughs."
+    spoiler_level: public
+    plot_beats: [beat_14_lead_burroughs]
+  - name: "Amber Gel production facility / Insect Spirit Hive"
+    status: pending_detail
+    source_page: [6]
+    kind: "industrial_facility_with_hidden_hive"
+    district: "Puyallup Barrens"
+    role: "Craft's operation - Amber Gel production front over a nascent Ant Spirit Hive. Module's climax location."
+    spoiler_level: gm_only
+    plot_beats: [beat_01_discovery, beat_02_amber_gel, beat_10_second_kidnap, beat_16_climax]
+
+# Paranormal entities surfaced in the synopsis. Same pending_detail pattern
+# as NPCs / factions / places. Note: Data/Lore/Creatures/ (or similar) tree
+# is deferred per earlier decision until the 'Insect Spirits' p.54 chapter
+# ingests.
+creature_refs:
+  - name: "Queen Ant Spirit"
+    kind: "insect_spirit_queen"
+    status: pending_detail
+    source_page: [6]
+    role: "The unsummoned Queen of the Hive. Craft has returned from South America under her thrall and is preparing the Hive for her summoning. Euphoria is the intended vessel / final-act Queen-making."
+    spoiler_level: gm_only
+    plot_beats: [beat_01_discovery, beat_09_burroughs_panic, beat_10_second_kidnap, beat_16_climax]
+  - name: "Soldier / Worker Insect Spirits"
+    kind: "insect_spirit_caste"
+    status: pending_detail
+    source_page: [6]
+    role: "Hive members under Craft's control. Soldier spirits are used in the attack on Burroughs' office and in the bodyguard slaughter at Euphoria's penthouse; Worker-spirit material is the biological source of Amber Gel."
+    spoiler_level: gm_only
+    plot_beats: [beat_10_second_kidnap, beat_14_lead_burroughs]
+
 hooks: []
 
 transcription_gaps:
@@ -276,6 +594,7 @@ transcription_gaps:
   - "p.3 also shows the opening of the Ant Lion prologue fiction. Per project policy, prologue prose is NOT transcribed - archive-only."
   - "p.3 TOC Cast of Characters entries under page 62-64 are too low-res to extract individual names beyond Robert Carmon; full cast list deferred to Cast of Characters chapter ingestion."
   - "Source-file naming note: Sources/SR1E-QueenEuphoria/ filenames use pNNN in screenshot-upload order, NOT strictly matching printed page numbers. The 7 phone screenshots ingested so far (p001 - p007) cover printed pp.1 - 6 - the Ant Lion prologue spans printed pp.3 - 4 but was captured by 3 screenshots (p003, p004, p005) due to phone-scroll page overlap. The 'page:' field inside sources[] entries is the authoritative printed page number for cross-referencing."
+  - "p.6 Plot Synopsis was ingested from a low-res phone screenshot; several names are tentative and must be re-verified when their chapter pages ingest: 'Elliot Whitecastle' (Fixer name spelling), 'Pride' + 'African-Itzaman' (magical-tradition name), 'Van Willis' (waiter name), 'Magic Crafts' (shop/location name in Puyallup Barrens), 'Blue Bacaoey' (Ludomeria's knockoff food product). 'Ludomeria' is ambiguous between corp and individual - classified as both a tentative faction and an NPC until disambiguated."
 
 sources:
   - edition: SR1E
@@ -316,3 +635,10 @@ sources:
     image: "Sources/SR1E-QueenEuphoria/p006-introduction.png"
     section: "Introduction / Gamemastering Notes / Making Success Tests / How To Use This Book"
     note: "File is named p006 by screenshot order; printed page is 5."
+  - edition: SR1E
+    book: "Queen Euphoria"
+    year: 1990
+    page: 6
+    image: "Sources/SR1E-QueenEuphoria/p007-plot-synopsis.png"
+    section: "Introduction (How To Use This Book tail: Cast of Characters / Picking Up The Pieces / Player Handouts paragraphs) + Plot Synopsis"
+    note: "File is named p007 by screenshot order; printed page is 6."
