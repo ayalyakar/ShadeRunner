@@ -1,0 +1,71 @@
+# DESIGN - NSFW
+
+## Decision
+
+**DECIDED:** Adult content is a **first-class design pillar**, co-equal with combat, Matrix, magic. Not optional flavor, not toggleable — always-on, illustrated-explicit register where scenes call for it. The project is personal; there is no commercial audience to filter for.
+
+## In-scope content
+
+All of the following are first-class design targets:
+
+- **Sex, romance, sex work.** Romance arcs with contacts; brothels, escorts, clients, and sex-work runs as venue types and run types. On-screen sex scenes.
+- **BTL chip content** (including adult chips). BTL economy, content pipeline, addiction, and chip-farming setups. Adult-simsense studios as venues.
+- **Drug / addiction systems.** Novacoke, Cram, Kamikaze, BTL addiction, withdrawal, tolerance, dealer economies, overdose. Mechanical simulation, not just flavor.
+- **Graphic violence, torture, wetwork, body horror.** Cyberzombies, ghouls, blood magic, ritual sacrifice, Night-of-Rage aftermath content, insect spirit themes. On-screen and illustrated.
+- **Political extremism as faction content.** Humanis Policlub, KKK, The Order, Alamos 20,000 etc. as antagonist factions with runnable content. Hate-crime events as part of the simulation.
+- **The broader SR dark register.** Organleggers, meta-human discrimination, corporate wage-slavery, privatized police brutality, extraterritoriality abuses, magical atrocities.
+
+## Register
+
+**Illustrated-explicit.** Explicit written descriptions *and* on-screen illustrations for sex and graphic scenes. Register selected per scene — a sex scene between contacts should read and look different from a BTL-studio industrial-chip shoot, which should look different from wetwork.
+
+- **Text:** explicit, unhedged, character-true. Not leering; not coy. Adult literacy.
+- **Art:** illustrated (hand-authored or diffusion-drafted then curated). See Narrative/DESIGN - Writing.md and Technology/DESIGN - AI Tooling.md for the dev-time pipeline.
+- **Animation:** out of MVP scope. Static illustrated scenes are acceptable; 3D sex animation is post-MVP at earliest (likely never).
+
+## Toggle
+
+**Always-on. No toggle, no settings unlock, no content warnings as a gate.** The game is the game. If NSFW is off-putting, this is not the game for that audience.
+
+- A per-scene "skip" option is acceptable UX (player can skip a specific scene they are not in the mood for), but NSFW is not a global toggle.
+- Accessibility: subtitle / text-alt for all art. No hiding of the text layer.
+
+## Hard floor (project-independent)
+
+Absolute limits I (the assistant helping build this) will not cross regardless of NSFW-unlock status:
+
+- **No sexual content involving minors** in any form. Characters in sexual contexts are adults.
+- Everything else in the SR dark register is open for design discussion.
+
+## Pipeline
+
+- **Authoring:** human drafts or dev-time LLM drafts (see `Technology/DESIGN - AI Tooling.md`). Every shipped line is human-reviewed.
+- **Illustration:** dev-time diffusion-tool drafts, human-curated and edited. No runtime generation. Shipped art is static.
+- **Storage:** NSFW scripts live in `Data/Content/Scenes/` alongside non-NSFW scenes (no separate-folder ghetto — scenes are tagged).
+- **Tagging:** each scene declares `nsfw_kind:` (`sex`, `violence`, `drug`, `horror`, `mixed`) and `intensity:` (`suggestive`, `explicit`, `extreme`) for the scene-skip UX, not for gating.
+
+## Integration with systems
+
+- **Economy:** sex work, BTL chip sales, drug sales are real income sources. Rent can be paid with nuyen from any of them.
+- **Reputation:** some social circles react to your documented behavior (sex work, violence, addiction). Tracked, not judged — reputations open and close doors.
+- **Contacts:** can become romantic/sexual. Multiple simultaneous relationships allowed; consequences tracked. No monogamy assumption.
+- **Health:** drug addiction and STI-equivalents (HMHVV, cyber-sexual-transmitted infections) are mechanical if we choose to simulate — TBD per system-specific pass.
+- **BTL:** chip content is playable content — you can record, sell, and consume chips. Running a chip studio is a possible career path.
+
+## MVP scope
+
+At MVP, the NSFW pipeline must:
+
+- Ship at least one illustrated-explicit scene in the vertical slice (sex, violence, or both, depending on the run).
+- Have scene-tagging and scene-skip UX working.
+- Prove the authoring → art → ship loop end-to-end.
+
+Full romance arcs, brothel hubs, BTL studios, addiction systems, sex-work career paths — all post-MVP.
+
+## Open questions
+
+- How explicit does MVP art get? Shipping art vs placeholder (to validate the pipeline only)?
+- STI / health mechanics — simulated or narrative-only?
+- Romance mechanics — classic CRPG "approval" meter, or looser simulation?
+- Consent modeling in systems — is consent tracked mechanically, or narrative-only?
+- BTL chip content as a mini-game (authoring / recording) vs. just as inventory items?

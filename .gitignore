@@ -1,0 +1,34 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*~
+
+# Godot
+Game/.godot/
+Game/.import/
+Game/export.cfg
+Game/export_presets.cfg
+Game/*.translation
+
+# Build artifacts
+Game/build/
+Game/exports/
+*.pck
+*.zip
+
+# Python / tooling scratch
+__pycache__/
+*.pyc
+.venv/
+.mypy_cache/
+.ruff_cache/
+
+# Logs / scratch
+*.log
+scratch/
+tmp/
