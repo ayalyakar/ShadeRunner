@@ -19,6 +19,7 @@ Raw sourcebook page screenshots cited by files in `Data/`.
 ### SR1E-QueenEuphoria (Shadowrun 1E — Queen Euphoria adventure module, FASA, 1990)
 
 - `p001-cover.png` — cover (dragonfly motif, title only).
+- `p002-credits.png` — title page / credits / FASA copyright 1990 / publisher address (archive-only; credits deliberately not ingested to canon per project policy).
 
 ## Citation format (in `Data/` YAML)
 

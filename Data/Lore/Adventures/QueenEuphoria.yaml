@@ -37,6 +37,7 @@ hooks: []
 
 transcription_gaps:
   - "Cover art is illustration-only: no text beyond the title 'Queen Euphoria' is captured on p.1."
+  - "p.2 production credits (writing / development / editorial / production staff / art / illustration / layout) are intentionally NOT ingested to canon per project policy (real-world staff attribution is not in-world canon). Archive-only at Sources/SR1E-QueenEuphoria/p002-credits.png."
 
 sources:
   - edition: SR1E
@@ -45,3 +46,9 @@ sources:
     page: 1
     image: "Sources/SR1E-QueenEuphoria/p001-cover.png"
     section: "Cover"
+  - edition: SR1E
+    book: "Queen Euphoria"
+    year: 1990
+    page: 2
+    image: "Sources/SR1E-QueenEuphoria/p002-credits.png"
+    section: "Credits / Copyright / Publisher"
