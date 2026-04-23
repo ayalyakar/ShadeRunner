@@ -1,0 +1,31 @@
+# Canonical place stub.
+
+name: "Lucky Tom Hotel"
+type: "Hotel"
+sourcebook_marker: "#11.4"
+
+sources:
+  - edition: SR1E
+    page: 130
+    title: "Redmond: New Hope for a Troubled District"
+    section: "Places of Interest — Hotels"
+
+facts:
+  district: "Redmond"
+  location_hint: "Redmond Center / Touristville area."
+  tier: null    # transcription uncertain; appears mid/cheap range
+  yakuza_adjacent: true
+
+flavor: |
+  Yakuza-adjacent; BBS posts note "The Yaks have been moving hot and
+  heavy around here" and a hotel guest was found with his throat
+  slashed — "Yaks don't waste any time."
+
+hooks:
+  - "Yakuza safehouse / front operation."
+  - "Evidence collection on recent wetwork incidents."
+  - "Dangerous place to stay if you're not under Yakuza protection."
+
+game_presence:
+  mvp: "ambient (named venue; avoid-or-infiltrate signal)"
+  post_mvp: "Yakuza side-plot anchor"

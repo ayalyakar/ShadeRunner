@@ -1,0 +1,36 @@
+# Canonical place stub.
+
+name: "Skoofin Hill Manor & Eat"
+type: "Hotel (Cheap) + Restaurant"
+sourcebook_marker: "#10.5"
+
+sources:
+  - edition: SR1E
+    page: 130
+    title: "Redmond: New Hope for a Troubled District"
+    section: "Places of Interest — Hotels"
+
+facts:
+  district: "Redmond"
+  street: "Novelty Hill Road & W. Snoqualmie Valley Road"
+  ltg: "11206 (34-0409)"
+  owner: "Brion Tonugle"
+  owner_file: "Data/Lore/NPCs/Brion Tonugle.yaml"
+  racial_bias: false
+  tier: "Cheap — borderline death-trap"
+
+flavor: |
+  "A typical Redmond death-trap." A former warehouse crammed with
+  15-high rows of sleeping cubicles without proper bracing. Cubicles
+  seldom cleaned; no fire alarms; unguarded. Cited by the Redmond
+  Times Examiner as a hellhole. Still, it fills — desperate people
+  need a roof, even a cheap one with zero safety margin.
+
+hooks:
+  - "Cheap crash pad for SINless PCs between runs."
+  - "Fire-risk / collapse incident as run-trigger event."
+  - "Missing-person case: someone checked in; never checked out."
+
+game_presence:
+  mvp: "ambient (cheap-lodging option; low-consequence establishing venue)"
+  post_mvp: "site for a deadly incident or investigative run"

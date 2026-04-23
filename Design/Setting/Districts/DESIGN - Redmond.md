@@ -2,15 +2,13 @@
 
 Per-district design sheet. Follows the hybrid template: **sourcebook tabs** (Facts, History, Downtown, Outlying, Government, Economy, Crime, Maps) plus **design additions** (Hooks, MVP Notes, Open Questions).
 
-Canonical data lives in [`Data/Lore/Districts/Redmond.yaml`](../../../Data/Lore/Districts/Redmond.yaml). Sources: **SR1E pp. 127–129**. Policy: **seed — calibrate for play** (see `Setting/DESIGN - Canon.md`).
+Canonical data lives in [`Data/Lore/Districts/Redmond.yaml`](../../../Data/Lore/Districts/Redmond.yaml). Sources: **SR1E pp. 127–130**. Policy: **seed — calibrate for play** (see `Setting/DESIGN - Canon.md`).
 
-Named NPCs: [`Data/Lore/NPCs/`](../../../Data/Lore/NPCs/). Factions: [`Data/Lore/Factions/`](../../../Data/Lore/Factions/).
+Named NPCs: [`Data/Lore/NPCs/`](../../../Data/Lore/NPCs/). Factions: [`Data/Lore/Factions/`](../../../Data/Lore/Factions/). Places: [`Data/Lore/Places/`](../../../Data/Lore/Places/).
 
 ---
 
 ## Facts
-
-Authoritative figures from the transcribed fact sheet (p.127):
 
 | Stat | Value |
 |---|---|
@@ -26,6 +24,7 @@ Authoritative figures from the transcribed fact sheet (p.127):
 | Hospitals and clinics | 6 |
 | Government corruption rate | ~33% (p.128) |
 | **LTG prefix** | **11206** (p.129) |
+| **Security rating** | **A** (SR worst; p.130) |
 
 Metatype mix (as printed; sums to 106% — retained as canonical):
 
@@ -40,169 +39,186 @@ Metatype mix (as printed; sums to 106% — retained as canonical):
 
 Education: <12yr 78% · HS 18% · College 3% · Advanced <1%.
 
-**Distribution pattern (p.128):** since the Night of Rage (2039), metahumans **cluster in specific neighborhoods** for self-defense rather than distributing evenly. Procgen honors this clustering (see `World/DESIGN - Procgen.md`).
+**Distribution pattern (p.128):** post-Night-of-Rage metahuman clustering for self-defense. Known concentration: **The Plastic Jungles** (p.130).
 
 ## History
 
-Pre-game backdrop (referenced in dialogue, BBS, news archives — not simulated):
+Pre-game backdrop (not simulated):
 
-- **2029 — Computer Crash.** Economic devastation; district never fully recovered.
-- **2032 — VITAS outbreak.** Population collapse; social fabric broken.
-- **2039 — Night of Rage.** Drove metahuman clustering / self-defense patterns.
-- **Redmond Hellhounds attack.** Canonical gang incident that shaped the Barrens.
-- **Del Secondi Mafia schism.** Del Secondi and supporters declared independence from Seattle Mafia; Del Secondi executed; renegade faction continues to challenge for control.
-- **2048 — Jeffrey Gasston elected mayor.** Drives the Renton Corner Mall recovery project.
-
-In-game canonical events (simulated at their canonical dates if the PC lives long enough):
-
-- *(to be filled as the district is written through the decades)*
-
-See `Setting/DESIGN - Canon.md` for pre-game-backdrop vs. in-game-simulated policy.
+- **2013 — Tritium Services partial meltdown.** Contaminated Beacon Lake and kilometers around it. Origin of Glow City.
+- **2028 — Shiawase America replacement plant built** beside Tritium's ruined hulk. Still operational.
+- **2029 — Computer Crash.** Economic devastation.
+- **2032 — VITAS outbreak.** Population collapse.
+- **2039 — Night of Rage.** Drove metahuman clustering.
+- **Redmond Hellhounds attack.** Canonical gang incident.
+- **Del Secondi Mafia schism.** Executed; renegades persist.
+- **2048 — Jeffrey Gasston elected mayor.** Drives recovery project.
 
 ## Downtown
 
-Redmond has no real "downtown" in the corp-tower sense; the district is **post-crash Barrens and decay**. Commercial remnants concentrate toward the district edges.
-
-Planned hand-built ground for MVP: **Touristville strip** (see MVP Notes below).
+No corp-tower downtown. Redmond is post-crash Barrens and decay; commercial remnants cluster at district edges and in the Touristville strip.
 
 ## Outlying
 
-- **Redmond Barrens.** Lawless core of the district. MVP starter ground.
-- **Touristville.** Shadow-tourism strip: bars, strip clubs, illicit commerce, Johnson meets. The MVP's single hand-crafted sub-zone.
-- **Glow City.** Radioactive ruin. Backdrop only in MVP — visible from the skyline but not enterable.
-- **Bargain Basement.** Crimson Crush turf (p.128).
-- **Hollywood.** Red Hot Nukes turf (p.128); also hosts Hollywood Simsense Entertainments' Redmond facility — built-in gang-vs-corp tension.
-- **Bellevue-border strip.** The only part of Redmond with functioning civic law (p.129); occasional Lone Star patrols.
+Top-level sub-areas:
+
+- **Touristville (aka "Redmond" informal).** Best-developed section of the district, anchored by the Capitol Building and Bellevue proximity. Houses all legitimate tourism. **Seven named neighborhoods** (p.130):
+  - **Sophistos** — Squatter
+  - **Brats Heaven** — Street
+  - **Partys** — Squatter *(spelling uncertain)*
+  - **Acondole** — Squatter *(spelling uncertain)*
+  - **Klingenpers** — Squatter *(spelling uncertain)*
+  - **Woodlanders** — Squatter
+  - **Hollywood** — Low (also Red Hot Nukes turf; also Hollywood Simsense facility)
+- **Rat's Nest (North Seattle Garbage Center).** Open-air garbage dump; ~1,000 squatters; **canonical Rat-totem shaman concentration** — distinct magical community. See `Systems/DESIGN - Magic.md`.
+- **The Plastic Jungles.** 20-greenhouse complex built at the turn of the century on toxic land (harvests contaminated); abandoned post-Crash; now home to much of the district's **metahuman squatter population**.
+- **Glow City.** Radioactive zone born of Tritium Services' 2013 meltdown; adjacent to Shiawase America's 2028 replacement plant. Squatter population tripled post-Crash despite cancer and infant-mortality crises.
+- **Bargain Basement.** Pre-Crash premium apartments now decayed; illegal power/ventilation hook-ups; street markets and bazaars with Mafia and Yakuza black markets flourishing. Crimson Crush turf.
+- **Bellevue-border strip.** Only part of Redmond with functioning civic law; occasional Lone Star patrols.
+- **Redmond Barrens.** Umbrella term for the ungoverned majority of the district.
 
 ## Government
 
-- **Mayor:** **Jeffrey Gasston** (elected 2048). Young, politically green at first, mentored by **Governor Schultz**; gaining savvy across terms. Championing the Renton Corner Mall as economic-revival flagship.
-- **Effective control (p.129):** Most of the district is **not meaningfully governed**. Only the Bellevue-border strip shows respect for law and order. Civic services, code enforcement, and tax collection are effectively suspended across the majority of Redmond.
-- **Corruption:** ~33% of Redmond government tied to the Mafia and Yakuza (p.128). Bribery channels plentiful; reliability of official channels reduced.
-- **Legal jurisdiction:** Seattle Metroplex under UCAS; Barrens functionally lawless.
-- **Police:** minimum four-man squads per patrol; vehicles are **Aero Citymaster** and **Nissan Patrol-1** riot vans. Regular patrol presence confined to the Bellevue-border strip; deep Barrens sees only occasional patrols. See `Data/Lore/Districts/Redmond.yaml` `police_response` — canonical **per-district override** of the global escalation model (`Systems/DESIGN - Combat.md`).
+- **Mayor:** **Jeffrey Gasston** (elected 2048). Mentored by **Governor Schultz**. Champion of the Renton Corner Mall / Redmond Center recovery project.
+- **Effective control:** most of the district is **ungoverned**. Only the Bellevue-border strip shows law and order. **Security rating A** (Lone Star worst) across almost all of Redmond (p.130).
+- **Corruption:** ~33% of Redmond government tied to Mafia and Yakuza (p.128).
+- **Police:** minimum four-man squads; **Aero Citymaster** and **Nissan Patrol-1** riot vans. Regular presence confined to Bellevue-border strip. Per-district override in `Data/Lore/Districts/Redmond.yaml` `police_response`.
 
 ## Economy
 
-- **Per-capita income:** 6,000¥/year (≈ 500¥/month) — game-wide calibration anchor (see `World/DESIGN - Economy.md`).
-- **70% below poverty level.** Squatter and Street lifestyles dominate.
-- **22% corporate affiliation** concentrated at district edges.
-- **Renton Corner Mall** is the visible legitimate-economy revival project.
+- **Per-capita income:** 6,000¥/year (≈ 500¥/month) — game-wide anchor.
+- **70% below poverty level.**
+- **Renton Corner Mall / Redmond Center** is the visible legitimate-economy revival.
 
-### Industrial landscape — "Toxic Castles" (p.129)
+### Industrial landscape — "Toxic Castles" + nuclear (p.129, p.130)
 
-Only a handful of major corps operate in Redmond. Facilities are fortified compounds (high walls, electric fencing, armed guards) continuously spewing poisons into the air — nicknamed **"Toxic Castles"**. Named corps (all with stubs under `Data/Lore/Factions/`):
+Fortified corp compounds with high walls, electric fencing, armed guards, visible pollution:
 
-- **Hollywood Simsense Entertainments** — simsense/entertainment; Hollywood sub-area.
-- **Life-Eze Appliances** — consumer appliances.
-- **Moonshun Vehicles** — vehicles / light automotive.
-- **Carnation Seattle** — product domain TBD; regional subsidiary.
+- **Hollywood Simsense Entertainments** — Hollywood sub-area.
+- **Life-Eze Appliances**
+- **Moonshun Vehicles**
+- **Carnation Seattle**
+- **Shiawase America** — nuclear plant in Glow City (AAA anchor).
+- **Tritium Services** — defunct; ruined reactor hulk in Glow City.
 
-Unnamed smaller operators: petro-chemical refineries, chemical plants, metal recycling centers — these move **inferior products to unscrupulous megacorps** (p.129) who resell elsewhere.
+Plus unnamed petro-chemical refineries, chemical plants, metal recycling centers — fraud pipeline into unscrupulous megacorp supply chains.
 
 ### Logistics
 
-Ground shipments attract desperate squatters; factories rely on **helicopter**, **tilt-rotor aircraft**, and **Snoqualmie River barge** shipping instead. Both air and river logistics are run-content vectors (intercept, escort, sabotage).
+Helicopter, tilt-rotor, and **Snoqualmie River barge** shipping — ground shipments attract squatter raids.
 
-### Sub-economies (ambient or MVP-eligible)
+### Sub-economies
 
-- **BTL chip trade** — most "successful" Redmond businesses actually sell BTL. Canonical per p.129. MVP-ambient with run-content potential.
-- **Body-parts trade** — thugs kidnap squatters, back-alley butcher shops, organs sold to wealthy SINners. **MVP sub-economy** — high-heat, morally grey run content.
-- **Inferior industrial products** — fraud pipeline into megacorp supply chains; ambient.
+- **BTL chip trade** — ambient + run-content eligible.
+- **Body-parts trade** — **MVP sub-economy**.
+- **Inferior industrial products** — ambient fraud.
+- **Bargain Basement street markets** — ambient venue; Mafia/Yakuza black markets.
 
 ### Named businesses
 
-- **Redmond Phoenix House** — Japanese-American restaurant on **Union Hill Road**, LTG# 11206 (63-7516). First canonical Redmond business address; plausible neutral meet spot.
+- **Redmond Phoenix House** — Japanese-American, Union Hill Road, LTG 11206 (63-7516). *[`Data/Lore/Places/Restaurants/`](../../../Data/Lore/Places/Restaurants/)*
+
+## Places of Interest
+
+### Hotels ([`Data/Lore/Places/Hotels/`](../../../Data/Lore/Places/Hotels/))
+
+- **Redmond Center Hotel** (#11.1) — Luxury, Redmond Way, LTG 11206 (34-9001), Salish-American cuisine. Yakuza blackmail rumor on the manager.
+- **Lucky Tom Hotel** (#11.4) — Yakuza-adjacent violence; recent wetwork incident.
+- **Skoofin Hill Manor & Eat** (#10.5) — Cheap/death-trap, Novelty Hill Road & W. Snoqualmie Valley Road, LTG 11206 (34-0409), owner **Brion Tonugle** (no racial bias).
 
 ## Crime
 
 ### Gangs (all MVP)
 
-| Gang | Notes |
+| Gang | Turf / Notes |
 |---|---|
 | Halloweeners | Fire-themed chaotic street gang. |
-| Redmond Hellhounds | District's namesake; canonical history. |
+| Redmond Hellhounds | District namesake; canonical history. |
 | Spikes | Ork-majority go-gang. |
-| Rusted Stilettos | Metahuman gang (p.128). |
-| Crimson Crush | Metahuman gang; Bargain Basement turf. |
-| Red Hot Nukes | Metahuman gang; Hollywood turf. |
+| Rusted Stilettos | Metahuman gang. |
+| Crimson Crush | Metahuman gang; **Bargain Basement**. |
+| Red Hot Nukes | Metahuman gang; **Hollywood**. |
 
 ### Organized crime (ambient in MVP)
 
-- **Seattle Mafia (Redmond branch).** Nominal Don: **James O'Malley**; Capo: **Theodore Alamando**. Internal turmoil since the executed **Del Secondi** schism.
-- **Yakuza Rings.** 5 known Rings in Redmond used as recruitment pool. **Ill Squires** (Don **Autigerano**) most active.
+- **Seattle Mafia (Redmond branch).** O'Malley / Alamando regime; Del Secondi schism.
+- **Yakuza Rings.** 5 Rings; Ill Squires (Don Autigerano) most active. Active in Redmond Center hotels per p.130.
 
 ### Supremacy groups (ambient in MVP)
 
-- **Humanis Policlub**, **KKK**, **The Order** all active. Spread human-supremacy rhetoric. Metahuman counter-organizing for self-defense is a visible response.
+Humanis Policlub, KKK, The Order.
 
 ### Illegal economies (MVP)
 
-- **BTL chip trade** — see Economy.
-- **Body-parts trade** — see Economy. MVP sub-economy; high-heat; runs include victim extractions, butcher-shop raids, buyer-exposure jobs.
-- **Fraudulent industrial products** — ambient.
-
-### Law enforcement
-
-Law response is slow and under-resourced for the Barrens; see Government section above for the canonical patrol data.
+BTL chip trade; body-parts trade; fraudulent industrial products; Bargain Basement black markets.
 
 ## Maps
 
-To be authored (hero streets + procgen fill). Target for MVP:
-- One hand-crafted Touristville block (fixer bar, cheap eats, alley, strip-club entrance, fleabag motel).
-- Two adjacent Barrens streets (the PC's apartment, a corner store, a gang hang).
-- Canonical geographic anchors: **Snoqualmie River** (also a logistics artery), **flat terrain** with hills in the southern end, **Renton Corner Mall** and **Union Hill Road** as visible landmarks.
+Target for MVP:
+- One hand-crafted Touristville neighborhood (candidate: a specific neighborhood from the seven).
+- Two adjacent Barrens streets.
+- Canonical anchors: Snoqualmie River, Beacon Lake (Glow City), Union Hill Road, Novelty Hill Road, Capitol Building, Renton Corner Mall / Redmond Center.
 
 ## BBS personas
 
-Recurring Shadowland handles are tracked as persistent NPC personas (see `Narrative/DESIGN - Writing.md`).
+Recurring Shadowland handles (see `Narrative/DESIGN - Writing.md`):
 
-- **Huyen Nick** — recurring (2+ posts from p.129); cynical civic-journalism voice. Profile at [`Data/Lore/NPCs/Huyen Nick.yaml`](../../../Data/Lore/NPCs/Huyen%20Nick.yaml).
-- **Just Another Barrens Squat** — one post so far; not yet promoted.
-- **Marcuson** — one post so far (p.128); not yet promoted.
+- **Huyen Nick** — recurring (2+ posts); cynical civic-journalism voice. [`Data/Lore/NPCs/Huyen Nick.yaml`](../../../Data/Lore/NPCs/Huyen%20Nick.yaml)
+- **Just Another Barrens Squat**, **Marcuson**, **SPD**, **Connie Connostat** — one post each; not yet promoted.
 - **Anonymous** — one-off; not persona-tracked.
 
-## Hooks (design additions)
+Media: **Redmond Times Examiner** cited as newspaper source (p.130).
 
-- **Tutorial vector.** Touristville fixer calls the PC cold. Low-stakes intro job leads into the district's broader web.
-- **Multi-gang mosaic.** Six gangs share the Barrens; turf politics is the persistent faction substrate.
-- **Mafia schism.** The O'Malley–Alamando regime vs. Del Secondi's surviving renegades is a live conflict the player can exploit.
-- **Yakuza recruitment pipeline.** Promising street talent (warrior or magician) can be drawn into the Ill Squires.
-- **Supremacy vs. self-defense.** Humanis/KKK/Order vs. organized metahuman communities.
-- **Civic thread.** Mayor Gasston's recovery project is a vector for both corruption-exposure and corporate-adversary runs.
-- **Toxic Castle heists.** The four named corp facilities are viable corp-tier targets with distinct fortifications and logistics (air/river).
-- **BTL chip trade.** Run-content opportunities for supply-chain, demand-side, or police-front-operation angles.
-- **Body-parts trade.** Victim rescues, butcher-shop raids, buyer-exposure jobs — all morally loaded.
-- **Bellevue-border strip.** The district's "lawful" border is a natural fall-back zone for under-pressure runners and a natural trap vector for patrolled arrests.
-- **Poverty-driven runs.** Exploitation, debt, body-shopping, missing persons.
-- **Glow City spectacle.** Visible skyline; occasional runs to the edge; full interior deferred to post-MVP.
+## Hooks
+
+- **Tutorial vector:** Touristville fixer.
+- **Six-gang mosaic.** Turf politics as persistent faction substrate.
+- **Mafia schism.** O'Malley–Alamando vs. Secondi renegades.
+- **Yakuza mall-control plot.** p.130 BBS rumor — Yaks angling for Redmond Center / Renton Corner Mall control. Multi-run arc.
+- **Yakuza recruitment pipeline.** Warrior/magician recruits.
+- **Supremacy vs. self-defense.** Humanis/KKK/Order vs. metahuman communities.
+- **Civic thread.** Gasston's recovery project.
+- **Toxic Castle heists.** 5 fortified corp facilities (including Shiawase's nuclear plant).
+- **BTL chip trade / body-parts trade / industrial-fraud** runs.
+- **Rat's Nest magical community.** Shaman mentor / protection contract / talismonger hook (post-MVP when Magic lands).
+- **Plastic Jungles refuge.** Metahuman squatter community; faction conflicts; botany of contaminated harvests.
+- **Glow City spectacle.** Nuclear plant + radioactive slum. Post-MVP run territory.
+- **Skoofin Hill Manor incident.** Fire/collapse/missing-person seed.
+- **Bellevue-border strip.** Fallback zone for under-pressure runners.
+- **Poverty-driven runs.**
 
 ## MVP notes
 
-Concrete scope for the vertical slice (see `Meta/DESIGN - MVP.md`):
+Concrete scope (see `Meta/DESIGN - MVP.md`):
 
-- **Geography:** Redmond Barrens only; Touristville strip as the one hand-built sub-zone.
-- **PC start:** Low-tier apartment, 2,000¥/month rent due pressure.
+- **Geography:** Redmond Barrens only; one hand-crafted Touristville neighborhood (specific name TBD — candidates include Brats Heaven [Street lifestyle] or Hollywood [Low lifestyle + Red Hot Nukes turf + Hollywood Simsense facility = built-in tension]).
+- **PC start:** Low-tier apartment, 2,000¥/month.
 - **Gangs:** all six present with turf.
-- **Organized crime:** Seattle Mafia and Yakuza Rings ambient.
-- **Supremacy groups:** ambient presence.
-- **Corp facilities:** four named Toxic Castles as ambient backdrop / visible landmarks; runs against them deferred post-MVP.
-- **Sub-economies:** BTL chip trade + body-parts trade as MVP-visible economies (BBS chatter, street gossip, possible runs); inferior-products fraud ambient.
-- **Named NPCs:** Gasston, O'Malley, Alamando, Autigerano statted but peripheral to the first run. Huyen Nick as a BBS persona pumping posts into the seed corpus.
+- **Organized crime:** Mafia + Yakuza ambient (Yakuza mall-control rumor seeded via BBS).
+- **Supremacy groups:** ambient.
+- **Corp facilities:** five named (Toxic Castles + Shiawase plant) as ambient backdrop; runs against them post-MVP.
+- **Sub-economies:** BTL + body-parts MVP-visible; inferior-products ambient; Bargain Basement markets as traversable venue.
+- **Hotels:** three canonical hotels as ambient venues; Skoofin Hill Manor as cheap-crash option.
+- **Named NPCs:** Gasston, O'Malley, Alamando, Autigerano, Brion Tonugle peripheral. Huyen Nick as BBS persona.
+- **BBS seed corpus:** 12+ posts across pp.127–130.
+- **LTG prefix:** 11206.
+- **Police:** per-district override; concentrated at Bellevue-border strip.
 - **First Johnson:** Touristville fixer with Connection ~3–4.
-- **First run:** type **TBD**.
-- **NPC procgen:** district metatype percentages + neighborhood-level clustering + LTG prefix 11206 for procgen commlink / business numbers.
-- **Police response:** canonical per-district override (4-man squads, Aero Citymaster / Nissan Patrol-1, Bellevue-border-strip concentration).
+- **First run:** TBD.
 
 ## Open questions
 
-- **First run content.** Retrieval / protection / extraction / sabotage — deferred decision.
-- **Body-parts MVP content.** Which angle (victim rescue / butcher raid / buyer exposure) ships first?
-- **Toxic Castle geography.** Which neighborhoods host Life-Eze, Moonshun, Carnation Seattle? Hollywood locked for Hollywood Simsense.
-- **Exact Touristville layout.** Street-level plan for the hand-crafted block.
-- **Gang turf geography.** Specific blocks / streets owned by each of the six gangs.
-- **Metahuman clustering geometry.** Which Redmond neighborhoods skew metahuman-heavy.
-- **Shadowland post transcription** (p.127 / p.128 / p.129 posts).
-- **Huyen Nick's on-meat identity.** Purely BBS, or a physical NPC with a persona?
-- **Carnation Seattle parent company.** "Seattle" suffix implies a larger Carnation — is this the dairy/food Carnation, or a reinterpretation?
-- **Metatype percentage 106% sum.** Keep canonical or renormalize for procgen? Currently retained as-is.
+- **MVP Touristville neighborhood.** Which of the seven is the hand-crafted one?
+- **First run content.** Retrieval / protection / extraction / sabotage.
+- **Body-parts MVP content angle.** Rescue / raid / exposure.
+- **Toxic Castle geography.** Neighborhoods for Life-Eze, Moonshun, Carnation Seattle.
+- **Gang turf geography at block level.**
+- **Metahuman clustering geometry.** Plastic Jungles confirmed; others TBD.
+- **Rat-totem community depth.** Post-MVP magical-tutor arc?
+- **Neighborhood-name transcription.** Partys / Acondole / Klingenpers spellings need verification.
+- **Redmond Center Hotel manager's name.** Transcription unreadable.
+- **Full Shadowland-post transcriptions** (pp.127–130).
+- **Huyen Nick's on-meat identity.**
+- **Carnation Seattle parent company.**
+- **Metatype 106% sum.** Normalize or retain?
+- **Shiawase America scope.** Do we expand the stub to a full AAA treatment, or wait for more extracts?

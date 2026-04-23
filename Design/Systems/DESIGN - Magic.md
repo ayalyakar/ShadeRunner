@@ -70,6 +70,16 @@ Paths:
 - Operates on Matrix. No physical cyberdeck needed.
 - Shares UI language with Matrix where possible; shares mechanic scaffolding with Magic subsystem.
 
+## Canonical magical communities
+
+Per-district data files can declare **magical-community anchors** — locations that concentrate a specific tradition, totem, or awakened community. These are location-bound hooks for initiation, mentorship, and run content.
+
+Reference implementation: Redmond (`Data/Lore/Districts/Redmond.yaml`) declares:
+
+- **Rat's Nest (North Seattle Garbage Center)** — concentrated **Rat-totem shaman** community (SR1E p.130). Post-MVP hook: shaman mentor access, community-protection contracts, talismonger connections, rat-shaman-specific initiation ordeals and metamagics.
+
+These anchors should be surfaced in the Magic subsystem's tradition / tutor / community-access logic when the subsystem lands.
+
 ## Open questions
 
 - Background count fidelity — per tile, per zone, per district?
