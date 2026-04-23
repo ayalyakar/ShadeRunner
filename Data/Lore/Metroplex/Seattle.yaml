@@ -47,6 +47,12 @@ sources:
     page: 14
     image: "Sources/SR1E-Seattle/p014-history-treaty-of-denver.png"
     section: "History — Treaty of Denver (opening)"
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 15
+    image: "Sources/SR1E-Seattle/p015-history-treaty-provisions-exodus.png"
+    section: "History — Treaty provisions / Truth Element / Thunder Tyer bio / Exodus of 2019"
 
 ingestion_gaps:
   - pages: [7, 8]
@@ -1168,11 +1174,173 @@ history:
         - "Mexico"
       native_signatories: "Native American Nations (NAN) collective, including the Salish-Shidhe War Council."
       driver: "Cessation of hostilities + recognition of native sovereignty."
-      page_cuts_off: "Page 14 ends mid-sentence on the Treaty's provisions — continuation expected on p.15."
-      transcription_note: |
-        'President William James' administration + Treaty date read
-        with moderate confidence. Specific provisions of the treaty
-        are cut off on p.14; ingest p.15 to continue.
+      provisions:
+        source_page: 15
+        formal_sovereignty: "Formal recognition of NAN as a sovereign federation of Native American nations."
+        territory_ceded_to_nan: "Most of western North America."
+        us_retained_enclaves:
+          - "California"
+          - "Seattle"
+          - "Everett"
+          - "Tacoma"
+          - "Denver"
+        us_enclave_notes: |
+          The four Pacific-Northwest cities (Seattle / Everett / Tacoma
+          / Denver) became US-sovereign city-states surrounded by (or
+          adjacent to) NAN territory. This is the structural basis of
+          the Seattle Metroplex — a UCAS enclave in the middle of SSC
+          lands. Canonical driver for border-crossing logistics
+          captured under salish_shidhe_council_access.
+
+  post_awakening_intelligence:
+    source_page: 15
+    overview: |
+      Most world intelligence agencies struggled to accept magic as
+      real after the Awakening, even in the face of repeated elaborate
+      demonstrations. NAN moved first on magic-integrated
+      counterintelligence.
+    nan_intel_agency:
+      name: "Truth Element"
+      role: "NAN counterintelligence / magical-powered interrogation and agent-hunting."
+      early_operations:
+        - "Rounded up foreign intelligence assets embedded in NAN territory shortly after the Treaty of Denver."
+        - "Elite Native-American-tribe members identified as having been turned by foreign powers were executed; 'truth' was established magically."
+      notes: |
+        The Truth Element is the canonical SR1E NAN spy-hunter agency.
+        Useful as an antagonist faction for runners operating in
+        SSC / NAN lands, or as a run-adjacent threat when NAN citizens
+        appear on run objectives.
+      transcription_note: "Agency name and early-operations phrasing read with low confidence; key facts captured."
+    us_magic_integration:
+      lag_years: 5
+      milestone: "Five years after the Awakening, agencies including the CIA and FBI were able to successfully integrate magicians into their operations."
+      implication: "Magic-assisted intelligence is relatively recent in US institutions — a canonical reason for US-side paranoia / obsession re: NAN thaumaturgical parity."
+    bbs_post_smiley:
+      handle: "Smiley"
+      timestamp_raw: "(18-39-94-3) (?-2-50)"
+      timestamp_transcription_note: "Handle + timestamp read with low confidence."
+      topic: "Military-reluctance-to-accept-magic observation; cynical-veteran register."
+    bbs_post_colonel_mendiola:
+      handle: "Colonel Mendiola"
+      timestamp_raw: "(21-02-04-5) (5-50)"
+      handle_transcription_note: "Handle read as 'Colonel Mendiola' / 'Menlosla'; low confidence."
+      topic: |
+        First-person recollection of NAN warriors using magic during
+        the Ninth Division's operations in the Awakening. Notes that
+        NAN magic users husbanded power for the Great Ghost Dance
+        rather than deploying it in every engagement.
+      game_presence: |
+        Useful as a voice profile for older military / veteran NPCs
+        reminiscing about the war. Retained as a persona hook, not yet
+        promoted.
+
+  thunder_tyer_biography:
+    source_page: 15
+    format: "BBS exchange — 'Canyon' asks what happened; 'Professor Stealth' replies with a detailed biography."
+    asker:
+      handle: "Canyon"
+      timestamp_raw: "(20-00-48-4) (34-30)"
+      transcription_note: "Handle + timestamp read with low confidence."
+    responder:
+      handle: "Professor Stealth"
+      timestamp_raw: "(15-45-20-5) (2-50)"
+      transcription_note: "Handle + timestamp read with low confidence."
+      voice_profile_note: |
+        Authoritative, documentary tone; willing to assemble long
+        multi-sentence historical summaries. Candidate for a recurring
+        persona (promotion deferred pending additional appearances).
+    biography:
+      early_life:
+        stepmother_community: "Native American — Salish or adjacent tribe."
+        us_army:
+          enlisted_age: 18
+          notes: "Joined the US Army at age 18; rose to officer rank in the infantry."
+        enlisted_age_transcription_note: "Age read as 18 (possibly 28 or 38); prose partly illegible."
+        rumored_double_agent: |
+          Rumored to have worked as a NAN / Red sympathizer while still
+          in US uniform. Never conclusively documented.
+      defection_to_nan:
+        trigger: "Radicalized by mistreatment of his stepmother's community and other Native Americans in Colorado."
+        transcription_note: "Location / Colorado-specific detail partly illegible."
+      salish_shidhe_command:
+        role: "Assumed control of Salish-Shidhe War Council military operations."
+        credited_victories: "Trident Submarine Base (Bangor), Kugri / Puget Sound Naval Shipyard (Bremerton), and other major offensives."
+        atrocities:
+          note: "Multiple reports link Thunder Tyer to atrocities committed by Salish forces against Anglo civilians."
+          moral_complexity: |
+            Same commander credited with ordering Salish warriors to
+            evacuate and protect Anglo civilians threatened by the
+            Mount Rainier eruption late in the war — canonical moral
+            contradiction.
+      fate_after_treaty:
+        certainty: "Unknown."
+        rumors:
+          - "Retired quietly to a peninsula homestead with his wife and children immediately after Treaty ratification."
+          - "Assassinated by a US Army wetwork team."
+          - "Executed by his own officers after ordering Salish warriors to lay down arms and evacuate Anglos from volcanic-threat zones."
+        transcription_note: "Three-rumor enumeration captured with moderate confidence."
+    game_presence:
+      mvp: "historical / lore only (pre-game, likely deceased or mythological by 2050)."
+      post_mvp:
+        - "Source material for shaman / elder NPC dialogue about the war era."
+        - "Possible living-old-man NPC if canon supports (age ~70-90 by 2050)."
+        - "Thunder-Tyer-era relic as a run MacGuffin."
+        - "Atrocity / moral-contradiction angle for faction-rep politics in SSC-border runs."
+
+  exodus_of_2019:
+    source_page: 15
+    overview: |
+      First major population shock after the Treaty of Denver. Anglo
+      residents of former US territory that had been ceded to NAN lost
+      their land-ownership rights; those who didn't want to live as
+      NAN minority citizens fled east into the remaining US enclaves.
+    year: 2019
+    mechanism:
+      anglo_options:
+        - "Repatriate to new US boundaries."
+        - "Remain as minority citizens under NAN sovereignty."
+      sovereign_tribal_council_resolution: |
+        Outlawed formal reprisals against Anglos who chose to stay,
+        but couldn't prevent social-pressure departures.
+    sovereign_tribal_council:
+      note: "Canonical governing body distinct from the Salish-Shidhe War Council — the broader NAN legislature."
+      game_presence: "Faction-level actor (post-MVP). Not stubbed yet."
+    migration_volume:
+      seattle_area_refugees_year_2019: 200000
+      primary_resettlement_sub_district: "Puyallup region"
+      notes: |
+        Over 200,000 refugees arrived in Seattle-area within 2019
+        alone. Most resettled in Puyallup — canonical root cause of
+        the Puyallup region's overcrowding / Barrens reputation
+        carrying forward into 2050.
+    absorption_capacity:
+      eastern_us: "Had resources to absorb the flood."
+      california: "Had resources to absorb the flood."
+      seattle_and_neighbors: "Overwhelmed; inter-city competition for federal aid."
+    federal_response:
+      quality: "Inadequate — federal aid distributed across cities; Seattle's specific pleas for help 'all but ignored'."
+    city_tensions:
+      seattle_vs_tacoma_vs_everett: "Cities fought over every scrap of federal aid, laying the groundwork for 2050-era inter-district dysfunction."
+    temporary_camps: "Liquid refugee camps (floating barges?) used as temporary housing."
+    temporary_camps_transcription_note: |
+      Prose reads 'liquid refugee camps'; may refer to floating
+      waterfront barge encampments or to a specific camp-type
+      mis-scanned. Flag.
+    eyewitness_bbs_post:
+      handle: null
+      timestamp_raw: "(CHIS-98) (15-25-29-30)"
+      transcription_note: "Handle partly illegible; timestamp captured as best-effort."
+      topic: |
+        Eyewitness account of kilometer-long refugee columns arriving
+        in Seattle. Mixed register — hungry / frightened but grateful
+        to be alive. Useful as an ambient / flashback voice profile
+        for an older 2050-era Seattle NPC.
+    game_presence:
+      mvp: "historical / lore only — grounds Puyallup-Barrens population pressure and Seattle-area inter-city tensions."
+      post_mvp:
+        - "Anglo-refugee-descendant NPC background type."
+        - "NAN-sympathetic vs. nativist NPC branching for older Seattle residents."
+        - "Tacoma / Everett / Seattle aid-competition as civic-politics run backdrop."
 
 # Run Run Shaw's is featured in a stylized ad on the right side of p.11
 # (vertical "run run shaw's" typography; line about 'x runs at $9 plus tax').
@@ -1322,3 +1490,22 @@ transcription_gaps:
   - page: 14
     section: "History — Treaty of Denver provisions cut off mid-sentence"
     note: "Treaty details continue on p.15; ingest to complete."
+  - page: 15
+    section: "History — NAN counterintelligence agency 'Truth Element'"
+    note: "Agency name read with moderate confidence; early-operations prose partly illegible."
+  - page: 15
+    section: "History — BBS handles (Smiley, Canyon, Professor Stealth, Colonel Mendiola)"
+    note: |
+      Handles + timestamp codes read with low confidence; none promoted
+      to persistent NPC personas yet. Professor Stealth's documentary
+      tone is a strong candidate for recurring-persona status on a
+      subsequent appearance.
+  - page: 15
+    section: "History — Thunder Tyer enlistment age / Colorado geography"
+    note: "Age-at-enlistment and stepmother-community location partly illegible."
+  - page: 15
+    section: "History — Exodus 2019 'liquid refugee camps'"
+    note: "Phrase 'liquid refugee camps' read as-is; may be floating waterfront barges or a mis-scan. Flag."
+  - page: 15
+    section: "History — Exodus 2019 eyewitness BBS handle"
+    note: "Handle partly illegible in the eyewitness-post attribution."
