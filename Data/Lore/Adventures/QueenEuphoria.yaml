@@ -28,16 +28,170 @@ synopsis_stub: |
   motif (foreshadowing the Ant Lion / insect-spirit themes of the prologue
   and plot).
 
-# Populated as later pages ingest.
-acts: []
-npc_refs: []
-faction_refs: []
+# Module outline skeleton derived from the p.3 Table of Contents. Scene /
+# section detail is filled in as each chapter's page ingests. Page numbers
+# are the printed sourcebook pages. Entries with transcription_note were
+# partially illegible on the p.3 low-res phone screenshot and must be
+# re-verified when each chapter's own page ingests.
+structure:
+  prologue:
+    title: "Ant Lion: A Prologue"
+    start_page: 3
+    note: "Atmospheric in-world fiction. Per project policy, prose NOT transcribed - archive-only."
+  sections:
+    - id: introduction
+      title: "Introduction"
+      start_page: 5
+      subsections:
+        - title: "Gamemastering Notes"
+          page: 5
+        - title: "How To Use This Book"
+          page: 5
+        - title: "Plot Synopsis"
+          page: 6
+    - id: the_adventure
+      title: "The Adventure"
+      start_page: 8
+      scenes:
+        - title: "Wake Up Call"
+          page: 8
+        - title: "Road West?"
+          page: 9
+        - title: "Road What?"
+          page: 11
+        - title: "Pacific Towers"
+          page: 13
+        - title: "To Cause A Stir"
+          page: 17
+          transcription_note: "p.3 TOC low-res - title reading tentative, verify at chapter page."
+        - title: "Herding Euphoria"
+          page: 21
+          transcription_note: "p.3 TOC low-res - title reading tentative ('Herding' vs 'Hiding'), verify at chapter page."
+        - title: "Foreplay"
+          page: 24
+        - title: "In The Pink"
+          page: 25
+        - title: "Deja Vu"
+          page: 27
+        - title: "Meeting Carmon"
+          page: 28
+        - title: "Missing Again"
+          page: 30
+        - title: "Rocking Strikes"
+          page: 35
+          transcription_note: "p.3 TOC low-res - title reading tentative, verify at chapter page."
+        - title: "Meeting Heroes"
+          page: 39
+          transcription_note: "p.3 TOC low-res - title reading tentative ('Meeting' vs 'Missing'), verify at chapter page."
+        - title: "Hit The Waxx?"
+          page: 39
+          transcription_note: "p.3 TOC low-res - title reading tentative, verify at chapter page."
+        - title: "The Magic Shop"
+          page: 39
+        - title: "A MegaMedia Production"
+          page: null
+          transcription_note: "p.3 TOC low-res - title confident, page number illegible. Verify at chapter page."
+        - title: "Audience With The Queen"
+          page: null
+          transcription_note: "p.3 TOC low-res - title confident, page number illegible. Verify at chapter page."
+    - id: picking_up_the_pieces
+      title: "Picking Up The Pieces"
+      start_page: 53
+      subsections:
+        - title: "Dorin Ignored"
+          page: 53
+        - title: "Payment"
+          page: 53
+        - title: "\"Hey Chummer, Ain't That Us?\""
+          page: 53
+        - title: "Awarding Karma"
+          page: 54
+    - id: insects_among_us
+      title: "Insects Among Us"
+      start_page: 54
+      subsections:
+        - title: "Insect Spirits"
+          page: 54
+    - id: legwork
+      title: "Legwork"
+      start_page: 56
+      entries:
+        - name: "Vincent Burroughs"
+          page: 56
+        - name: "Robert Carmon"
+          page: 57
+        - name: "Craft / Thomas Ozella"
+          page: 57
+          transcription_note: "p.3 TOC low-res - name pairing tentative (possibly two entries), verify at Legwork chapter."
+        - name: "Hugh Coulis"
+          page: 58
+        - name: "Euphoria"
+          page: 58
+          transcription_note: "p.3 TOC low-res - entry present but page tentative; distinct from the adventure-frame 'Queen Euphoria' starlet entry, verify at Legwork chapter."
+        - name: "Osprey"
+          page: 59
+          transcription_note: "p.3 TOC low-res - page tentative."
+        - name: "Kerr"
+          page: 59
+          transcription_note: "p.3 TOC low-res - page tentative."
+        - name: "Selva Fasilo"
+          page: 60
+          transcription_note: "p.3 TOC low-res - name spelling tentative, verify at Legwork chapter."
+        - name: "MegaMedia Entertainment Inc."
+          page: 61
+    - id: cast_of_characters
+      title: "Cast of Characters"
+      start_page: 62
+    - id: player_handouts
+      title: "Player Handouts"
+      start_page: 65
+      transcription_note: "p.3 TOC low-res - Player Handouts page number tentative."
+
+# NPC / faction / place refs. Populated from TOC as pending stubs; each gets
+# a real file under Data/Lore/NPCs|Factions|Places when its detail chapter
+# ingests. Per decision, MegaMedia Entertainment Inc. is NOT yet created
+# as a Factions file - faction schema needs the Legwork page's data.
+npc_refs:
+  - name: "Vincent Burroughs"
+    status: pending_detail
+    source_page: [56]
+  - name: "Robert Carmon"
+    status: pending_detail
+    source_page: [57, 62]
+    transcription_note: "Appears in both Legwork and Cast of Characters."
+  - name: "Thomas Ozella"
+    status: pending_detail
+    source_page: [57]
+    transcription_note: "Name paired with 'Craft' in p.3 TOC - relationship TBD."
+  - name: "Hugh Coulis"
+    status: pending_detail
+    source_page: [58]
+  - name: "Osprey"
+    status: pending_detail
+    source_page: [59]
+  - name: "Kerr"
+    status: pending_detail
+    source_page: [59]
+  - name: "Selva Fasilo"
+    status: pending_detail
+    source_page: [60]
+    transcription_note: "p.3 TOC low-res - spelling tentative."
+
+faction_refs:
+  - name: "MegaMedia Entertainment Inc."
+    status: pending_detail
+    source_page: [61]
+    note: "Deferred creation of Data/Lore/Factions/ file until Legwork p.61 ingests - faction schema requires more data than TOC provides."
+
 place_refs: []
 hooks: []
 
 transcription_gaps:
   - "Cover art is illustration-only: no text beyond the title 'Queen Euphoria' is captured on p.1."
   - "p.2 production credits (writing / development / editorial / production staff / art / illustration / layout) are intentionally NOT ingested to canon per project policy (real-world staff attribution is not in-world canon). Archive-only at Sources/SR1E-QueenEuphoria/p002-credits.png."
+  - "p.3 TOC was ingested from a low-res phone screenshot; multiple scene titles, names, and page numbers carry per-entry transcription_note flags and MUST be re-verified when each chapter's own page ingests. Key ambiguities: 'To Cause A Stir' / 'Herding Euphoria' / 'Rocking Strikes' / 'Meeting Heroes' / 'Hit The Waxx?' (titles); 'Craft / Thomas Ozella' (pairing); 'Selva Fasilo' (spelling); 'A MegaMedia Production' and 'Audience With The Queen' (page numbers)."
+  - "p.3 also shows the opening of the Ant Lion prologue fiction. Per project policy, prologue prose is NOT transcribed - archive-only."
+  - "p.3 TOC Cast of Characters entries under page 62-64 are too low-res to extract individual names beyond Robert Carmon; full cast list deferred to Cast of Characters chapter ingestion."
 
 sources:
   - edition: SR1E
@@ -52,3 +206,9 @@ sources:
     page: 2
     image: "Sources/SR1E-QueenEuphoria/p002-credits.png"
     section: "Credits / Copyright / Publisher"
+  - edition: SR1E
+    book: "Queen Euphoria"
+    year: 1990
+    page: 3
+    image: "Sources/SR1E-QueenEuphoria/p003-toc-prologue-open.png"
+    section: "Table of Contents + Ant Lion: A Prologue (opening)"
