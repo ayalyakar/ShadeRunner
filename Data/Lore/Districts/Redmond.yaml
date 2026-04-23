@@ -1,0 +1,90 @@
+# Transcribed from sourcebook extract (Screenshot 2026-04-23).
+# Edition attribution: SR1E (per project lead).
+# Page: 127 ("REDMOND: NEW HOPE FOR A TROUBLED DISTRICT").
+# Policy: seed — calibrate for play. See Design/Setting/DESIGN - Canon.md.
+
+district: Redmond
+source:
+  edition: SR1E
+  page: 127
+  title: "Redmond: New Hope for a Troubled District"
+  tabs: [Facts, History, Downtown, Districts, Government, Economy, Crime, Maps]
+
+facts:
+  area_km2: 436
+  population: 436000
+  population_density_per_km2: 1142
+  per_capita_income_annual_yen: 6000
+  below_poverty_level: 0.70
+  on_fortunes_active_trackers_list: 0.00
+  corporate_affiliation: 0.22
+  voting_precincts: 15
+  hospitals_and_clinics: 6
+  ltg_access_numbers: null   # TODO: transcribe from source; image illegible
+
+# Per-metatype percentages as printed in the fact sheet.
+# Note: raw values sum to 106%. Canonical SR sourcebook data sometimes
+# sums above 100% due to metavariant/overlap accounting. Retained as-is.
+metatype_mix:
+  human: 0.87
+  elf: 0.06
+  dwarf: 0.01
+  ork: 0.10
+  troll: 0.01
+  other: 0.01
+
+education:
+  less_than_12_years: 0.78
+  high_school_equivalency: 0.18
+  college_equivalency: 0.03
+  advanced_studies_certificates: 0.01   # <1% — printed as <1%
+
+# Historical events referenced in the district's flavor prose.
+# See Design/Setting/DESIGN - Canon.md for in-game treatment rules
+# (pre-game events = backdrop; in-game canon events = scheduled sim events).
+history_hooks:
+  - year: 2029
+    event: "Computer Crash of '29"
+    notes: "Pre-game backdrop; economic devastation of the district."
+  - year: 2032
+    event: "VITAS outbreak"
+    notes: "Pre-game backdrop; population collapse, social fabric broken."
+  - year: null
+    event: "Redmond Hellhounds attack"
+    notes: "Pre-game backdrop; canonical gang incident that shaped the Barrens."
+
+# Named sub-areas surfaced from the prose / canonical lore.
+sub_areas:
+  - name: "Redmond Barrens"
+    notes: "The lawless core of the district; MVP starter ground."
+  - name: "Touristville"
+    notes: "Shadow-tourism strip; bars, clubs, Johnson meets. MVP hand-crafted sub-zone."
+  - name: "Glow City"
+    notes: "Radioactive ruin; backdrop only in MVP."
+
+# Canonical gangs surfaced from the prose / canonical lore.
+# MVP includes Halloweeners, Redmond Hellhounds, Spikes (project decision).
+gangs:
+  - name: "Halloweeners"
+    mvp: true
+  - name: "Redmond Hellhounds"
+    mvp: true
+  - name: "Spikes"
+    mvp: true
+
+# Shadowland posts quoted at the foot of the page.
+# Policy: verbatim ingest as in-game BBS content (see Design/Narrative/DESIGN - Writing.md).
+# Image not fully legible; transcription pending a clearer scan.
+shadowland_posts:
+  - handle: null
+    text: null
+    notes: "Fragment mentions abandoned buildings, darkened alleys, scavengers' life. Transcribe from clearer source."
+
+# Gameplay calibration hooks (computed from the facts above).
+calibration:
+  per_capita_income_anchor_yen_per_year: 6000
+  per_capita_income_anchor_yen_per_month: 500
+  notes: |
+    Anchor for lifestyle tier pricing and run-payout curves.
+    A Low-tier apartment (~2,000¥/mo) is ~4x median Redmond monthly income,
+    which matches a working runner's precarious economic framing.

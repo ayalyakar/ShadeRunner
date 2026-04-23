@@ -4,11 +4,24 @@
 
 **DECIDED:** The MVP is one district, one archetype, one run type:
 
-- **District:** Redmond Barrens.
+- **District:** Redmond Barrens (Seattle). Hand-built sub-zone: **Touristville strip**. See `Design/Setting/Districts/DESIGN - Redmond.md` and `Data/Lore/Districts/Redmond.yaml` for canonical data.
 - **Archetype:** Street samurai (physical combat; also covers physical adept with minor tweaks).
 - **Run type:** A single, specific run structure (framed below).
 
 The MVP is **shippable to self**: complete end-to-end, no placeholders in the critical path.
+
+## Concrete Redmond Barrens scope
+
+- **Geography:** Redmond Barrens only; Touristville strip as the one hand-crafted sub-zone (fixer bar, cheap eats, alley, strip-club entrance, fleabag motel). Two adjacent Barrens streets: the PC's apartment, a corner store, a gang hang.
+- **PC start:** Low-tier apartment at 2,000¥/month. Monthly rent pressure is the baseline economic stake.
+- **Factions present:**
+  - **Halloweeners** (fire-themed chaotic street gang).
+  - **Redmond Hellhounds** (the district's namesake gang, canonical in SR1E).
+  - **Spikes** (ork-majority go-gang).
+  - No corp presence beyond ambient. Knight Errant / Lone Star response time is effectively unbounded.
+- **First Johnson:** a **Touristville fixer** (Connection ~3–4) who calls the PC cold. Meet happens in a Touristville bar.
+- **First run:** content **TBD** (deferred; retrieval / protection / extraction / sabotage).
+- **NPC populations:** procgen driven by the district's canonical demographics (87% human, 10% ork, 6% elf, 1% dwarf, 1% troll, 1% other; 70% below poverty; 78% <12-years education).
 
 ## Why these choices
 

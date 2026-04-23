@@ -10,6 +10,7 @@
 - Identity, metatype, appearance, profession, schedule, dwelling, social graph.
 - Templates per district (Redmond Barrens barfly templates differ from Downtown exec templates).
 - Promoted to "named minor" on player interaction; identity persists.
+- **Demographic distributions are authoritative** — metatype mix, education levels, corp-affiliation rate, and income distribution are read directly from the district's canonical fact sheet (`Data/Lore/Districts/<Name>.yaml`). Procgen must honor these ratios when sampling a district's population. Neighborhood-level skew is handled by sub-district overrides, not by ignoring the baseline.
 
 ### Interiors (apartments, shops, corp offices, hideouts)
 - Room-graph generator: pick archetype (e.g. "middle-class apartment"), place rooms from a palette, fill with props.

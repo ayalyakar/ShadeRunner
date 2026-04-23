@@ -28,6 +28,12 @@ Each district has:
 - **Canonical NPCs** anchored here (with schedules).
 - **Run flavor** — kinds of jobs typically offered from this district.
 
+## Per-district design sheets
+
+Each district gets a dedicated design file under `Design/Setting/Districts/` following the sourcebook-tab hybrid template (Facts, History, Downtown, Districts, Government, Economy, Crime, Maps + Hooks, MVP Notes, Open Questions). Stats are transcribed from canonical extracts and stored separately at `Data/Lore/Districts/<Name>.yaml`. See `Setting/DESIGN - Canon.md` for the ingestion policy.
+
+Reference: `Design/Setting/Districts/DESIGN - Redmond.md` (first district implemented).
+
 ## Scale guidance
 
 - Redmond Barrens at MVP: a hand-curated subset of streets + procedural fill. Not the full district.

@@ -40,6 +40,41 @@ These can be altered by the player:
 - Sourcebook references accompany each entry.
 - Conflicts between editions are flagged and a policy recorded.
 
+## Sourcebook ingestion
+
+Canonical extracts (fact sheets, NPC statblocks, faction entries, event descriptions) flow into the project via a **transcribed data + design reference** pipeline.
+
+### Policy
+
+- **Seed, not truth.** Extracts seed the game; numbers may be rebalanced for playability. Each rebalance is documented at the point of use.
+- **Edition attribution required.** Every transcription records its source edition and page. SR1E data and SR6E data are both canonical — neither supersedes the other by default.
+- **Edition-conflict reconciliation:** when multiple editions cover the same entity with different numbers, a per-entity policy is recorded (latest wins / oldest wins / per-stat merge / our own calibration). Default: **latest edition wins for stats, earliest-canonical wins for lore**, overridable per entity.
+
+### Storage
+
+- **Transcribed stats / data** → `Data/Lore/<domain>/<name>.yaml`
+  - `Data/Lore/Districts/` — district fact sheets.
+  - `Data/Lore/NPCs/` — canonical NPC statblocks (coming).
+  - `Data/Lore/Factions/` — corp / gang / organization entries (coming).
+- **Design prose** → `Design/Setting/<domain>/DESIGN - <Name>.md`
+  - `Design/Setting/Districts/DESIGN - <District>.md` — district design sheets (hybrid template).
+- **Source images / scans** are not committed to the repo; the transcribed data files are the authoritative in-repo reference.
+
+### District template (sourcebook-tab hybrid)
+
+Per-district design files use the sourcebook tab layout (**Facts, History, Downtown, Districts, Government, Economy, Crime, Maps**) extended with design-only sections (**Hooks, MVP Notes, Open Questions**). See `Design/Setting/Districts/DESIGN - Redmond.md` for the reference implementation.
+
+### Historical events split
+
+Per-district history events split cleanly:
+
+- **Pre-game events** (dated before the campaign start year) are **backdrop only** — referenced in dialogue, BBS, news archives, but not simulated.
+- **In-game-period events** are **scheduled sim events** in the event log (see `Technology/DESIGN - Persistence.md`) and fire at their canonical dates subject to the canon-vs-branching policy above.
+
+### Shadowland BBS posts
+
+Quoted Shadowland posts in extracts are ingested **verbatim** as in-game BBS content attributed to their canonical handles. This forms a seed corpus for the BBS system; additional posts can be authored in the same voice (see `Narrative/DESIGN - Writing.md`).
+
 ## Open questions
 
 - Where exactly is the line between "anchor" and "can be altered"? Needs a full pass through the canonical timeline.
