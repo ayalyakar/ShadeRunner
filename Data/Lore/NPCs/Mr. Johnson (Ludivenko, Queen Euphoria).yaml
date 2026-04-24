@@ -1,10 +1,10 @@
-# Canonical NPC — the Ludivenko executive who actually commissions the run.
+# Canonical NPC — the Ludivenko executive who commissions the Queen Euphoria run.
 
 name: "Mr. Johnson (Ludivenko, Queen Euphoria)"
 kind: "Mr. Johnson (corporate runner alias)"
 era: 2050
 authored: false
-status: "pending_detail; identity not revealed on p.8"
+status: "active adventure NPC (Queen Euphoria). Real name deliberately withheld by the module."
 
 sources:
   - edition: SR1E
@@ -12,65 +12,130 @@ sources:
     year: 1990
     page: 8
     image: "Sources/SR1E-QueenEuphoria/p008-wake-up-call.png"
-    section: "Wake Up Call / Behind the Scenes"
+    section: "Wake Up Call / Behind the Scenes (referenced)"
+  - edition: SR1E
+    book: "Queen Euphoria"
+    year: 1990
+    page: 9
+    image: "Sources/SR1E-QueenEuphoria/p009-off-and-running.png"
+    section: "Off and Running / Tell It To Them Straight (on-screen meet)"
+  - edition: SR1E
+    book: "Queen Euphoria"
+    year: 1990
+    page: 10
+    image: "Sources/SR1E-QueenEuphoria/p010-off-and-running-behind.png"
+    section: "Off and Running / Behind the Scenes (negotiation + stat references)"
 
 facts:
   role: |
-    Executive at the Ludivenko Corporation. Commissions the runners for
-    the Queen Euphoria run; meets them in person at Pier 36 on the
-    Tacoma docks at 11pm. Uses the generic 'Mr. Johnson' corp-cover
-    alias rather than a true name.
+    Executive at the Ludivenko Corporation. Commissions the runners
+    for the Queen Euphoria run; meets them at Pier 36 on the Tacoma
+    docks at 11pm. Uses the generic 'Mr. Johnson' corp-cover alias
+    rather than a true name.
   employer:
     faction_ref: "Data/Lore/Factions/Ludivenko Corporation.yaml"
-    position: "Executive (specific title not given on p.8)"
+    position: "Executive in Ludivenko's Seattle operations (p.10 disclosure)."
   broker:
     fixer_ref: "Data/Lore/NPCs/Ellery Whitecastle.yaml"
     pattern: |
-      Uses Whitecastle as a cut-out: Whitecastle places the opening call,
-      the PCs never learn Mr. Johnson's true employer from Whitecastle,
-      and Mr. Johnson is the only Ludivenko face the runners will see in
-      the Wake Up Call scene.
+      Uses Whitecastle as a cut-out: Whitecastle places the opening
+      videophone call and brokers the meet. The PCs hear Johnson's
+      Ludivenko affiliation only at the dockside meet itself.
   venue_first_meet:
     place_ref: "Data/Lore/Places/Docks/Pier 36 (Tacoma).yaml"
     time: "11pm"
+  muscle:
+    npc_ref: "Data/Lore/NPCs/Juan Diablo.yaml"
+    note: "Johnson arrives with Juan Diablo as bodyguard / driver. Diablo passes the PCs the Royal Meadows Apartments keycard and the whispernumber #5-5-Chrome for follow-up."
+
+appearance:
+  face: |
+    'Like a hundred other faces' - deliberately unmemorable. Smooth
+    clear complexion; canonical line: 'smiles broadly' and 'the eyes
+    are implant perfect.' The implant-perfect eye detail implies
+    corporate cyber-eye replacement as a mid-career marker.
+  demeanor: |
+    Outwardly affable - smiles broadly, asks 'shall we talk business'
+    as the opening line. Condescending when pressed on anything he
+    considers too obvious. Brief and efficient with negotiation.
+  register:
+    adaptation_note: "Corporate-anonymous on the surface; cold underneath. Keep voice distinctly separate from both Whitecastle (videophone mercantile) and Diablo (gang-polish muscle)."
 
 identity_reveal:
-  revealed_on_page_eight: false
-  note: |
-    p.8 names him only as 'Mr. Johnson' and identifies his employer as
-    Ludivenko. A real name (if the module gives one) must come from a
-    later chapter. This file stays a pending stub until that reveal or
-    until Legwork / Cast of Characters ingestion fills it in.
+  revealed_on_page: false
+  canonical_line: |
+    p.10 explicitly states his real name is 'unimportant' and gives
+    only his employer (Ludivenko executive). The module may or may not
+    reveal his name later; stay pending until a later chapter does.
+
+negotiation:
+  opening_offer_per_pc_yen: 20000
+  max_negotiable_additional_per_pc_yen: 1000
+  negotiation_mechanic:
+    kind: "Opposed Negotiation Test"
+    rules_location: "SR1E core rules (base Negotiation Skill procedure)."
+    outcome_success: "+1,000 nuyen per PC; or, per p.10's alternate framing, a 1,000 reduction from a higher starting ask if the PCs negotiate poorly. The canonical note: 'subtracts 1,000 nuyen from the original offer' on a failed-against-Johnson result."
+  payment_plan:
+    note: "Fixed; NOT negotiable. Half up-front on abduction; half after Euphoria misses her last scheduled promotional appearance. Refuses to revise this structure."
+  bargaining_posture: "Won't dwell on operational detail; considers many PC questions too obvious and dismisses them. Will accept a reasonable run-plan without scrutiny."
+  run_terms:
+    target: "Euphoria"
+    target_ref: "Data/Lore/Adventures/QueenEuphoria.yaml npc_refs/Euphoria"
+    duration_days: 4
+    no_harm_directive: |
+      'Hold her anywhere you like - no harm must come to the lady.'
+      Injury or death voids the commercial value of the kidnapping
+      (Ludivenko's objective is Euphoria missing the Sirius Foods
+      Amber Gel promotion, not damaging her).
+    hideout_provided_by_johnson:
+      place_ref: "Data/Lore/Places/Apartments/Royal Meadows Apartments.yaml"
+      delivery: "magnetic-strip keycard handed to the PCs at Pier 36."
+    promotion_window_context:
+      target_event: "Friday Sirius Foods Amber Gel promotional appearance at Pacific Towers."
+      product_ref: "Data/Lore/Products/Amber Gel.yaml"
+
+sr_rules_refs:
+  - archetype: "Mr. Johnson Contact"
+    edition: SR1E
+    book: "Shadowrun core rules"
+    page: 170
+    note: "Primary stat block reference per p.10 explicit citation."
 
 contact_profile:
   connection: 4
   loyalty_default: 1
   venue: "Data/Lore/Places/Docks/Pier 36 (Tacoma).yaml"
   services:
-    - type: "fixer"
-      availability: "one engagement only - Queen Euphoria"
+    - type: "fixer (single engagement)"
+      availability: "Queen Euphoria run only."
   voice:
     engine: xtts
     model_ref: null
-    profile_note: |
-      Corporate register, deliberately anonymous - this is exactly the
-      'Corporate Mr. Johnson' slot described in Design/Social/DESIGN -
-      Contacts.md (Connection 4, Loyalty 1, single-scene + payout).
-      Hand-author distinct voice from Whitecastle to avoid conflation.
+    profile_note: "Affable-corporate surface, condescending-corporate underbelly. Hand-author distinct from Whitecastle + Diablo."
   relationship:
     romance_eligible: false
   faction_affiliation:
     primary: "Ludivenko Corporation"
 
+vehicle:
+  make_model: "Toyota Elite"
+  role: "Sedan that delivers Johnson + Diablo to Pier 36."
+  driver: "Data/Lore/NPCs/Juan Diablo.yaml"
+
 game_presence:
   mvp: "out of MVP scope."
-  post_mvp: "The commissioning Mr. Johnson of the Queen Euphoria run when adapted. UI-level identity stays 'Mr. Johnson' unless and until the module reveals a real name."
+  post_mvp: |
+    Commissioning Mr. Johnson for the Queen Euphoria run when adapted.
+    UI-level identity stays 'Mr. Johnson' unless and until the module
+    later reveals a real name.
 
 adaptation_notes:
-  - "Distinct NPC file from Whitecastle's to avoid the alias conflation I originally slipped into: Mr. Johnson and Whitecastle are two separate people with two different meets (videophone + dockside)."
-  - "When the real name or more detail surfaces in a later chapter, either rename this file to the real name and keep a cover_identities entry for 'Mr. Johnson', or keep this file as-is and cross-link."
+  - "Distinct NPC file from Whitecastle's - two different meets (videophone + dockside)."
+  - "Negotiation beat is a canonical SR1E Opposed Negotiation Test with a tight delta (+/- 1,000 nuyen per PC). ShadeRunner adaptation should preserve the low-stakes character of the negotiation (nobody is haggling hard here; Johnson is in a hurry and the PCs have little leverage)."
+  - "Payment-plan fixity is a design-important detail: the second-half payout creates a built-in reason for the PCs to deliver the four-day window rather than bail."
+  - "When the real name (if any) surfaces in a later chapter, either rename this file to the real name and keep a cover_identities entry for 'Mr. Johnson', or keep this file as-is and cross-link."
 
 transcription_gaps:
-  - "Real name unknown as of p.8 (identity deliberately withheld by the module at this beat)."
-  - "Mr. Johnson's physical description, metatype, cyberware, and stats are not on p.8. The player is cued to meet him at Pier 36 but does not yet see him on this page."
-  - "Specific title / seniority at Ludivenko is not stated."
+  - "Real name unknown - explicitly withheld on p.10 ('name is unimportant')."
+  - "Metatype, age, height, cyberware beyond 'implant-perfect eyes' not given."
+  - "Specific title at Ludivenko not stated - only 'executive'."

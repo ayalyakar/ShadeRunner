@@ -1,0 +1,78 @@
+# Canonical product — Sirius Foods' nutrient / consumer product that anchors the Queen Euphoria plot McGuffin.
+
+name: "Amber Gel"
+type: "Consumer product (Sirius Foods brand)"
+
+era: 2050
+authored: false
+status: "active in-universe product; plot-central McGuffin"
+
+sources:
+  - edition: SR1E
+    book: "Queen Euphoria"
+    year: 1990
+    page: 6
+    image: "Sources/SR1E-QueenEuphoria/p007-plot-synopsis.png"
+    section: "Plot Synopsis (origin + hidden nature)"
+  - edition: SR1E
+    book: "Queen Euphoria"
+    year: 1990
+    page: 9
+    image: "Sources/SR1E-QueenEuphoria/p009-off-and-running.png"
+    section: "Off and Running / Tell It To Them Straight (public promotion framing)"
+  - edition: SR1E
+    book: "Queen Euphoria"
+    year: 1990
+    page: 10
+    image: "Sources/SR1E-QueenEuphoria/p010-off-and-running-behind.png"
+    section: "Off and Running / Behind the Scenes (commercial stakes)"
+
+manufacturer:
+  faction_ref: "Data/Lore/Factions/Sirius Foods.yaml"
+  faction_status: "pending_detail (Sirius Foods file not yet promoted from adventure faction_refs)."
+
+public_framing:
+  category: "Consumer food / nutrient product"
+  positioning: "Product being promoted through a celebrity campaign (Euphoria) tied to Sirius Foods' marketing calendar."
+  promotion_event:
+    endorser: "Euphoria (MegaMedia starlet)"
+    endorser_ref: "Data/Lore/Adventures/QueenEuphoria.yaml npc_refs/Euphoria (pending_detail)"
+    cadence: "Scheduled Friday promotional appearance (referenced on p.9); the Queen Euphoria run hinges on Euphoria NOT being present for this appearance."
+
+hidden_nature:
+  spoiler_level: gm_only
+  spoiler_reveal_source: "p.6 Plot Synopsis + adventure climax"
+  summary: |
+    Amber Gel's biological source is Insect-Spirit-derived material
+    (Worker-caste insect-spirit substance) linked to Craft / Thomas
+    Dorin's nascent Queen-Ant-Spirit Hive in the Puyallup Barrens.
+    The product is effectively a vector for the Hive's presence in
+    the consumer market. See:
+    - Data/Lore/Adventures/QueenEuphoria.yaml plot_synopsis (beat 02 Amber Gel, beat 09 Burroughs panic)
+    - Data/Lore/Adventures/QueenEuphoria.yaml creature_refs/Soldier-Worker-Insect-Spirits (pending_detail)
+
+plot_role:
+  mcguffin_axis: "corporate_sabotage"
+  commercial_stakes:
+    - "Ludivenko's opening run buys four in-world days of Euphoria absence to pre-empt the Sirius Foods promotion - the kidnapping is framed as corporate sabotage of the Amber Gel launch window, not violence against Euphoria."
+    - "Ludivenko's no-harm directive at the Pier 36 meet is tied to not wanting to damage the product-competition narrative: an injured endorser is a different (and worse for Ludivenko) story than a delayed appearance."
+  escalation_axis: "insect_spirit_reveal"
+  escalation_note: "The corporate-sabotage frame is the PCs' entry point; the reveal that Amber Gel's substance is Insect-Spirit biological material is the module's twist into horror register."
+
+sales_channels:
+  public: "consumer retail (implied from Sirius Foods brand framing)."
+  note: "Specific distribution, pricing, regulatory status not given on pp.6-10."
+
+adaptation_notes:
+  - "ShadeRunner product-item schema: Amber Gel is the first entry in Data/Lore/Products/. Schema shape (public_framing + hidden_nature + plot_role) is proposed here as a template for future plot McGuffins (BTL chips, drugs, corp trade goods)."
+  - "UI treatment: at MVP-narrative integration, Amber Gel should appear in the PC's commlink / dossier as a public-brand entry, with the hidden_nature block gated on spoiler_level until the plot reveal lands."
+  - "Parallel knockoff product 'Blue Bacaoey' noted on p.6 (Ludomeria/Ludivenko's own knockoff push). Candidate for a sibling Data/Lore/Products/ file when its chapter ingests."
+
+game_presence:
+  mvp: "out of MVP scope."
+  post_mvp: "Plot McGuffin for the Queen Euphoria run when adapted. Not a craftable / usable item - exists as a dossier entry and a scene-state flag."
+
+transcription_gaps:
+  - "Physical description of Amber Gel (appearance, packaging, portion form) is not in the pp.6-10 pages."
+  - "Price, retail channels, regulatory approval status not given."
+  - "Specific chemistry / active ingredient - the pp.6-10 pages frame the hidden nature but do not quote a product spec."

@@ -45,7 +45,14 @@ facts:
   stat_reference:
     archetype: "Fixer Contact"
     rules_citation: "SR1E core rules, p.167"
-    note: "No custom stat block on p.8; module defers to the SR1E core rules Fixer archetype."
+    note: "No custom stat block on p.8; module defers to the SR1E core rules Fixer archetype. See sr_rules_refs below for the structured citation."
+
+sr_rules_refs:
+  - archetype: "Fixer Contact"
+    edition: SR1E
+    book: "Shadowrun core rules"
+    page: 167
+    note: "Primary stat block reference per p.8 explicit citation. Preserved as a structured citation for the later stats-migration pass."
 
 appearance_videophone:
   hair: "Black, slicked back."
