@@ -1,0 +1,52 @@
+# Canonical place — waterfront pier on the Tacoma docks; Queen Euphoria meet site.
+
+name: "Pier 36"
+type: "Pier / dockside meeting location"
+
+era: 2050
+authored: false
+status: "active"
+
+sources:
+  - edition: SR1E
+    book: "Queen Euphoria"
+    year: 1990
+    page: 8
+    image: "Sources/SR1E-QueenEuphoria/p008-wake-up-call.png"
+    section: "Wake Up Call / Tell It To Them Straight + Behind the Scenes"
+
+location:
+  metroplex: "Seattle"
+  district: "Tacoma"
+  subarea: "Tacoma docks"
+  district_ref_note: "Tacoma is named as a distinct district in the p.5 Seattle-metroplex setting recap (Seattle / Tacoma / Redmond). Not yet one of the ingested district files - placeholder until the Tacoma chapter ingests or a Districts/Tacoma.yaml is bootstrapped."
+
+description: |
+  Waterfront pier on Tacoma's industrial docks. Used in Queen Euphoria
+  as a neutral off-corp meet site for the runners' Wake Up Call
+  briefing with Whitecastle (as 'Mr. Johnson'). P.8 does not describe
+  the pier's physical layout beyond its location and an 11pm meeting
+  time that implies night-mode dockside lighting, minimal civilian
+  traffic, and ambient harbor noise.
+
+uses_canonical:
+  - context: "Queen Euphoria / Wake Up Call meet"
+    time: "11pm"
+    party: "runners (individually briefed) + Whitecastle + implied Whitecastle security (not enumerated on p.8)"
+    source_page: 8
+
+security_posture:
+  overt: null
+  covert_implied: "Whitecastle's one-at-a-time briefing cadence and cut-out hiring pattern imply he arrives with at least minimal corporate protection / observation; not detailed on p.8."
+
+adaptation_notes:
+  - "ShadeRunner scene design: dockside-at-night is the visual / audio register. Expect wet concrete, sodium-vapor halos, intermittent cargo-crane silhouettes, ambient foghorn / water-lap SFX. Place file is the venue ref for the Wake Up Call scene."
+  - "Solo-PC play collapses the one-at-a-time interview cadence (p.8 canon) into a single meet. Retain the staggered-timing flavor for any NPC party-members who tag along."
+
+game_presence:
+  mvp: "out of MVP scope."
+  post_mvp: "Wake Up Call venue when Queen Euphoria is adapted."
+
+transcription_gaps:
+  - "Pier-36 physical layout, interior / exterior structures, nearby landmarks, and any named adjacent businesses are not on p.8."
+  - "Whether Pier 36 is Whitecastle-owned / Whitecastle-chosen / Mercurial-chosen is not stated on p.8."
