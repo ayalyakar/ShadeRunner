@@ -1,0 +1,77 @@
+# Canonical BBS persona — recurring Shadowland handle.
+
+name: "Smiley"
+persona_type: "BBS / Shadowland handle (recurring persona)"
+promotion_rationale: |
+  Four posts across pp.15 + 22 cross the recurring-handle threshold
+  per Design/Narrative/DESIGN - Writing.md. Voice profile consistent
+  across appearances: cynical-veteran register, bitter-experience
+  authority, willing to name institutional decay. Voice is distinct
+  enough to warrant dedicated-persona tracking.
+
+sources:
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 15
+    image: "Sources/SR1E-Seattle/p015-history-treaty-provisions-exodus.png"
+    section: "History — Post-Awakening intelligence (military-reluctance-re-magic post)"
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 22
+    image: "Sources/SR1E-Seattle/p022-downtown-politics.png"
+    section: "Downtown — Politics (3 posts: corruption recap / cop-POV essay / council-chamber-shooting recap)"
+
+posts:
+  - page_ref: 15
+    timestamp_raw: "(18-39-94-3) (?-2-50)"
+    topic: "Observation on military-agency reluctance to accept magic as real post-Awakening."
+    transcription_note: "Handle + timestamp low confidence per Sources/VERIFICATION.md."
+  - page_ref: 22
+    timestamp_raw: "(06-23-49) (12-15-50)"
+    topic: "Documentary summary of the 2048 Bob Perkins sting operation + ironic Honesty-in-Government adviser outcome."
+  - page_ref: 22
+    timestamp_raw: "(10-57-39) (01-21-51)"
+    topic: "Downtown-is-the-most-frustrating-district-from-a-cop's-POV essay. Press-swarm behavior, FBI/NSA presence, Mitsuhama intel-torture reputation."
+  - page_ref: 22
+    timestamp_raw: "(03-48-39) (01-05-51)"
+    topic: "Recap of 2045 + 2049 council-chamber shootings; notes Mayor Lindstrom's impassive response + 'gutsy mayor' press nickname."
+
+inferred_profile:
+  occupation_hypothesis: "Former or current law-enforcement / private investigator with Downtown beat. Cop-POV perspective is consistent across posts. Not same as the SPD handle (different voice; SPD has specific dissolved-force grievance; Smiley has broader institutional cynicism)."
+  era_of_activity: "Posts span 2050-11 through 2051-01 (timestamps suggest continuous presence over recent months)."
+  reach: "Willing to cite specific years + name officials. Implies good primary-source access; probably informant-network or professional proximity."
+  metatype_implication: "Unmarked on the page; default-human assumption until contrary evidence."
+
+voice_profile:
+  tone: |
+    Cynical-veteran register. Bitter experience delivered dry; no
+    crusading. Focus on institutional failure rather than individual
+    villainy. Consistent across all four posts.
+  pacing: "Short-to-medium paragraphs. Factual-first, commentary-second. Knows what he's talking about."
+  stock_moves:
+    - "Open with a specific case / year / number."
+    - "Deliver analysis in the middle."
+    - "Close with a dry acid observation."
+  opinions_stance:
+    - "Downtown corruption is ambient, not exceptional."
+    - "Press-swarm behavior undermines law enforcement."
+    - "Federal intel (FBI/NSA) adds paranoia, not safety."
+    - "Mitsuhama's intel register is torture-and-drugs; name it."
+  recurring_tropes_to_avoid:
+    - "No 'salty veteran' archetype-collapse. Smiley's cynicism is specific and earned, not a register template."
+
+game_presence:
+  mvp: "BBS ambient content — Smiley posts appear on the Shadowland feed; possible legwork beat where PC searches Smiley's post history for intel."
+  post_mvp:
+    - "On-meat identity reveal as a possible story thread."
+    - "Informant contact type — Connection-3+ Downtown-beat info broker."
+    - "Run: protect Smiley's source before Mitsuhama intel closes in."
+    - "Voice-profile template for authoring further Smiley content (BBS feed rotation)."
+
+hooks:
+  - "Smiley's dossier-adjacent knowledge mirrors Lone Star's dossier system — the handle may be sourced from a dossier-division leak."
+  - "Consistent timestamp window (late-2050 through early-2051) implies active, current voice — not a retrospective-only persona."
+
+transcription_note: "Handle + timestamps across pp.15 + 22 all low confidence. See Sources/VERIFICATION.md."

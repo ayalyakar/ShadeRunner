@@ -1,0 +1,90 @@
+# Canonical BBS persona — recurring Shadowland handle, specific former officer.
+
+name: "SPD"
+handle: "SPD"
+persona_type: "BBS / Shadowland handle (recurring persona — specific former officer)"
+promotion_rationale: |
+  Six+ posts across pp.17 + 22 well past the recurring-handle
+  threshold. Per project canon decision, SPD is NOT the defunct
+  police force's official account — it's a specific former officer
+  using the force's name as their handle, with a coherent single
+  voice across all posts. The on-meat identity is TBD (possible
+  post-MVP reveal).
+
+sources:
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 17
+    image: "Sources/SR1E-Seattle/p017-history-night-of-rage.png"
+    section: "History — SPD dissolution BBS thread (3 posts: lament / rebuttal to racist Anonymous / counter-threat)"
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 22
+    image: "Sources/SR1E-Seattle/p022-downtown-politics.png"
+    section: "Downtown — Politics (3 posts: crowded-politics quip / popularity-contest cynicism / Mahogany Hall security critique)"
+
+on_meat_identity:
+  canonical_status: "Not revealed in ingested material."
+  inferred_attributes:
+    - "Former SPD officer (pre-2023 dissolution)."
+    - "Deep institutional memory of SPD-era policing and its collapse."
+    - "Post-dissolution civic involvement (knows Mahogany Hall security, warned the city while still on force)."
+    - "Willing to threaten flame-war antagonists explicitly with violent follow-through (per p.17 rebuttal post)."
+  post_mvp_reveal_hook: "Specific on-meat identity + why they still use the force's name as their handle — a possible character-arc story thread."
+
+posts:
+  - page_ref: 17
+    timestamp_raw: "(13-35-25-5) (11-50)"
+    topic: "Veteran cop's first-person lament — caught between Human and Metahuman mobs without riot gear in 2022-23. Lost a partner; told her husband personally. City Hall considered officers expendable."
+  - page_ref: 17
+    timestamp_raw: "(11-17-14-3) (5-50)"
+    context: "Reply TO a racist Anonymous post that had attacked SPD for 'protecting animals.'"
+    topic: "Sharp rejection. Asserts the oath was to uphold the law regardless of metatype. Ends with an explicit in-person threat ('I'll find you through a decker friend and show up with a 10-pound Heavy stick and the biggest gun you've ever seen')."
+  - page_ref: 17
+    timestamp_raw: "(03-50) (15-4-50)"
+    topic: "Same thread continuation (timestamp variant format)."
+  - page_ref: 22
+    timestamp_raw: "(12-57-39) (01-21-51)"
+    topic: "Opening quip on downtown politics: 'a little more crowded, a little noisier, a little smellier than its streets.'"
+  - page_ref: 22
+    timestamp_raw: "(18-42-51) (11-21-50)"
+    topic: "Cynical local-election commentary — citizen participation degenerates into whitest-teeth / most-money / most-dirt popularity contest."
+  - page_ref: 22
+    timestamp_raw: "(09-47-25) (01-21-51)"
+    topic: "Mahogany Hall security critique — triple safety glass + guards at entrances but zero internal protection against insider violence (2045 + 2049 shootings). SPD warned the city while still on force; they didn't listen."
+
+voice_profile:
+  tone: |
+    Veteran cop. Specific, grounded, non-discriminatory. Willing to
+    take shots at City Hall, Lone Star's successors, corrupt
+    councilmen, racists. Deep moral compass under the cynicism —
+    genuinely believes in the oath.
+  pacing: "Short-paragraph, first-person. Tends to anchor points in personal memory ('when I was on the force,' 'I warned them...')."
+  register_shifts:
+    softens_around: "Fallen colleagues, widowed partners, wrongly-accused metahumans."
+    hardens_around: "Racists (Humanis / Anonymous trolls), City Hall incompetents, corrupt officials."
+  opinions_stance:
+    - "Post-SPD-dissolution Lone-Star-era Seattle is worse at street-level policing, better at syndicate-protection paperwork."
+    - "Metahuman discrimination is a moral failure; the oath applies to everyone."
+    - "Mahogany Hall security is performative, not functional."
+    - "Downtown politics is popularity-contest theater, not governance."
+  recurring_tropes_to_avoid:
+    - "No 'salty retired cop' archetype collapse. Specific grievances, specific moral clarity."
+    - "Not a 'tough guy' — the threats are earned rhetoric against explicit bigotry, not posturing."
+
+game_presence:
+  mvp: "BBS ambient content — SPD posts appear on Shadowland feed; possible legwork anchor for SPD-era history or Mahogany-Hall security intel."
+  post_mvp:
+    - "On-meat identity reveal as a post-MVP story thread."
+    - "Mentor-figure contact for PC runners doing righteous-violence work against bigots."
+    - "Security-gap exploit — SPD's Mahogany Hall post reveals precisely how the chamber is vulnerable (run content)."
+    - "SPD-dissolution-era witness — possible Night-of-Rage eyewitness for a post-MVP NoR-investigation arc."
+
+hooks:
+  - "SPD-as-handle is deliberate — the force was dissolved in 2023; using the name is an institutional grief statement."
+  - "Consistent non-discriminatory voice makes SPD a natural moral anchor for metahuman-PC allies."
+  - "Mahogany Hall security critique reads as operational intel — tempting for an antagonist with bad intent."
+
+transcription_note: "Handle clear ('SPD'); timestamp formats vary and are low-confidence across all posts. See Sources/VERIFICATION.md."

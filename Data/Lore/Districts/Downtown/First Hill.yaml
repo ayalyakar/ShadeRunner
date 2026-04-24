@@ -1,0 +1,52 @@
+# Canonical neighborhood — Downtown Seattle councilmanic district.
+
+name: "First Hill"
+parent_district: "Downtown"
+parent_district_file: "Data/Lore/Districts/Downtown.yaml"
+type: "Downtown neighborhood / council-seat area"
+
+sources:
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 22
+    image: "Sources/SR1E-Seattle/p022-downtown-politics.png"
+    section: "Downtown — Politics (Bob Perkins as First Hill councilman)"
+
+overview: |
+  Named Downtown neighborhood / councilmanic district. First ingested
+  canonical detail: canonically the seat held by ex-councilman Bob
+  Perkins at the time of his 2048 sting-op arrest. Specific geography
+  and demographics not yet captured.
+
+canonical_associations:
+  council_seat:
+    role: "Seat on the Downtown district council."
+    historical_occupants:
+      - name: "Bob Perkins"
+        file: "Data/Lore/NPCs/Bob Perkins.yaml"
+        term: "through 2048"
+        outcome: "Arrested in the 2048 Lone Star + FBI sting; convicted; two-year suspended sentence; currently adviser to Honesty in Government."
+
+geography:
+  status: "Not captured on p.22. Probable real-world parallel: Seattle's First Hill neighborhood (east of downtown core, hospital district). Confirm when Downtown map / neighborhood-specific pages ingest."
+  transcription_note: "Geographic-detail page not yet ingested."
+
+demographics:
+  status: "Not captured on p.22."
+
+syndicate_turf:
+  status: "Not captured on p.22. Perkins's corruption case involved Mafia-cover agents — but doesn't establish First Hill as Mafia turf directly (he was the mark, not the local)."
+
+game_presence:
+  mvp: "lore / flavor only (MVP district is Redmond)."
+  post_mvp:
+    - "Council-seat politics backdrop for First-Hill-level run content."
+    - "Successor-councilman NPC (whoever holds the seat post-Perkins) as potential contact."
+    - "Perkins-era-leverage run content (evidence still in the dossier system)."
+
+hooks:
+  - "'First Hill' as a councilmanic district name may imply a hill-geography real-world parallel; noted but not verified."
+  - "Perkins's seat is recently vacant or post-Perkins; successor dynamics offer content potential."
+
+transcription_note: "Stub built from a single canonical mention on SR1E Seattle Sourcebook p.22. Expand when First Hill appears in dedicated-neighborhood or Downtown-map pages."

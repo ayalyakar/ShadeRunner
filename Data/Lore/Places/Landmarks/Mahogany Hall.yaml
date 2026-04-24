@@ -1,0 +1,68 @@
+# Canonical landmark — Downtown Seattle district council chamber.
+
+name: "Mahogany Hall"
+former_name: "Charles Royer Building"
+type: "Landmark / Government building (district council chamber)"
+
+sources:
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 22
+    image: "Sources/SR1E-Seattle/p022-downtown-politics.png"
+    section: "Downtown — Politics (council-chamber violence + security critique)"
+
+location:
+  district: "Downtown"
+  neighborhood: null
+  neighborhood_note: "Specific neighborhood not stated on p.22; resolve when Downtown sub-neighborhood pages ingest."
+
+role:
+  primary: "Seat of the Downtown district council. Canonical venue for the mayor's office + district-council chambers."
+  civic_weight: "Site of canonical 2045 + 2049 council-chamber shootings; Mayor Lindstrom's 'gutsy mayor' nickname origin."
+
+description:
+  interior: "Canonical 'oak-paneled council rooms' per p.22 (reference to the 2045 gun-control-bill shooting)."
+  former_name_provenance: "Named the 'Charles Royer Building' in a prior era; renamed to 'Mahogany Hall' at an unstated date."
+
+security_architecture:
+  source_page: 22
+  canonical_description: "Security is external-facing: triple-thick safety glass + plenty of guards at the entrances, to prevent attacks FROM outside."
+  documented_gap: |
+    No special internal security for politicians and employees inside
+    the building. Both 2045 + 2049 shooting incidents were carried
+    out by insiders (a councilman in 2045; a BTL-addicted secretary
+    in 2049). SPD canonically warned the city about this gap; it was
+    ignored (per SPD BBS post on p.22).
+  mechanical_hint: |
+    Post-MVP run: bypass external security becomes moot once you
+    have insider access. Infiltrate via employment / blackmail /
+    lift-of-insider's-credstick rather than frontal assault.
+
+notable_incidents:
+  - year: 2045
+    event: "Councilman shot the author of a gun-control bill during debate. Bill failed."
+    file: "Data/Lore/History/Council-Shooting-2045.yaml"
+  - year: 2049
+    event: "BTL-addicted secretary opened fire in the chambers; killed 1 councilman, wounded 3."
+    file: "Data/Lore/History/Council-Shooting-2049.yaml"
+
+associated_figures:
+  - name: "Ivar Lindstrom"
+    file: "Data/Lore/NPCs/Ivar Lindstrom.yaml"
+    role: "Current Mayor of Downtown. Presides from Mahogany Hall."
+
+game_presence:
+  mvp: "flavor only (MVP is Redmond)."
+  post_mvp:
+    - "Walkable council-chamber venue for political-run content."
+    - "Infiltration target exploiting the insider-gap (deep-NPC rule for staff / security / council-member NPCs)."
+    - "Crime-scene-reconstruction scene for council-shooting investigation."
+    - "Political-favor exchange venue (mayor's office + council committee rooms)."
+
+hooks:
+  - "External-only security = canonical vulnerability documented by SPD years before the shootings."
+  - "Oak-paneled chambers as aesthetic anchor for 2050-era 'old-money civic politics' register."
+  - "Charles Royer rename as a lore-cleanup question: when was the rename, and why?"
+
+transcription_note: "Stub built from SR1E Seattle Sourcebook p.22 politics section."

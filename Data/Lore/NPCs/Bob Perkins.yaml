@@ -1,0 +1,89 @@
+# Canonical NPC — corruption-scandal councilman (2048), ironic Honesty-in-Government adviser (2050).
+
+name: "Bob Perkins"
+title: "Former Councilman, First Hill district (Downtown Seattle). Current adviser, Honesty in Government policlub."
+
+sources:
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 22
+    image: "Sources/SR1E-Seattle/p022-downtown-politics.png"
+    section: "Downtown — Politics (corruption case study)"
+
+status: "Alive (per canon); ironic post-conviction advisory role ongoing."
+
+facts:
+  prior_role: "Councilman representing First Hill (Downtown)."
+  prior_role_file: "Data/Lore/Districts/Downtown/First Hill.yaml"
+  current_role: "Adviser to the Honesty in Government policlub."
+  current_role_file: "Data/Lore/Factions/Honesty in Government.yaml"
+
+corruption_case:
+  year: 2048
+  sting_operation:
+    coordinating_agencies:
+      - name: "Lone Star Organized Crime Division"
+        file: "Data/Lore/Factions/Lone Star.yaml"
+      - name: "FBI (Seattle)"
+        file: "Data/Lore/Factions/FBI (Seattle).yaml"
+    cover_identity: "Lone Star + FBI agents posed as members of Mafia Don James O'Malley's crew."
+    cover_file: "Data/Lore/Factions/Seattle Mafia.yaml"
+    evidence_captured: "Filmed and recorded accepting money."
+  trial:
+    outcome: "Convicted."
+    sentence: "Two-year suspended sentence."
+    implication: |
+      Suspended sentence after filmed-and-recorded corruption evidence
+      is canonically suspicious. Prose emphasizes the disproportion
+      ('all the time and money spent... received only a two-year
+      suspended sentence'). Draws attention to either political
+      protection, jury-tampering, or plea-bargain leverage — all
+      open-canon hooks.
+
+post_conviction_arc:
+  role: "Adviser to the Honesty in Government policlub."
+  irony_register: |
+    The convicted-bribery councilman advising the ethics-policlub is
+    a canonical civic-satire note — either (a) ethics-washing front
+    for ongoing corruption, (b) genuine remorse-based transformation
+    (unlikely per the cynical prose register), or (c) leverage play
+    by Honesty-in-Government to keep Perkins silent about deeper
+    corruption. Deep-NPC rule applies when this is authored into a scene.
+
+interior:
+  surface_want: "Rehabilitation; return to civic respectability."
+  deep_want: |
+    Protection. He took money; he knows who else he took it with /
+    for; he parades as reformed so nothing gets looked at too hard.
+  shame: "Getting caught by amateurs in pretty suits. Not the taking of money — the inability to spot a sting."
+  pride: "The two-year suspended sentence. He still thinks of it as a win."
+  contradiction: |
+    Advises on Honesty-in-Government while keeping a well-paid private
+    advisory practice that appears to sell insider-corruption-knowledge
+    as a 'consulting' service. Public ethics, private rent-seeking.
+    To be fleshed out when Perkins becomes a scene.
+  formative_event:
+    year: 2048
+    description: "The sting arrest itself — the moment he realized he wasn't as untouchable as he'd convinced himself."
+
+voice:
+  register: "Smooth politician. Soft-spoken. Over-explains. Uses civic-reformer vocabulary without irony."
+  pet_phrase: "TBD."
+  softens_around: "Honesty-in-Government public audiences."
+  hardens_around: "Lone Star officers; journalists asking about 2048."
+
+game_presence:
+  mvp: "lore only (MVP district is Redmond)."
+  post_mvp:
+    - "Informant / leak-source contact type — Perkins knows where Downtown's bodies are buried."
+    - "Run: investigate whether Honesty-in-Government is clean or a cover — Perkins is your entry point."
+    - "Run: extract Perkins before a mob counter-move silences him."
+    - "Run: plant evidence in the Lone Star dossier system referencing the 2048 case (cross-ref Design/World/DESIGN - Economy.md dossier-leverage mechanic)."
+
+hooks:
+  - "The suspended sentence is canonically weird. Why?"
+  - "Honesty-in-Government adviser role as irony / leverage / cover."
+  - "Mafia-adjacent exposure — Perkins thought he was taking money from O'Malley's men; he was actually taking it from Lone Star + FBI. The real O'Malley organization may want to know he's no longer useful, or may already consider him a former asset."
+
+transcription_note: "Stub built from SR1E Seattle Sourcebook p.22 corruption-case paragraph."

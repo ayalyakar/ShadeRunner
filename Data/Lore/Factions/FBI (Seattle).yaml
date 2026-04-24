@@ -1,0 +1,77 @@
+# Canonical faction — US Federal Bureau of Investigation (Seattle office).
+
+name: "FBI (Seattle)"
+short_name: "FBI"
+full_name: "Federal Bureau of Investigation — Seattle field office"
+type: "Federal law-enforcement agency"
+tier: "Federal"
+
+sources:
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 22
+    image: "Sources/SR1E-Seattle/p022-downtown-politics.png"
+    section: "Downtown — Politics (FBI presence + Bob Perkins sting co-agent)"
+
+overview: |
+  US federal law-enforcement agency with canonical Seattle presence.
+  Downtown canonically the 'center' of FBI + NSA operations in the
+  metroplex. Partnered with Lone Star's Organized Crime Division
+  on the 2048 Bob Perkins sting operation (undercover as Mafia Don
+  James O'Malley's crew).
+
+presence:
+  - metroplex: "Seattle"
+    district: "Downtown"
+    activity_level: "ambient at MVP (background federal presence); direct engagement post-MVP."
+
+canonical_operations:
+  perkins_sting_2048:
+    partners:
+      - "Lone Star Organized Crime Division"
+    role: "Undercover agents posed as members of Mafia Don James O'Malley's crew to entrap Councilman Bob Perkins."
+    outcome: "Perkins convicted; 2-year suspended sentence (canonically suspicious disproportion)."
+    cross_ref: "Data/Lore/NPCs/Bob Perkins.yaml"
+
+register:
+  source_page: 22
+  characterization: |
+    Smiley's BBS post characterizes federal intel (FBI + NSA combined)
+    as 'thugs in pretty suits' who conduct aggressive interviews.
+    Canonical paranoia-register in Downtown.
+
+relationships:
+  allies:
+    - "Lone Star (operational partner on corruption investigations)."
+    - "NSA Seattle (inter-agency federal coordination)."
+  rivals:
+    - "Mafia / Yakuza (primary targets)."
+    - "Megacorp intelligence (canonical friction; megacorps prefer extraterritorial jurisdiction)."
+  hostile:
+    - "Shadowrunner community (by vocation)."
+  neutral:
+    - "Seattle Metroplex government (federal vs. metroplex jurisdiction friction)."
+
+standing_default: -10
+standing_default_note: "Most shadowrunner PCs start slightly hostile; federal agency pursuing their clientele."
+thresholds:
+  hostile: -60
+  unfriendly: -20
+  neutral: 0
+  friendly: 20
+  trusted: 60
+
+game_presence:
+  mvp: "ambient (news / Trid mentions)."
+  post_mvp:
+    - "FBI agent NPC as potential contact or antagonist."
+    - "Perkins-case file as post-MVP MacGuffin."
+    - "Run: corrupt FBI agent as leverage-exchange partner."
+    - "Deep-NPC rule: no 'rogue FBI agent' stereotype — specific interior needed."
+
+hooks:
+  - "Perkins sting is a canonical hook — what does the FBI still know about O'Malley's operation?"
+  - "NSA-adjacency — 'pretty suit thugs' is a canonical joint-register line; pair content."
+
+transcription_note: "Minimal stub from SR1E Seattle Sourcebook p.22. Expand if FBI-specific content arrives on later pages."

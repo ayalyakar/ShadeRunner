@@ -1,0 +1,77 @@
+# Canonical faction — civic-ethics policlub with canonical-ironic membership.
+
+name: "Honesty in Government"
+type: "Policlub (civic ethics / anti-corruption)"
+tier: "Political / advocacy"
+
+sources:
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 22
+    image: "Sources/SR1E-Seattle/p022-downtown-politics.png"
+    section: "Downtown — Politics (Bob Perkins corruption case coda)"
+
+overview: |
+  A Seattle Metroplex civic-ethics policlub advocating transparent,
+  clean government. Canonically named as the post-conviction
+  landing pad for ex-Councilman Bob Perkins (caught in a 2048
+  Lone-Star+FBI sting operation). The Perkins-as-adviser role
+  is played for explicit civic-satire register in the sourcebook.
+
+presence:
+  - metroplex: "Seattle"
+    activity_level: "ambient at MVP (Trid spots, BBS posts, lobbying activity mentions)."
+
+membership:
+  advisers_named:
+    - name: "Bob Perkins"
+      file: "Data/Lore/NPCs/Bob Perkins.yaml"
+      role: "Adviser (ironic — convicted 2048 of bribery)."
+      canonical_status: "Named in SR1E Seattle Sourcebook p.22."
+
+services_stated:
+  - "Civic-ethics advocacy."
+  - "Anti-corruption lobbying."
+  - "Political candidate vetting (implied)."
+  - "Educational programs (implied)."
+
+possible_true_nature:
+  options:
+    - "Clean ethics-policlub that accepted Perkins as a reform-narrative cover."
+    - "Ethics-washing front for ongoing corruption networks."
+    - "Leverage mechanism keeping Perkins silent about deeper Mafia / Lone Star / FBI dynamics."
+  canonical_status: "Open question. Sourcebook does not resolve. Each option supports different post-MVP run content."
+
+relationships:
+  allies_possible:
+    - "Downtown civic-reform press"
+    - "Lone Star (contractual anti-corruption alignment) — possibly hollow"
+  rivals_possible:
+    - "Mafia / Yakuza (nominally)"
+  hostile_possible:
+    - "Bob Perkins's former underworld patrons (depending on true-nature resolution)"
+  neutral:
+    - "Most Seattle corps"
+
+standing_default: 0
+thresholds:
+  hostile: -60
+  unfriendly: -20
+  neutral: 0
+  friendly: 20
+  trusted: 60
+
+game_presence:
+  mvp: "ambient — Trid spots, BBS posts, possible Perkins dialogue appearance."
+  post_mvp:
+    - "Investigation arc: is Honesty-in-Government clean or corrupt? Perkins is the entry point."
+    - "Contact type: civic-reformer informant (Connection-2 at baseline)."
+    - "Run: leak internal policlub communications as political leverage."
+    - "Run: extract a whistleblower inside the policlub."
+
+hooks:
+  - "Canonical-ironic-adviser Perkins role is the primary hook."
+  - "Deep-NPC rule applies to any member NPC — no 'pious reformer' stereotype."
+
+transcription_note: "Stub built from a single canonical mention on SR1E Seattle Sourcebook p.22 coda to the Perkins sting summary."

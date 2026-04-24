@@ -30,6 +30,18 @@ All of the following are first-class design targets:
 - A per-scene "skip" option is acceptable UX (player can skip a specific scene they are not in the mood for), but NSFW is not a global toggle.
 - Accessibility: subtitle / text-alt for all art. No hiding of the text layer.
 
+## Canonical register anchors
+
+To keep NSFW content specific rather than generic, each dark-register slot has a **canonical anchor faction** whose flavor defines the project's register for that kind of content. Other factions operating in the same register get distinct cultural / methodological character to avoid faction-flattening.
+
+- **Corporate torture + mind-altering drug coercion:** anchor = **Mitsuhama Computer Technologies** (per SR1E Seattle Sourcebook p.22 canonical flavor). Mitsuhama's intel-division torture sites are the project's template for corp-tier torture content (on-screen where scene-tagged; scene-skip UX available). Other corps developing similar content get distinct registers (e.g. Aztechnology magical-ritual-based, Renraku deep-Matrix-based — TBD as those corps ingest).
+- **Hate-crime / racial violence:** anchor = **Humanis Policlub** (per SR1E Seattle Sourcebook pp.17–18). Night-of-Rage-style mass incidents + Liberty-Village-style firebombings are the project's template for organized-bigotry content.
+- **Extreme magical / demonic register:** anchor TBD (likely the blood-magic / ritual-circle underworld once those pages ingest).
+- **Sex-work upmarket register:** anchor = **licensed pleasure houses** (Lord of Out-Style / Lucy's / Bedlight per p.13). Legal, medically-inspected, expensive — the project's top-tier sex-work register. Street-level and exploitative sex-work registers distinct and authored per canonical source as those arrive.
+- **BTL + drug addiction register:** anchored in the simulated-addiction system (see `Character/DESIGN - Downtime.md` + `World/DESIGN - Economy.md`).
+
+The deep-NPC rule (see `Narrative/DESIGN - Writing.md`) applies within every register: Mitsuhama torturers are specific people with specific reasons, not stock villain clichés; Humanis rank-and-file have human motives; pleasure-house performers have lives beyond the job.
+
 ## Hard floor (project-independent)
 
 Absolute limits I (the assistant helping build this) will not cross regardless of NSFW-unlock status:

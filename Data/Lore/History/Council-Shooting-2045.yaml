@@ -1,0 +1,56 @@
+# Seattle history — Downtown council-chamber shooting (2045).
+
+event: "2045 Downtown council-chamber shooting"
+era: "Schults Era"
+era_file: "Data/Lore/History/Schults-Era.yaml"
+year: 2045
+venue: "Mahogany Hall (oak-paneled council chambers)"
+venue_file: "Data/Lore/Places/Landmarks/Mahogany Hall.yaml"
+district: "Downtown"
+
+sources:
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 22
+    image: "Sources/SR1E-Seattle/p022-downtown-politics.png"
+    section: "Downtown — Politics (council-chamber violence recap)"
+
+participants:
+  shooter:
+    role: "Disgruntled councilman"
+    name: null
+    name_transcription_note: "Shooter's name not captured on p.22; flag for re-ingestion."
+    motive: "Opposition to a pending gun-control bill; emphasized his position by shooting the author."
+  victim:
+    role: "Councilman / author of the gun-control bill under debate"
+    name: null
+    outcome: "Shot (further detail on survival not captured)."
+  mayor_present:
+    name: "Ivar Lindstrom"
+    file: "Data/Lore/NPCs/Ivar Lindstrom.yaml"
+    behavior: "Sat impassively under his desk while other councilmen cowered."
+    press_effect: "Contributed to the 'gutsy mayor' nickname."
+
+outcome:
+  bill_status: "The gun-control bill failed to pass."
+  shooter_fate: "Not stated on p.22."
+  reform_status: "Mahogany Hall internal security NOT reformed after this incident (canonical per p.22's SPD critique — SPD warned the city, they didn't listen)."
+
+narrative_significance:
+  - "Canonical case of canonical-SR civic-satire: a gun-control bill killed by gun violence on the chamber floor."
+  - "Evidence that Downtown-district politics veers into violence periodically."
+  - "Mahogany Hall's internal-security gap documented before the 2049 incident repeated it."
+
+cross_refs:
+  - "Data/Lore/Districts/Downtown.yaml politics.council_chamber_violence"
+  - "Data/Lore/Places/Landmarks/Mahogany Hall.yaml notable_incidents"
+
+game_presence:
+  mvp: "lore only."
+  post_mvp:
+    - "Historical-investigation run — uncover shooter's name / motive / fate."
+    - "Gun-control-bill-killed angle for civic-politics arc."
+    - "2045 + 2049 shooting pair as a two-run investigation sequence."
+
+transcription_note: "Stub built from SR1E Seattle Sourcebook p.22 single paragraph. Shooter / victim names not captured in ingested material."

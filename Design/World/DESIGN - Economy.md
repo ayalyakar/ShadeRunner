@@ -167,6 +167,29 @@ bribe_profile:
 - Multi-step bribery (set up a corrupt official over many interactions) — post-MVP.
 - Bribe-as-Social-contest dice minigame — MVP uses a simple check; post-MVP can elaborate.
 
+## Dossier leverage
+
+**DECIDED (post-MVP):** Lone Star's Organized Crime Division canonically maintains a **corruption dossier on every Seattle Metroplex city official** (per SR1E Seattle Sourcebook p.22). This is modeled as a **manipulable information-state** the PC can steal, leak, forge, or protect.
+
+### Model
+
+- **Dossier record per official:** evidence inventory, accuracy-confidence score (1–6), last-updated timestamp, author-unit (Lone Star / FBI / NSA).
+- **PC interactions:**
+  - **Steal** a dossier → leverage over the official (bribery discount, favor, silence).
+  - **Leak** a dossier → public scandal, faction-standing shift, possible removal-from-office event.
+  - **Forge** dossier entries → frame someone (high heat + political risk if detected).
+  - **Protect** / delete a dossier → favor from the official; major Lone-Star-internal heat.
+- **Dossier access points:** Lone Star Downtown HQ (canonical seat), regional precinct archives, decker-accessible secure hosts.
+
+### Ties into bribery
+
+- A PC with a targeted official's dossier in hand gets a **bribery discount** (the price of silence is always cheaper than the price of ignorance).
+- Bribery-failure detection is **lower** when the PC brings leverage — the official has more to lose by reporting the bribe than accepting it.
+
+### MVP status
+
+**Not in MVP** — system is post-MVP. MVP's bribery mechanic stands alone without the dossier layer. Canon anchor in place for forward-compat.
+
 ## Open questions
 
 - Inflation across era drift (2050 → 2064). Same yen? Explicit curve?

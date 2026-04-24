@@ -19,6 +19,12 @@ sources:
     page: 21
     image: "Sources/SR1E-Seattle/p021-downtown-geography-demographics.png"
     section: "Downtown — Geography and Demographics"
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 22
+    image: "Sources/SR1E-Seattle/p022-downtown-politics.png"
+    section: "Downtown — Politics (extended corruption + Lindstrom mayoralty + council-chamber violence)"
 
 ingestion_gaps:
   - pages: [20]
@@ -200,11 +206,34 @@ demographics_extension:
       note: "Location at the Duwamish-mouth / Elliot-Bay freight-dock zone is implied."
       file: "Data/Lore/Districts/Downtown/Harbor Island.yaml (to be created)"
 
+neighborhoods_index:
+  source_pages: [21, 22]
+  entries:
+    - name: "International District"
+      file: "Data/Lore/Districts/Downtown/International District.yaml (to be created)"
+      flavor: "Historically Asian-American; Yakuza extortion turf."
+    - name: "Elven District"
+      file: "Data/Lore/Districts/Downtown/Elven District.yaml (to be created)"
+      flavor: "Tir-Tairngire-flavored enclave."
+    - name: "Ork District"
+      file: "Data/Lore/Districts/Downtown/Ork District.yaml (to be created)"
+      flavor: "Ork-majority surface layer; see also Places/Underground/Ork Underground.yaml (distinct entity)."
+    - name: "Harbor Island"
+      file: "Data/Lore/Districts/Downtown/Harbor Island.yaml (to be created)"
+      flavor: "Industrial / freight-dock zone; Mafia extortion turf."
+    - name: "First Hill"
+      file: "Data/Lore/Districts/Downtown/First Hill.yaml"
+      flavor: "Councilmanic district; canonical home of the 2048 Bob Perkins sting-op seat."
+      source_page: 22
+
 landmarks_index:
   source_page: 21
   entries:
     - name: "Queen Anne Hill"
       file: "Data/Lore/Places/Landmarks/Queen Anne Hill.yaml"
+    - name: "Mahogany Hall"
+      file: "Data/Lore/Places/Landmarks/Mahogany Hall.yaml"
+      note: "Downtown council chamber, formerly Charles Royer Building (canonical civic seat; p.22)."
     - name: "Elliot Bay"
       file: null
       note: "Body-of-water anchor; stub when relevant content arrives."
@@ -285,6 +314,106 @@ government_block:
     Prose implies other districts have 'loftier sentiments and
     practical sensitivity' that restrain open corruption. Downtown
     is noted as distinctively unabashed about the graft.
+  lone_star_dossier_system:
+    source_page: 22
+    scope: "Whole city (not just Downtown)."
+    coverage: "Lone Star's organized-crime division maintains a dossier on every city official across the Seattle Metroplex."
+    implication: |
+      Every city councilperson has been under suspicion at some point;
+      not all are corrupt, but institutional mistrust is canonical.
+      Cross-reference Design/World/DESIGN - Economy.md 'Bribery' +
+      new 'Dossier leverage' mechanic.
+    mechanic_cross_ref: "Design/World/DESIGN - Economy.md lone_star_dossier_leverage"
+  canonical_corruption_case:
+    source_page: 22
+    year: 2048
+    official:
+      name: "Bob Perkins"
+      file: "Data/Lore/NPCs/Bob Perkins.yaml"
+      role: "Councilman of the First Hill area"
+    sting:
+      agents: ["Lone Star (organized-crime division)", "FBI"]
+      cover: "Undercover as Mafia Don James O'Malley's men."
+      evidence: "Filmed and recorded accepting money."
+    outcome:
+      sentence: "Two-year suspended sentence."
+      post_conviction_role: "Adviser to the Honesty in Government policlub."
+      file: "Data/Lore/Factions/Honesty in Government.yaml"
+    irony: "The corrupt-and-caught councilman ended up as adviser to the ethics policlub."
+
+politics:
+  source_page: 22
+  register: |
+    'Downtown politics always manages to be a little more crowded, a
+    little noisier, and a little smellier than its streets' (quoted
+    former councilman per p.22). Citizen participation high; candidate
+    fields large; elections quickly devolve from issue-focused to
+    popularity-contest ('whitest teeth, most money, most dirt on
+    opponents').
+  mayor:
+    name: "Ivar J. Lindstrom"
+    alt_names: ["Ivan Lindstrom"]
+    file: "Data/Lore/NPCs/Ivar Lindstrom.yaml"
+    role: "Mayor of Downtown (currently serving third term; re-elected 2048)."
+    lineage: "Son of Charles C. Lindstrom (Metroplex's first Governor). Lost the 2039 gubernatorial special election to Schults (see History/Schults-Era.yaml)."
+    voter_profile: "Handsome, articulate, energetic; voter favorite for the past ~10 years."
+    signature_stance: "Strongly supports the boisterous debating in district chambers. Quote: 'Seattle is more than just pretty buildings and a sea breeze.'"
+    press_nickname: "The city's 'gutsy mayor'."
+    press_nickname_origin: "Sat impassively under his desk during two council-chamber shootings while other councilmen cowered. Press couldn't decide if it was bravery or stupidity."
+  council_chamber_violence:
+    source_page: 22
+    events:
+      - year: 2045
+        description: "A disgruntled councilman emphasized his opposition to a gun-control bill by shooting the councilman who authored it. The bill failed to pass."
+        file: "Data/Lore/History/Council-Shooting-2045.yaml"
+        outcome: "Bill killed; shooter's fate canonically unstated."
+      - year: 2049
+        description: "A BTL-addicted ('wide-addicted') secretary went berserk in the chambers, killing one councilman and wounding three others."
+        file: "Data/Lore/History/Council-Shooting-2049.yaml"
+        outcome: "Shooter's fate canonically unstated; security reforms not enacted per post-shooting prose."
+    transcription_note: "'Wide-addicted' reads as a possible BTL-addiction euphemism ('wired' on chips). See Sources/VERIFICATION.md."
+  council_chamber_venue:
+    name: "Mahogany Hall"
+    former_name: "Charles Royer Building"
+    file: "Data/Lore/Places/Landmarks/Mahogany Hall.yaml"
+
+federal_intel_presence:
+  source_page: 22
+  overview: "Downtown is the center of FBI and NSA presence in Seattle."
+  agencies:
+    - name: "FBI (Seattle)"
+      file: "Data/Lore/Factions/FBI (Seattle).yaml"
+      role: "Federal investigation + Lone Star sting-op partner (per 2048 Perkins case)."
+    - name: "NSA (Seattle)"
+      file: "Data/Lore/Factions/NSA (Seattle).yaml"
+      role: "Signal intelligence + surveillance; aggressive interview practices per Smiley's BBS post."
+  resident_register: |
+    Canonical 'you haven't lived until you've been talked to by thugs
+    in pretty suits from your friendly neighborhood government
+    intelligence agency.' Adds to general Downtown paranoia baseline.
+
+megacorp_intel_presence:
+  source_page: 22
+  note: |
+    Downtown megacorp intelligence divisions contribute to the paranoia
+    baseline. Mitsuhama specifically named for torture + mind-altering
+    drug use in intel ops — canonical anchor for the project's
+    'corporate torture register.'
+  named_corps:
+    - name: "Mitsuhama Computer Technologies"
+      file: "Data/Lore/Factions/Mitsuhama Computer Technologies.yaml"
+      register: "Torture + mind-altering drugs in intel ops (canonical per p.22)."
+      nsfw_cross_ref: "Meta/DESIGN - NSFW.md — graphic violence / torture pillar anchor."
+
+press_register:
+  source_page: 22
+  overview: |
+    Seattle Video stations swarm any high-profile crime scene within
+    minutes, arriving with bright lights and pushy reporters. Cops
+    canonically get ~5 minutes of undisturbed crime scene before
+    press descend 'like vultures on a carcass, stumbling about,
+    touching things, destroying evidence' (Smiley).
+  mechanical_hint: "Press-arrival timer as a post-MVP crime-scene-stealth mechanic."
 
 bbs_posts:
   source_page: 19
@@ -311,6 +440,36 @@ bbs_posts:
       register: "World-weary local; dry sarcasm."
       recurring_persona_candidate: false
     handle_transcription_note: "Handle captured; timestamp low confidence."
+  - handle: "Smiley"
+    source_page: 22
+    timestamp_raw: "(06-23-49) (12-15-50)"
+    topic: "Documentary summary of the 2048 Bob Perkins sting operation + 2-year-suspended-sentence outcome + ironic Honesty-in-Government advisory role."
+    persona_file: "Data/Lore/NPCs/Smiley.yaml"
+  - handle: "Smiley"
+    source_page: 22
+    timestamp_raw: "(10-57-39) (01-21-51)"
+    topic: "Downtown-is-the-most-frustrating-district-from-a-cop's-POV essay. Press-swarm behavior; FBI / NSA presence; Mitsuhama intel-torture-and-drugs reputation."
+    persona_file: "Data/Lore/NPCs/Smiley.yaml"
+  - handle: "Smiley"
+    source_page: 22
+    timestamp_raw: "(03-48-39) (01-05-51)"
+    topic: "Recaps the 2045 + 2049 council-chamber shootings. Notes Mayor Lindstrom's impassive-under-desk behavior; 'gutsy mayor' press nickname."
+    persona_file: "Data/Lore/NPCs/Smiley.yaml"
+  - handle: "SPD"
+    source_page: 22
+    timestamp_raw: "(12-57-39) (01-21-51)"
+    topic: "Opening quip: downtown politics is 'a little more crowded, a little noisier, a little smellier than its streets.'"
+    persona_file: "Data/Lore/NPCs/SPD.yaml"
+  - handle: "SPD"
+    source_page: 22
+    timestamp_raw: "(18-42-51) (11-21-50)"
+    topic: "Cynical cite on local election dynamics — citizen participation turns into popularity contest (whitest teeth / most money / most dirt)."
+    persona_file: "Data/Lore/NPCs/SPD.yaml"
+  - handle: "SPD"
+    source_page: 22
+    timestamp_raw: "(09-47-25) (01-21-51)"
+    topic: "Mahogany Hall security is external-facing only — triple safety glass + guards at entrances — no internal protection against wigged-out councilmen or BTL-addicted staffers. SPD warned the city while still on the force; they didn't listen."
+    persona_file: "Data/Lore/NPCs/SPD.yaml"
 
 canon_contrasts:
   source_page: 19

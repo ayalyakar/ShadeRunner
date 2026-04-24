@@ -1,0 +1,106 @@
+# Canonical NPC — sitting Mayor of Downtown Seattle (2050 MVP era).
+
+name: "Ivar Lindstrom"
+full_name: "Ivar J. Lindstrom"
+alt_names:
+  - name: "Ivan Lindstrom"
+    status: "Name variant / OCR drift between sourcebook pages."
+    transcription_note: |
+      Page 18 (2039 special election material) spells the surname
+      owner as 'Ivan'; p.22 (2050 Downtown mayoralty) spells as
+      'Ivar J.'. Per project canon decision (user-verified), these
+      refer to the same person — Charles C. Lindstrom's son. See
+      Sources/VERIFICATION.md.
+title: "Mayor of Downtown Seattle (currently serving third term; re-elected 2048)"
+
+sources:
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 18
+    image: "Sources/SR1E-Seattle/p018-history-from-ashes-schults.png"
+    section: "History — Special Election 2039 (expected winner; lost)"
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 22
+    image: "Sources/SR1E-Seattle/p022-downtown-politics.png"
+    section: "Downtown — Politics (sitting mayor profile)"
+
+facts:
+  lineage: "Son of Charles C. Lindstrom, first Governor of the Seattle Metroplex (2020-11-16 installation)."
+  role_2039: "Mayor of Downtown district in 2039; expected winner of the special gubernatorial election triggered by Alameson's assassination. Lost to Marilyn Schults (UCC-backed)."
+  role_2050: "Mayor of Downtown Seattle — voter favorite for ~10 years; serving his third term after 2048 re-election."
+  district: "Downtown"
+  house_seat_venue: "Mahogany Hall (formerly Charles Royer Building)"
+
+public_image:
+  physical: "Handsome."
+  manner: "Articulate, energetic."
+  press_nickname: "The city's 'gutsy mayor'."
+  press_nickname_origin: |
+    During the 2045 and 2049 council-chamber shootings, Mayor
+    Lindstrom reportedly sat impassively under his desk while other
+    councilmen cowered. Press couldn't decide if it was bravery or
+    stupidity; settled on 'gutsy'.
+  signature_quote: |
+    'Seattle is more than just pretty buildings and a sea breeze.'
+    (On the value of boisterous council-chamber debate vs.
+    tourist-visible civic polish.)
+  public_stance: "Strongly supports open, loud district-council debating — pro-argument-as-democracy register."
+
+career_arc:
+  - year: 2039
+    event: "Mayor of Downtown district at the time of Alameson's assassination."
+    outcome: "Expected winner of the gubernatorial special election; lost to Schults."
+  - year_range: "~2040-2050 (past 10 years per p.22)"
+    event: "Continuous voter favor as Downtown mayor."
+  - year: 2048
+    event: "Re-elected to a third term."
+
+interior:
+  surface_want: "Continue as Downtown's steady hand; steward civic debate."
+  deep_want: |
+    Reconciliation with the 2039 loss — he was supposed to be his
+    father's heir. Schults's continued popularity is a personal
+    wound carefully tended.
+  shame: |
+    The public 'gutsy mayor' reputation rests on an incident he
+    was paralyzed through, not courageous through. He knows. Few
+    others do. Specific private retelling for a romance / trust
+    scene when authored.
+  pride: "Genuine belief in argument as democracy — the boisterous-chamber posture is philosophically sincere, not theatrical."
+  contradiction: |
+    Pro-democracy-by-argument in public; in private, watches every
+    word for political damage-control. Can name Perkins as a cautionary
+    tale but would have protected Perkins if the bribes had come
+    through his channels.
+  formative_event:
+    year: 2039
+    description: "Losing the gubernatorial special election to Schults. Publicly conceded gracefully; privately still metabolizing the defeat a decade later."
+
+voice:
+  register: "Articulate, slightly fatherly, relaxed when on-camera. Shifts to careful political neutrality when the topic is risky."
+  pet_phrase: "TBD on first scripted appearance."
+  softens_around: "Family members; long-tenure aides."
+  hardens_around: "Schults, UCC lobbyists, Humanis rhetoric."
+
+game_presence:
+  mvp: "named NPC, lore-only at MVP (MVP district is Redmond)."
+  post_mvp:
+    - "Mahogany Hall venue scenes — Lindstrom's office, council-floor confrontations."
+    - "Lindstrom vs. Schults political-arc content."
+    - "UCC-patronage rival storyline — Lindstrom has reasons to want leverage over Schults."
+    - "2039-loss investigation arc: was the election actually clean?"
+    - "Romance-contact viability pending deep-NPC authoring pass (see Narrative/DESIGN - Writing.md)."
+  hooks:
+    - "Lindstrom dynasty politics — son of the first Governor, now 10-year-running mayor."
+    - "Gutsy-mayor public-vs-private reputation divergence."
+    - "Schults rivalry as civic-politics backbone."
+
+stats:
+  notes: "Statblock not yet derived. Social / rep build expected — Charisma / Etiquette / Negotiation high; possible Streetwise / Intimidation dip from 10 years of district politics."
+
+transcription_note: |
+  Name-variant flag on 'Ivar J.' vs 'Ivan'. See Sources/VERIFICATION.md
+  for the canonical spelling TODO.

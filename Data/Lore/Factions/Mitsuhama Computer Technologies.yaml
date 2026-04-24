@@ -1,0 +1,105 @@
+# Canonical faction — AAA megacorp (Seattle operations).
+
+name: "Mitsuhama Computer Technologies"
+short_name: "Mitsuhama"
+aliases:
+  - "MCT"
+type: "Corporation (megacorp / AAA-tier)"
+tier: "AAA"
+
+sources:
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 22
+    image: "Sources/SR1E-Seattle/p022-downtown-politics.png"
+    section: "Downtown — Politics (Smiley BBS post naming Mitsuhama intel register)"
+
+overview: |
+  Japanese-origin AAA megacorp with significant Seattle operations.
+  Canonical SR1E megacorp. First named reference in the current
+  project canon: SR1E Seattle Sourcebook p.22 (Smiley BBS post)
+  identifies Mitsuhama's intelligence division as particularly noted
+  for 'use of torture and mind-altering drugs' in operations.
+  Richer canon (corp structure, leadership, Seattle facilities,
+  subsidiaries) will land when the Corporations chapter (TOC-listed)
+  ingests.
+
+presence:
+  - metroplex: "Seattle"
+    visible_role: "Downtown intelligence operations."
+    activity_level: "ambient at MVP (Trid ads, corp-zone backdrop); direct engagement post-MVP."
+
+canonical_register:
+  intelligence_ops:
+    source_page: 22
+    description: |
+      Mitsuhama's intel division is canonically noted for use of
+      torture and mind-altering drug administration in ops. Per
+      project canon decision, Mitsuhama is the project's CANONICAL
+      ANCHOR for the 'corporate intelligence torture / drug coercion'
+      register. Other corps get distinct intel-register characters
+      to avoid corp-flattening (Aztechnology has its own register
+      to be fleshed out when named; Renraku per its Arcology focus;
+      Fuchi per its own; etc.).
+    nsfw_cross_ref: "Meta/DESIGN - NSFW.md — graphic violence / torture pillar. Mitsuhama content sits directly on this pillar."
+    content_implications:
+      - "Mitsuhama intel abductions + interrogations as canonical post-MVP scene content."
+      - "Mind-altering-drug BTL crossover — Mitsuhama may be an unnamed source for black-market BTL content (speculative; flag)."
+      - "Corporate torture site (underground lab / Downtown basement floor) as run target."
+      - "PC extraction from Mitsuhama custody as a run framing."
+  cultural_anchor:
+    origin: "Japanese-origin corp (per canonical SR)."
+    language_register: |
+      Japanese corporate-hierarchy signaling (zaibatsu / keiretsu
+      terminology; on-meat rank / bow / honorific discipline).
+      Deep-NPC rule: avoid Orientalist cliches. Mitsuhama NPCs are
+      specific individuals with internal politics, not stock
+      salaryman figures.
+
+structure:
+  global_tier: "AAA megacorp."
+  seattle_facilities:
+    status: "Not enumerated on p.22; TBD from Corporations chapter."
+  leadership:
+    status: "Not captured on p.22; TBD."
+
+relationships:
+  allies:
+    - "Other AAA Japanese-origin corps (canonical SR network — TBD which ones operate in Seattle)."
+  rivals:
+    - "Rival AAA megacorps operating in Seattle (Fuchi, Renraku, Aztechnology, Ares, Shiawase — TBD which are direct rivals)."
+    - "Lone Star (institutional friction over corp-extraterritoriality vs. metroplex law)."
+  hostile:
+    - "Shadowrunner community when it intersects Mitsuhama targets (routine)."
+  neutral:
+    - "United Corporation Council (member? TBD)."
+    - "Seattle Metroplex government (contractual / taxpayer footing)."
+
+standing_default: 0
+thresholds:
+  hostile: -60
+  unfriendly: -20
+  neutral: 0
+  friendly: 20
+  trusted: 60
+
+game_presence:
+  mvp: "ambient — Trid ads, corp-tower backdrop, dialogue mentions."
+  post_mvp:
+    - "Mitsuhama corp-tower / intel-site as high-tier run target."
+    - "Mitsuhama intel-abduction as run trigger."
+    - "Run: rescue a PC-adjacent NPC from Mitsuhama custody."
+    - "Run: steal Mitsuhama mind-altering drug research."
+    - "Run: infiltrate a Mitsuhama torture site (post-MVP NSFW-pillar content; informed-consent gating at player-option level, not content-gating)."
+
+hooks:
+  - "Canonical torture register = hard-edge NSFW content home."
+  - "Japanese corporate-culture register (carefully authored, no Orientalism)."
+  - "Intel-division as antagonist organization for any run touching Mitsuhama territory."
+
+transcription_note: |
+  Stub built from SR1E Seattle Sourcebook p.22 single-mention. Expand
+  significantly when Corporations chapter ingests. Canonical SR1E
+  Mitsuhama should cross-reference later-edition material carefully
+  (SR3E / SR4 change the MCT profile).

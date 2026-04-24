@@ -1,0 +1,65 @@
+# Seattle history — Downtown council-chamber shooting (2049).
+
+event: "2049 Downtown council-chamber shooting"
+era: "Schults Era"
+era_file: "Data/Lore/History/Schults-Era.yaml"
+year: 2049
+venue: "Mahogany Hall (oak-paneled council chambers)"
+venue_file: "Data/Lore/Places/Landmarks/Mahogany Hall.yaml"
+district: "Downtown"
+
+sources:
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 22
+    image: "Sources/SR1E-Seattle/p022-downtown-politics.png"
+    section: "Downtown — Politics (council-chamber violence recap)"
+
+participants:
+  shooter:
+    role: "Council-chamber secretary."
+    name: null
+    name_transcription_note: "Shooter's name not captured on p.22; flag for re-ingestion."
+    mental_state: "BTL-addicted ('wide-addicted' per page; project interpretation = BTL / 'wired on chips' addiction)."
+    transcription_note: "'Wide-addicted' OCR may be misread of 'wired-addicted' or similar BTL-euphemism. See Sources/VERIFICATION.md."
+    motive: "Not stated; berserk-episode register (addiction-driven loss of control)."
+  casualties:
+    killed: 1
+    wounded: 3
+    role_note: "All casualties were councilmen."
+  mayor_present:
+    name: "Ivar Lindstrom"
+    file: "Data/Lore/NPCs/Ivar Lindstrom.yaml"
+    behavior: "Sat impassively under his desk while councilmen cowered."
+    press_effect: "Reinforced the 'gutsy mayor' nickname."
+
+outcome:
+  shooter_fate: "Not stated on p.22."
+  reform_status: |
+    Mahogany Hall internal security was NOT meaningfully reformed
+    after this incident either. SPD's post-event BBS critique on
+    p.22 notes that external-only security still didn't address
+    insider threats.
+
+narrative_significance:
+  - "BTL-addiction register surfaced as a specific civic-violence cause — cross-ref Character/DESIGN - Lifestyle.md + Meta/DESIGN - NSFW.md BTL-consumable mechanics + addiction system."
+  - "Employee-screening gap at the council-chamber level is canonical — Mahogany Hall hires without deep vetting."
+  - "2045 + 2049 paired incidents establish a pattern: insider threats ignored by security architecture."
+
+cross_refs:
+  - "Data/Lore/Districts/Downtown.yaml politics.council_chamber_violence"
+  - "Data/Lore/Places/Landmarks/Mahogany Hall.yaml notable_incidents"
+  - "Data/Lore/History/Council-Shooting-2045.yaml (paired precedent)"
+
+game_presence:
+  mvp: "lore only."
+  post_mvp:
+    - "BTL-addiction-driven-violence run variant: protect / pursue / rehabilitate an addict NPC who may snap."
+    - "Employee-screening-exploit run: infiltrate Mahogany Hall as a contractor / cleaner / aide."
+    - "Historical-investigation run — uncover the secretary's identity, chip source, triggering event."
+
+transcription_note: |
+  Stub built from SR1E Seattle Sourcebook p.22 single paragraph.
+  Secretary's name not captured. 'Wide-addicted' phrase needs
+  verification per Sources/VERIFICATION.md.

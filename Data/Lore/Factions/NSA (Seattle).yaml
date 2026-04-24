@@ -1,0 +1,75 @@
+# Canonical faction — US National Security Agency (Seattle operations).
+
+name: "NSA (Seattle)"
+short_name: "NSA"
+full_name: "National Security Agency — Seattle operations"
+type: "Federal intelligence agency"
+tier: "Federal"
+
+sources:
+  - edition: SR1E
+    book: "Seattle Sourcebook"
+    year: 1990
+    page: 22
+    image: "Sources/SR1E-Seattle/p022-downtown-politics.png"
+    section: "Downtown — Politics (NSA + FBI presence, Smiley BBS post)"
+
+overview: |
+  US federal signals-intelligence / surveillance agency with
+  canonical Seattle presence. Downtown canonically the 'center' of
+  federal intel (NSA + FBI combined). Canonical register: aggressive
+  interview practices against suspected subjects.
+
+presence:
+  - metroplex: "Seattle"
+    district: "Downtown"
+    activity_level: "ambient at MVP (background federal presence); direct engagement post-MVP."
+
+register:
+  source_page: 22
+  characterization: |
+    Smiley's BBS post pair-groups NSA with FBI as 'thugs in pretty
+    suits from your friendly neighborhood government intelligence
+    agency.' Aggressive interviews are canonical.
+  likely_role: |
+    Signals intelligence + communications surveillance (per real-world
+    + canonical SR register). In a SR1E wired-Matrix world, NSA's
+    domain is jackpoint taps, commlink intercepts, cyberdeck
+    traffic analysis. Post-Crash wireless era adds ambient-signal
+    mass surveillance.
+
+relationships:
+  allies:
+    - "FBI Seattle (inter-agency coordination)."
+    - "Lone Star (selective cooperation on high-stakes cases)."
+  rivals:
+    - "Foreign intelligence services operating in Seattle (NAN Truth Element most notable)."
+    - "Megacorp intelligence divisions (Mitsuhama especially — corporate vs. federal signals-intel turf)."
+  hostile:
+    - "Shadowrunner decker community (by vocation — matrix-traffic analysts are the decker's natural antagonist)."
+  neutral:
+    - "Seattle Metroplex government (federal-vs-metroplex friction)."
+
+standing_default: -10
+thresholds:
+  hostile: -60
+  unfriendly: -20
+  neutral: 0
+  friendly: 20
+  trusted: 60
+
+game_presence:
+  mvp: "ambient."
+  post_mvp:
+    - "NSA analyst NPC as post-Matrix-run antagonist."
+    - "Run: destroy NSA intercept records of a PC's past run."
+    - "Run: steal NSA surveillance feeds of a target (for leverage)."
+    - "Matrix content: NSA as IC-operator faction on certain public-tier hosts."
+    - "Deep-NPC rule: no 'sinister federal spy' stereotype — specific interior."
+
+hooks:
+  - "Signal-intel domain = naturally paired with Decker archetype content."
+  - "Pretty-suit-thug register as cross-ref voice profile for NSA-agent NPCs."
+  - "Post-Crash-2.0 drift toward ambient mass surveillance as a post-MVP era-transition hook."
+
+transcription_note: "Minimal stub from SR1E Seattle Sourcebook p.22. Expand if NSA-specific content arrives on later pages."
