@@ -1,7 +1,8 @@
-# Canonical place — high-rise apartment complex designated as the Euphoria-kidnapping hideout.
+# Canonical place — high-rise corporate-tenement in Redmond Barrens; Queen Euphoria kidnap hideout.
 
 name: "Royal Meadows Apartments"
-type: "Apartments / high-rise residential"
+type: "Apartments / corporate tenement (high-rise)"
+floors: 18
 
 era: 2050
 authored: false
@@ -14,46 +15,167 @@ sources:
     page: 10
     image: "Sources/SR1E-QueenEuphoria/p010-off-and-running-behind.png"
     section: "Off and Running / Behind the Scenes (keycard disclosure)"
+  - edition: SR1E
+    book: "Queen Euphoria"
+    year: 1990
+    page: 11
+    image: "Sources/SR1E-QueenEuphoria/p011-royal-what.png"
+    section: "Royal What? / Tell It To Them Straight + Behind the Scenes"
+  - edition: SR1E
+    book: "Queen Euphoria"
+    year: 1990
+    page: 12
+    image: "Sources/SR1E-QueenEuphoria/p012-royal-meadows-map.png"
+    section: "Royal What? / flat map + room-by-room key + Debugging"
 
 location:
   metroplex: "Seattle"
-  district: unknown
-  district_note: |
-    District not named on p.10. The keycard's address is carried on
-    the keycard but not spoken in the scene text captured on this
-    page. Establish at a later page or from Legwork cross-reference.
+  district: "Redmond"
+  subarea: "Redmond Barrens (a few blocks into)"
+  district_ref_note: |
+    p.11 Behind the Scenes places Royal Meadows 'a few blocks into the
+    Redmond Barrens'. Redmond is the project MVP district (Design/Meta/
+    DESIGN - MVP.md). Per ingestion decision, Data/Lore/Districts/
+    Redmond.yaml is NOT bootstrapped here - the district file gets
+    created at the Redmond Sourcebook ingestion pass. Reference-only
+    cross-link for now.
 
 description: |
-  High-rise apartment building. Canonical role in Queen Euphoria: the
-  site Ludivenko arranges as the hideout for the kidnapped Euphoria.
-  The PCs are handed a magnetic-strip keycard at the Pier 36 meet that
-  carries the building address; no further physical detail is given
-  on p.10 (the building's layout, floor of the safehouse unit, and
-  security posture will surface at later scene pages).
+  18-story corporate-tenement on the edge of the Redmond Barrens.
+  Cinderblock-and-concrete frame with plastic-glazed windows and
+  rusted iron sculptures along the approach; the building's promised
+  'meadows' are conspicuous in their absence (no trees, no greenery
+  - the name is a leasing-brochure fiction). Exterior reads as slum
+  housing despite the corporate pedigree. Steady traffic of wage-
+  workers and street people through the main doors at street level.
 
-canonical_use:
-  role: "Euphoria-kidnap hideout (first kidnapping)"
-  scene_refs:
-    - "Data/Lore/Adventures/QueenEuphoria.yaml scenes.off_and_running"
-  keycard:
-    type: "plastic card with magnetic strip"
-    issued_by: "Ludivenko Corporation (via the Mr. Johnson meet)"
-    encoded: "Royal Meadows Apartments street address"
+building_layout:
+  exterior_approach:
+    note: "Street-fronted; iron sculptures and rust along the approach. Building is set back from the avenue."
+    sign: "No external sign confirming the building's name; PCs identify the address from the keycard."
+  lobby:
+    description: "Lobby connects to a wide hallway leading to a nexus of elevators."
+    manager_window:
+      role: "Crucius Bunter's permanent post."
+      glazing: "Heavy plastic window."
+      adjacent: "An Ork (asleep on duty per p.11) staffs a station near the elevator bank."
+      npc_ref: "Data/Lore/NPCs/Crucius Bunter.yaml"
+    elevators: "Multiple cars in a nexus arrangement; in poor repair (PCs in canon distrust the elevators and walk the stairs)."
+    stairs:
+      condition: "Disturbing; vermin and insect life on every landing."
+      canon_route: "PCs walk 8 flights of stairs to reach apartment 812."
 
 security_posture:
-  overt: null
-  covert: null
-  notes: "Not described on p.10 - canonical security detail deferred."
+  building_level: "No effective security checks. Building offers no access control beyond the lobby's manager presence and individual-unit keycards."
+  unit_level: "Magnetic-strip keycard per unit (e.g. apartment 812's keycard handed to PCs at Pier 36)."
+
+# The hideout flat. p.12 carries a labeled flat map (1 Living/Kitchenette,
+# 2 Bedroom, 3 Closet, 4 Bathroom) with a 1-meter scale bar. Captured
+# below as structured rooms[] data so a downstream scene-authoring pass
+# can generate a 3D-isometric interior. Scale notes: living room is the
+# largest room; bedroom + bathroom are smaller; closet is very small.
+hideout_apartment:
+  unit_number: 812
+  floor: 8
+  rented_by:
+    alias: "John Smith"
+    pattern: "Stock-cover alias from Ludivenko-side rental setup."
+    duration: "Entire month."
+    payor: "Ludivenko Corporation (via the Mr. Johnson handoff)."
+  scale_meters_per_grid: 1
+  rooms:
+    - id: "1_living_kitchenette"
+      number_on_map: 1
+      name: "Living Room / Kitchenette"
+      role: "Combined social + food-prep space; main door entrance."
+      furniture:
+        - "Two chairs and a couch, all upholstered in black plastic."
+        - "End table on each side of the couch."
+        - "Larger table at the room's center."
+        - "All tables are imitation wood."
+      kitchenette:
+        appliances: ["microwave", "refrigerator (freezer non-functional)", "cupboards", "sink"]
+        cupboard_contents: "Sealed containers of dehydrated food, courtesy of Ludivenko (surprisingly tasty when prepared correctly per p.12)."
+      condition_issues:
+        - "One of the chairs will break if sat on."
+        - "Refrigerator's freezer compartment is non-functional."
+        - "Sink water filters are 'disgusting' (long overdue replacement)."
+        - "Main air filter in the living room ceiling needs replacement."
+    - id: "2_bedroom"
+      number_on_map: 2
+      name: "Bedroom"
+      role: "Sleeping space; canonically over-furnished for occupant overcrowding."
+      furniture:
+        - "Two double beds squeezed against one another (rented units anticipated to be packed; building owners over-provision beds)."
+        - "Hard plastic bed frames; foam mattresses."
+        - "Imitation-wood dresser in one corner with a plastic mirror."
+      contents:
+        - "Several items of women's clothing (still in plastic wrap, in dresser drawers) - Ludivenko-supplied for Euphoria."
+      condition_issues: []
+    - id: "3_closet"
+      number_on_map: 3
+      name: "Closet"
+      role: "Hanging storage."
+      contents:
+        - "Several items of average-size women's clothing on hangers - Ludivenko-supplied for Euphoria."
+      condition_issues: []
+    - id: "4_bathroom"
+      number_on_map: 4
+      name: "Bathroom"
+      role: "Sanitation; canonically described as coffin-sized."
+      furniture: ["shower stall", "toilet", "sink"]
+      condition_issues:
+        - "All water filters need changing."
+        - "Sink hot-water faucet does not work."
+
+# Items the Ludivenko side has pre-positioned in the unit for the kidnap
+# operation. Per ingestion decision, recorded as a stocked_by block on
+# the Place rather than as Products/ entries (anonymous supply, not
+# named consumer brands).
+stocked_by_ludivenko:
+  source_page: 12
+  intent: "Provisioning for a four-day hold of Euphoria with a small holding crew."
+  items:
+    - kind: "food (dehydrated, sealed containers)"
+      location: "Living Room / Kitchenette cupboards"
+      quality: "Surprisingly tasty if prepared correctly (per p.12 parenthetical)."
+    - kind: "women's clothing (in plastic wrap)"
+      location: "Bedroom dresser drawers"
+      sized_for: "Euphoria"
+    - kind: "women's clothing (on hangers)"
+      location: "Closet"
+      sized_for: "Euphoria (average size)"
+
+ambient_atmosphere:
+  air: "Stale and thick; the room has insect life that 'eyes the runners speculatively' on entry."
+  pest_load: "Vermin on the stairwells; insects in the unit. Author cue, not a combat encounter."
+
+canonical_use:
+  role: "Euphoria-kidnap hideout (first kidnapping)."
+  scene_refs:
+    - "Data/Lore/Adventures/QueenEuphoria.yaml scenes.off_and_running"
+    - "Data/Lore/Adventures/QueenEuphoria.yaml scenes.royal_what"
+  keycard:
+    type: "plastic card with magnetic strip"
+    issued_by: "Ludivenko Corporation (via Juan Diablo at the Pier 36 meet)"
+    encoded: "Royal Meadows Apartments street address + apartment 812 access"
+
+management:
+  landlord_npc_ref: "Data/Lore/NPCs/Crucius Bunter.yaml"
+  bribe_economics:
+    note: "Crucius accepts bribes; see his bribe_profile for canonical price points (e.g. ~100 nuyen calms him when annoyed; ~50 nuyen for deferred maintenance). Reflects Redmond Barrens 'High corruption' tier per Design/World/DESIGN - Economy.md."
 
 adaptation_notes:
-  - "Scene writing: the keycard is the inciting concrete object of the Off and Running scene - PC leaves Pier 36 with it. Promote to an inventory item in the ShadeRunner adaptation so it is visible in the PC's commlink / inventory layer between scenes."
-  - "Building-interior authoring is deferred until later chapters describe the hideout unit. Placeholder asset: generic Seattle high-rise exterior + sterile rented-apartment interior."
+  - "Scene assets: the p.12 flat map is the first canonical floor plan in this ingestion. Use the rooms[] schema as the seed for a 3D-isometric interior; specific furniture states (broken chair, dead freezer, broken hot tap) become world-state flags that small environmental dialogue can reference."
+  - "Lobby gating: the manager window + sleeping Ork form the only ambient social check. PCs can pass through trivially during a normal-traffic time."
+  - "Building exterior aesthetic: cinderblock + plastic windows + rust-iron sculpture vocabulary; useful for Redmond-Barrens art direction more broadly."
+  - "Pest atmosphere is set-dressing, not a combat encounter. Don't spawn mobs."
 
 game_presence:
-  mvp: "out of MVP scope."
+  mvp: "out of MVP scope (MVP focus is broader Redmond, not specifically Royal Meadows)."
   post_mvp: "Hideout venue for the first-kidnapping arc when Queen Euphoria is adapted."
 
 transcription_gaps:
-  - "District / neighborhood not given on p.10."
-  - "Floor + unit number of the actual hideout not given on p.10."
-  - "Building layout, access control (lobby security, cameras, elevator gating) not given on p.10."
+  - "Building's exact street address (the keycard carries an address but the address itself is not transcribed in pp.10-12)."
+  - "Specific Redmond-Barrens neighborhood / sub-zone is not named beyond 'a few blocks into the Redmond Barrens'."
+  - "Total apartment count + floor distribution beyond '18 stories' not given."

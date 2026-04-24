@@ -1,0 +1,105 @@
+# Canonical NPC — landlord / manager of the Royal Meadows Apartments in Redmond Barrens.
+
+name: "Crucius Bunter"
+era: 2050
+authored: false
+status: "active adventure NPC (Queen Euphoria)"
+kind: "Landlord / building manager (corporate-tenement)"
+
+sources:
+  - edition: SR1E
+    book: "Queen Euphoria"
+    year: 1990
+    page: 11
+    image: "Sources/SR1E-QueenEuphoria/p011-royal-what.png"
+    section: "Royal What? / Behind the Scenes (introduction)"
+  - edition: SR1E
+    book: "Queen Euphoria"
+    year: 1990
+    page: 12
+    image: "Sources/SR1E-QueenEuphoria/p012-royal-meadows-map.png"
+    section: "Royal What? / Debugging (bribe price)"
+
+facts:
+  role: |
+    Resident landlord / building manager of Royal Meadows Apartments
+    (Redmond Barrens). Sits behind the lobby manager's window most
+    hours of the day. Nominally responsible for the building's
+    maintenance; in practice delegates nothing and fixes little.
+  residence_ref: "Data/Lore/Places/Apartments/Royal Meadows Apartments.yaml"
+  demeanor: "Irritable, overworked, complains on any prompt."
+  maintenance_posture: |
+    Building's scale outstrips his capacity (too many rooms for one
+    man). Long abandoned routine maintenance tasks like replacing
+    waste filters and air filters. Meets tenant complaints with either
+    a mumbled 'I'll get to it' or a retaliatory monologue about his
+    own hardships. Responds to nuyen where he does not respond to
+    words.
+
+physical:
+  metatype: "Dwarf"
+  age_approx: 35
+  face: "Pockmarked by disease."
+  note: "No stat block on pp.11-12; treat as civilian non-combat NPC."
+
+contact_profile:
+  connection: 1
+  loyalty_default: 1
+  venue: "Data/Lore/Places/Apartments/Royal Meadows Apartments.yaml"
+  venue_note: "Always reachable through the lobby manager's window (behind heavy plastic); the window is his default on-screen position."
+  services:
+    - type: "building_maintenance (reluctant)"
+      availability: "per-request; cost-gated in practice via bribe"
+  voice:
+    engine: xtts
+    model_ref: null
+    profile_note: "Gruff, put-upon, quick to monologue about his own lot. Hand-author for a Dwarvish tenement-landlord register; keep distinct from the corporate Mr. Johnson voice."
+  relationship:
+    romance_eligible: false
+  faction_affiliation:
+    primary: "Independent / building-operator employee"
+
+# Wired to Design/World/DESIGN - Economy.md bribery mechanic schema.
+# Crucius is the first canonical NPC in Data/Lore/ to carry a
+# bribe_profile block. Price seed from p.12 Debugging: ~100 nuyen
+# calms him down when annoyed. Redmond Barrens is flagged in the
+# Economy doc as 'High corruption (Redmond / Barrens)' - lower-than-
+# base prices, very-low detection risk; no district multiplier
+# applied here beyond that seed.
+bribe_profile:
+  available: true
+  actions:
+    - action: "Calm annoyed manager (smooth over tenant noise / odd-hours traffic complaints)"
+      base_yen: 100
+      detection_base_risk: 0.05
+      source_page: 12
+      note: "Canonical debugging beat on p.12: if the PCs annoy Crucius, ~100 nuyen calms him. Detection risk is nominal - he simply pockets it."
+    - action: "Persuade to make deferred maintenance repairs (filters / water / minor fixes)"
+      base_yen: 50
+      detection_base_risk: 0.05
+      source_page: 11
+      note: "p.11 Behind the Scenes: 'Nuyen talks, however, and even a little bribe will be enough to persuade Crucius to make some repairs.' 'Little bribe' pegged at 50 nuyen as a seed - below the annoyance-calm price, reflecting that he is happier to do his actual job than to ignore tenant noise."
+  integrity: 2
+  greed: 4
+  note: |
+    Integrity 2 reflects a landlord who will take a bribe without much
+    hesitation; greed 4 is mid-range (he is poor and tired, not a
+    strategic bribe-taker). These seeds are project-calibration values
+    pending play-testing.
+
+game_presence:
+  mvp: |
+    Candidate for Redmond-adjacent ambient presence when the MVP
+    district populates. Not a MVP-critical NPC in his own right; may
+    surface if a ShadeRunner player-character takes a Barrens lifestyle
+    apartment or runs an encounter at Royal Meadows.
+  post_mvp: "Royal Meadows Apartments manager for Queen Euphoria scene adaptation (the Royal What? scene uses him as the mechanical friction point)."
+
+adaptation_notes:
+  - "UI layer: Crucius is reachable as a stationary NPC at the lobby window. Dialogue tree exposes maintenance complaints + bribe options."
+  - "Design tie-in: Crucius is the reference implementation for the Design/World/DESIGN - Economy.md bribery_profile schema on a Data/Lore/NPCs/ file. Future bribable NPCs (Lindstrom, Seattle-mafia contacts, corrupt Lone Star) should follow this shape."
+  - "Writer note: Crucius is a tired, irritable, poor man - not a villain. The 'character depth discipline' rule (Design/Social/DESIGN - Contacts.md) applies: author his exhaustion as a specific fact, not as 'disgruntled landlord archetype'. Pockmarked face + overworked schedule are canonical handles."
+
+transcription_gaps:
+  - "No first-name disambiguation beyond 'Crucius Bunter' - unclear whether 'Crucius' is given-name or handle."
+  - "Specific tenure at Royal Meadows, prior employment, and personal history are not on pp.11-12."

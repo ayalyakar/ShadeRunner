@@ -329,7 +329,7 @@ structure:
           page: 8
         - title: "Off and Running"
           page: 9
-        - title: "Road What?"
+        - title: "Royal What?"
           page: 11
         - title: "Pacific Towers"
           page: 13
@@ -551,6 +551,18 @@ npc_refs:
     spoiler_level: public
     plot_beats: [beat_04_ludomeria_hires_fixer, beat_05_first_kidnap]
     detail_ref: "Data/Lore/NPCs/Juan Diablo.yaml"
+  - name: "Crucius Bunter"
+    status: ingested
+    source_page: [11, 12]
+    role: |
+      Dwarf landlord / manager of the Royal Meadows Apartments in the
+      Redmond Barrens. Irritable, overworked, pockmarked. First
+      canonical Data/Lore/NPCs/ entry wired to the Design/World/
+      DESIGN - Economy.md bribe_profile schema (~100 nuyen to calm,
+      ~50 nuyen for deferred maintenance).
+    spoiler_level: public
+    plot_beats: [beat_05_first_kidnap]
+    detail_ref: "Data/Lore/NPCs/Crucius Bunter.yaml"
 
 faction_refs:
   - name: "MegaMedia Entertainment Inc."
@@ -644,10 +656,11 @@ place_refs:
     detail_ref: "Data/Lore/Places/Docks/Pier 36 (Tacoma).yaml"
   - name: "Royal Meadows Apartments"
     status: ingested
-    source_page: [10]
-    kind: "apartments_high_rise"
-    district: unknown
-    role: "Hideout provided by Ludivenko for the kidnapped Euphoria. Address encoded on a magnetic-strip keycard handed to the PCs at the Pier 36 meet."
+    source_page: [10, 11, 12]
+    kind: "apartments_corporate_tenement_high_rise"
+    district: "Redmond"
+    subarea: "Redmond Barrens"
+    role: "18-story corporate-tenement hideout. Apartment 812 rented by Ludivenko (under alias 'John Smith') for the full month. Crucius Bunter manages the building; the flat is pre-stocked with dehydrated food + women's clothing sized for Euphoria."
     spoiler_level: public
     plot_beats: [beat_05_first_kidnap]
     detail_ref: "Data/Lore/Places/Apartments/Royal Meadows Apartments.yaml"
