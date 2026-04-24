@@ -33,13 +33,19 @@ promised to ship.
 - `DESIGN - Vision.md` — elevator pitch, player fantasy, north stars,
   non-goals, inspiration, working style. **Start here.**
 - `DESIGN - Index.md` — this file.
-- `Sourcebooks/` — chapter-by-chapter ingestion of the Shadowrun tabletop
-  material. Starts with SR1E, expands forward through 6E.
+- `Sourcebooks/` — sub-topic-level ingestion of the Shadowrun tabletop
+  material. Starts with SR1E, expands forward through 6E. One file per
+  sub-topic as printed in each book's ToC; one `SOURCEBOOK - Index.md` per
+  book.
   - `SOURCEBOOK - Ingestion Policy.md` — starting edition, folder shape,
-    note-content standard, timeline-aware conflict rule, chapter note
-    template.
-  - `SR1E/SOURCEBOOK - Core Rulebook.md` — first book in the queue,
-    awaiting chapter content.
+    sub-topic granularity, note-content standard, timeline-aware conflict
+    rule, visual-asset policy, sub-topic note template.
+  - `SR1E/Core Rulebook/SOURCEBOOK - Index.md` — first book in the queue;
+    ToC-populated progress table (~307 rows, all `QUESTIONING`).
+  - `SR1E/Core Rulebook/SOURCEBOOK - Seattle Map 2050.md` — Seattle map
+    note (partial; legend needs higher-res scan).
+  - `SR1E/Core Rulebook/Images/` — binary assets (maps etc.) kept
+    alongside their sub-topic notes.
 
 ## Planned top-level sections (not yet written)
 
