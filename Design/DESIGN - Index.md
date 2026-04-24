@@ -33,6 +33,13 @@ promised to ship.
 - `DESIGN - Vision.md` — elevator pitch, player fantasy, north stars,
   non-goals, inspiration, working style. **Start here.**
 - `DESIGN - Index.md` — this file.
+- `Sourcebooks/` — chapter-by-chapter ingestion of the Shadowrun tabletop
+  material. Starts with SR1E, expands forward through 6E.
+  - `SOURCEBOOK - Ingestion Policy.md` — starting edition, folder shape,
+    note-content standard, timeline-aware conflict rule, chapter note
+    template.
+  - `SR1E/SOURCEBOOK - Core Rulebook.md` — first book in the queue,
+    awaiting chapter content.
 
 ## Planned top-level sections (not yet written)
 
@@ -52,7 +59,6 @@ with its own question round before any content is drafted.
 - `Pillar - Rigging/` — full-depth rigging subsystem design.
 - `Pillar - Combat/` — full-depth combat subsystem design.
 - `Pillar - Social/` — full-depth social subsystem design.
-- `Sourcebooks/` — chapter-by-chapter ingestion notes per edition.
 
 ## Status legend (for use inside individual docs)
 
