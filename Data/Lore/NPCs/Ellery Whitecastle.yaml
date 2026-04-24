@@ -1,0 +1,96 @@
+# Canonical NPC — local Fixer hired by Ludivenko Corporation; PC-facing voice for the Queen Euphoria opening brief.
+
+name: "Ellery Whitecastle"
+alt_names:
+  - name: "Elliot Whitecastle"
+    status: "rejected; low-res misread from p.6 Plot Synopsis ingestion"
+    transcription_note: "The p.6 synopsis was ingested from a low-res phone screenshot and mis-transcribed the given name as 'Elliot.' Canonical spelling on the clearer p.8 Wake Up Call page is 'Ellery.' The p.6 npc_refs entry in Data/Lore/Adventures/QueenEuphoria.yaml still carries the old spelling with a reconciliation note."
+era: 2050
+authored: false
+status: "active adventure NPC (Queen Euphoria)"
+kind: "Fixer (contact-tier; SR rules NPC archetype)"
+
+sources:
+  - edition: SR1E
+    book: "Queen Euphoria"
+    year: 1990
+    page: 8
+    image: "Sources/SR1E-QueenEuphoria/p008-wake-up-call.png"
+    section: "Wake Up Call / Tell It To Them Straight + Behind the Scenes"
+  - edition: SR1E
+    book: "Queen Euphoria"
+    year: 1990
+    page: 6
+    image: "Sources/SR1E-QueenEuphoria/p006-introduction.png"
+    section: "Plot Synopsis (mention as 'Elliot Whitecastle', misread)"
+
+facts:
+  role: |
+    Local Seattle Fixer. Hired by the Ludivenko Corporation to assemble a
+    shadowrun team and to broker the initial meet between the runners and
+    Ludivenko's own Mr. Johnson. Whitecastle is NOT the run's
+    commissioner - he is the cut-out.
+  hired_by:
+    faction_ref: "Data/Lore/Factions/Ludivenko Corporation.yaml"
+  meet_role: |
+    Whitecastle places the opening videophone call, keeps the brief itself
+    thin (he does not know the job specifics and cannot say for whom
+    Mr. Johnson works - he only suspects Ludivenko), and directs the
+    runners to Pier 36 on the Tacoma docks at 11pm for the actual meet
+    with Mr. Johnson.
+  success_tier: "Moderately successful Fixer. Does not dress in style and does not live in comfort; appearance-vs-lifestyle gap is canonical."
+  business_style: "Works almost exclusively by phone; rarely appears in person."
+  referral_to_pcs: "Knows the PCs through his own street sources - they are not cold-called but tracked to."
+  referral_alt_path: "If the party has previously run the Shadowrun adventure 'Mercurial,' Whitecastle cites prior big-name-star experience as the reason for choosing them. Otherwise the street-sources path is used."
+  stat_reference:
+    archetype: "Fixer Contact"
+    rules_citation: "SR1E core rules, p.167"
+    note: "No custom stat block on p.8; module defers to the SR1E core rules Fixer archetype."
+
+appearance_videophone:
+  hair: "Black, slicked back."
+  eyes: "Green cybereyes."
+  dress: "Expensive suit for the videophone frame."
+  style_contradiction: |
+    Canonical tension: the videophone image reads as prosperous, but his
+    actual lifestyle is described as not-stylish and not-comfortable. The
+    suit is presentation, not status. Author for this contradiction in
+    the ShadeRunner adaptation (performative corporate front over a
+    modest street-Fixer base).
+
+contact_profile:
+  connection: 3
+  loyalty_default: 1
+  venue: null
+  venue_note: "No venue established - all on-screen contact is videophone-only. Post-MVP adaptation may invent a venue if the module requires an in-person fallback."
+  services:
+    - type: "fixer"
+      availability: "during the Queen Euphoria engagement; referral-only pre-run"
+  voice:
+    engine: xtts
+    model_ref: null
+    profile_note: |
+      Corporate-polished over a street-Fixer baseline. Hand-authored for
+      the Queen Euphoria adaptation. The green-cybereyes + slicked hair +
+      expensive suit presentation reads cool, clipped, mercantile. Brief
+      and repetitive on important points because his fee depends on the
+      runners actually showing up.
+  relationship:
+    romance_eligible: false
+  faction_affiliation:
+    primary: "Independent"
+    engagement: "Contracted by Ludivenko Corporation for the Queen Euphoria brokerage"
+
+game_presence:
+  mvp: "out of MVP scope."
+  post_mvp: "Videophone-only Fixer for the Queen Euphoria run when adapted. Single-scene adaptive contact; probably does not become a recurring fixer."
+
+adaptation_notes:
+  - "PC-facing UI: Whitecastle opens the Wake Up Call scene as a named Fixer, NOT as a Mr. Johnson cover. 'Mr. Johnson' is a separate Ludivenko NPC whom the PC meets at Pier 36; Whitecastle is the middleman who never leaves the phone."
+  - "Debugging behavior on p.8: if the PC declines or ignores the call, Whitecastle re-dials the other party members in sequence. Solo-PC adaptation: same call repeats with gentle urgency before falling back to the 'four-days-and-skip-to-Deja-Vu' debug path."
+  - "Whitecastle's Fixer-fee-depends-on-runners-showing-up incentive is a handle for the dialogue writer: he will be persistent on the 'show up' beat. Use that to keep the opening tight without feeling like a forced hook."
+  - "SR rules Fixer archetype reference (p.167) is a ShadeRunner-mechanics stub until combat / contact stats are locked; don't hardcode the numbers at ingestion time."
+
+transcription_gaps:
+  - "No metatype, age, height, or full physical description on p.8 beyond the videophone appearance fields captured here."
+  - "Home district / neighbourhood of operation not named on p.8."

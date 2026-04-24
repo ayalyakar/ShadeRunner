@@ -472,19 +472,33 @@ npc_refs:
     plot_beats: [beat_03_euphoria_promotion, beat_05_first_kidnap, beat_06_pride_counter, beat_10_second_kidnap, beat_16_climax]
     transcription_note: "Distinct from the 'Queen Euphoria' module title. The in-world character's stage name is 'Euphoria'; 'Queen Euphoria' is the title the module gives to the storyline-through-line (Craft intends to make her into a Queen Spirit)."
   - name: "Ludomeria"
-    status: pending_detail
+    status: superseded_by_p8
     source_page: [6]
     role: "Corporate rival to Sirius Foods in the food / nutrient space. Hires Fixer Elliot Whitecastle to sabotage Sirius's Amber Gel promotion by kidnapping Euphoria. Later contracts MegaMedia for a promotion push of its own Amber-Gel knockoff, 'Blue Bacaoey.'"
     spoiler_level: public
-    plot_beats: [beat_04_ludomeria_hires_fixer, beat_08_ludomeria_megamedia]
-    transcription_note: "Readable from p.6 synopsis. Whether Ludomeria is a corp, a named individual, or both is unclear from p.6 alone - the name's grammatical use in the synopsis is ambiguous ('Ludomeria, seeing an opportunity, approaches MegaMedia'). Default to 'corp' until chapter ingestion clarifies; may instead be an individual exec, in which case re-classify."
+    transcription_note: |
+      Superseded by the p.8 Wake Up Call page. The clearer p.8 rendering
+      of this employer is 'Ludivenko Corporation' (p.6 'Ludomeria' was
+      a low-res misread). The corp-vs-individual ambiguity noted on
+      ingestion resolves as 'corporation' per p.8. The earlier-flagged
+      rival-to-Sirius-Foods plot role still applies and remains on the
+      Ludivenko file as the canonical employer.
+    supersedes_with:
+      faction_ref: "Data/Lore/Factions/Ludivenko Corporation.yaml"
   - name: "Elliot Whitecastle"
-    status: pending_detail
+    status: superseded_by_p8
     source_page: [6]
     role: "Local Fixer. Recruited by Ludomeria to assemble the shadowrun team for the first Euphoria kidnapping - the team the PCs run on."
     spoiler_level: public
-    plot_beats: [beat_04_ludomeria_hires_fixer, beat_05_first_kidnap]
-    transcription_note: "Spelling 'Whitecastle' read tentatively from low-res p.6; verify at later ingestion pass."
+    transcription_note: |
+      Superseded by the p.8 Wake Up Call page. The clearer p.8 rendering
+      of this NPC is 'Ellery Whitecastle' (given name 'Elliot' was a p.6
+      low-res misread). Detail lives at
+      Data/Lore/NPCs/Ellery Whitecastle.yaml. Employer rendered on p.6
+      as 'Ludomeria' is also a low-res misread of 'Ludivenko Corporation'
+      - see Faction refs reconciliation below.
+    supersedes_with:
+      npc_ref: "Data/Lore/NPCs/Ellery Whitecastle.yaml"
   - name: "Pride"
     status: pending_detail
     source_page: [6]
@@ -499,6 +513,31 @@ npc_refs:
     spoiler_level: public
     plot_beats: [beat_12_penthouse_investigation, beat_13_lead_garnatys]
     transcription_note: "Name 'Van Willis' read tentatively from low-res p.6."
+  - name: "Ellery Whitecastle"
+    status: ingested
+    source_page: [6, 8]
+    role: |
+      Local Seattle Fixer hired by Ludivenko Corporation to broker the
+      Wake Up Call meet between the PCs and Ludivenko's Mr. Johnson.
+      Videophone-only appearance; does not know the job specifics and
+      cannot say who his client is beyond a suspicion of Ludivenko.
+    spoiler_level: public
+    plot_beats: [beat_04_ludomeria_hires_fixer, beat_05_first_kidnap]
+    detail_ref: "Data/Lore/NPCs/Ellery Whitecastle.yaml"
+    transcription_note: |
+      Supersedes the earlier 'Elliot Whitecastle' p.6 entry. See that
+      entry's supersedes_with block for the reconciliation path.
+  - name: "Mr. Johnson (Ludivenko, Queen Euphoria)"
+    status: pending_detail
+    source_page: [8]
+    role: |
+      Ludivenko Corporation executive who commissions the run. Meets
+      the PCs at Pier 36 on the Tacoma docks at 11pm. Real name not
+      revealed on p.8; identified only by the generic 'Mr. Johnson'
+      corp-cover alias. Distinct NPC from Whitecastle - do not conflate.
+    spoiler_level: public
+    plot_beats: [beat_04_ludomeria_hires_fixer]
+    detail_ref: "Data/Lore/NPCs/Mr. Johnson (Ludivenko, Queen Euphoria).yaml"
 
 faction_refs:
   - name: "MegaMedia Entertainment Inc."
@@ -516,9 +555,26 @@ faction_refs:
     plot_beats: [beat_02_amber_gel, beat_03_euphoria_promotion, beat_06_pride_counter, beat_07_court_standoff, beat_11_megamedia_hires_pcs, beat_15_lead_matrix]
     note: "Faction-detail file deferred until chapter / Legwork ingestion provides rating, services, category, etc."
   - name: "Ludomeria"
-    status: tentative_faction
+    status: superseded_by_p8
     source_page: [6]
-    note: "Classification as a faction (vs. a named individual antagonist) is tentative - grammatical use in p.6 is ambiguous. Cross-linked with the Ludomeria npc_refs entry until disambiguated."
+    note: |
+      Superseded by p.8. The p.6 low-res 'Ludomeria' reading is the
+      same entity as the p.8 'Ludivenko Corporation'. Corp-vs-individual
+      ambiguity resolves as 'corporation' per p.8.
+    supersedes_with:
+      faction_ref: "Data/Lore/Factions/Ludivenko Corporation.yaml"
+  - name: "Ludivenko Corporation"
+    status: ingested
+    source_page: [6, 8]
+    role: |
+      Corporation that hires Ellery Whitecastle to broker the PCs and
+      dispatches a Mr. Johnson to meet them at Pier 36, Tacoma docks,
+      at 11pm. Commissioning faction for the opening run. Canonical
+      p.6 plot role (rival to Sirius Foods, later contracts MegaMedia)
+      carries forward under this name.
+    spoiler_level: public
+    plot_beats: [beat_04_ludomeria_hires_fixer, beat_05_first_kidnap, beat_08_ludomeria_megamedia]
+    detail_ref: "Data/Lore/Factions/Ludivenko Corporation.yaml"
 
 place_refs:
   - name: "Garnaty's Bar and Grill"
@@ -564,6 +620,79 @@ place_refs:
     role: "Craft's operation - Amber Gel production front over a nascent Ant Spirit Hive. Module's climax location."
     spoiler_level: gm_only
     plot_beats: [beat_01_discovery, beat_02_amber_gel, beat_10_second_kidnap, beat_16_climax]
+  - name: "Pier 36 (Tacoma docks)"
+    status: ingested
+    source_page: [8]
+    kind: "pier_meeting_location"
+    district: "Tacoma"
+    role: "Meeting location for the Wake Up Call scene. 11pm rendezvous with the Ludivenko Mr. Johnson."
+    spoiler_level: public
+    plot_beats: [beat_04_ludomeria_hires_fixer]
+    detail_ref: "Data/Lore/Places/Docks/Pier 36 (Tacoma).yaml"
+
+# Per-scene entries for 'The Adventure'. Scenes populate as each chapter
+# page ingests. Prose fields are SUMMARIES (per the fidelity policy; no
+# verbatim transcription). Each scene captures the SR1E module sections
+# defined on printed p.5: tell_straight_summary, behind_scenes_summary,
+# and debugging_summary, plus ShadeRunner adaptation hooks.
+scenes:
+  - id: wake_up_call
+    title: "Wake Up Call"
+    page: 8
+    order_in_adventure: 1
+    tags: [opening, hook, meet, videophone]
+    entities_introduced:
+      npc_refs:
+        - "Data/Lore/NPCs/Ellery Whitecastle.yaml"
+        - "Data/Lore/NPCs/Mr. Johnson (Ludivenko, Queen Euphoria).yaml"
+      faction_refs:
+        - "Data/Lore/Factions/Ludivenko Corporation.yaml"
+      place_refs:
+        - "Data/Lore/Places/Docks/Pier 36 (Tacoma).yaml"
+    cross_refs_out:
+      next_on_accept: "deja_vu"
+      next_on_accept_page: 27
+      legwork_on_whitecastle_page: 56
+      fallback_on_refusal: "re-call other PCs; four-day timeout then skip to deja_vu"
+    tell_straight_summary: |
+      The PC is woken late by a videophone call after a heavy night out.
+      The caller is a man in an expensive suit with slicked-back black
+      hair and green cybereyes; he opens with a friendly 'greetings,
+      chummer' and offers a job.
+    behind_scenes_summary: |
+      The caller is Ellery Whitecastle, a local Fixer hired by the
+      Ludivenko Corporation. Whitecastle's job is to assemble a
+      shadowrun team and broker the meet between them and an executive
+      Mr. Johnson from Ludivenko. Whitecastle knows the PCs through his
+      own street sources (or, if the party ran the earlier Shadowrun
+      adventure 'Mercurial', via that prior big-name-star experience).
+      He keeps the brief deliberately thin - he does not know the run
+      specifics and can only suspect Ludivenko as the ultimate client.
+      Mr. Johnson will meet the runners at Pier 36 on the Tacoma docks
+      at 11pm that evening. Whitecastle's own fee depends on the
+      runners actually showing up, so he repeats key details. He is a
+      moderately successful Fixer using the SR1E core Fixer Contact
+      archetype (p.167); his videophone appearance is stylish but his
+      actual lifestyle is modest.
+    debugging_summary: |
+      If the PC declines or fails to assemble the team, Whitecastle
+      re-calls other PCs until one bites. If nuyen isn't enough, the
+      module recommends applying street hardship (mugging, theft,
+      Matrix crime) to renew motivation. Last resort: skip the opening
+      run entirely - four in-world days pass, then cut straight to the
+      Deja Vu scene (p.27).
+    adaptation_notes:
+      - "Whitecastle is the videophone voice; Mr. Johnson is the dockside meet. Two distinct NPCs with two distinct voices."
+      - "Solo-PC play: the one-at-a-time interview cadence collapses to a single meet. Preserve the videophone-then-dockside beat structure as two UI scenes."
+      - "The 'Mercurial' prior-adventure continuity hook is a reference to a different SR1E adventure module, not an NPC. Flagging here so it is not re-misread in future ingestions."
+      - "Narrative register: night-after hangover framing (the PC wakes groggy and throat-raw). Art-direction / audio cue - interior, late-night, dim lighting, urban ambient; harbor-dockside night for the Pier 36 beat."
+    cross_adventure_references:
+      - adventure_title: "Mercurial"
+        relationship: "Optional prior-adventure continuity - if PCs ran 'Mercurial', Whitecastle's reason for selecting them cites that experience."
+        note: "This is NOT a ShadeRunner-canon adventure; it is an external SR1E adventure module referenced by title only on p.8. Flagged to avoid confusion with NPC-named fixers."
+    transcription_gaps:
+      - "Mr. Johnson's real name, metatype, physical description, and stats are not on p.8 (identity deliberately withheld by the module at this beat)."
+      - "Specific SR1E page for Fixer Contact stat reference given as p.167; not yet cross-linked to a ShadeRunner stat file."
 
 # Paranormal entities surfaced in the synopsis. Same pending_detail pattern
 # as NPCs / factions / places. Note: Data/Lore/Creatures/ (or similar) tree
@@ -595,6 +724,7 @@ transcription_gaps:
   - "p.3 TOC Cast of Characters entries under page 62-64 are too low-res to extract individual names beyond Robert Carmon; full cast list deferred to Cast of Characters chapter ingestion."
   - "Source-file naming note: Sources/SR1E-QueenEuphoria/ filenames use pNNN in screenshot-upload order, NOT strictly matching printed page numbers. The 7 phone screenshots ingested so far (p001 - p007) cover printed pp.1 - 6 - the Ant Lion prologue spans printed pp.3 - 4 but was captured by 3 screenshots (p003, p004, p005) due to phone-scroll page overlap. The 'page:' field inside sources[] entries is the authoritative printed page number for cross-referencing."
   - "p.6 Plot Synopsis was ingested from a low-res phone screenshot; several names are tentative and must be re-verified when their chapter pages ingest: 'Elliot Whitecastle' (Fixer name spelling), 'Pride' + 'African-Itzaman' (magical-tradition name), 'Van Willis' (waiter name), 'Magic Crafts' (shop/location name in Puyallup Barrens), 'Blue Bacaoey' (Ludomeria's knockoff food product). 'Ludomeria' is ambiguous between corp and individual - classified as both a tentative faction and an NPC until disambiguated."
+  - "p.8 Wake Up Call resolved two p.6 low-res misreads: 'Elliot Whitecastle' -> 'Ellery Whitecastle' (given name), and 'Ludomeria' -> 'Ludivenko Corporation' (employer name; also confirmed as a corporation rather than an individual). The superseded p.6 entries are preserved under status: superseded_by_p8 with supersedes_with pointers to the canonical detail files, so the reconciliation trail is self-documenting. Further Plot-Synopsis names from p.6 (Pride, Van Willis, Magic Crafts, Blue Bacaoey, African-Itzaman) remain pending re-verification."
 
 sources:
   - edition: SR1E
@@ -642,3 +772,9 @@ sources:
     image: "Sources/SR1E-QueenEuphoria/p007-plot-synopsis.png"
     section: "Introduction (How To Use This Book tail: Cast of Characters / Picking Up The Pieces / Player Handouts paragraphs) + Plot Synopsis"
     note: "File is named p007 by screenshot order; printed page is 6."
+  - edition: SR1E
+    book: "Queen Euphoria"
+    year: 1990
+    page: 8
+    image: "Sources/SR1E-QueenEuphoria/p008-wake-up-call.png"
+    section: "The Adventure / Wake Up Call (Tell It To Them Straight + Behind the Scenes + Debugging)"

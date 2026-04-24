@@ -1,0 +1,58 @@
+# Canonical faction — the corporate employer behind Queen Euphoria's opening hook.
+
+name: "Ludivenko Corporation"
+type: "Corporation"
+tier: null
+tier_note: "Corp tier (A / AA / AAA) not stated on p.8; pending later-chapter data."
+
+era: 2050
+authored: false
+status: "active (Queen Euphoria)"
+
+sources:
+  - edition: SR1E
+    book: "Queen Euphoria"
+    year: 1990
+    page: 8
+    image: "Sources/SR1E-QueenEuphoria/p008-wake-up-call.png"
+    section: "Wake Up Call / Behind the Scenes"
+
+overview: |
+  Corporation for which Ellery Whitecastle serves as an executive and
+  as the 'Mr. Johnson' commissioning the Queen Euphoria run. Hires the
+  runners via the fixer Mercurial as a cut-out. Specific business
+  sector, size, and corporate-tier are not established on the opening
+  scene page - detail awaits later chapters and the Legwork section.
+
+personnel:
+  - npc_ref: "Data/Lore/NPCs/Ellery Whitecastle.yaml"
+    role: "Executive / run-commissioner (uses 'Mr. Johnson' cover)"
+    source_page: 8
+
+hires_via:
+  - fixer_ref: "Data/Lore/NPCs/Mercurial.yaml"
+    method: "Cut-out referral — runners are briefed through Mercurial rather than first-party corp contact."
+    source_page: 8
+
+presence:
+  - metroplex: "Seattle"
+    hq_district: null
+    hq_district_note: "HQ district not specified on p.8; meeting venue is Pier 36 on the Tacoma docks, which is a neutral off-corp location, not the HQ."
+    activity_level: "appears only through its Queen Euphoria engagement at this point in ingestion."
+
+turf:
+  authoritative: false
+  zones: []
+  note: "No canonical turf yet on this page. Revisit when later chapters describe Ludivenko operations, facilities, or rivalries."
+
+adaptation_notes:
+  - "ShadeRunner faction schema expects tier + category + rep-on-faction + services. Most fields are deferred to later Queen Euphoria pages or other SR1E sources that may cite Ludivenko."
+  - "Logic consequence: current MVP Redmond-run chargen should not be gated on Ludivenko rep. Rep wiring happens when this corp becomes playable."
+
+game_presence:
+  mvp: "out of MVP scope."
+  post_mvp: "Commissioner faction for the Queen Euphoria run when adapted."
+
+transcription_gaps:
+  - "Spelling 'Ludivenko' taken from the phone-screenshot of p.8; rendering tentative. Also appears once in the 'Behind the Scenes' block with minor typography differences. Verify against the Legwork page and any corp-index page when they ingest."
+  - "Corporate tier, business sector, size, rivals, and HQ location are all absent from p.8."

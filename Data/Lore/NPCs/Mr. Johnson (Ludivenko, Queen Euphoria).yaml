@@ -1,0 +1,76 @@
+# Canonical NPC — the Ludivenko executive who actually commissions the run.
+
+name: "Mr. Johnson (Ludivenko, Queen Euphoria)"
+kind: "Mr. Johnson (corporate runner alias)"
+era: 2050
+authored: false
+status: "pending_detail; identity not revealed on p.8"
+
+sources:
+  - edition: SR1E
+    book: "Queen Euphoria"
+    year: 1990
+    page: 8
+    image: "Sources/SR1E-QueenEuphoria/p008-wake-up-call.png"
+    section: "Wake Up Call / Behind the Scenes"
+
+facts:
+  role: |
+    Executive at the Ludivenko Corporation. Commissions the runners for
+    the Queen Euphoria run; meets them in person at Pier 36 on the
+    Tacoma docks at 11pm. Uses the generic 'Mr. Johnson' corp-cover
+    alias rather than a true name.
+  employer:
+    faction_ref: "Data/Lore/Factions/Ludivenko Corporation.yaml"
+    position: "Executive (specific title not given on p.8)"
+  broker:
+    fixer_ref: "Data/Lore/NPCs/Ellery Whitecastle.yaml"
+    pattern: |
+      Uses Whitecastle as a cut-out: Whitecastle places the opening call,
+      the PCs never learn Mr. Johnson's true employer from Whitecastle,
+      and Mr. Johnson is the only Ludivenko face the runners will see in
+      the Wake Up Call scene.
+  venue_first_meet:
+    place_ref: "Data/Lore/Places/Docks/Pier 36 (Tacoma).yaml"
+    time: "11pm"
+
+identity_reveal:
+  revealed_on_page_eight: false
+  note: |
+    p.8 names him only as 'Mr. Johnson' and identifies his employer as
+    Ludivenko. A real name (if the module gives one) must come from a
+    later chapter. This file stays a pending stub until that reveal or
+    until Legwork / Cast of Characters ingestion fills it in.
+
+contact_profile:
+  connection: 4
+  loyalty_default: 1
+  venue: "Data/Lore/Places/Docks/Pier 36 (Tacoma).yaml"
+  services:
+    - type: "fixer"
+      availability: "one engagement only - Queen Euphoria"
+  voice:
+    engine: xtts
+    model_ref: null
+    profile_note: |
+      Corporate register, deliberately anonymous - this is exactly the
+      'Corporate Mr. Johnson' slot described in Design/Social/DESIGN -
+      Contacts.md (Connection 4, Loyalty 1, single-scene + payout).
+      Hand-author distinct voice from Whitecastle to avoid conflation.
+  relationship:
+    romance_eligible: false
+  faction_affiliation:
+    primary: "Ludivenko Corporation"
+
+game_presence:
+  mvp: "out of MVP scope."
+  post_mvp: "The commissioning Mr. Johnson of the Queen Euphoria run when adapted. UI-level identity stays 'Mr. Johnson' unless and until the module reveals a real name."
+
+adaptation_notes:
+  - "Distinct NPC file from Whitecastle's to avoid the alias conflation I originally slipped into: Mr. Johnson and Whitecastle are two separate people with two different meets (videophone + dockside)."
+  - "When the real name or more detail surfaces in a later chapter, either rename this file to the real name and keep a cover_identities entry for 'Mr. Johnson', or keep this file as-is and cross-link."
+
+transcription_gaps:
+  - "Real name unknown as of p.8 (identity deliberately withheld by the module at this beat)."
+  - "Mr. Johnson's physical description, metatype, cyberware, and stats are not on p.8. The player is cued to meet him at Pier 36 but does not yet see him on this page."
+  - "Specific title / seniority at Ludivenko is not stated."
