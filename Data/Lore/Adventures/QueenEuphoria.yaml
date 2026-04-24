@@ -327,7 +327,7 @@ structure:
       scenes:
         - title: "Wake Up Call"
           page: 8
-        - title: "Road West?"
+        - title: "Off and Running"
           page: 9
         - title: "Road What?"
           page: 11
@@ -528,16 +528,29 @@ npc_refs:
       Supersedes the earlier 'Elliot Whitecastle' p.6 entry. See that
       entry's supersedes_with block for the reconciliation path.
   - name: "Mr. Johnson (Ludivenko, Queen Euphoria)"
-    status: pending_detail
-    source_page: [8]
+    status: ingested
+    source_page: [8, 9, 10]
     role: |
       Ludivenko Corporation executive who commissions the run. Meets
-      the PCs at Pier 36 on the Tacoma docks at 11pm. Real name not
-      revealed on p.8; identified only by the generic 'Mr. Johnson'
-      corp-cover alias. Distinct NPC from Whitecastle - do not conflate.
+      the PCs at Pier 36 on the Tacoma docks at 11pm with his
+      bodyguard Juan Diablo. Real name deliberately withheld
+      ('unimportant' per p.10); identified only by the generic
+      'Mr. Johnson' corp-cover alias. Distinct NPC from Whitecastle
+      - do not conflate.
     spoiler_level: public
-    plot_beats: [beat_04_ludomeria_hires_fixer]
+    plot_beats: [beat_04_ludomeria_hires_fixer, beat_05_first_kidnap]
     detail_ref: "Data/Lore/NPCs/Mr. Johnson (Ludivenko, Queen Euphoria).yaml"
+  - name: "Juan Diablo"
+    status: ingested
+    source_page: [10]
+    role: |
+      Ludivenko Company-Man bodyguard for the Pier 36 meet. Drives the
+      Toyota Elite that delivers Mr. Johnson. Passes the PCs the
+      Royal Meadows Apartments keycard and whispernumber #5-5-Chrome
+      for follow-up coordination.
+    spoiler_level: public
+    plot_beats: [beat_04_ludomeria_hires_fixer, beat_05_first_kidnap]
+    detail_ref: "Data/Lore/NPCs/Juan Diablo.yaml"
 
 faction_refs:
   - name: "MegaMedia Entertainment Inc."
@@ -622,13 +635,22 @@ place_refs:
     plot_beats: [beat_01_discovery, beat_02_amber_gel, beat_10_second_kidnap, beat_16_climax]
   - name: "Pier 36 (Tacoma docks)"
     status: ingested
-    source_page: [8]
+    source_page: [8, 9, 10]
     kind: "pier_meeting_location"
     district: "Tacoma"
-    role: "Meeting location for the Wake Up Call scene. 11pm rendezvous with the Ludivenko Mr. Johnson."
+    role: "Meeting location for the Wake Up Call + Off and Running scenes. 11pm rendezvous with the Ludivenko Mr. Johnson and his bodyguard Juan Diablo."
     spoiler_level: public
-    plot_beats: [beat_04_ludomeria_hires_fixer]
+    plot_beats: [beat_04_ludomeria_hires_fixer, beat_05_first_kidnap]
     detail_ref: "Data/Lore/Places/Docks/Pier 36 (Tacoma).yaml"
+  - name: "Royal Meadows Apartments"
+    status: ingested
+    source_page: [10]
+    kind: "apartments_high_rise"
+    district: unknown
+    role: "Hideout provided by Ludivenko for the kidnapped Euphoria. Address encoded on a magnetic-strip keycard handed to the PCs at the Pier 36 meet."
+    spoiler_level: public
+    plot_beats: [beat_05_first_kidnap]
+    detail_ref: "Data/Lore/Places/Apartments/Royal Meadows Apartments.yaml"
 
 # Per-scene entries for 'The Adventure'. Scenes populate as each chapter
 # page ingests. Prose fields are SUMMARIES (per the fidelity policy; no
@@ -693,6 +715,99 @@ scenes:
     transcription_gaps:
       - "Mr. Johnson's real name, metatype, physical description, and stats are not on p.8 (identity deliberately withheld by the module at this beat)."
       - "Specific SR1E page for Fixer Contact stat reference given as p.167; not yet cross-linked to a ShadeRunner stat file."
+
+  - id: off_and_running
+    title: "Off and Running"
+    page: 9
+    pages_spanned: [9, 10]
+    order_in_adventure: 2
+    tags: [meet, negotiation, hook, dockside, handoff]
+    entities_introduced:
+      npc_refs:
+        - "Data/Lore/NPCs/Juan Diablo.yaml"
+      place_refs:
+        - "Data/Lore/Places/Apartments/Royal Meadows Apartments.yaml"
+      products_refs:
+        - "Data/Lore/Products/Amber Gel.yaml"
+    entities_expanded:
+      - "Data/Lore/NPCs/Mr. Johnson (Ludivenko, Queen Euphoria).yaml (first on-screen appearance + negotiation stats)"
+      - "Data/Lore/Places/Docks/Pier 36 (Tacoma).yaml (~100m wooden pier; dockside context; staggered-arrival cinematic)"
+    cross_refs_out:
+      next_on_accept:
+        scene_id: "royal_meadows_hideout_prep"
+        scene_id_note: "TOC-listed next scene is 'Pacific Towers' at p.13 (Euphoria-kidnap operational site); the hideout move is addressed separately from this scene. Use p.13 title-at-page to confirm exact scene id."
+        page_hint: [11, 13]
+      legwork_on_whitecastle_page: 56
+      fallback_on_refusal: |
+        If the PCs refuse the deal or never assemble at the pier,
+        p.10 routes the scene straight to Deja Vu (p.27).
+    tell_straight_summary: |
+      The pier is empty by nine o'clock. Dockside warehouses bracket
+      the approach road; water laps the piles. At eleven, a staggered
+      arrival: a long sedan rolls in with a lanky, bereted bodyguard
+      at the wheel; a chromed Scorpion motorcycle crests the road
+      with an Ork rider; and finally Mr. Johnson steps out of the
+      sedan. He is deliberately forgettable - smooth complexion,
+      'implant-perfect' eyes, and a practiced smile - and opens with
+      'shall we talk business?' Euphoria's name comes up quickly
+      (MegaMedia starlet, Friday Sirius Foods promo appearance for
+      Amber Gel), followed by the run: snatch her, hold her four
+      days, return her unharmed. Fee and follow-up logistics follow.
+    behind_scenes_summary: |
+      Mr. Johnson's real name is explicitly withheld - an executive in
+      Ludivenko's Seattle operations. Stats reference: SR1E Mr.
+      Johnson Contact (p.170).
+
+      Negotiation: opening offer is 20,000 nuyen per PC with a
+      canonical +/-1,000 delta via an Opposed Negotiation Test. The
+      half-on-abduction / half-on-missed-appearance payment plan is
+      NOT negotiable. Johnson is uninterested in operational detail
+      and dismissive of questions he considers obvious; he insists
+      only on the four-day hold window and the no-harm directive
+      (an injured or dead endorser undermines Ludivenko's
+      corporate-sabotage angle).
+
+      The driver / bodyguard is Juan Diablo - gang-punk-turned-
+      samurai on Ludivenko funding. Stats reference: Company Man
+      (p.164) + Troll Street Samurai (p.46), Gunnery 4. Equipment:
+      Lined Coat; Browning Max-Power with silencer and explosive
+      ammo; Uzi III with smartgun and shock pads. Passive unless the
+      PCs turn violent.
+
+      Diablo hands the PCs a magnetic-strip keycard addressed to
+      Royal Meadows Apartments (the pre-arranged hideout), plus a
+      whispernumber (#5-5-Chrome) for follow-up coordination. The
+      keycard is a concrete scene object - a pickup the PCs carry
+      forward.
+    debugging_summary: |
+      Missed or refused meet: Johnson comes to the pier anyway, but
+      only characters actually present can participate in the brief.
+      If the PCs turn violent, Diablo covers Johnson's extraction.
+      Irreconcilable refusal routes to Deja Vu (p.27) and skips the
+      first kidnap arc entirely.
+    adaptation_notes:
+      - "Scene-state handoffs: (1) keycard pickup (inventory item for Royal Meadows Apartments), (2) whispernumber addition to the PC's commlink contact list (Diablo, #5-5-Chrome), (3) terms log (four days / no harm / half-half payout) stored as quest state."
+      - "Negotiation beat is mechanically thin (+/-1,000 nuyen max). Don't over-engineer dialogue options here - the canonical range is tight and Johnson's condescension means aggressive haggling is punished, not rewarded."
+      - "Arrival cadence is explicitly staggered (Diablo first with the sedan, then the Ork chopper flourish, then Johnson). Keep the stagger in the cinematic - it sets tone without slowing pace."
+      - "'Implant-perfect eyes' on Johnson is a small, specific detail. Preserve it in the character portrait brief."
+    transcription_gaps:
+      - "Specific identity of the Ork Scorpion rider is not disclosed on pp.9-10 (may be Diablo-adjacent muscle or unrelated dockside ambient; default to ambient until a later page clarifies)."
+      - "District of Royal Meadows Apartments is not named on p.10 - only the building address on the keycard."
+      - "The Ork Scorpion arrival is described on p.9 but Diablo's explicit make/model arrival is the Toyota Elite; whether the Scorpion belongs to Johnson's party or is incidental is left ambiguous."
+
+# Named in-universe products / consumer goods / McGuffins. New ref tree
+# opened at p.9-10 ingestion. Mirrors the structure of other *_refs blocks:
+# summary role here, full detail in Data/Lore/Products/.
+products_refs:
+  - name: "Amber Gel"
+    status: ingested
+    source_page: [6, 9, 10]
+    kind: "consumer_food_product"
+    manufacturer: "Sirius Foods"
+    role: "Sirius Foods product being promoted via a Euphoria-endorsed Friday appearance. Corporate-sabotage McGuffin. Hidden nature (Insect-Spirit Worker-caste biological material tied to Craft's Puyallup Hive) gated at spoiler_level: gm_only."
+    spoiler_level: public
+    plot_beats: [beat_02_amber_gel, beat_03_euphoria_promotion, beat_04_ludomeria_hires_fixer, beat_09_burroughs_panic]
+    detail_ref: "Data/Lore/Products/Amber Gel.yaml"
 
 # Paranormal entities surfaced in the synopsis. Same pending_detail pattern
 # as NPCs / factions / places. Note: Data/Lore/Creatures/ (or similar) tree
@@ -778,3 +893,15 @@ sources:
     page: 8
     image: "Sources/SR1E-QueenEuphoria/p008-wake-up-call.png"
     section: "The Adventure / Wake Up Call (Tell It To Them Straight + Behind the Scenes + Debugging)"
+  - edition: SR1E
+    book: "Queen Euphoria"
+    year: 1990
+    page: 9
+    image: "Sources/SR1E-QueenEuphoria/p009-off-and-running.png"
+    section: "The Adventure / Off and Running (Tell It To Them Straight)"
+  - edition: SR1E
+    book: "Queen Euphoria"
+    year: 1990
+    page: 10
+    image: "Sources/SR1E-QueenEuphoria/p010-off-and-running-behind.png"
+    section: "The Adventure / Off and Running (Behind the Scenes + Debugging)"

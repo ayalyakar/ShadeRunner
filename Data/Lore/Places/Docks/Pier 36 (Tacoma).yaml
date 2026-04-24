@@ -14,39 +14,74 @@ sources:
     page: 8
     image: "Sources/SR1E-QueenEuphoria/p008-wake-up-call.png"
     section: "Wake Up Call / Tell It To Them Straight + Behind the Scenes"
+  - edition: SR1E
+    book: "Queen Euphoria"
+    year: 1990
+    page: 9
+    image: "Sources/SR1E-QueenEuphoria/p009-off-and-running.png"
+    section: "Off and Running / Tell It To Them Straight (dockside approach + meet)"
+  - edition: SR1E
+    book: "Queen Euphoria"
+    year: 1990
+    page: 10
+    image: "Sources/SR1E-QueenEuphoria/p010-off-and-running-behind.png"
+    section: "Off and Running / Behind the Scenes (pier geometry + dockside context)"
 
 location:
   metroplex: "Seattle"
   district: "Tacoma"
   subarea: "Tacoma docks"
   district_ref_note: "Tacoma is named as a distinct district in the p.5 Seattle-metroplex setting recap (Seattle / Tacoma / Redmond). Not yet one of the ingested district files - placeholder until the Tacoma chapter ingests or a Districts/Tacoma.yaml is bootstrapped."
+  dockside_context: |
+    p.10 places Pier 36 among 'disreputable and dangerous' areas of
+    the Tacoma docks. Heavy wooden pier stretches over the water about
+    100 meters (hundred-meter dock structure). Street runs alongside
+    the pier, stretching into the dock area. Area is deserted by 9pm
+    and patrolled by police only lightly (lone law-enforcement
+    presence, not a sustained sweep).
 
 description: |
   Waterfront pier on Tacoma's industrial docks. Used in Queen Euphoria
-  as a neutral off-corp meet site for the runners' Wake Up Call
-  briefing with Whitecastle (as 'Mr. Johnson'). P.8 does not describe
-  the pier's physical layout beyond its location and an 11pm meeting
-  time that implies night-mode dockside lighting, minimal civilian
-  traffic, and ambient harbor noise.
+  as a neutral off-corp meet site for the runners' briefing with the
+  Ludivenko Mr. Johnson. The pier is wooden, heavy-built, extends ~100m
+  over the water; a road parallels the pier on land. Few ships dock
+  at the pier by night; the location is deliberately chosen for its
+  isolation. Ambient register (authoring cue): wet wooden planking,
+  salt air, distant harbor machinery, an incandescent street lamp on
+  the approach road, sodium halos, occasional motorcycle / sedan
+  traffic during the meet arrival window.
+
+night_activity_pattern:
+  before_9pm: "Last dockside business finishes; area empties."
+  after_9pm: "Deserted except for planned meets. Light police patrol presence."
+  meet_window:
+    time: "11pm"
+    arrivals_on_scene_per_p9:
+      - "Lanky Latino bodyguard (Juan Diablo) disembarks a Toyota Elite - beret, combat-ready posture."
+      - "Harley Scorpion motorcycle rolls up; chromed, ridden by an Ork (gang / courier register)."
+      - "Mr. Johnson steps out of the sedan at the meet point."
+    note: "Arrivals cadence on p.9 is staggered and deliberately theatrical. ShadeRunner adaptation: preserve the stagger as a short arrival cinematic."
 
 uses_canonical:
-  - context: "Queen Euphoria / Wake Up Call meet"
+  - context: "Queen Euphoria / Wake Up Call briefing referent"
     time: "11pm"
-    party: "runners (individually briefed) + Whitecastle + implied Whitecastle security (not enumerated on p.8)"
-    source_page: 8
+    party: "runners (individually briefed per module; solo PC in ShadeRunner adaptation) + Mr. Johnson + Juan Diablo"
+    source_page: [8, 9, 10]
 
 security_posture:
-  overt: null
-  covert_implied: "Whitecastle's one-at-a-time briefing cadence and cut-out hiring pattern imply he arrives with at least minimal corporate protection / observation; not detailed on p.8."
+  overt: "Minimal - open dockside approach."
+  covert_implied: "Johnson's cut-out hiring pattern + Diablo's loadout + the Toyota Elite's armored profile imply a low-key but competent protective perimeter around Johnson. Not detailed in force composition."
+  civil: "Occasional police patrol on the approach road (p.10 implies rather than states; passing rather than stationed)."
 
 adaptation_notes:
-  - "ShadeRunner scene design: dockside-at-night is the visual / audio register. Expect wet concrete, sodium-vapor halos, intermittent cargo-crane silhouettes, ambient foghorn / water-lap SFX. Place file is the venue ref for the Wake Up Call scene."
-  - "Solo-PC play collapses the one-at-a-time interview cadence (p.8 canon) into a single meet. Retain the staggered-timing flavor for any NPC party-members who tag along."
+  - "ShadeRunner scene design: dockside-at-night is the visual / audio register. Wet concrete + wooden planks, sodium-vapor halos, intermittent cargo-crane silhouettes, ambient foghorn / water-lap SFX. Place file is the venue ref for Wake Up Call and Off and Running scenes."
+  - "Solo-PC play collapses the one-at-a-time interview cadence (p.8 canon) into a single meet. Retain the staggered-arrival (Diablo first, then Johnson) cinematic cadence from p.9 for mood."
+  - "The keycard-handoff beat is the concrete object that marks the scene transition from Pier 36 to Royal Meadows Apartments; wire it as an explicit inventory pickup."
 
 game_presence:
   mvp: "out of MVP scope."
-  post_mvp: "Wake Up Call venue when Queen Euphoria is adapted."
+  post_mvp: "Wake Up Call / Off and Running venue when Queen Euphoria is adapted."
 
 transcription_gaps:
-  - "Pier-36 physical layout, interior / exterior structures, nearby landmarks, and any named adjacent businesses are not on p.8."
-  - "Whether Pier 36 is Whitecastle-owned / Whitecastle-chosen / Mercurial-chosen is not stated on p.8."
+  - "Pier-36 physical layout beyond the ~100m wooden-pier description, nearby warehouses and their interiors, named adjacent businesses are not on pp.8-10."
+  - "Whether Pier 36 is Ludivenko-owned / Ludivenko-chosen / Whitecastle-chosen is not stated."

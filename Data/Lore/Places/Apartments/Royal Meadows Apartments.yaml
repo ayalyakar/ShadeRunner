@@ -1,0 +1,59 @@
+# Canonical place — high-rise apartment complex designated as the Euphoria-kidnapping hideout.
+
+name: "Royal Meadows Apartments"
+type: "Apartments / high-rise residential"
+
+era: 2050
+authored: false
+status: "active"
+
+sources:
+  - edition: SR1E
+    book: "Queen Euphoria"
+    year: 1990
+    page: 10
+    image: "Sources/SR1E-QueenEuphoria/p010-off-and-running-behind.png"
+    section: "Off and Running / Behind the Scenes (keycard disclosure)"
+
+location:
+  metroplex: "Seattle"
+  district: unknown
+  district_note: |
+    District not named on p.10. The keycard's address is carried on
+    the keycard but not spoken in the scene text captured on this
+    page. Establish at a later page or from Legwork cross-reference.
+
+description: |
+  High-rise apartment building. Canonical role in Queen Euphoria: the
+  site Ludivenko arranges as the hideout for the kidnapped Euphoria.
+  The PCs are handed a magnetic-strip keycard at the Pier 36 meet that
+  carries the building address; no further physical detail is given
+  on p.10 (the building's layout, floor of the safehouse unit, and
+  security posture will surface at later scene pages).
+
+canonical_use:
+  role: "Euphoria-kidnap hideout (first kidnapping)"
+  scene_refs:
+    - "Data/Lore/Adventures/QueenEuphoria.yaml scenes.off_and_running"
+  keycard:
+    type: "plastic card with magnetic strip"
+    issued_by: "Ludivenko Corporation (via the Mr. Johnson meet)"
+    encoded: "Royal Meadows Apartments street address"
+
+security_posture:
+  overt: null
+  covert: null
+  notes: "Not described on p.10 - canonical security detail deferred."
+
+adaptation_notes:
+  - "Scene writing: the keycard is the inciting concrete object of the Off and Running scene - PC leaves Pier 36 with it. Promote to an inventory item in the ShadeRunner adaptation so it is visible in the PC's commlink / inventory layer between scenes."
+  - "Building-interior authoring is deferred until later chapters describe the hideout unit. Placeholder asset: generic Seattle high-rise exterior + sterile rented-apartment interior."
+
+game_presence:
+  mvp: "out of MVP scope."
+  post_mvp: "Hideout venue for the first-kidnapping arc when Queen Euphoria is adapted."
+
+transcription_gaps:
+  - "District / neighborhood not given on p.10."
+  - "Floor + unit number of the actual hideout not given on p.10."
+  - "Building layout, access control (lobby security, cameras, elevator gating) not given on p.10."

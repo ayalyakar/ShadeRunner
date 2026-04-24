@@ -1,0 +1,90 @@
+# Canonical NPC — bodyguard / company-man enforcer for the Ludivenko Mr. Johnson on the Off and Running meet.
+
+name: "Juan Diablo"
+era: 2050
+authored: false
+status: "active adventure NPC (Queen Euphoria)"
+kind: "Bodyguard / Company Man (gang-punk-turned-samurai under Ludivenko funding)"
+
+sources:
+  - edition: SR1E
+    book: "Queen Euphoria"
+    year: 1990
+    page: 10
+    image: "Sources/SR1E-QueenEuphoria/p010-off-and-running-behind.png"
+    section: "Off and Running / Behind the Scenes"
+
+facts:
+  role: |
+    Muscle / bodyguard for the Ludivenko Mr. Johnson at the Pier 36
+    meet and the subsequent Pacific Towers rendezvous. Drives the
+    Toyota Elite that delivers Johnson to the pier. Serves as PC
+    contact channel for follow-up coordination.
+  employer:
+    faction_ref: "Data/Lore/Factions/Ludivenko Corporation.yaml"
+    pattern: "Gang-punk recruited into corporate samurai service through Ludivenko's funding - canonical bio beat."
+  contact_method:
+    whispernumber: "#5-5-Chrome"
+    note: "The number the PCs can use to reach Diablo for follow-up (vehicle arrangements, Pacific Towers coordination, Thursday 6pm check-in window referenced on p.10)."
+  combat_posture: "Attacks only if the PCs become violent first; otherwise passive cover presence at the meet."
+  vehicle: "Drives the Toyota Elite (Johnson's corporate sedan) to Pier 36."
+
+equipment:
+  armor: "Lined Coat (ballistic)."
+  primary:
+    weapon: "Browning Max-Power pistol"
+    accessories: ["silencer", "explosive ammunition"]
+  heavy:
+    weapon: "Uzi III"
+    accessories: ["smartgun adapter", "shock pads"]
+  note: "Full equipment layout per p.10 Behind the Scenes; weapons / attachments aligned with SR1E gear tables."
+
+sr_rules_refs:
+  - archetype: "Company Man Contact"
+    edition: SR1E
+    book: "Shadowrun core rules"
+    page: 164
+    note: "Primary stat block reference for Diablo as corporate muscle."
+  - archetype: "Troll Street Samurai"
+    edition: SR1E
+    book: "Shadowrun core rules"
+    page: 46
+    note: "Secondary reference; the p.10 text routes some of Diablo's physical / combat stats through the Troll Street Samurai archetype in combination with the Company Man baseline."
+  - skill_addendum:
+      name: "Gunnery"
+      rating: 4
+      note: "Explicit skill rating called out by p.10 beyond the base archetype numbers."
+
+contact_profile:
+  connection: 2
+  loyalty_default: 1
+  venue: "Data/Lore/Places/Docks/Pier 36 (Tacoma).yaml"
+  services:
+    - type: "muscle / coordination"
+      availability: "Queen Euphoria run only - Thursday onward"
+  voice:
+    engine: xtts
+    model_ref: null
+    profile_note: "Hand-authored for Queen Euphoria adaptation. Gang-polish-over-street baseline; clipped, direct, minimal small-talk. Keep distinct from Johnson's corporate-anonymous register."
+  relationship:
+    romance_eligible: false
+  faction_affiliation:
+    primary: "Ludivenko Corporation"
+
+game_presence:
+  mvp: "out of MVP scope."
+  post_mvp: |
+    Scene-bound NPC for the Pier 36 meet and the Pacific Towers
+    rendezvous. The whispernumber follow-up hook makes him a
+    potentially recurring coordination contact across the Off and
+    Running -> Pacific Towers -> (subsequent acts) beats.
+
+adaptation_notes:
+  - "PC-facing UI: Diablo is the visible muscle at the Pier 36 meet. Johnson speaks; Diablo watches."
+  - "Follow-up mechanic: whispernumber #5-5-Chrome can back a commlink-based dialogue node that lets the PC reach Diablo for Pacific Towers coordination, separate from the Johnson-only negotiation channel."
+  - "Stat-wiring note: SR1E p.164 + p.46 references are preserved as sr_rules_refs for the later stats-migration pass. Do not hard-code numbers at ingestion time."
+
+transcription_gaps:
+  - "Juan Diablo's physical description (height, build, visible cyber) beyond 'gang-punk-turned-samurai' is not explicitly given on p.10 in field-ready detail."
+  - "Whether 'Diablo' is a handle or a given name is not stated."
+  - "His pre-Ludivenko gang affiliation is referenced but not named."
